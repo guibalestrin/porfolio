@@ -100,7 +100,7 @@ pt: {
   ij4_t:"Financeiro", ij4_d:"Custos, projeções e viabilidade: o que faz o número fechar.",
   ij_gt:"O que isso agregou", ij_g:"Eu já vinha do marketing digital, olhando para o anúncio e o funil. A consultoria abriu o resto do mapa: agora enxergo o negócio inteiro — mercado, operação, marketing e números — e entendo como cada parte afeta as outras.",
   ij_st:"Skills que ganhei", ij_chips:["Visão estratégica","Análise de mercado","Estruturação de processos","Viabilidade financeira","Comunicação com cliente","Trabalho em equipe","Gestão de projetos","Apresentação de resultados"],
-  nav_projects:"Projetos",
+  nav_projects:"Projetos", ab_gt:"Um pouco mais de mim", g1:"Escritório é onde der.", g2:"Quando pede formalidade.", g3:"Rotina de faculdade.",
   vn_k:"Projetos paralelos", vn_t:"Ideias que viram produto.",
   vn_l:"Além do marketing e da faculdade, eu gosto de pegar uma ideia, desenhar a solução e colocar no ar. Estes são os projetos que construí em paralelo.",
   in_s:"Projeto atual · em construção",
@@ -188,7 +188,7 @@ en: {
   ij4_t:"Finance", ij4_d:"Costs, projections and viability: what makes the numbers work.",
   ij_gt:"What it added", ij_g:"I came from digital marketing, looking at the ad and the funnel. Consulting opened up the rest of the map: now I see the whole business — market, operations, marketing and numbers — and how each part affects the others.",
   ij_st:"Skills I gained", ij_chips:["Strategic thinking","Market analysis","Process design","Financial viability","Client communication","Teamwork","Project management","Presenting results"],
-  nav_projects:"Projects",
+  nav_projects:"Projects", ab_gt:"A little more of me", g1:"Office is wherever it works.", g2:"When it calls for a suit.", g3:"College routine.",
   vn_k:"Side projects", vn_t:"Ideas that become products.",
   vn_l:"Beyond marketing and college, I like to take an idea, design the solution and put it live. These are the projects I built on the side.",
   in_s:"Current project · in the making",
@@ -260,6 +260,7 @@ const STK = [
   { k:"leader", fx:.2, fy:-.12, r:3, c:"ink" },   { k:"insper", fx:.62, fy:-.14, r:-4, c:"" },
   { k:"y2022", fx:.48, fy:1.16, r:2, c:"alt" },   { k:"organic", fx:-.08, fy:1.05, r:-3, c:"ink" },
   { k:"app_in", fx:.62, fy:-.1, r:3, c:"ink" }, { k:"app_swap", fx:1.12, fy:.78, r:-5, c:"" }, { k:"app_pz", fx:-.12, fy:.82, r:4, c:"alt" },
+  { k:"ph_cut", img:"assets/cut-daily.webp", fx:.2, fy:.56, r:-3, c:"photo cut" }, { k:"ph_work", img:"assets/g-work.webp", fx:.68, fy:1.1, r:4, c:"photo" },
   { k:"ph_tiktok", img:"assets/tiktok.webp", fx:.91, fy:.40, r:5, c:"photo" },  { k:"ph_kiwify", img:"assets/kiwify.webp", fx:.09, fy:.42, r:-5, c:"photo" },
   { k:"ph_me", img:"assets/me-sq.webp", cap:"Guilherme, 19", fx:.33, fy:.11, r:-4, c:"photo me" },  { k:"ph_amazon", img:"assets/amazon.webp", fx:.40, fy:1.12, r:3, c:"photo" },  { k:"ph_shop", img:"assets/shopify.webp", fx:.74, fy:-.14, r:-4, c:"photo" }
 ];
