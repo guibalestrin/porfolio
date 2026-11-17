@@ -786,3 +786,19 @@ html[data-still] .sm{opacity:1!important;transform:rotate(var(--r))!important}
 .jc-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
 .jc-chips li{padding:.55em 1em;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1px var(--hair);font-size:14.5px;font-weight:500}
 @media (max-width:860px){.jc,.jc-flip{grid-template-columns:minmax(0,1fr)}.jc-flip .jc-text{order:0}.jn-duo{grid-template-columns:minmax(0,1fr)}}
+
+/* ---- experiência prática ---- */
+.xp-item{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(20px,4vw,64px);align-items:start;margin-top:clamp(18px,2.6vw,32px);padding:clamp(24px,3.6vw,52px);border-radius:clamp(26px,3vw,44px);background:var(--fill);box-shadow:inset 0 0 0 1px var(--hair);color:var(--ink)}
+.xp-tag{display:inline-block;padding:.45em .9em;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1px var(--hair);color:var(--blue);font:600 13px/1 var(--text);letter-spacing:.01em}
+.xp-head h3{margin:16px 0 10px;font-size:clamp(24px,2.6vw,38px);font-weight:600;letter-spacing:-.04em;line-height:1.08}
+.xp-head p{color:var(--quiet);font-size:clamp(15px,1.2vw,18px);line-height:1.45;letter-spacing:-.01em}
+.xp-b{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.xp-b li{position:relative;padding-left:24px;color:#424245;font-size:clamp(15px,1.2vw,18px);line-height:1.5;letter-spacing:-.01em}
+.xp-b li::before{content:"";position:absolute;left:3px;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--blue)}
+.xp-b .xp-res{margin-top:4px;color:var(--ink);font-weight:600}
+.xp-b .xp-res::before{background:#19c37d;box-shadow:0 0 0 4px rgba(25,195,125,.18)}
+.xp-foot{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(18px,2.6vw,32px);margin-top:clamp(18px,2.6vw,32px)}
+.xp-box{padding:clamp(22px,3vw,40px);border-radius:clamp(24px,2.6vw,36px);background:var(--fill);box-shadow:inset 0 0 0 1px var(--hair)}
+.xp-box h3{font-size:clamp(20px,1.8vw,26px);font-weight:600;letter-spacing:-.03em}
+.xp-box .jc-chips{margin-top:16px}
+@media (max-width:860px){.xp-item{grid-template-columns:minmax(0,1fr)}.xp-foot{grid-template-columns:minmax(0,1fr)}}
