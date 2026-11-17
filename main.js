@@ -44,11 +44,12 @@ pt: {
   hit_msg:"Por favor, não bata nele.",
   story_sr:"eu crio funis, sites e campanhas que vendem",
   work_h:"Trabalhos",
-  p1_t:"Dropshipping", p1_l:"Onde tudo começou, em 2022: lojas online e tráfego orgânico que gerou resultado de verdade.", p1_k:"E-commerce · Tráfego orgânico",
+  p1_t:"Dropshipping", p1_l:"Onde tudo começou, em 2022: lojas online e tráfego orgânico — com um vídeo que passou de 2,3 milhões de views no TikTok.", p1_k:"E-commerce · Tráfego orgânico",
   p2_t:"Infoprodutos", p2_l:"Criei um produto do zero, montei toda a operação e vendi com campanhas pagas.", p2_k:"Produto digital · Funil · Tráfego pago",
   p3_t:"Sites em WordPress", p3_l:"Páginas de venda e sites pensados para a jornada do cliente, do primeiro clique à compra.", p3_k:"Web · Design · Copy",
-  tabs_drop:["Loja","Tráfego orgânico","Conteúdo"], tabs_info:["Produto","Funil","Campanhas"], tabs_wp:["Páginas","Design","Copy"],
-  sub_drop:["Catálogo e oferta","Alcance sem pagar anúncio","Vídeos e posts que atraem"], sub_info:["Do zero ao lançamento","Da atenção à compra","Tráfego pago em escala"], sub_wp:["Páginas que convertem","Visual com intenção","Texto que persuade"],
+  tabs_drop:["Vídeo viral","TikTok","Shopify","Amazon","Vendas"], tabs_info:["Vendas","Funil","Campanhas"], tabs_wp:["Páginas","Design","Copy"],
+  sub_drop:["views. O vídeo da garrafinha na escola — o produto que eu vendia.","novos seguidores e 132K curtidas no mesmo vídeo (TikTok Studio).","sessões em uma semana na loja Shopify · R$161,49 em vendas, 3 pedidos.","de conversão em links de afiliado: 38 cliques, 6 pedidos, R$169,72.","venda paga no crédito (Yampi) + Reel com 5 mil curtidas."], big_drop:["2,3M","+3.375","944","15,79%","R$155,96"],
+  sub_info:["notificações reais de Venda Aprovada e Pix Gerado no Kiwify.","Da atenção à compra","Tráfego pago em escala"], big_info:["Kiwify","",""], sub_wp:["Páginas que convertem","Visual com intenção","Texto que persuade"],
   rw_sr:"O que me move", rw_head:"Entender gente é o negócio.", rw_sub:"Toque em um rosto.",
   rw:[
     {t:"Liderança", x:"Quero entender o que faz um time seguir alguém — e como isso se aprende."},
@@ -74,6 +75,17 @@ pt: {
   q4:"Como começamos?", a4:"Preencha o formulário acima ou escreva direto por e-mail.",
   ft_say:"Marketing digital com<br>visão de gestão.", ft_loc:"Insper · Administração", ft_top:"Voltar ao topo ↑", copied:"Copiado",
   stk:{traffic:"Tráfego pago",copy:"Copywriting",design:"Design",wp:"WordPress",funnel:"Funis",persuasion:"Persuasão",leader:"Liderança",body:"Linguagem corporal",psych:"Psicologia de vendas",insper:"Insper",y2022:"Desde 2022",organic:"Tráfego orgânico"},
+  tip_help:"Teclas e gestos",
+  ch4_k:"CANAL 04 · TIKTOK", ch4_b:"2,3M<br>VIEWS", ch4_v:"o vídeo da garrafinha",
+  ch5_k:"CANAL 05 · LOJA", ch5_b:"944<br>SESSÕES", ch5_v:"numa semana · 3 pedidos",
+  mq_t:"Plataformas por onde já passei",
+  st_t:"Números de verdade.", st_l:"Métricas e prints das minhas próprias operações — sem enfeite.",
+  st1:"views em um único vídeo no TikTok", st1s:"Maio/2023 · dropshipping",
+  st2:"curtidas no mesmo vídeo", st2s:"Produto que eu vendia",
+  st3:"novos seguidores vindos dele", st3s:"Dados do TikTok Studio",
+  st4:"de conversão em links de afiliado", st4s:"Amazon Associados · 38 cliques, 6 pedidos",
+  hp_t:"Teclas e gestos", hp_keys:"Atalhos de uma tecla", hp_close:"Fechar",
+  hp_rows:[["Arrastar","Olhar em volta (ou mover os adesivos)"],["3 cliques no monitor","Não faça isso."],["1 – 5","Trocar de canal"],["L","Idioma PT / EN"],["M","Reduzir movimento"],["?","Esta ajuda"],["Shift + rolar","Mover o mundo na horizontal"]],
   title:"Guilherme Balestrin — Marketing digital & Administração",
   desc:"Guilherme Balestrin, 19. Marketing digital desde 2022: tráfego, copy, design e sites. Administração no Insper.",
   story:["eu","crio","funis","sites","e","campanhas","que","VENDEM"]
@@ -89,11 +101,12 @@ en: {
   hit_msg:"Please do not hit it.",
   story_sr:"I create funnels, websites and campaigns that sell",
   work_h:"Work",
-  p1_t:"Dropshipping", p1_l:"Where it all began, in 2022: online stores and organic traffic that delivered real results.", p1_k:"E-commerce · Organic traffic",
+  p1_t:"Dropshipping", p1_l:"Where it all began, in 2022: online stores and organic traffic — with a video that passed 2.3 million views on TikTok.", p1_k:"E-commerce · Organic traffic",
   p2_t:"Info products", p2_l:"I built a product from scratch, set up the whole operation and sold it with paid campaigns.", p2_k:"Digital product · Funnel · Paid traffic",
   p3_t:"WordPress sites", p3_l:"Sales pages and sites built around the customer journey, from first click to checkout.", p3_k:"Web · Design · Copy",
-  tabs_drop:["Store","Organic traffic","Content"], tabs_info:["Product","Funnel","Campaigns"], tabs_wp:["Pages","Design","Copy"],
-  sub_drop:["Catalog and offer","Reach without paying for ads","Videos and posts that pull people in"], sub_info:["From zero to launch","From attention to purchase","Paid traffic at scale"], sub_wp:["Pages that convert","Design with intent","Copy that persuades"],
+  tabs_drop:["Viral video","TikTok","Shopify","Amazon","Sales"], tabs_info:["Sales","Funnel","Campaigns"], tabs_wp:["Pages","Design","Copy"],
+  sub_drop:["views. The school bottle video — the product I was selling.","new followers and 132K likes on the same video (TikTok Studio).","sessions in one week on the Shopify store · R$161.49 in sales, 3 orders.","conversion on affiliate links: 38 clicks, 6 orders, R$169.72.","a sale paid by credit card (Yampi) + a Reel with 5K likes."], big_drop:["2.3M","+3,375","944","15.79%","R$155.96"],
+  sub_info:["real Approved Sale and Pix Generated notifications from Kiwify.","From attention to purchase","Paid traffic at scale"], big_info:["Kiwify","",""], sub_wp:["Pages that convert","Design with intent","Copy that persuades"],
   rw_sr:"What drives me", rw_head:"Understanding people is the business.", rw_sub:"Tap a face.",
   rw:[
     {t:"Leadership", x:"I want to understand what makes a team follow someone — and how that is learned."},
@@ -119,6 +132,17 @@ en: {
   q4:"How do we start?", a4:"Fill in the form above or email me directly.",
   ft_say:"Digital marketing with<br>a management mindset.", ft_loc:"Insper · Business Administration", ft_top:"Back to top ↑", copied:"Copied",
   stk:{traffic:"Paid traffic",copy:"Copywriting",design:"Design",wp:"WordPress",funnel:"Funnels",persuasion:"Persuasion",leader:"Leadership",body:"Body language",psych:"Sales psychology",insper:"Insper",y2022:"Since 2022",organic:"Organic traffic"},
+  tip_help:"Keys & gestures",
+  ch4_k:"CHANNEL 04 · TIKTOK", ch4_b:"2.3M<br>VIEWS", ch4_v:"the school bottle video",
+  ch5_k:"CHANNEL 05 · STORE", ch5_b:"944<br>SESSIONS", ch5_v:"in one week · 3 orders",
+  mq_t:"Platforms I've worked on",
+  st_t:"Real numbers.", st_l:"Metrics and screenshots from my own operations — no polish.",
+  st1:"views on a single TikTok video", st1s:"May 2023 · dropshipping",
+  st2:"likes on the same video", st2s:"A product I was selling",
+  st3:"new followers from it", st3s:"TikTok Studio data",
+  st4:"conversion on affiliate links", st4s:"Amazon Associates · 38 clicks, 6 orders",
+  hp_t:"Keys & gestures", hp_keys:"Single-key shortcuts", hp_close:"Close",
+  hp_rows:[["Drag","Look around (or move the stickers)"],["3 clicks on the TV","Please don't."],["1 – 5","Switch channel"],["L","Language PT / EN"],["M","Reduce motion"],["?","This help"],["Shift + scroll","Pan the world sideways"]],
   title:"Guilherme Balestrin — Digital marketing & Business Administration",
   desc:"Guilherme Balestrin, 19. Digital marketing since 2022: traffic, copy, design and websites. Business Administration at Insper.",
   story:["I","create","funnels","websites","and","campaigns","that","SELL"]
@@ -137,14 +161,25 @@ let pan = { x: 0, y: 0, vx: 0, vy: 0, drag: false, lx: 0, ly: 0, moved: 0 };
 let heroVisible = true, chIdx = 0, rolling = false;
 
 /* canais: clona 3→6 para o "roll" voltar ao mesmo canal sem salto */
+const NCH = $$(".ch", strip).length;
 $$(".ch", strip).forEach(c => strip.appendChild(c.cloneNode(true)));
-$$(".ch", strip).forEach((c, i) => { c.style.top = (i * 100) + "%"; if (i >= 3) c.setAttribute("aria-hidden", "true"); });
+$$(".ch", strip).forEach((c, i) => { c.style.top = (i * 100) + "%"; if (i >= NCH) c.setAttribute("aria-hidden", "true"); });
+strip.style.setProperty("--roll", (NCH * 100) + "%");
+/* só o vídeo do canal ativo carrega/toca (economiza banda e CPU) */
+function syncChVideo() {
+  [...strip.children].forEach((ch, idx) => {
+    const v = ch.querySelector("video"); if (!v) return;
+    const on = idx === chIdx && heroVisible && !root.dataset.still && !document.hidden && !rolling;
+    if (on) { if (!v.getAttribute("src") && v.dataset.src) v.src = v.dataset.src; v.play().catch(() => {}); } else v.pause();
+  });
+}
 function setCh(i, flash = true) {
-  chIdx = (i + 3) % 3;
+  chIdx = (i + NCH) % NCH;
   strip.style.setProperty("--y0", (-chIdx * 100) + "%");
   strip.style.transform = `translateY(${-chIdx * 100}%)`;
   tvch.textContent = "CH 0" + (chIdx + 1);
   if (flash && !root.dataset.still) { tv.classList.remove("is-flicker"); void tv.offsetWidth; tv.classList.add("is-flicker"); }
+  syncChVideo();
 }
 setCh(0, false);
 setInterval(() => { if (heroVisible && !pan.drag && !rolling && !root.dataset.still && !document.hidden) setCh(chIdx + 1); }, 5600);
@@ -161,11 +196,14 @@ const STK = [
   { k:"funnel", fx:.24, fy:.86, r:-3, c:"" },     { k:"persuasion", fx:.72, fy:.86, r:3, c:"ink" },
   { k:"body", fx:-.16, fy:.42, r:-5, c:"" },      { k:"psych", fx:1.16, fy:.38, r:4, c:"alt" },
   { k:"leader", fx:.2, fy:-.12, r:3, c:"ink" },   { k:"insper", fx:.62, fy:-.14, r:-4, c:"" },
-  { k:"y2022", fx:.48, fy:1.16, r:2, c:"alt" },   { k:"organic", fx:-.08, fy:1.05, r:-3, c:"ink" }
+  { k:"y2022", fx:.48, fy:1.16, r:2, c:"alt" },   { k:"organic", fx:-.08, fy:1.05, r:-3, c:"ink" },
+  { k:"ph_tiktok", img:"assets/tiktok.webp", fx:.91, fy:.40, r:5, c:"photo" },  { k:"ph_kiwify", img:"assets/kiwify.webp", fx:.09, fy:.42, r:-5, c:"photo" },
+  { k:"ph_amazon", img:"assets/amazon.webp", fx:.40, fy:1.12, r:3, c:"photo" },  { k:"ph_shop", img:"assets/shopify.webp", fx:.74, fy:-.14, r:-4, c:"photo" }
 ];
 const stickersEl = $("#stickers");
 const stickers = STK.map(s => {
   const el = mk("div", "sticker " + s.c); el.setAttribute("role", "note");
+  if (s.img) { const im = mk("img"); im.src = s.img; im.alt = ""; im.draggable = false; im.loading = "lazy"; el.appendChild(im); }
   stickersEl.appendChild(el);
   const o = { ...s, el, x: s.fx * vw, y: s.fy * vh, vx: 0, vy: 0, drag: false };
   bindSticker(o); return o;
@@ -236,11 +274,11 @@ function hit() {
   tv.classList.remove("is-flicker"); void tv.offsetWidth; tv.classList.add("is-flicker");
 }
 function roll() {
-  rolling = true; root.dataset.breaking = "1";
+  rolling = true; root.dataset.breaking = "1"; syncChVideo();
   strip.style.setProperty("--y0", (-chIdx * 100) + "%");
   tv.classList.add("is-rolling");
   setTimeout(() => { delete root.dataset.breaking; }, 620);
-  setTimeout(() => { tv.classList.remove("is-rolling"); rolling = false; say(T[lang].hit_msg); }, 1200);
+  setTimeout(() => { tv.classList.remove("is-rolling"); rolling = false; say(T[lang].hit_msg); syncChVideo(); }, 1200);
 }
 
 /* ruído de TV (canvas minúsculo) */
@@ -275,7 +313,8 @@ function heroTick() {
   }
   requestAnimationFrame(heroTick);
 }
-new IntersectionObserver(([en]) => { heroVisible = en.isIntersecting; }, { threshold: 0 }).observe(hero);
+new IntersectionObserver(([en]) => { heroVisible = en.isIntersecting; syncChVideo(); }, { threshold: 0 }).observe(hero);
+document.addEventListener("visibilitychange", () => { syncChVideo(); Object.values(pjState).forEach(x => x.sync && x.sync()); });
 
 /* ============================================================
    3) STORY — frase animada por scroll
@@ -432,10 +471,25 @@ function storyTick() {
 /* ============================================================
    4) WORK — janelas com abas (telas geradas em CSS)
    ============================================================ */
+const G = ["linear-gradient(135deg,#ff6a3d,#ff2d55)","linear-gradient(135deg,#0a84ff,#5ac8fa)","linear-gradient(135deg,#7b36ff,#ff2d92)","linear-gradient(135deg,#ff9500,#ffcc00)","linear-gradient(135deg,#00b894,#0a84ff)"];
 const PJ = {
-  drop: { grads:["linear-gradient(135deg,#ff6a3d,#ff2d55)","linear-gradient(135deg,#0a84ff,#5ac8fa)","linear-gradient(135deg,#7b36ff,#ff2d92)"], kinds:["cards","bars","lines"] },
-  info: { grads:["linear-gradient(135deg,#111,#3a3a3c)","linear-gradient(135deg,#00b894,#0a84ff)","linear-gradient(135deg,#ff9500,#ff3b30)"], kinds:["lines","funnel","bars"] },
-  wp:   { grads:["linear-gradient(135deg,#1f2a44,#4a6fa5)","linear-gradient(135deg,#f9d423,#ff4e50)","linear-gradient(135deg,#5856d6,#af52de)"], kinds:["cards","lines","lines"] }
+  drop: { items: [
+    { g:G[0], v:1, src:"assets/bottle.mp4", poster:"assets/bottle.jpg", ar:"540/960" },
+    { g:G[1], src:"assets/tiktok.webp", ar:"591/1280" },
+    { g:G[2], v:1, src:"assets/dashboard.mp4", poster:"assets/dashboard.jpg", ar:"16/9", w:57, tw:33 },
+    { g:G[3], src:"assets/amazon.webp", ar:"591/1280" },
+    { g:G[4], src:"assets/notifs.webp", ar:"591/246", w:40, tw:42 }
+  ] },
+  info: { items: [
+    { g:"linear-gradient(135deg,#0b8a5a,#19c37d)", src:"assets/kiwify.webp", ar:"591/813" },
+    { g:"linear-gradient(135deg,#00b894,#0a84ff)", mock:"funnel" },
+    { g:"linear-gradient(135deg,#ff9500,#ff3b30)", mock:"bars" }
+  ] },
+  wp: { items: [
+    { g:"linear-gradient(135deg,#1f2a44,#4a6fa5)", mock:"cards" },
+    { g:"linear-gradient(135deg,#f9d423,#ff4e50)", mock:"lines" },
+    { g:"linear-gradient(135deg,#5856d6,#af52de)", mock:"lines" }
+  ] }
 };
 const pjState = {};
 function mockHTML(kind, title, sub, i) {
@@ -447,31 +501,45 @@ function mockHTML(kind, title, sub, i) {
   if (kind === "funnel") return head + [0,1,2,3].map(j => `<div class="m-card" style="left:${5 + j * 4}cqw;top:${22 + j * 8.6}cqw;width:${62 - j * 12}cqw;height:6.6cqw"></div>`).join("") + `<div class="m-pill" style="right:6cqw;top:16cqw">→ R$</div>` + big;
   return head + `<div class="m-line" style="left:5cqw;top:26cqw;width:56cqw"></div><div class="m-line" style="left:5cqw;top:31cqw;width:44cqw"></div><div class="m-line" style="left:5cqw;top:36cqw;width:50cqw"></div><div class="m-pill" style="left:5cqw;top:43cqw">${["Ver agora","Saiba mais","Começar"][i % 3]} →</div>` + big;
 }
+function mediaHTML(it, big, sub) {
+  const pos = it.w ? `width:${it.w}cqw;top:50%;translate:0 -50%;` : `height:88%;top:6%;`;
+  const inner = it.v ? `<video muted loop playsinline preload="none" poster="${it.poster}" data-src="${it.src}"></video>` : `<img src="${it.src}" alt="" loading="lazy" draggable="false">`;
+  return `<div class="m-text" style="width:${it.tw || 42}cqw"><b>${big}</b><span>${sub}</span></div><div class="m-phone" style="--ar:${it.ar};${pos}">${inner}</div>`;
+}
 function buildWork() {
   $$(".pj").forEach(art => {
     const key = art.dataset.pj, tabsEl = $(".pj-tabs", art), screen = $(".pj-screen", art), P = PJ[key];
-    const names = T[lang]["tabs_" + key], subs = T[lang]["sub_" + key];
+    const names = T[lang]["tabs_" + key], subs = T[lang]["sub_" + key], bigs = T[lang]["big_" + key] || [];
     const cur = pjState[key] ? pjState[key].i : 0;
     tabsEl.textContent = ""; screen.textContent = "";
     tabsEl.setAttribute("role", "tablist"); tabsEl.setAttribute("aria-label", $(".pj-app span:last-child", art).textContent);
     names.forEach((n, i) => {
+      const it = P.items[i];
       const b = mk("button", "pj-tab", n); b.type = "button"; b.setAttribute("role", "tab");
       b.addEventListener("click", () => { select(i); if (pjState[key]) pjState[key].auto = false; });
-      b.addEventListener("keydown", e => { if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); select((pjState[key].i + (e.key === "ArrowRight" ? 1 : names.length - 1)) % names.length); tabsEl.children[pjState[key].i].focus(); if (pjState[key]) pjState[key].auto = false; } });
+      b.addEventListener("keydown", e => { if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); select((pjState[key].i + (e.key === "ArrowRight" ? 1 : names.length - 1)) % names.length); tabsEl.children[pjState[key].i].focus(); pjState[key].auto = false; } });
       tabsEl.appendChild(b);
-      const s = mk("div", "scr"); s.style.background = P.grads[i]; s.innerHTML = mockHTML(P.kinds[i], n, subs[i], i); s.setAttribute("role", "img"); s.setAttribute("aria-label", n + " — " + subs[i]);
-      screen.appendChild(s);
+      const sc = mk("div", "scr" + (it.mock ? "" : " media")); sc.style.background = it.g;
+      sc.innerHTML = it.mock ? mockHTML(it.mock, n, subs[i], i) : mediaHTML(it, bigs[i] || n, subs[i]);
+      sc.setAttribute("role", "img"); sc.setAttribute("aria-label", n + " — " + (bigs[i] || "") + " " + subs[i]);
+      screen.appendChild(sc);
     });
     function select(i) {
       pjState[key].i = i;
       [...tabsEl.children].forEach((b, j) => { b.setAttribute("aria-selected", j === i); b.tabIndex = j === i ? 0 : -1; });
-      [...screen.children].forEach((s, j) => { if (j === i) s.setAttribute("data-on", ""); else s.removeAttribute("data-on"); });
+      [...screen.children].forEach((sc, j) => { if (j === i) sc.setAttribute("data-on", ""); else sc.removeAttribute("data-on"); });
+      pjState[key].sync();
     }
-    pjState[key] = pjState[key] || { i: 0, auto: true };
-    pjState[key].select = select; pjState[key].n = names.length; select(cur);
+    pjState[key] = pjState[key] || { i: 0, auto: true, visible: false };
+    pjState[key].select = select; pjState[key].n = names.length;
+    pjState[key].sync = () => { /* só toca o vídeo da aba ativa quando visível */
+      [...screen.children].forEach((sc, j) => { const v = $("video", sc); if (!v) return;
+        if (j === pjState[key].i && pjState[key].visible && !root.dataset.still && !document.hidden) { if (!v.getAttribute("src")) v.src = v.dataset.src; v.play().catch(() => {}); } else v.pause(); });
+    };
+    select(cur);
   });
 }
-setInterval(() => { if (root.dataset.still || document.hidden) return; Object.values(pjState).forEach(s => { if (s.auto && s.visible) s.select((s.i + 1) % s.n); }); }, 3800);
+setInterval(() => { if (root.dataset.still || document.hidden) return; Object.values(pjState).forEach(x => { if (x.auto && x.visible) x.select((x.i + 1) % x.n); }); }, 5600);
 
 /* ============================================================
    5) ROLA — roda de interesses com balões estilo iMessage
@@ -525,7 +593,7 @@ new IntersectionObserver(([en]) => { rwVisible = en.isIntersecting; }, { thresho
    ============================================================ */
 const io = new IntersectionObserver(es => es.forEach(en => {
   const t = en.target;
-  if (t.matches(".pj")) { const s = pjState[t.dataset.pj]; if (s) s.visible = en.isIntersecting; if (en.isIntersecting) t.setAttribute("data-in", ""); }
+  if (t.matches(".pj")) { const s = pjState[t.dataset.pj]; if (s) { s.visible = en.isIntersecting; s.sync && s.sync(); } if (en.isIntersecting) t.setAttribute("data-in", ""); }
   if (en.isIntersecting) { if (t.matches(".sv")) t.classList.add("in"); if (t.matches("#rg-say")) t.classList.add("in"); }
 }), { threshold: .25 });
 $$(".pj, .sv, #rg-say").forEach(el => io.observe(el));
@@ -570,11 +638,11 @@ function setLang(l) {
   root.lang = l === "pt" ? "pt-BR" : "en"; root.dataset.lang = l;
   $$("[data-i]").forEach(el => { const v = T[l][el.dataset.i]; if (typeof v === "string") el.innerHTML = v; });
   document.title = T[l].title; $('meta[name="description"]').setAttribute("content", T[l].desc);
-  stickers.forEach(o => { o.el.textContent = T[l].stk[o.k]; });
+  stickers.forEach(o => { if (!o.img) o.el.textContent = T[l].stk[o.k]; });
   $("#mail-t").textContent = CONFIG.email; mailBtn.dataset.copied = T[l].copied;
   $("#btn-still").setAttribute("aria-label", T[l].tip_still);
   buildWork(); buildWheel(); splitCTA(); buildStory();
-  $$(".pj").forEach(a => { const s = pjState[a.dataset.pj]; if (s) s.visible = false; });
+  buildHelp(); setCounters(false);
 }
 $("#btn-lang").addEventListener("click", () => setLang(lang === "pt" ? "en" : "pt"));
 
@@ -584,7 +652,7 @@ function setStill(on, persist = true) {
   $("#btn-still").setAttribute("aria-pressed", on);
   if (persist) store.set("gb-still", on ? "1" : "0");
   if (on) { pan.x = pan.y = pan.vx = pan.vy = 0; paintWorld(); }
-  renderStory(true); splitCTA(); heroScroll();
+  renderStory(true); splitCTA(); heroScroll(); syncChVideo(); Object.values(pjState).forEach(x => x.sync && x.sync()); setCounters(false);
 }
 $("#btn-still").addEventListener("click", () => setStill(!root.dataset.still));
 
@@ -592,15 +660,18 @@ $("#btn-still").addEventListener("click", () => setStill(!root.dataset.still));
 addEventListener("keydown", e => {
   if (e.metaKey || e.ctrlKey || e.altKey || /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) return;
   const k = e.key.toLowerCase();
+  if (k === "?" || (k === "h" && keysOn)) { openHelp(); return; }
+  if (!keysOn) return;
   if (k === "l") setLang(lang === "pt" ? "en" : "pt");
   else if (k === "m") setStill(!root.dataset.still);
-  else if (k === "1" || k === "2" || k === "3") setCh(+k - 1);
+  else if (/^[1-9]$/.test(k) && +k <= NCH) setCh(+k - 1);
 });
 
 /* hero some/escala ao rolar + dock adaptativo */
 const sheet = $(".sheet"), footer = $(".ft");
 function heroScroll() {
   const y = scrollY, p = clamp01(y / vh);
+  $("#progress").style.transform = `scaleX(${clamp01(y / Math.max(1, document.documentElement.scrollHeight - vh))})`;
   if (root.dataset.still) { hero.style.transform = ""; hero.style.opacity = ""; }
   else { hero.style.transform = `scale(${1 - p * .08})`; hero.style.opacity = String(1 - p * .85); }
   const st = sheet.getBoundingClientRect().top, ft = footer.getBoundingClientRect().top;
@@ -608,6 +679,42 @@ function heroScroll() {
 }
 addEventListener("scroll", heroScroll, { passive: true });
 addEventListener("resize", () => { vw = innerWidth; vh = innerHeight; layoutStickers(); layoutStory(); layoutWheel(); paintWheel(); heroScroll(); });
+
+/* ---------- contadores animados (padrão "stats" do 21st) ---------- */
+const counted = new WeakSet();
+const fmtN = (v, dec) => new Intl.NumberFormat(lang === "pt" ? "pt-BR" : "en-US", { minimumFractionDigits: dec, maximumFractionDigits: dec }).format(v);
+function paintCounter(el, v) { el.textContent = (el.dataset.pre || "") + fmtN(v, +el.dataset.dec) + (el.dataset.suf || ""); }
+function setCounters(animate) { $$(".st-num").forEach(el => { if (counted.has(el) || !animate) paintCounter(el, +el.dataset.to); }); }
+const cio = new IntersectionObserver(es => es.forEach(en => {
+  if (!en.isIntersecting || counted.has(en.target)) return;
+  const el = en.target; counted.add(el); cio.unobserve(el);
+  if (root.dataset.still) { paintCounter(el, +el.dataset.to); return; }
+  const to = +el.dataset.to, t0 = performance.now(), D = 1500;
+  (function step(now) { const t = clamp01((now - t0) / D); paintCounter(el, to * easeOut(t)); if (t < 1) requestAnimationFrame(step); })(t0);
+}), { threshold: .6 });
+$$(".st-num").forEach(el => { paintCounter(el, 0); cio.observe(el); });
+
+/* ---------- spotlight que segue o mouse (cards) ---------- */
+$$("[data-spot]").forEach(el => {
+  el.addEventListener("pointermove", e => { const r = el.getBoundingClientRect(); el.style.setProperty("--mx", (e.clientX - r.left) + "px"); el.style.setProperty("--my", (e.clientY - r.top) + "px"); });
+});
+/* tilt sutil nas janelas */
+$$(".pj-window").forEach(el => {
+  el.addEventListener("pointermove", e => { if (root.dataset.still || e.pointerType === "touch") return; const r = el.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5; el.style.transform = `perspective(1200px) rotateY(${x * 4}deg) rotateX(${-y * 4}deg)`; });
+  el.addEventListener("pointerleave", () => { el.style.transform = ""; });
+});
+/* marquee: duplica a lista para loop contínuo */
+{ const ml = $("#mq-list"); if (ml) { const c = ml.cloneNode(true); c.removeAttribute("id"); c.setAttribute("aria-hidden", "true"); ml.parentNode.appendChild(c); } }
+
+/* ---------- painel "teclas e gestos" (ntch) ---------- */
+const help = $("#help"); let keysOn = store.get("gb-keys") !== "0";
+function buildHelp() { const ul = $("#help-list"); ul.textContent = ""; T[lang].hp_rows.forEach(([k, d]) => { const li = mk("li"); li.appendChild(mk("kbd", "", k)); li.appendChild(mk("span", "", d)); ul.appendChild(li); }); paintKeys(); }
+function paintKeys() { $("#help-keys").setAttribute("aria-pressed", keysOn); $("#help-keys-s").textContent = keysOn ? "on" : "off"; }
+function openHelp() { if (help.open) return; if (help.showModal) help.showModal(); else help.setAttribute("open", ""); }
+$("#btn-help").addEventListener("click", openHelp);
+$("#help-close").addEventListener("click", () => help.close());
+help.addEventListener("click", e => { if (e.target === help) help.close(); });
+$("#help-keys").addEventListener("click", () => { keysOn = !keysOn; store.set("gb-keys", keysOn ? "1" : "0"); paintKeys(); });
 
 /* ---------- init ---------- */
 const savedStill = store.get("gb-still");

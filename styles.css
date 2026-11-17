@@ -74,7 +74,7 @@ html[data-lang=pt] body.on-light .dock-lang [data-l=pt],html[data-lang=en] body.
 .tv.is-rolling .strip{transition:none;animation:roll 1.2s cubic-bezier(.4,.1,.3,1) both}
 .tv.is-rolling .roll-bar{animation:rollbar 1.2s linear both}
 .tv.is-rolling .tv-screen{animation:rollblur 1.2s linear both}
-@keyframes roll{0%{transform:translateY(var(--y0,0))}78%{transform:translateY(calc(var(--y0,0) - 300%))}100%{transform:translateY(var(--y0,0))}}
+@keyframes roll{0%{transform:translateY(var(--y0,0))}78%{transform:translateY(calc(var(--y0,0) - var(--roll,300%)))}100%{transform:translateY(var(--y0,0))}}
 @keyframes rollbar{0%{opacity:0;top:-20%}10%{opacity:1}90%{opacity:1}100%{opacity:0;top:110%}}
 @keyframes rollblur{0%,100%{filter:none}15%,75%{filter:blur(2px) contrast(1.3)}}
 .tv-panel{display:flex;align-items:center;gap:3.5%;height:clamp(34px,8.5%,52px);padding:0 4%;margin-top:3%}
@@ -305,3 +305,85 @@ html[data-still] .hero{transform:none!important;opacity:1!important}
 @media (prefers-reduced-motion:reduce){html:not([data-motion]) *{animation-duration:.01ms!important;animation-iteration-count:1!important}}
 
 .chrome-letter{display:inline-block;transform-style:preserve-3d}
+
+
+/* ============================================================
+   v2 — vídeo na TV, mídia real, stats, marquee, ajuda, progresso
+   ============================================================ */
+.progress{position:fixed;inset:0 0 auto 0;height:2px;z-index:120;background:var(--accent);transform:scaleX(0);transform-origin:0 50%;pointer-events:none}
+.dock-btn span[aria-hidden]{font:700 15px/1 var(--text)}
+
+/* canais de vídeo no CRT */
+.ch-vid{padding:0;justify-content:flex-end;align-items:flex-start;background:#000}
+.ch-vid video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:contrast(1.12) saturate(.92) brightness(.9)}
+.vid-shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.82),rgba(0,0,0,.05) 55%,rgba(0,0,0,.25))}
+.vid-cap{position:relative;display:flex;flex-direction:column;gap:1.4cqw;padding:7cqw;text-align:left;align-items:flex-start}
+.vid-cap b{font-size:15cqw}
+
+/* fotos como stickers arrastáveis */
+.sticker.photo{padding:6px;border-radius:14px;background:#fff;box-shadow:0 14px 34px rgba(0,0,0,.6),0 0 0 1px rgba(0,0,0,.4)}
+.sticker.photo img{display:block;width:clamp(96px,10.5vw,150px);height:auto;border-radius:9px;pointer-events:none;-webkit-user-drag:none}
+
+/* janelas com mídia real */
+.scr.media{display:block}
+.scr.media .m-text{position:absolute;left:5cqw;top:50%;translate:0 -50%;display:flex;flex-direction:column;gap:2cqw}
+.scr.media .m-text b{font:800 17cqw/.88 var(--display);letter-spacing:-.005em;text-transform:uppercase;text-shadow:0 .6cqw 3cqw rgba(0,0,0,.25)}
+.scr.media .m-text span{font:500 2.9cqw/1.35 var(--text);opacity:.92;max-width:34cqw;text-wrap:balance}
+.scr.media .m-phone{position:absolute;right:6cqw;aspect-ratio:var(--ar);border-radius:2.6cqw;overflow:hidden;background:#000;box-shadow:0 0 0 .8cqw rgba(0,0,0,.85),0 3cqw 8cqw rgba(0,0,0,.45);isolation:isolate}
+.scr.media .m-phone img,.scr.media .m-phone video{display:block;width:100%;height:100%;object-fit:cover}
+.pj-window{transition:transform .5s var(--ease);will-change:transform}
+
+/* marquee de plataformas */
+.mq{padding:clamp(40px,7svh,80px) 0 0;color:var(--ink)}
+.mq-t{margin:0 max(24px,7vw) 18px;color:var(--quiet);font-size:14px;letter-spacing:.02em}
+.mq-track{display:flex;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.mq-list{display:flex;flex:none;gap:14px;padding-right:14px;min-width:100%;justify-content:space-around;animation:mq 34s linear infinite}
+.mq-track:hover .mq-list{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-100%)}}
+.mq-list li{display:flex;align-items:center;gap:10px;padding:12px 20px;border-radius:999px;background:var(--fill);box-shadow:inset 0 0 0 1px var(--hair);font:600 16px/1 var(--text);letter-spacing:-.01em;white-space:nowrap}
+.mq-list img{width:22px;height:22px;opacity:.85}
+.mq-badge{display:grid;place-items:center;width:22px;height:22px;border-radius:7px;background:var(--ink);color:#fff;font:700 12px/1 var(--text);font-style:normal}
+
+/* stats (cards bento com spotlight) */
+.st{padding:clamp(70px,12svh,140px) max(24px,7vw) clamp(10px,3svh,40px);color:var(--ink)}
+.st-in{max-width:1240px;margin:0 auto}
+.st-title{font-size:clamp(40px,5.2vw,76px);font-weight:600;letter-spacing:-.046em;line-height:1.02}
+.st-lede{max-width:30em;margin-top:clamp(14px,2vw,24px);color:var(--quiet);font-size:clamp(17px,1.4vw,20px);line-height:1.42;letter-spacing:-.02em}
+.st-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:clamp(36px,6svh,64px)}
+.st-card{--mx:50%;--my:50%;position:relative;display:flex;flex-direction:column;gap:6px;padding:26px 24px 24px;border-radius:24px;background:var(--fill);overflow:hidden;isolation:isolate;box-shadow:inset 0 0 0 1px var(--hair);transition:transform .5s var(--pop),box-shadow .3s}
+.st-card::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .3s;background:radial-gradient(260px circle at var(--mx) var(--my),rgba(10,132,255,.16),transparent 70%)}
+.st-card::after{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .3s;border-radius:inherit;padding:1px;background:radial-gradient(200px circle at var(--mx) var(--my),rgba(10,132,255,.9),transparent 70%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+.st-card:hover{transform:translateY(-4px)}
+.st-card:hover::before,.st-card:hover::after{opacity:1}
+.st-ico{display:grid;place-items:center;width:46px;height:46px;margin-bottom:18px;border-radius:14px;background:#fff;color:var(--blue);box-shadow:0 1px 2px rgba(0,0,0,.08),inset 0 0 0 1px var(--hair)}
+.st-num{font-size:clamp(44px,5vw,72px);font-weight:700;letter-spacing:-.05em;line-height:1;font-variant-numeric:tabular-nums}
+.st-lab{font-size:16px;line-height:1.35;letter-spacing:-.012em;margin-top:6px}
+.st-card small{color:var(--quiet);font-size:13px;margin-top:auto;padding-top:14px}
+.sv-col{position:relative}
+.sv-ico svg{display:block}
+
+/* botão com brilho (shimmer) */
+.bf-send{position:relative;overflow:hidden}
+.bf-send::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.45) 50%,transparent 65%);transform:translateX(-120%);animation:shine 3.6s ease-in-out infinite}
+@keyframes shine{0%,55%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+
+/* painel de ajuda */
+.help{margin:auto;width:min(92vw,460px);padding:0;border:0;border-radius:22px;background:#111;color:#fff;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 40px 80px rgba(0,0,0,.6)}
+.help::backdrop{background:rgba(0,0,0,.6);backdrop-filter:blur(6px)}
+.help-in{padding:26px}
+.help h2{font:800 34px/1 var(--display);letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+.help-list li{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;padding:11px 0;border-top:1px solid rgba(255,255,255,.1);font-size:15px;color:rgba(255,255,255,.78)}
+.help-list kbd{font:600 12px/1 var(--text);padding:6px 9px;border-radius:7px;background:rgba(255,255,255,.1);box-shadow:inset 0 -1px 0 rgba(255,255,255,.18);color:#fff;white-space:nowrap}
+.help-keys{display:flex;justify-content:space-between;width:100%;margin-top:14px;padding:12px 14px;border-radius:12px;background:rgba(255,255,255,.07);font-size:14px}
+.help-keys b{color:var(--accent)}
+.help-keys[aria-pressed=false] b{color:#888}
+.help-close{margin-top:12px;padding:11px 18px;border-radius:999px;background:var(--accent);color:#000;font:700 14px/1 var(--text)}
+
+@media (max-width:900px){.st-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:699px){
+  .st-grid{grid-template-columns:minmax(0,1fr)}
+  .scr.media .m-text b{font-size:15cqw}.scr.media .m-text span{font-size:3.3cqw}
+  .sticker.photo img{width:84px}
+}
+html[data-still] .mq-list{animation:none}
+html[data-still] .progress{transition:none}
