@@ -73,7 +73,7 @@ pt: {
   q2:"O que você já fez?", a2:"Lojas de dropshipping com tráfego orgânico e um infoproduto criado do zero, com operação estruturada e vendas por campanhas pagas. Também crio sites em WordPress.",
   q3:"O que te interessa além de marketing?", a3:"Liderança, gestão de pessoas, linguagem corporal e psicologia aplicada às vendas. Entender o comportamento humano é a base de qualquer negócio.",
   q4:"Como começamos?", a4:"Preencha o formulário acima ou escreva direto por e-mail.",
-  ft_say:"Marketing digital com<br>visão de gestão.", ft_loc:"Insper · Administração", ft_top:"Voltar ao topo ↑", copied:"Copiado",
+  ft_say:"Marketing digital com<br>visão de gestão.", ft_loc:"Administração", ft_top:"Voltar ao topo ↑", copied:"Copiado",
   stk:{traffic:"Tráfego pago",copy:"Copywriting",design:"Design",wp:"WordPress",funnel:"Funis",persuasion:"Persuasão",leader:"Liderança",body:"Linguagem corporal",psych:"Psicologia de vendas",insper:"Insper",y2022:"Desde 2022",organic:"Tráfego orgânico"},
   tip_help:"Teclas e gestos",
   ch4_k:"CANAL 04 · TIKTOK", ch4_b:"2,3M<br>VIEWS", ch4_v:"o vídeo da garrafinha",
@@ -86,6 +86,20 @@ pt: {
   st4:"de conversão em links de afiliado", st4s:"Amazon Associados · 38 cliques, 6 pedidos",
   hp_t:"Teclas e gestos", hp_keys:"Atalhos de uma tecla", hp_close:"Fechar",
   hp_rows:[["Arrastar","Olhar em volta (ou mover os adesivos)"],["3 cliques no monitor","Não faça isso."],["1 – 5","Trocar de canal"],["L","Idioma PT / EN"],["M","Reduzir movimento"],["?","Esta ajuda"],["Shift + rolar","Mover o mundo na horizontal"]],
+  ab_k:"Sobre mim", ab_t:"Oi, eu sou o Guilherme.",
+  ab_c1:"19 anos", ab_c2:"Marketing digital desde 2022", ab_c3:"Administração",
+  ab_p1:"Tenho 19 anos e, desde 2022, construo minha experiência no marketing digital: primeiro com dropshipping, agora com infoprodutos. Aprendi na prática tráfego pago e orgânico, copywriting, design, persuasão, produção de conteúdo e criação de sites em WordPress.",
+  ab_p2:"Criei um produto do zero, estruturei toda a operação e vendi com campanhas pagas — o que me deu uma visão completa de funis e da jornada do cliente.",
+  ab_p3:"Hoje estudo Administração no Insper e estou explorando e direcionando o que vem a seguir. Me interesso por liderança, gestão de pessoas, linguagem corporal e psicologia aplicada às vendas: entender o comportamento humano é um dos pilares de qualquer negócio bem-sucedido.",
+  ab_f1:"Administração, em exploração e direcionamento", ab_f2:"Empresa júnior de consultoria",
+  ij_k:"Experiência", ij_t:"Consultoria de verdade, na Insper Jr.",
+  ij_l:"Tive a oportunidade de participar da Insper Jr, a empresa júnior de consultoria do Insper. Lá aprendi, na prática, os 4 escopos de um projeto de consultoria.",
+  ij1_t:"Mercadológico", ij1_d:"Entender mercado, concorrência e público antes de qualquer decisão.",
+  ij2_t:"Operacional", ij2_d:"Mapear processos, achar gargalos e organizar como o trabalho acontece.",
+  ij3_t:"Marketing", ij3_d:"Posicionamento, marca e a forma como o negócio chega até o cliente.",
+  ij4_t:"Financeiro", ij4_d:"Custos, projeções e viabilidade: o que faz o número fechar.",
+  ij_gt:"O que isso agregou", ij_g:"Eu já vinha do marketing digital, olhando para o anúncio e o funil. A consultoria abriu o resto do mapa: agora enxergo o negócio inteiro — mercado, operação, marketing e números — e entendo como cada parte afeta as outras.",
+  ij_st:"Skills que ganhei", ij_chips:["Visão estratégica","Análise de mercado","Estruturação de processos","Viabilidade financeira","Comunicação com cliente","Trabalho em equipe","Gestão de projetos","Apresentação de resultados"],
   title:"Guilherme Balestrin — Marketing digital & Administração",
   desc:"Guilherme Balestrin, 19. Marketing digital desde 2022: tráfego, copy, design e sites. Administração no Insper.",
   story:["eu","crio","funis","sites","e","campanhas","que","VENDEM"]
@@ -130,7 +144,7 @@ en: {
   q2:"What have you done?", a2:"Dropshipping stores driven by organic traffic, and an info product built from scratch with a structured operation and sales through paid campaigns. I also build WordPress sites.",
   q3:"What else are you into?", a3:"Leadership, people management, body language and psychology applied to sales. Understanding human behavior is the base of any business.",
   q4:"How do we start?", a4:"Fill in the form above or email me directly.",
-  ft_say:"Digital marketing with<br>a management mindset.", ft_loc:"Insper · Business Administration", ft_top:"Back to top ↑", copied:"Copied",
+  ft_say:"Digital marketing with<br>a management mindset.", ft_loc:"Business Administration", ft_top:"Back to top ↑", copied:"Copied",
   stk:{traffic:"Paid traffic",copy:"Copywriting",design:"Design",wp:"WordPress",funnel:"Funnels",persuasion:"Persuasion",leader:"Leadership",body:"Body language",psych:"Sales psychology",insper:"Insper",y2022:"Since 2022",organic:"Organic traffic"},
   tip_help:"Keys & gestures",
   ch4_k:"CHANNEL 04 · TIKTOK", ch4_b:"2.3M<br>VIEWS", ch4_v:"the school bottle video",
@@ -143,6 +157,20 @@ en: {
   st4:"conversion on affiliate links", st4s:"Amazon Associates · 38 clicks, 6 orders",
   hp_t:"Keys & gestures", hp_keys:"Single-key shortcuts", hp_close:"Close",
   hp_rows:[["Drag","Look around (or move the stickers)"],["3 clicks on the TV","Please don't."],["1 – 5","Switch channel"],["L","Language PT / EN"],["M","Reduce motion"],["?","This help"],["Shift + scroll","Pan the world sideways"]],
+  ab_k:"About me", ab_t:"Hi, I'm Guilherme.",
+  ab_c1:"19 y/o", ab_c2:"Digital marketing since 2022", ab_c3:"Business Admin",
+  ab_p1:"I'm 19 and since 2022 I've been building my experience in digital marketing: first dropshipping, now info products. I learned paid and organic traffic, copywriting, design, persuasion, content production and WordPress sites by doing.",
+  ab_p2:"I built a product from scratch, structured the whole operation and sold it with paid campaigns — which gave me a full view of funnels and the customer journey.",
+  ab_p3:"Today I study Business Administration at Insper and I'm exploring what comes next. I'm into leadership, people management, body language and psychology applied to sales: understanding human behavior is one of the pillars of any successful business.",
+  ab_f1:"Business Administration, exploring and finding direction", ab_f2:"Junior consulting company",
+  ij_k:"Experience", ij_t:"Real consulting, at Insper Jr.",
+  ij_l:"I had the opportunity to take part in Insper Jr, Insper's junior consulting company. There I learned, hands-on, the 4 scopes of a consulting project.",
+  ij1_t:"Market", ij1_d:"Understand the market, competitors and audience before any decision.",
+  ij2_t:"Operations", ij2_d:"Map processes, find bottlenecks and organize how the work gets done.",
+  ij3_t:"Marketing", ij3_d:"Positioning, brand and how the business reaches the customer.",
+  ij4_t:"Finance", ij4_d:"Costs, projections and viability: what makes the numbers work.",
+  ij_gt:"What it added", ij_g:"I came from digital marketing, looking at the ad and the funnel. Consulting opened up the rest of the map: now I see the whole business — market, operations, marketing and numbers — and how each part affects the others.",
+  ij_st:"Skills I gained", ij_chips:["Strategic thinking","Market analysis","Process design","Financial viability","Client communication","Teamwork","Project management","Presenting results"],
   title:"Guilherme Balestrin — Digital marketing & Business Administration",
   desc:"Guilherme Balestrin, 19. Digital marketing since 2022: traffic, copy, design and websites. Business Administration at Insper.",
   story:["I","create","funnels","websites","and","campaigns","that","SELL"]
@@ -198,12 +226,12 @@ const STK = [
   { k:"leader", fx:.2, fy:-.12, r:3, c:"ink" },   { k:"insper", fx:.62, fy:-.14, r:-4, c:"" },
   { k:"y2022", fx:.48, fy:1.16, r:2, c:"alt" },   { k:"organic", fx:-.08, fy:1.05, r:-3, c:"ink" },
   { k:"ph_tiktok", img:"assets/tiktok.webp", fx:.91, fy:.40, r:5, c:"photo" },  { k:"ph_kiwify", img:"assets/kiwify.webp", fx:.09, fy:.42, r:-5, c:"photo" },
-  { k:"ph_amazon", img:"assets/amazon.webp", fx:.40, fy:1.12, r:3, c:"photo" },  { k:"ph_shop", img:"assets/shopify.webp", fx:.74, fy:-.14, r:-4, c:"photo" }
+  { k:"ph_me", img:"assets/me-sq.webp", cap:"Guilherme, 19", fx:.33, fy:.11, r:-4, c:"photo me" },  { k:"ph_amazon", img:"assets/amazon.webp", fx:.40, fy:1.12, r:3, c:"photo" },  { k:"ph_shop", img:"assets/shopify.webp", fx:.74, fy:-.14, r:-4, c:"photo" }
 ];
 const stickersEl = $("#stickers");
 const stickers = STK.map(s => {
   const el = mk("div", "sticker " + s.c); el.setAttribute("role", "note");
-  if (s.img) { const im = mk("img"); im.src = s.img; im.alt = ""; im.draggable = false; im.loading = "lazy"; el.appendChild(im); }
+  if (s.img) { const im = mk("img"); im.src = s.img; im.alt = ""; im.draggable = false; im.loading = "lazy"; el.appendChild(im); if (s.cap) el.appendChild(mk("span", "cap", s.cap)); }
   stickersEl.appendChild(el);
   const o = { ...s, el, x: s.fx * vw, y: s.fy * vh, vx: 0, vy: 0, drag: false };
   bindSticker(o); return o;
@@ -461,7 +489,7 @@ new IntersectionObserver(([en]) => { storyVisible = en.isIntersecting; }, { root
 function storyTick() {
   if (storyVisible && !document.hidden && !root.dataset.still) {
     spTarget = storyProgress();
-    const d = spTarget - sp; sp += Math.abs(d) < .0003 ? d : d * .14;
+    const d = spTarget - sp; sp += Math.abs(d) < .0003 ? d : d * .22;
     tilt.x = lerp(tilt.x, tilt.tx, .08); tilt.y = lerp(tilt.y, tilt.ty, .08);
     renderStory();
   }
@@ -642,7 +670,7 @@ function setLang(l) {
   $("#mail-t").textContent = CONFIG.email; mailBtn.dataset.copied = T[l].copied;
   $("#btn-still").setAttribute("aria-label", T[l].tip_still);
   buildWork(); buildWheel(); splitCTA(); buildStory();
-  buildHelp(); setCounters(false);
+  buildHelp(); setCounters(false); buildChips();
 }
 $("#btn-lang").addEventListener("click", () => setLang(lang === "pt" ? "en" : "pt"));
 
@@ -705,6 +733,11 @@ $$(".pj-window").forEach(el => {
 });
 /* marquee: duplica a lista para loop contínuo */
 { const ml = $("#mq-list"); if (ml) { const c = ml.cloneNode(true); c.removeAttribute("id"); c.setAttribute("aria-hidden", "true"); ml.parentNode.appendChild(c); } }
+
+/* chips de skills + reveals genéricos (.rv) */
+function buildChips() { const ul = $("#ij-chips"); ul.textContent = ""; T[lang].ij_chips.forEach((c, i) => { const li = mk("li", "", c); li.style.setProperty("--k", i); ul.appendChild(li); }); }
+const rvio = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add("in"); rvio.unobserve(en.target); } }), { threshold: .15 });
+$$(".rv").forEach(el => rvio.observe(el));
 
 /* ---------- painel "teclas e gestos" (ntch) ---------- */
 const help = $("#help"); let keysOn = store.get("gb-keys") !== "0";

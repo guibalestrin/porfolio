@@ -21,6 +21,7 @@
   <nav class="mode-nav" aria-label="Site">
     <a href="#work" data-i="nav_work">Trabalhos</a>
     <a href="#about" data-i="nav_about">Sobre</a>
+    <a href="#insperjr">Insper Jr</a>
     <a href="#services" data-i="nav_services">O que faço</a>
     <a href="#contact" data-i="nav_contact">Contato</a>
     <a href="#faq" data-i="nav_faq">FAQ</a>
@@ -57,7 +58,7 @@
               <div class="ch ch-2">
                 <small data-i="ch2_k">CANAL 02 · FACULDADE</small>
                 <b data-i="ch2_b">ADMINIS&shy;TRAÇÃO</b>
-                <em>Insper</em>
+                <img class="logo-insper" src="assets/insper.png" alt="Insper">
               </div>
               <div class="ch ch-3">
                 <small data-i="ch3_k">CANAL 03 · DESDE 2022</small>
@@ -168,8 +169,53 @@
   </article>
 </section>
 
-<!-- ============ ABOUT — o que me move (roda de rostos + balões) ============ -->
-<section id="about" class="rw" aria-labelledby="rw-h">
+<!-- ============ SOBRE MIM ============ -->
+<section id="about" class="ab" aria-labelledby="ab-h">
+  <div class="ab-in">
+    <figure class="ab-photo rv" data-spot>
+      <img src="assets/me.webp" alt="Guilherme Balestrin" width="720" height="900" loading="lazy" decoding="async">
+      <span class="ab-chip c1"><i></i><span data-i="ab_c1">19 anos</span></span>
+      <span class="ab-chip c2"><i></i><span data-i="ab_c2">Marketing digital desde 2022</span></span>
+      <span class="ab-chip c3"><img src="assets/insper.png" alt="Insper"><span data-i="ab_c3">Administração</span></span>
+    </figure>
+    <div class="ab-text">
+      <p class="ab-eyebrow rv" data-i="ab_k">Sobre mim</p>
+      <h2 id="ab-h" class="ab-title rv" data-i="ab_t">Oi, eu sou o Guilherme.</h2>
+      <p class="ab-p rv" data-i="ab_p1"></p>
+      <p class="ab-p rv" data-i="ab_p2"></p>
+      <p class="ab-p rv" data-i="ab_p3"></p>
+      <ul class="ab-facts rv">
+        <li><span class="logo-chip"><img src="assets/insper.png" alt="Insper"></span><span data-i="ab_f1">Administração, em exploração e direcionamento</span></li>
+        <li><span class="logo-chip jr"><b>Insper</b><i>Jr</i></span><span data-i="ab_f2">Empresa júnior de consultoria</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSPER JR ============ -->
+<section id="insperjr" class="ij" aria-labelledby="ij-h">
+  <div class="ij-panel">
+    <div class="ij-head rv">
+      <span class="ij-brand"><img src="assets/insper.png" alt="Insper"><i></i><b>Jr</b></span>
+      <p class="ij-eyebrow" data-i="ij_k">Experiência</p>
+      <h2 id="ij-h" class="ij-title" data-i="ij_t">Consultoria de verdade, na Insper Jr.</h2>
+      <p class="ij-lede" data-i="ij_l"></p>
+    </div>
+    <ol class="ij-scopes">
+      <li class="ij-card rv" data-spot><span class="ij-n">01</span><span class="ij-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span><h3 data-i="ij1_t">Mercadológico</h3><p data-i="ij1_d"></p></li>
+      <li class="ij-card rv" data-spot><span class="ij-n">02</span><span class="ij-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="8" height="8" x="3" y="3" rx="2"/><path d="M7 11v4a2 2 0 0 0 2 2h4"/><rect width="8" height="8" x="13" y="13" rx="2"/></svg></span><h3 data-i="ij2_t">Operacional</h3><p data-i="ij2_d"></p></li>
+      <li class="ij-card rv" data-spot><span class="ij-n">03</span><span class="ij-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></span><h3 data-i="ij3_t">Marketing</h3><p data-i="ij3_d"></p></li>
+      <li class="ij-card rv" data-spot><span class="ij-n">04</span><span class="ij-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span><h3 data-i="ij4_t">Financeiro</h3><p data-i="ij4_d"></p></li>
+    </ol>
+    <div class="ij-gain rv">
+      <div><h3 data-i="ij_gt">O que isso agregou</h3><p data-i="ij_g"></p></div>
+      <div><h3 data-i="ij_st">Skills que ganhei</h3><ul class="ij-chips" id="ij-chips"></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MOVES (roda) ============ -->
+<section id="moves" class="rw" aria-labelledby="rw-h">
   <h2 id="rw-h" class="sr-only" data-i="rw_sr">O que me move</h2>
   <div class="rw-stage" id="rw-stage">
     <div class="rw-wheel" id="rw-wheel"></div>
@@ -243,12 +289,13 @@
 <footer class="ft">
   <p class="ft-say" data-i="ft_say">Marketing digital com<br>visão de gestão.</p>
   <ul class="ft-meta">
-    <li data-i="ft_loc">Insper · Administração</li>
+    <li class="ft-insper"><img src="assets/insper.png" alt="Insper" width="64" height="26"><span data-i="ft_loc">Administração</span></li>
     <li><button type="button" class="ft-mail" id="mail" data-copied="Copiado"><span id="mail-t"></span></button></li>
   </ul>
   <nav class="ft-links" aria-label="Footer">
     <a href="#work" data-i="nav_work">Trabalhos</a>
     <a href="#about" data-i="nav_about">Sobre</a>
+    <a href="#insperjr">Insper Jr</a>
     <a href="#services" data-i="nav_services">O que faço</a>
     <a href="#faq" data-i="nav_faq">FAQ</a>
   </nav>
