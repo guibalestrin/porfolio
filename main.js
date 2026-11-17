@@ -126,21 +126,8 @@ pt: {
   me_wk_t:"Pontos de atenção",
   me_wk:["Foco disperso","Dificuldade de me comprometer com um só caminho","Execução inconsistente","Interesses voláteis","Autocobrança alta","Tendência a idealizar"],
   me_wk_n:"Sei onde eu travo. Meu antídoto: critérios escritos, metas com prazo e projetos que eu realmente coloco no ar.",
-  me_ba_t:"Antes × depois da orientação", me_ba_s:"Minha autoavaliação, de 0 a 10", me_ba_avg:"6,2 → 8,3", me_ba_avgl:"média dos 14 itens", me_ba_b:"Antes", me_ba_a:"Depois",
-  me_ba:[["Saber o que busco em uma profissão",3,10],["Distinguir meus valores",7,10],["Identificar minhas habilidades",5,9],["Identificar meus interesses",6,9],["Usar estratégias para decidir",7,9],["Ter hábito de reflexão contínua",5,7],["Entender como o mercado funciona",4,6],["Conhecer profissões e tendências",2,5]],
-  me_ba_foot:"Maior salto: saber o que busco em uma carreira (3 → 10). Onde ainda quero evoluir: visão de mercado e tendências das áreas que considero.",
-  me_cr_t:"Meus critérios de carreira", me_cr_s:"Os 10 que mais pesam, em ordem de prioridade",
-  me_cr:["Ajudar as pessoas","Enfrentar desafios","Aconselhar","Liberdade","Estabilidade financeira","Desenvolver habilidades","Comportamento humano","Gerenciar pessoas","Networking profissional","Viajar a trabalho"],
   me_pa_t:"Caminhos que pesei", me_pa_s:"Ranking de uma balança que cruza critérios e profissões",
   me_pa:[[1,"Administração"],[2,"Estrategista digital"],[2,"Gestão de marketing e vendas"],[3,"Vendedor"],[4,"Produtor de conteúdo"],[5,"Analista de investimentos"],[6,"Comércio exterior"]],
-  me_dc_t:"Como eu decido", me_dc_l:"O que se repete nas minhas escolhas: experimentar coisas novas e ficar com o que é bom, e servir o outro. Meus valores são o filtro.",
-  me_dc:[["2022","Entrar no marketing digital","Sempre pensei em como ganhar dinheiro. Senti que estava crescendo e tinha propósito: aprendi a lidar com gente, pesquisar e filtrar informação."],["2023","Escrever um livro","Sintetizar e comunicar o que aprendo, gerando valor e autoridade. Ainda preciso me especializar e viver um pouco mais para fechá-lo."],["Rússia","Estudar russo e mochilar pelo Leste Europeu","Região mais barata e com uma cultura bem diferente da ocidental, com gente que agrega. Experiência de vida, repertório e desafios que fortalecem."],["Agora","Criar uma comunidade com amigos","O que mais me dá propósito é servir o outro. Estamos pensando em uma startup: começaria online, o ideal é presencial."]],
-  me_ct_t:"Curtograma", me_ct_l:"O que eu gosto de fazer, e o que ainda faço pouco.", me_ct_a:"Gosto e faço", me_ct_b:"Gosto e quero fazer mais",
-  me_ct1:["Estudar o que me interessa","Academia","Andar de bicicleta","Viajar","Ajudar os outros","Ensinar"],
-  me_ct2:["Liderar","Trabalhar em grupo","Vendas","Persuadir","Socializar","Ler","Cozinhar","Documentários"],
-  me_gl_t:"Metas", me_gl_s:"Até 2029 eu fecho a graduação. Depois, o resto da lista.", me_gl_a:"Até 2029", me_gl_b:"Depois de 2029",
-  me_gl1:[["Russo C1/C2",0],["Participar de 1 entidade: Insper Jr",1],["Intercâmbio / mochilão na Rússia",0],["Curso de comunicação e oratória",0],["Curso de barman",0],["Curso de finanças e investimentos",0],["Ler 50 livros",0]],
-  me_gl2:["Ironman","Teologia","Latim","Grego","Arte marcial","Viajar o mundo","Aprender um instrumento","Escrever um livro"],
   title:"Guilherme Balestrin — Marketing digital & Administração",
   desc:"Guilherme Balestrin, 19. Marketing digital desde 2022: tráfego, copy, design e sites. Administração no Insper.",
   story:["eu","crio","funis","sites","e","campanhas","que","VENDEM"]
@@ -238,21 +225,8 @@ en: {
   me_wk_t:"Watch-outs",
   me_wk:["Scattered focus","Hard to commit to a single path","Inconsistent execution","Volatile interests","High self-pressure","Prone to idealizing"],
   me_wk_n:"I know where I get stuck. My antidote: written criteria, deadlines on goals and projects I actually put live.",
-  me_ba_t:"Before × after the guidance process", me_ba_s:"My self-assessment, 0 to 10", me_ba_avg:"6.2 → 8.3", me_ba_avgl:"average across 14 items", me_ba_b:"Before", me_ba_a:"After",
-  me_ba:[["Knowing what I look for in a profession",3,10],["Telling my values apart",7,10],["Identifying my skills",5,9],["Identifying my interests",6,9],["Using strategies to decide",7,9],["Habit of ongoing reflection",5,7],["Understanding how the market works",4,6],["Knowing professions and trends",2,5]],
-  me_ba_foot:"Biggest jump: knowing what I look for in a career (3 → 10). Where I still want to grow: market vision and trends in the fields I'm considering.",
-  me_cr_t:"My career criteria", me_cr_s:"The 10 that weigh the most, in priority order",
-  me_cr:["Helping people","Facing challenges","Advising","Freedom","Financial stability","Developing skills","Human behavior","Managing people","Professional networking","Traveling for work"],
   me_pa_t:"Paths I weighed", me_pa_s:"Ranking from a scale that crosses criteria and professions",
   me_pa:[[1,"Business administration"],[2,"Digital strategist"],[2,"Marketing & sales management"],[3,"Salesperson"],[4,"Content producer"],[5,"Investment analyst"],[6,"Foreign trade"]],
-  me_dc_t:"How I decide", me_dc_l:"What repeats in my choices: trying new things and keeping what's good, and serving others. My values are the filter.",
-  me_dc:[["2022","Starting digital marketing","I've always thought about how to make money. I felt I was growing and had purpose: I learned to deal with people, research and filter information."],["2023","Writing a book","To synthesize and communicate what I learn, creating value and authority. I still need to specialize and live a bit more to finish it."],["Russia","Studying Russian and backpacking Eastern Europe","A cheaper region with a culture very different from the Western one, with people who add to my life. Life experience, repertoire and challenges that make me stronger."],["Now","Building a community with friends","What gives me the most purpose is serving others. We're thinking about a startup: it'd start online, ideally in person."]],
-  me_ct_t:"Like-o-gram", me_ct_l:"What I like doing, and what I still do too little.", me_ct_a:"I like it and do it", me_ct_b:"I like it and want more",
-  me_ct1:["Studying what interests me","Gym","Cycling","Traveling","Helping others","Teaching"],
-  me_ct2:["Leading","Working in a team","Sales","Persuading","Socializing","Reading","Cooking","Documentaries"],
-  me_gl_t:"Goals", me_gl_s:"By 2029 I finish college. After that, the rest of the list.", me_gl_a:"By 2029", me_gl_b:"After 2029",
-  me_gl1:[["Russian C1/C2",0],["Take part in 1 organization: Insper Jr",1],["Exchange / backpacking in Russia",0],["Communication & public speaking course",0],["Bartending course",0],["Finance & investing course",0],["Read 50 books",0]],
-  me_gl2:["Ironman","Theology","Latin","Greek","Martial art","Travel the world","Learn a musical instrument","Write a book"],
   title:"Guilherme Balestrin — Digital marketing & Business Administration",
   desc:"Guilherme Balestrin, 19. Digital marketing since 2022: traffic, copy, design and websites. Business Administration at Insper.",
   story:["I","create","funnels","websites","and","campaigns","that","SELL"]
@@ -870,19 +844,7 @@ function buildMe() {
   const fill = (id, items, fn) => { const ul = $(id); ul.textContent = ""; items.forEach((x, i) => { const li = fn(x, i); li.style.setProperty("--k", i); ul.appendChild(li); }); };
   fill("#me-str", t.me_str, x => mk("li", "", x));
   fill("#me-wk", t.me_wk, x => mk("li", "", x));
-  fill("#me-bars", t.me_ba, ([l, a, d]) => {
-    const li = mk("li", "me-bar"); li.style.setProperty("--a", a); li.style.setProperty("--d", d);
-    li.append(mk("span", "me-bar-l", l), mk("span", "me-bar-t"), mk("b", "me-bar-n", a + " → " + d));
-    const tr = li.querySelector(".me-bar-t"); tr.append(mk("i", "b0"), mk("i", "b1"));
-    return li;
-  });
-  fill("#me-cr", t.me_cr, x => mk("li", "", x));
   fill("#me-pa", t.me_pa, ([n, x]) => { const li = mk("li"); li.append(mk("b", "", n + "º"), mk("span", "", x)); return li; });
-  fill("#me-dc", t.me_dc, ([y, h, p]) => { const li = mk("li"); li.append(mk("small", "", y), mk("h4", "", h), mk("p", "", p)); return li; });
-  fill("#me-ct1", t.me_ct1, x => mk("li", "", x));
-  fill("#me-ct2", t.me_ct2, x => mk("li", "", x));
-  fill("#me-gl1", t.me_gl1, ([x, done]) => mk("li", done ? "done" : "", x));
-  fill("#me-gl2", t.me_gl2, x => mk("li", "", x));
 }
 function buildChips() { const ul = $("#ij-chips"); ul.textContent = ""; T[lang].ij_chips.forEach((c, i) => { const li = mk("li", "", c); li.style.setProperty("--k", i); ul.appendChild(li); }); }
 const rvio = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add("in"); rvio.unobserve(en.target); } }), { threshold: .15 });
