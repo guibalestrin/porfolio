@@ -40,7 +40,7 @@ pt: {
   ch1_k:"Olá, eu sou", ch1_v:"4 anos de experiência em marketing digital",
   ch2_k:"Faculdade", ch2_b:"Administração<br>no Insper", ch2_v:"Marketing com visão de gestão",
   ch3_k:"O que eu faço", ch3_b:"Tráfego, copy<br>e sites", ch3_v:"Do anúncio à página de venda",
-  hint_drag:"Arraste para olhar em volta", cta1:"Ver trabalhos", cta2:"Falar comigo", hint_scroll:"Role para mudar de canal", rail:["Olá","Faculdade","Serviços"],
+  hint_drag:"Arraste para olhar em volta", stp1:"TikTok Studio", stp2:"Amazon Associados", cta1:"Ver trabalhos", cta2:"Falar comigo", hint_scroll:"Role para mudar de canal", rail:["Olá","Faculdade","Serviços"],
   hit_msg:"Por favor, não bata nele.",
   story_sr:"eu crio funis, sites e campanhas que vendem",
   work_h:"Trabalhos",
@@ -137,7 +137,7 @@ en: {
   ch1_k:"Hi, I'm", ch1_v:"4 years of digital marketing experience",
   ch2_k:"College", ch2_b:"Business Admin<br>at Insper", ch2_v:"Marketing with a management view",
   ch3_k:"What I do", ch3_b:"Traffic, copy<br>and websites", ch3_v:"From the ad to the sales page",
-  hint_drag:"Drag to look around", cta1:"See my work", cta2:"Talk to me", hint_scroll:"Scroll to change channel", rail:["Hello","College","Skills"],
+  hint_drag:"Drag to look around", stp1:"TikTok Studio", stp2:"Amazon Associates", cta1:"See my work", cta2:"Talk to me", hint_scroll:"Scroll to change channel", rail:["Hello","College","Skills"],
   hit_msg:"Please do not hit it.",
   story_sr:"I create funnels, websites and campaigns that sell",
   work_h:"Work",
@@ -450,6 +450,7 @@ const TIMING = [["rise",0,1],["reel",.5,1.3],["frame",1.4,2.4],["type",3.6,1.8],
 const LINES = [[0,1,2],[3,4,5],[6,7]];
 const SUFFIX = { 2: "," };
 const tilt = { x: 0, y: 0, tx: 0, ty: 0 };
+const smEls = $$(".sm");
 let words = [], storyVisible = false, sp = 0, spTarget = 0;
 
 const FX = {
@@ -578,6 +579,7 @@ function renderStory(force) {
   words.forEach(w => { const e = clamp01((Tt - w.at) / w.len); w.update(e, now); if (w.suf) w.suf.style.opacity = smooth(.1, .4, e); });
   const o = still ? 0 : easeInOut(span(Tt, 9.1, TOTAL));
   sentence.style.opacity = 1 - o * .8; sentence.style.transform = `scale(${1 - o * .06})`;
+  smEls.forEach(el => { const e = still ? 1 : clamp01((Tt - parseFloat(el.dataset.at)) / .9), k = easeOut(e); el.style.opacity = k * (1 - o * .8); el.style.transform = `translateY(${(1 - k) * 44}px) rotate(var(--r)) scale(${.82 + .18 * k})`; });
   sentence.setAttribute("data-ready", "");
 }
 const tiltMove = e => { tilt.tx = e.clientX / innerWidth * 2 - 1; tilt.ty = e.clientY / innerHeight * 2 - 1; };
