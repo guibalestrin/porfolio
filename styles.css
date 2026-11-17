@@ -619,3 +619,32 @@ html[data-still] .hero-track{height:calc(100svh + 260svh)}
 
 .sticker:not(.photo){display:inline-flex;align-items:center;gap:.45em}
 .stk-ico{width:1.1em;height:1.1em;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+
+/* ============================================================
+   v7 — Kiwify Festival + keywords em vidro com borda animada
+   ============================================================ */
+.kf{padding:clamp(20px,4svh,60px) max(16px,4vw) clamp(60px,10svh,120px)}
+.kf-panel{max-width:1320px;margin:0 auto;padding:clamp(32px,6vw,88px);border-radius:clamp(26px,3vw,44px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(30px,5vw,70px);align-items:center;color:#fff;position:relative;overflow:hidden;background:radial-gradient(90% 80% at 90% 100%,#0e4a2c 0%,transparent 60%),radial-gradient(120% 90% at 0% 0%,#10281c 0%,#070a08 65%);box-shadow:0 50px 100px -40px rgba(0,0,0,.55)}
+.kf-eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 14px 7px 10px;border-radius:999px;background:rgba(61,220,132,.1);box-shadow:inset 0 0 0 1px rgba(61,220,132,.4);color:#6df0a8;font:600 13px/1 var(--text);letter-spacing:.04em}
+.kf-eyebrow i{width:8px;height:8px;border-radius:50%;background:#3ddc84;box-shadow:0 0 12px #3ddc84}
+.kf-title{margin:18px 0 0;font:800 clamp(38px,5.4vw,74px)/1 var(--text);letter-spacing:-.04em;max-width:8em}
+.kf-lede{margin:20px 0 0;max-width:30em;color:rgba(255,255,255,.72);font:400 clamp(16px,1.4vw,20px)/1.5 var(--text)}
+.kf-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(12px,2vw,26px);align-items:center}
+.kf-card{position:relative;margin:0;border-radius:22px;overflow:hidden;aspect-ratio:3/4;rotate:var(--r,0deg);box-shadow:0 0 0 1px rgba(109,240,168,.35),0 36px 60px -24px rgba(0,0,0,.8);transition:rotate .6s var(--ease),transform .6s var(--ease),opacity .8s ease,translate 1s var(--ease)}
+.kf-card:nth-child(2){margin-top:clamp(20px,5vw,60px)}
+.kf-card:hover{rotate:0deg;transform:translateY(-6px) scale(1.02)}
+.kf-card img{display:block;width:100%;height:100%;object-fit:cover}
+.kf-card::after{content:"";position:absolute;inset:auto 0 0 0;height:38%;background:linear-gradient(transparent,rgba(0,0,0,.7));pointer-events:none}
+.kf-card span{position:absolute;left:14px;right:14px;bottom:13px;z-index:1;font:600 clamp(13px,1.2vw,17px)/1.2 var(--text);letter-spacing:-.01em}
+@media (max-width:860px){.kf-panel{grid-template-columns:minmax(0,1fr)}.kf-title{max-width:none}}
+
+@property --bm{syntax:"<angle>";inherits:false;initial-value:0deg}
+@keyframes bm{to{--bm:360deg}}
+.sticker:not(.photo){padding:.55em 1.05em .55em .6em;border-radius:999px;background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.04));color:#fff;font:600 clamp(14px,1.25vw,18px)/1 var(--text);letter-spacing:-.005em;text-transform:none;-webkit-backdrop-filter:blur(14px) saturate(1.4);backdrop-filter:blur(14px) saturate(1.4);box-shadow:0 14px 34px -10px rgba(0,0,0,.7),inset 0 1px 0 rgba(255,255,255,.18);isolation:isolate}
+.sticker:not(.photo)::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:conic-gradient(from var(--bm),rgba(255,255,255,.12) 0 55%,var(--tint,#dfcd2e) 80%,rgba(255,255,255,.12));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:bm 6s linear infinite;pointer-events:none}
+.sticker:not(.photo) .stk-ico{box-sizing:content-box;width:1em;height:1em;padding:.45em;border-radius:50%;background:color-mix(in srgb,var(--tint,#dfcd2e) 18%,transparent);color:var(--tint,#dfcd2e);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tint,#dfcd2e) 45%,transparent);stroke-width:2}
+.sticker.alt{--tint:#8ad8ff}
+.sticker.ink{--tint:#b69cff}
+.sticker:not(.photo).drag{box-shadow:0 26px 46px -10px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.25)}
+html[data-still] .sticker:not(.photo)::before{animation:none}
+@media (max-width:699px){.sticker:not(.photo){font-size:13px}}
