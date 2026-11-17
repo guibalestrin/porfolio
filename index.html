@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guilherme Balestrin — Marketing digital & Administração</title>
+<meta name="description" content="Guilherme Balestrin, 19. Marketing digital desde 2022: tráfego, copy, design e sites. Administração no Insper.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23000'/%3E%3Cpath d='M20 11a6 6 0 1 0 0 10v-4h-4' fill='none' stroke='%23dfcd2e' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ============ MODE BAR (acessibilidade / idioma) ============ -->
+<header class="mode-bar">
+  <a class="mode-first" href="#main" data-i="skip">Pular para o conteúdo</a>
+  <nav class="mode-nav" aria-label="Site">
+    <a href="#work" data-i="nav_work">Trabalhos</a>
+    <a href="#about" data-i="nav_about">Sobre</a>
+    <a href="#services" data-i="nav_services">O que faço</a>
+    <a href="#contact" data-i="nav_contact">Contato</a>
+    <a href="#faq" data-i="nav_faq">FAQ</a>
+  </nav>
+</header>
+
+<div class="dock" role="group" aria-label="Preferences">
+  <button id="btn-lang" class="dock-btn" type="button" aria-label="Language / Idioma"><span class="dock-lang"><b data-l="pt">PT</b><i>/</i><b data-l="en">EN</b></span></button>
+  <button id="btn-still" class="dock-btn" type="button" aria-pressed="false" aria-label="Reduzir movimento"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12h3l2-6 4 12 2-6h5"/></svg><span class="dock-tip" data-i="tip_still">Reduzir movimento</span></button>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO — monitor CRT (arraste para olhar em volta) ============ -->
+<section class="hero" id="top" aria-label="Guilherme Balestrin">
+  <h1 class="sr-only" data-i="h1">Guilherme Balestrin, 19 anos. Marketing digital desde 2022 e aluno de Administração no Insper.</h1>
+
+  <div class="world" id="world">
+    <div class="layer l-back" data-depth="0.55">
+      <span class="grid-lines"></span>
+    </div>
+
+    <div class="layer l-tv" data-depth="1">
+      <div class="tv" id="tv" role="img" aria-label="CRT">
+        <div class="tv-body">
+          <div class="tv-screen" id="screen">
+            <div class="strip" id="strip">
+              <div class="ch ch-1">
+                <small data-i="ch1_k">CANAL 01 · OLÁ</small>
+                <b>GUILHERME<br>BALESTRIN</b>
+                <em data-i="ch1_v">19 anos · marketing digital</em>
+              </div>
+              <div class="ch ch-2">
+                <small data-i="ch2_k">CANAL 02 · FACULDADE</small>
+                <b data-i="ch2_b">ADMINIS&shy;TRAÇÃO</b>
+                <em>Insper</em>
+              </div>
+              <div class="ch ch-3">
+                <small data-i="ch3_k">CANAL 03 · DESDE 2022</small>
+                <b data-i="ch3_b">TRÁFEGO<br>COPY · SITES</b>
+                <em data-i="ch3_v">dropshipping → infoprodutos</em>
+              </div>
+            </div>
+            <canvas id="noise" class="noise" width="96" height="72" aria-hidden="true"></canvas>
+            <span class="roll-bar" id="rollbar"></span>
+            <span class="scan"></span>
+            <span class="glare"></span>
+          </div>
+          <div class="tv-panel">
+            <span class="tv-led"></span>
+            <span class="tv-ch" id="tvch">CH 01</span>
+            <span class="tv-knob"></span><span class="tv-knob k2"></span>
+          </div>
+        </div>
+        <div class="tv-feet"><i></i><i></i></div>
+      </div>
+    </div>
+
+    <div class="layer l-stickers" id="stickers" data-depth="1.25"></div>
+  </div>
+
+  <div class="sysmsg" id="sysmsg" role="status" aria-live="polite"></div>
+  <p class="drag-hint" id="draghint"><span data-i="hint_drag">Arraste para olhar em volta</span></p>
+  <span class="hint" aria-hidden="true"><span data-i="hint_scroll">Role</span></span>
+</section>
+
+<!-- ============ STORY — frase presa na tela, animada pelo scroll ============ -->
+<section class="story" id="story" aria-label="Manifesto">
+  <div class="story-stage">
+    <p class="sr-only" id="story-sr"></p>
+    <div class="sentence" id="sentence" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- ============ WORK — janelas de macOS com abas ============ -->
+<div class="sheet">
+<section id="work" class="pjs" aria-labelledby="work-h">
+  <h2 id="work-h" class="sr-only" data-i="work_h">Trabalhos</h2>
+
+  <article class="pj" data-pj="drop" aria-label="Dropshipping">
+    <div class="pj-text">
+      <h3 class="pj-app"><span class="pj-icon" aria-hidden="true">🛒</span><span data-i="p1_t">Dropshipping</span></h3>
+      <p class="pj-line" data-i="p1_l">Onde tudo começou, em 2022: lojas online e tráfego orgânico que gerou resultado de verdade.</p>
+      <p class="pj-kind" data-i="p1_k">E-commerce · Tráfego orgânico</p>
+    </div>
+    <figure class="pj-window">
+      <div class="pj-bar"><span class="pj-lights" aria-hidden="true"><i></i><i></i><i></i></span>
+        <div class="pj-tabs" role="tablist"></div></div>
+      <div class="pj-screen"></div>
+    </figure>
+  </article>
+
+  <article class="pj pj-flip" data-pj="info" aria-label="Infoprodutos">
+    <div class="pj-text">
+      <h3 class="pj-app"><span class="pj-icon" aria-hidden="true">🎓</span><span data-i="p2_t">Infoprodutos</span></h3>
+      <p class="pj-line" data-i="p2_l">Criei um produto do zero, montei toda a operação e vendi com campanhas pagas.</p>
+      <p class="pj-kind" data-i="p2_k">Produto digital · Funil · Tráfego pago</p>
+    </div>
+    <figure class="pj-window">
+      <div class="pj-bar"><span class="pj-lights" aria-hidden="true"><i></i><i></i><i></i></span>
+        <div class="pj-tabs" role="tablist"></div></div>
+      <div class="pj-screen"></div>
+    </figure>
+  </article>
+
+  <article class="pj" data-pj="wp" aria-label="WordPress">
+    <div class="pj-text">
+      <h3 class="pj-app"><span class="pj-icon" aria-hidden="true">🖥️</span><span data-i="p3_t">Sites em WordPress</span></h3>
+      <p class="pj-line" data-i="p3_l">Páginas de venda e sites pensados para a jornada do cliente, do primeiro clique à compra.</p>
+      <p class="pj-kind" data-i="p3_k">Web · Design · Copy</p>
+    </div>
+    <figure class="pj-window">
+      <div class="pj-bar"><span class="pj-lights" aria-hidden="true"><i></i><i></i><i></i></span>
+        <div class="pj-tabs" role="tablist"></div></div>
+      <div class="pj-screen"></div>
+    </figure>
+  </article>
+</section>
+
+<!-- ============ ABOUT — o que me move (roda de rostos + balões) ============ -->
+<section id="about" class="rw" aria-labelledby="rw-h">
+  <h2 id="rw-h" class="sr-only" data-i="rw_sr">O que me move</h2>
+  <div class="rw-stage" id="rw-stage">
+    <div class="rw-wheel" id="rw-wheel"></div>
+    <div class="rw-head">
+      <p class="rw-headline"><span data-i="rw_head">Entender gente é o negócio.</span></p>
+      <p class="rw-sub" data-i="rw_sub">Toque em um rosto.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="sv" aria-labelledby="sv-h">
+  <div class="sv-in">
+    <h2 id="sv-h" class="sv-title"><span data-i="sv_a">Tudo o que eu</span> <span class="sv-wow" data-i="sv_b">faço.</span></h2>
+    <p class="sv-lede" data-i="sv_lede">Do primeiro anúncio ao site no ar — com a visão completa do funil e da jornada do cliente.</p>
+    <ul class="sv-cols">
+      <li class="sv-col"><span class="sv-ico" aria-hidden="true">📈</span><h3 class="sv-name" data-i="s1_n">Tráfego</h3><p class="sv-line" data-i="s1_l">Pago e orgânico, do teste à escala.</p>
+        <ul><li data-i="s1_1">Campanhas pagas</li><li data-i="s1_2">Orgânico</li><li data-i="s1_3">Conteúdo</li><li data-i="s1_4">Análise</li></ul></li>
+      <li class="sv-col"><span class="sv-ico" aria-hidden="true">✍️</span><h3 class="sv-name" data-i="s2_n">Copy & persuasão</h3><p class="sv-line" data-i="s2_l">Palavras que levam à decisão.</p>
+        <ul><li data-i="s2_1">Copywriting</li><li data-i="s2_2">Páginas de venda</li><li data-i="s2_3">Anúncios</li><li data-i="s2_4">Psicologia aplicada</li></ul></li>
+      <li class="sv-col"><span class="sv-ico" aria-hidden="true">🎨</span><h3 class="sv-name" data-i="s3_n">Design & sites</h3><p class="sv-line" data-i="s3_l">Visual claro, site que converte.</p>
+        <ul><li data-i="s3_1">WordPress</li><li data-i="s3_2">Landing pages</li><li data-i="s3_3">Criativos</li><li data-i="s3_4">Identidade</li></ul></li>
+      <li class="sv-col"><span class="sv-ico" aria-hidden="true">🧭</span><h3 class="sv-name" data-i="s4_n">Funis & produto</h3><p class="sv-line" data-i="s4_l">Da ideia à operação rodando.</p>
+        <ul><li data-i="s4_1">Infoprodutos</li><li data-i="s4_2">Estrutura de funil</li><li data-i="s4_3">Jornada do cliente</li><li data-i="s4_4">Operação</li></ul></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ CONTACT / BRIEF ============ -->
+<section id="contact" class="brief" aria-label="Contato">
+  <form id="bf" class="bf" novalidate>
+    <input class="bf-trap" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" name="website">
+    <h2 class="bf-title" data-i="bf_t">Vamos conversar</h2>
+    <p class="bf-lede" data-i="bf_l">Conte o que você está construindo. Eu respondo.</p>
+
+    <label class="bf-field"><input class="bf-input" name="name" placeholder=" " required autocomplete="name"><span data-i="bf_name">Nome</span></label>
+    <label class="bf-field"><input class="bf-input" name="email" type="email" placeholder=" " required autocomplete="email"><span data-i="bf_email">E-mail</span></label>
+
+    <fieldset class="bf-set"><legend data-i="bf_need">Do que você precisa?</legend>
+      <label class="bf-pill"><input type="checkbox" name="what" value="Site"><span data-i="pill_site">Site</span></label>
+      <label class="bf-pill"><input type="checkbox" name="what" value="Tráfego"><span data-i="pill_traffic">Tráfego</span></label>
+      <label class="bf-pill"><input type="checkbox" name="what" value="Copy"><span data-i="pill_copy">Copy</span></label>
+      <label class="bf-pill"><input type="checkbox" name="what" value="Funil"><span data-i="pill_funnel">Funil</span></label>
+      <label class="bf-pill"><input type="checkbox" name="what" value="Outro"><span data-i="pill_other">Outro</span></label>
+    </fieldset>
+
+    <label class="bf-field bf-tall"><textarea class="bf-input" name="about" rows="4" placeholder=" "></textarea><span data-i="bf_about">Conte mais</span></label>
+    <button class="bf-send" type="submit"><span data-i="bf_send">Enviar</span></button>
+    <p class="bf-note" id="bf-note" role="status"></p>
+  </form>
+</section>
+
+<section class="rg">
+  <p class="rg-ask" data-i="rg_ask">Tem uma ideia?</p>
+  <h2 class="rg-say" id="rg-say" data-i="rg_say">Vamos fazer vender.</h2>
+  <p class="rg-book"><span class="dot"></span><span data-i="rg_book">Aberto a conversas</span></p>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="fq" aria-labelledby="fq-h">
+  <h2 id="fq-h" class="fq-title" data-i="fq_t">Perguntas, respondidas.</h2>
+  <ul class="fq-list">
+    <li class="fq-item"><h3 class="fq-q"><button type="button" aria-expanded="false"><span data-i="q1">Quem é você?</span></button></h3><div class="fq-a"><p data-i="a1">Guilherme, 19 anos. Desde 2022 trabalho com marketing digital — primeiro dropshipping, depois infoprodutos — e agora estudo Administração no Insper.</p></div></li>
+    <li class="fq-item"><h3 class="fq-q"><button type="button" aria-expanded="false"><span data-i="q2">O que você já fez?</span></button></h3><div class="fq-a"><p data-i="a2">Lojas de dropshipping com tráfego orgânico e um infoproduto criado do zero, com operação estruturada e vendas por campanhas pagas. Também crio sites em WordPress.</p></div></li>
+    <li class="fq-item"><h3 class="fq-q"><button type="button" aria-expanded="false"><span data-i="q3">O que te interessa além de marketing?</span></button></h3><div class="fq-a"><p data-i="a3">Liderança, gestão de pessoas, linguagem corporal e psicologia aplicada às vendas. Entender o comportamento humano é a base de qualquer negócio.</p></div></li>
+    <li class="fq-item"><h3 class="fq-q"><button type="button" aria-expanded="false"><span data-i="q4">Como começamos?</span></button></h3><div class="fq-a"><p data-i="a4">Preencha o formulário acima ou escreva direto por e-mail.</p></div></li>
+  </ul>
+</section>
+</div><!-- /sheet -->
+
+<footer class="ft">
+  <p class="ft-say" data-i="ft_say">Marketing digital com<br>visão de gestão.</p>
+  <ul class="ft-meta">
+    <li data-i="ft_loc">Insper · Administração</li>
+    <li><button type="button" class="ft-mail" id="mail" data-copied="Copiado"><span id="mail-t"></span></button></li>
+  </ul>
+  <nav class="ft-links" aria-label="Footer">
+    <a href="#work" data-i="nav_work">Trabalhos</a>
+    <a href="#about" data-i="nav_about">Sobre</a>
+    <a href="#services" data-i="nav_services">O que faço</a>
+    <a href="#faq" data-i="nav_faq">FAQ</a>
+  </nav>
+  <p class="ft-row">© 2026 Guilherme Balestrin · <button type="button" id="ft-top" class="ft-top" data-i="ft_top">Voltar ao topo ↑</button></p>
+</footer>
+
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
