@@ -40,7 +40,7 @@ pt: {
   ch1_k:"CANAL 01 · OLÁ", ch1_v:"19 anos · marketing digital",
   ch2_k:"CANAL 02 · FACULDADE", ch2_b:"ADMINIS&shy;TRAÇÃO",
   ch3_k:"CANAL 03 · DESDE 2022", ch3_b:"TRÁFEGO<br>COPY · SITES", ch3_v:"dropshipping → infoprodutos",
-  hint_drag:"Arraste para olhar em volta", hint_scroll:"Role",
+  hint_drag:"Arraste para olhar em volta", hint_scroll:"Role para mudar de canal", rail:["Olá","Faculdade","Serviços","TikTok","Loja"],
   hit_msg:"Por favor, não bata nele.",
   story_sr:"eu crio funis, sites e campanhas que vendem",
   work_h:"Trabalhos",
@@ -100,6 +100,7 @@ pt: {
   ij4_t:"Financeiro", ij4_d:"Custos, projeções e viabilidade: o que faz o número fechar.",
   ij_gt:"O que isso agregou", ij_g:"Eu já vinha do marketing digital, olhando para o anúncio e o funil. A consultoria abriu o resto do mapa: agora enxergo o negócio inteiro — mercado, operação, marketing e números — e entendo como cada parte afeta as outras.",
   ij_st:"Skills que ganhei", ij_chips:["Visão estratégica","Análise de mercado","Estruturação de processos","Viabilidade financeira","Comunicação com cliente","Trabalho em equipe","Gestão de projetos","Apresentação de resultados"],
+  kf_k:"Evento", kf_t:"Kiwify Festival 2023.", kf_l:"Estive no maior evento de infoprodutos do Brasil, de dentro: vi de perto como quem vende na internet pensa, vende e escala.", kf_c1:"No palco da Kiwify", kf_c2:"Plateia lotada, palco verde", nav_kf:"Kiwify Festival",
   nav_projects:"Projetos", ab_gt:"Um pouco mais de mim", g1:"Escritório é onde der.", g2:"Quando pede formalidade.", g3:"Rotina de faculdade.",
   vn_k:"Projetos paralelos", vn_t:"Ideias que viram produto.",
   vn_l:"Além do marketing e da faculdade, eu gosto de pegar uma ideia, desenhar a solução e colocar no ar. Estes são os projetos que construí em paralelo.",
@@ -151,7 +152,7 @@ en: {
   ch1_k:"CHANNEL 01 · HELLO", ch1_v:"19 y/o · digital marketing",
   ch2_k:"CHANNEL 02 · COLLEGE", ch2_b:"BUSINESS<br>ADMIN",
   ch3_k:"CHANNEL 03 · SINCE 2022", ch3_b:"TRAFFIC<br>COPY · SITES", ch3_v:"dropshipping → info products",
-  hint_drag:"Drag to look around", hint_scroll:"Scroll",
+  hint_drag:"Drag to look around", hint_scroll:"Scroll to change channel", rail:["Hello","College","Skills","TikTok","Store"],
   hit_msg:"Please do not hit it.",
   story_sr:"I create funnels, websites and campaigns that sell",
   work_h:"Work",
@@ -211,6 +212,7 @@ en: {
   ij4_t:"Finance", ij4_d:"Costs, projections and viability: what makes the numbers work.",
   ij_gt:"What it added", ij_g:"I came from digital marketing, looking at the ad and the funnel. Consulting opened up the rest of the map: now I see the whole business — market, operations, marketing and numbers — and how each part affects the others.",
   ij_st:"Skills I gained", ij_chips:["Strategic thinking","Market analysis","Process design","Financial viability","Client communication","Teamwork","Project management","Presenting results"],
+  kf_k:"Event", kf_t:"Kiwify Festival 2023.", kf_l:"I was at Brazil's biggest info-product event, up close: seeing how the people who sell online think, sell and scale.", kf_c1:"At the Kiwify stage", kf_c2:"Packed crowd, green stage", nav_kf:"Kiwify Festival",
   nav_projects:"Projects", ab_gt:"A little more of me", g1:"Office is wherever it works.", g2:"When it calls for a suit.", g3:"College routine.",
   vn_k:"Side projects", vn_t:"Ideas that become products.",
   vn_l:"Beyond marketing and college, I like to take an idea, design the solution and put it live. These are the projects I built on the side.",
@@ -267,6 +269,7 @@ const layers = $$(".layer", world).map(el => ({ el, d: parseFloat(el.dataset.dep
 let vw = innerWidth, vh = innerHeight;
 let pan = { x: 0, y: 0, vx: 0, vy: 0, drag: false, lx: 0, ly: 0, moved: 0 };
 let heroVisible = true, chIdx = 0, rolling = false;
+const track = $("#heroTrack"), rail = $("#rail");
 
 /* canais: clona 3→6 para o "roll" voltar ao mesmo canal sem salto */
 const NCH = $$(".ch", strip).length;
@@ -286,33 +289,75 @@ function setCh(i, flash = true) {
   strip.style.setProperty("--y0", (-chIdx * 100) + "%");
   strip.style.transform = `translateY(${-chIdx * 100}%)`;
   tvch.textContent = "CH 0" + (chIdx + 1);
+  if (rail.children.length) paintRail();
   if (flash && !root.dataset.still) { tv.classList.remove("is-flicker"); void tv.offsetWidth; tv.classList.add("is-flicker"); }
   syncChVideo();
 }
 setCh(0, false);
-setInterval(() => { if (heroVisible && !pan.drag && !rolling && !root.dataset.still && !document.hidden) setCh(chIdx + 1); }, 5600);
+/* o scroll troca de canal: o hero fica fixo (sticky) dentro de uma pista alta */
+const trackRange = () => Math.max(1, track.offsetHeight - hero.offsetHeight);
+function goCh(i) {
+  i = (i + NCH) % NCH;
+  const top = track.getBoundingClientRect().top + scrollY;
+  scrollTo({ top: top + (i + .5) / NCH * trackRange() });
+}
+function buildRail() {
+  rail.textContent = "";
+  T[lang].rail.forEach((name, i) => {
+    const b = mk("button", "rail-i"); b.type = "button"; b.dataset.i = i;
+    b.setAttribute("aria-label", "CH 0" + (i + 1) + " · " + name);
+    b.append(mk("b", "", "0" + (i + 1)), mk("span", "", name));
+    b.addEventListener("click", e => { e.stopPropagation(); goCh(i); });
+    b.addEventListener("pointerdown", e => e.stopPropagation());
+    rail.appendChild(b);
+  });
+  paintRail();
+}
+function paintRail() { [...rail.children].forEach((b, i) => { b.classList.toggle("on", i === chIdx); if (i === chIdx) b.setAttribute("aria-current", "true"); else b.removeAttribute("aria-current"); }); }
+function chFromScroll() {
+  const p = clamp01(-track.getBoundingClientRect().top / trackRange());
+  hero.classList.toggle("scrolled", p > .015);
+  const i = Math.min(NCH - 1, Math.floor(p * NCH));
+  if (i !== chIdx && !rolling) setCh(i);
+}
 const knob = $(".tv-knob");
 if (knob) { knob.style.pointerEvents = "auto"; knob.style.cursor = "pointer"; knob.setAttribute("role", "button"); knob.setAttribute("tabindex", "0"); knob.setAttribute("aria-label", "Channel");
-  knob.addEventListener("click", e => { e.stopPropagation(); setCh(chIdx + 1); });
-  knob.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setCh(chIdx + 1); } });
+  knob.addEventListener("click", e => { e.stopPropagation(); goCh(chIdx + 1); });
+  knob.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); goCh(chIdx + 1); } });
   knob.addEventListener("pointerdown", e => e.stopPropagation()); }
 
 /* stickers (arrastáveis, com inércia) */
 const STK = [
   { k:"traffic", fx:.14, fy:.22, r:-6, c:"" },   { k:"copy", fx:.80, fy:.18, r:5, c:"alt" },
-  { k:"design", fx:.88, fy:.62, r:-4, c:"ink" },  { k:"wp", fx:.07, fy:.66, r:4, c:"alt" },
+  { k:"design", fx:.8, fy:.72, r:-4, c:"ink" },  { k:"wp", fx:.07, fy:.66, r:4, c:"alt" },
   { k:"funnel", fx:.24, fy:.86, r:-3, c:"" },     { k:"persuasion", fx:.72, fy:.86, r:3, c:"ink" },
   { k:"body", fx:-.16, fy:.42, r:-5, c:"" },      { k:"psych", fx:1.16, fy:.38, r:4, c:"alt" },
   { k:"leader", fx:.2, fy:-.12, r:3, c:"ink" },   { k:"insper", fx:.62, fy:-.14, r:-4, c:"" },
   { k:"y2022", fx:.48, fy:1.16, r:2, c:"alt" },   { k:"organic", fx:-.08, fy:1.05, r:-3, c:"ink" },
   { k:"app_in", fx:.62, fy:-.1, r:3, c:"ink" }, { k:"app_swap", fx:1.12, fy:.78, r:-5, c:"" }, { k:"app_pz", fx:-.12, fy:.82, r:4, c:"alt" },
-  { k:"ph_cut", img:"assets/cut-daily.webp", fx:.2, fy:.56, r:-3, c:"photo cut" }, { k:"ph_work", img:"assets/g-work.webp", fx:.68, fy:1.1, r:4, c:"photo" },
-  { k:"ph_tiktok", img:"assets/tiktok.webp", fx:.91, fy:.40, r:5, c:"photo" },  { k:"ph_kiwify", img:"assets/kiwify.webp", fx:.09, fy:.42, r:-5, c:"photo" },
-  { k:"ph_me", img:"assets/me-sq.webp", cap:"Guilherme, 19", fx:.33, fy:.11, r:-4, c:"photo me" },  { k:"ph_amazon", img:"assets/amazon.webp", fx:.40, fy:1.12, r:3, c:"photo" },  { k:"ph_shop", img:"assets/shopify.webp", fx:.74, fy:-.14, r:-4, c:"photo" }
 ];
+const ICO = {
+  traffic:'<path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/>',
+  copy:'<path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/>',
+  design:'<path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.6 7.6"/><circle cx="11" cy="11" r="2"/>',
+  wp:'<rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8M12 17v4"/>',
+  funnel:'<path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/>',
+  persuasion:'<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',
+  body:'<circle cx="12" cy="4" r="2"/><path d="m5 8 7 1 7-1M12 9v5m0 0-3 7m3-7 3 7"/>',
+  psych:'<path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6M10 22h4"/>',
+  leader:'<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
+  insper:'<path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>',
+  y2022:'<rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
+  organic:'<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/>',
+  app_in:'<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.3 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>',
+  app_swap:'<path d="M8 3 4 7l4 4M4 7h16M16 21l4-4-4-4M20 17H4"/>',
+  app_pz:'<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/>'
+};
+const SVGNS = "http://www.w3.org/2000/svg";
 const stickersEl = $("#stickers");
 const stickers = STK.map(s => {
   const el = mk("div", "sticker " + s.c); el.setAttribute("role", "note");
+  if (!s.img) { const sv = document.createElementNS(SVGNS, "svg"); sv.setAttribute("viewBox", "0 0 24 24"); sv.setAttribute("class", "stk-ico"); sv.setAttribute("aria-hidden", "true"); sv.innerHTML = ICO[s.k] || ""; el.append(sv, mk("span", "stk-t")); }
   if (s.img) { const im = mk("img"); im.src = s.img; im.alt = ""; im.draggable = false; im.loading = "lazy"; el.appendChild(im); if (s.cap) el.appendChild(mk("span", "cap", s.cap)); }
   stickersEl.appendChild(el);
   const o = { ...s, el, x: s.fx * vw, y: s.fy * vh, vx: 0, vy: 0, drag: false };
@@ -337,7 +382,9 @@ function bindSticker(o) {
   const up = () => { o.drag = false; o.el.classList.remove("drag"); if (root.dataset.still) o.vx = o.vy = 0; };
   o.el.addEventListener("pointerup", up); o.el.addEventListener("pointercancel", up);
 }
-function layoutStickers() { stickers.forEach(o => { o.x = o.fx * vw; o.y = o.fy * vh; o.vx = o.vy = 0; paintSticker(o); }); }
+/* no celular, empurra os stickers para fora da faixa onde fica a TV */
+function stkY(fy) { return vw < 700 && fy > .18 && fy < .82 ? (fy < .5 ? fy * .45 : 1 - (1 - fy) * .45) : fy; }
+function layoutStickers() { stickers.forEach(o => { o.x = o.fx * vw; o.y = stkY(o.fy) * vh; o.vx = o.vy = 0; paintSticker(o); }); }
 
 /* pan (arrastar para olhar em volta) */
 function bounds() { return { x: vw * .38, y: vh * .32 }; }
@@ -347,7 +394,7 @@ function paintWorld() {
 function hideHint() { if (!draghint.classList.contains("gone")) { draghint.classList.add("gone"); store.set("gb-hint", "1"); } }
 if (store.get("gb-hint")) draghint.classList.add("gone");
 hero.addEventListener("pointerdown", e => {
-  if (e.target.closest(".dock") || e.target.closest(".sticker")) return;
+  if (e.target.closest(".dock") || e.target.closest(".sticker") || e.target.closest(".rail")) return;
   pan.downOnTv = !!e.target.closest("#tv");
   pan.drag = true; pan.lx = e.clientX; pan.ly = e.clientY; pan.moved = 0; pan.vx = pan.vy = 0;
   hero.classList.add("dragging"); hero.setPointerCapture(e.pointerId);
@@ -748,7 +795,8 @@ function setLang(l) {
   root.lang = l === "pt" ? "pt-BR" : "en"; root.dataset.lang = l;
   $$("[data-i]").forEach(el => { const v = T[l][el.dataset.i]; if (typeof v === "string") el.innerHTML = v; });
   document.title = T[l].title; $('meta[name="description"]').setAttribute("content", T[l].desc);
-  stickers.forEach(o => { if (!o.img) o.el.textContent = T[l].stk[o.k]; });
+  stickers.forEach(o => { if (!o.img) o.el.querySelector(".stk-t").textContent = T[l].stk[o.k]; });
+  buildRail();
   $("#mail-t").textContent = CONFIG.email; mailBtn.dataset.copied = T[l].copied;
   $("#btn-still").setAttribute("aria-label", T[l].tip_still);
   buildWork(); buildWheel(); splitCTA(); buildStory();
@@ -774,16 +822,15 @@ addEventListener("keydown", e => {
   if (!keysOn) return;
   if (k === "l") setLang(lang === "pt" ? "en" : "pt");
   else if (k === "m") setStill(!root.dataset.still);
-  else if (/^[1-9]$/.test(k) && +k <= NCH) setCh(+k - 1);
+  else if (/^[1-9]$/.test(k) && +k <= NCH) goCh(+k - 1);
 });
 
 /* hero some/escala ao rolar + dock adaptativo */
 const sheet = $(".sheet"), footer = $(".ft");
 function heroScroll() {
-  const y = scrollY, p = clamp01(y / vh);
+  const y = scrollY;
   $("#progress").style.transform = `scaleX(${clamp01(y / Math.max(1, document.documentElement.scrollHeight - vh))})`;
-  if (root.dataset.still) { hero.style.transform = ""; hero.style.opacity = ""; }
-  else { hero.style.transform = `scale(${1 - p * .08})`; hero.style.opacity = String(1 - p * .85); }
+  chFromScroll();
   const st = sheet.getBoundingClientRect().top, ft = footer.getBoundingClientRect().top;
   document.body.classList.toggle("on-light", st < 40 && ft > 40);
 }
