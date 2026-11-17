@@ -37,10 +37,10 @@ pt: {
   skip:"Pular para o conteúdo", nav_work:"Trabalhos", nav_about:"Sobre", nav_services:"O que faço", nav_contact:"Contato", nav_faq:"FAQ",
   tip_still:"Reduzir movimento",
   h1:"Guilherme Balestrin, 19 anos. Marketing digital desde 2022 e aluno de Administração no Insper.",
-  ch1_k:"CANAL 01 · OLÁ", ch1_v:"19 anos · marketing digital",
-  ch2_k:"CANAL 02 · FACULDADE", ch2_b:"ADMINIS&shy;TRAÇÃO",
-  ch3_k:"CANAL 03 · DESDE 2022", ch3_b:"TRÁFEGO<br>COPY · SITES", ch3_v:"dropshipping → infoprodutos",
-  hint_drag:"Arraste para olhar em volta", hint_scroll:"Role para mudar de canal", rail:["Olá","Faculdade","Serviços","TikTok","Loja"],
+  ch1_k:"Olá, eu sou", ch1_v:"Marketing digital desde 2022",
+  ch2_k:"Faculdade", ch2_b:"Administração<br>no Insper", ch2_v:"Marketing com visão de gestão",
+  ch3_k:"O que eu faço", ch3_b:"Tráfego, copy<br>e sites", ch3_v:"Do anúncio à página de venda",
+  hint_drag:"Arraste para olhar em volta", hint_scroll:"Role para mudar de canal", rail:["Olá","Faculdade","Serviços"],
   hit_msg:"Por favor, não bata nele.",
   story_sr:"eu crio funis, sites e campanhas que vendem",
   work_h:"Trabalhos",
@@ -76,8 +76,6 @@ pt: {
   ft_say:"Marketing digital com<br>visão de gestão.", ft_loc:"Administração", ft_top:"Voltar ao topo ↑", copied:"Copiado",
   stk:{app_in:"IN.",app_swap:"InsperSwap",app_pz:"Presenza",traffic:"Tráfego pago",copy:"Copywriting",design:"Design",wp:"WordPress",funnel:"Funis",persuasion:"Persuasão",leader:"Liderança",body:"Linguagem corporal",psych:"Psicologia de vendas",insper:"Insper",y2022:"Desde 2022",organic:"Tráfego orgânico"},
   tip_help:"Teclas e gestos",
-  ch4_k:"CANAL 04 · TIKTOK", ch4_b:"2,3M<br>VIEWS", ch4_v:"o vídeo da garrafinha",
-  ch5_k:"CANAL 05 · LOJA", ch5_b:"944<br>SESSÕES", ch5_v:"numa semana · 3 pedidos",
   mq_t:"Plataformas por onde já passei",
   st_t:"Números de verdade.", st_l:"Métricas e prints das minhas próprias operações — sem enfeite.",
   st1:"views em um único vídeo no TikTok", st1s:"Maio/2023 · dropshipping",
@@ -85,7 +83,7 @@ pt: {
   st3:"novos seguidores vindos dele", st3s:"Dados do TikTok Studio",
   st4:"de conversão em links de afiliado", st4s:"Amazon Associados · 38 cliques, 6 pedidos",
   hp_t:"Teclas e gestos", hp_keys:"Atalhos de uma tecla", hp_close:"Fechar",
-  hp_rows:[["Arrastar","Olhar em volta (ou mover os adesivos)"],["3 cliques no monitor","Não faça isso."],["1 – 5","Trocar de canal"],["L","Idioma PT / EN"],["M","Reduzir movimento"],["?","Esta ajuda"],["Shift + rolar","Mover o mundo na horizontal"]],
+  hp_rows:[["Arrastar","Olhar em volta (ou mover os adesivos)"],["3 cliques no monitor","Não faça isso."],["1 – 3","Trocar de canal"],["L","Idioma PT / EN"],["M","Reduzir movimento"],["?","Esta ajuda"],["Shift + rolar","Mover o mundo na horizontal"]],
   ab_k:"Sobre mim", ab_t:"Oi, eu sou o Guilherme.",
   ab_c1:"19 anos", ab_c2:"Marketing digital desde 2022", ab_c3:"Administração",
   ab_p1:"Tenho 19 anos e, desde 2022, construo minha experiência no marketing digital: primeiro com dropshipping, agora com infoprodutos. Aprendi na prática tráfego pago e orgânico, copywriting, design, persuasão, produção de conteúdo e criação de sites em WordPress.",
@@ -136,10 +134,10 @@ en: {
   skip:"Skip to content", nav_work:"Work", nav_about:"About", nav_services:"Services", nav_contact:"Contact", nav_faq:"FAQ",
   tip_still:"Reduce motion",
   h1:"Guilherme Balestrin, 19. Digital marketing since 2022, studying Business Administration at Insper.",
-  ch1_k:"CHANNEL 01 · HELLO", ch1_v:"19 y/o · digital marketing",
-  ch2_k:"CHANNEL 02 · COLLEGE", ch2_b:"BUSINESS<br>ADMIN",
-  ch3_k:"CHANNEL 03 · SINCE 2022", ch3_b:"TRAFFIC<br>COPY · SITES", ch3_v:"dropshipping → info products",
-  hint_drag:"Drag to look around", hint_scroll:"Scroll to change channel", rail:["Hello","College","Skills","TikTok","Store"],
+  ch1_k:"Hi, I'm", ch1_v:"Digital marketing since 2022",
+  ch2_k:"College", ch2_b:"Business Admin<br>at Insper", ch2_v:"Marketing with a management view",
+  ch3_k:"What I do", ch3_b:"Traffic, copy<br>and websites", ch3_v:"From the ad to the sales page",
+  hint_drag:"Drag to look around", hint_scroll:"Scroll to change channel", rail:["Hello","College","Skills"],
   hit_msg:"Please do not hit it.",
   story_sr:"I create funnels, websites and campaigns that sell",
   work_h:"Work",
@@ -175,8 +173,6 @@ en: {
   ft_say:"Digital marketing with<br>a management mindset.", ft_loc:"Business Administration", ft_top:"Back to top ↑", copied:"Copied",
   stk:{app_in:"IN.",app_swap:"InsperSwap",app_pz:"Presenza",traffic:"Paid traffic",copy:"Copywriting",design:"Design",wp:"WordPress",funnel:"Funnels",persuasion:"Persuasion",leader:"Leadership",body:"Body language",psych:"Sales psychology",insper:"Insper",y2022:"Since 2022",organic:"Organic traffic"},
   tip_help:"Keys & gestures",
-  ch4_k:"CHANNEL 04 · TIKTOK", ch4_b:"2.3M<br>VIEWS", ch4_v:"the school bottle video",
-  ch5_k:"CHANNEL 05 · STORE", ch5_b:"944<br>SESSIONS", ch5_v:"in one week · 3 orders",
   mq_t:"Platforms I've worked on",
   st_t:"Real numbers.", st_l:"Metrics and screenshots from my own operations — no polish.",
   st1:"views on a single TikTok video", st1s:"May 2023 · dropshipping",
@@ -184,7 +180,7 @@ en: {
   st3:"new followers from it", st3s:"TikTok Studio data",
   st4:"conversion on affiliate links", st4s:"Amazon Associates · 38 clicks, 6 orders",
   hp_t:"Keys & gestures", hp_keys:"Single-key shortcuts", hp_close:"Close",
-  hp_rows:[["Drag","Look around (or move the stickers)"],["3 clicks on the TV","Please don't."],["1 – 5","Switch channel"],["L","Language PT / EN"],["M","Reduce motion"],["?","This help"],["Shift + scroll","Pan the world sideways"]],
+  hp_rows:[["Drag","Look around (or move the stickers)"],["3 clicks on the TV","Please don't."],["1 – 3","Switch channel"],["L","Language PT / EN"],["M","Reduce motion"],["?","This help"],["Shift + scroll","Pan the world sideways"]],
   ab_k:"About me", ab_t:"Hi, I'm Guilherme.",
   ab_c1:"19 y/o", ab_c2:"Digital marketing since 2022", ab_c3:"Business Admin",
   ab_p1:"I'm 19 and since 2022 I've been building my experience in digital marketing: first dropshipping, now info products. I learned paid and organic traffic, copywriting, design, persuasion, content production and WordPress sites by doing.",
@@ -302,13 +298,10 @@ if (knob) { knob.style.pointerEvents = "auto"; knob.style.cursor = "pointer"; kn
 
 /* stickers (arrastáveis, com inércia) */
 const STK = [
-  { k:"traffic", fx:.14, fy:.22, r:-6, c:"" },   { k:"copy", fx:.80, fy:.18, r:5, c:"alt" },
-  { k:"design", fx:.8, fy:.72, r:-4, c:"ink" },  { k:"wp", fx:.07, fy:.66, r:4, c:"alt" },
-  { k:"funnel", fx:.24, fy:.86, r:-3, c:"" },     { k:"persuasion", fx:.72, fy:.86, r:3, c:"ink" },
-  { k:"body", fx:-.16, fy:.42, r:-5, c:"" },      { k:"psych", fx:1.16, fy:.38, r:4, c:"alt" },
-  { k:"leader", fx:.2, fy:-.12, r:3, c:"ink" },   { k:"insper", fx:.62, fy:-.14, r:-4, c:"" },
-  { k:"y2022", fx:.48, fy:1.16, r:2, c:"alt" },   { k:"organic", fx:-.08, fy:1.05, r:-3, c:"ink" },
-  { k:"app_in", fx:.62, fy:-.1, r:3, c:"ink" }, { k:"app_swap", fx:1.12, fy:.78, r:-5, c:"" }, { k:"app_pz", fx:-.12, fy:.82, r:4, c:"alt" },
+  { k:"traffic", fx:.2, fy:.27, r:-5, c:"" },     { k:"copy", fx:.8, fy:.26, r:4, c:"alt" },
+  { k:"design", fx:.84, fy:.6, r:-3, c:"ink" },   { k:"wp", fx:.16, fy:.58, r:3, c:"alt" },
+  { k:"funnel", fx:.27, fy:.82, r:-3, c:"" },     { k:"persuasion", fx:.73, fy:.82, r:3, c:"ink" },
+  { k:"insper", fx:.35, fy:.13, r:-3, c:"" },     { k:"y2022", fx:.65, fy:.13, r:3, c:"alt" },
 ];
 const ICO = {
   traffic:'<path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/>',
@@ -358,7 +351,8 @@ function bindSticker(o) {
 }
 /* no celular, empurra os stickers para fora da faixa onde fica a TV */
 function stkY(fy) { return vw < 700 && fy > .18 && fy < .82 ? (fy < .5 ? fy * .45 : 1 - (1 - fy) * .45) : fy; }
-function layoutStickers() { stickers.forEach(o => { o.x = o.fx * vw; o.y = stkY(o.fy) * vh; o.vx = o.vy = 0; paintSticker(o); }); }
+const MOB = { traffic:[.28,.15], copy:[.72,.23], design:[.72,.73], wp:[.28,.81] };
+function layoutStickers() { stickers.forEach(o => { const m = vw < 700; const mp = MOB[o.k]; o.el.style.display = m && !mp ? "none" : ""; o.x = (m && mp ? mp[0] : o.fx) * vw; o.y = (m && mp ? mp[1] : stkY(o.fy)) * vh; o.vx = o.vy = 0; paintSticker(o); }); }
 
 /* pan (arrastar para olhar em volta) */
 function bounds() { return { x: vw * .38, y: vh * .32 }; }
