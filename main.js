@@ -8,7 +8,7 @@
 
 /* ---------- CONFIG (edite aqui) ---------- */
 const CONFIG = {
-  email: "seu-email@exemplo.com"   // TODO: troque pelo seu e-mail real
+  email: "guibalestrin@hotmail.com"
 };
 
 /* ---------- utilidades ---------- */
@@ -44,7 +44,7 @@ pt: {
   hit_msg:"Por favor, não bata nele.",
   story_sr:"eu crio funis, sites e campanhas que vendem",
   work_h:"Trabalhos",
-  p1_t:"Dropshipping", p1_l:"Tudo começou em 2022, com uma loja online e um vídeo no TikTok que passou de 2,3 milhões de views.", p1_k:"E-commerce · Tráfego orgânico",
+  p1_t:"Dropshipping", p1_l:"Tudo começou em 2022, com uma loja online. Demorou 1 ano até a primeira venda. Pelo caminho, um vídeo no TikTok passou de 2,3 milhões de views.", p1_k:"E-commerce · Tráfego orgânico",
   p2_t:"Infoprodutos", p2_l:"Depois criei meu próprio produto, montei a operação inteira e passei a vender com anúncios pagos.", p2_k:"Produto digital · Funil · Tráfego pago",
   p3_t:"Sites em WordPress", p3_l:"E sites em WordPress, pensados para guiar o cliente do primeiro clique até a compra.", p3_k:"Web · Design · Copy",
   tabs_drop:["Vídeo viral","TikTok","Shopify","Amazon","Vendas"], tabs_info:["Vendas","Funil","Campanhas"], tabs_wp:["Páginas","Design","Copy"],
@@ -73,7 +73,7 @@ pt: {
   q2:"O que você já fez?", a2:"Montei lojas de dropshipping com tráfego orgânico e criei um infoproduto do zero, com operação própria e vendas por anúncios pagos. Também faço sites em WordPress.",
   q3:"O que te interessa além de marketing?", a3:"Liderança, gestão de pessoas, linguagem corporal e psicologia nas vendas. Todo negócio depende de entender como as pessoas decidem.",
   q4:"Como começamos?", a4:"Preencha o formulário acima ou me escreva por e-mail. Eu respondo.",
-  ft_say:"Marketing digital com<br>visão de gestão.", ft_loc:"Administração", ft_top:"Voltar ao topo ↑", copied:"Copiado",
+  ft_say:"Marketing digital com<br>visão de gestão.", ft_top:"Voltar ao topo ↑", copied:"Copiado",
   stk:{app_in:"IN.",app_swap:"InsperSwap",app_pz:"Presenza",traffic:"Tráfego pago",copy:"Copywriting",design:"Design",wp:"WordPress",funnel:"Funis",persuasion:"Persuasão",leader:"Liderança",body:"Linguagem corporal",psych:"Psicologia de vendas",insper:"Insper",y2022:"4 anos de experiência",organic:"Tráfego orgânico"},
   tip_help:"Teclas e gestos",
   mq_t:"Plataformas por onde já passei",
@@ -86,7 +86,7 @@ pt: {
   hp_rows:[["Arrastar","Olhar em volta (ou mover os adesivos)"],["3 cliques no monitor","Não faça isso."],["1 – 3","Trocar de canal"],["L","Idioma PT / EN"],["M","Reduzir movimento"],["?","Esta ajuda"],["Shift + rolar","Mover o mundo na horizontal"]],
   ab_k:"Sobre mim", ab_t:"Oi, eu sou o Guilherme.",
   ab_c1:"19 anos", ab_c2:"4 anos de experiência", ab_c3:"Administração",
-  ab_p1:"Tenho 19 anos e comecei no marketing digital em 2022. Primeiro com dropshipping, depois com infoprodutos. Aprendi fazendo: tráfego pago e orgânico, copy, design, persuasão, conteúdo e sites em WordPress.",
+  ab_p1:"Tenho 19 anos e comecei no marketing digital em 2022. Primeiro com dropshipping, onde demorou 1 ano até a primeira venda, depois com infoprodutos. Aprendi fazendo: tráfego pago e orgânico, copy, design, persuasão, conteúdo e sites em WordPress.",
   ab_p2:"Em um desses projetos criei um produto do zero, montei a operação e vendi com anúncios pagos. Foi assim que passei a enxergar o funil inteiro e a jornada do cliente.",
   ab_p3:"Hoje estudo Administração no Insper e ainda estou descobrindo para onde ir. O que mais me puxa é liderança, gestão de pessoas, linguagem corporal e psicologia nas vendas, porque todo negócio bom começa em entender gente.",
   ab_f1:"Administração, descobrindo o caminho", ab_f2:"Empresa júnior de consultoria",
@@ -124,8 +124,6 @@ pt: {
   me_wk_t:"Pontos de atenção",
   me_wk:["Foco disperso","Dificuldade de me comprometer com um só caminho","Execução inconsistente","Interesses voláteis","Autocobrança alta","Tendência a idealizar"],
   me_wk_n:"Sei onde eu travo. Meu antídoto: critérios escritos, metas com prazo e projetos que eu realmente coloco no ar.",
-  me_pa_t:"Caminhos que pesei", me_pa_s:"Ranking de uma balança que cruza critérios e profissões",
-  me_pa:[[1,"Administração"],[2,"Estrategista digital"],[2,"Gestão de marketing e vendas"],[3,"Vendedor"],[4,"Produtor de conteúdo"],[5,"Analista de investimentos"],[6,"Comércio exterior"]],
   title:"Guilherme Balestrin | Marketing digital e Administração",
   desc:"Guilherme Balestrin, 19. 4 anos de experiência em marketing digital: tráfego, copy, design e sites. Administração no Insper.",
   story:["eu","crio","funis","sites","e","campanhas","que","VENDEM"]
@@ -141,7 +139,7 @@ en: {
   hit_msg:"Please do not hit it.",
   story_sr:"I create funnels, websites and campaigns that sell",
   work_h:"Work",
-  p1_t:"Dropshipping", p1_l:"It all started in 2022, with an online store and a TikTok video that passed 2.3 million views.", p1_k:"E-commerce · Organic traffic",
+  p1_t:"Dropshipping", p1_l:"It all started in 2022, with an online store. It took 1 year to get my first sale. Along the way, a TikTok video passed 2.3 million views.", p1_k:"E-commerce · Organic traffic",
   p2_t:"Info products", p2_l:"Then I built my own product, set up the whole operation and started selling with paid ads.", p2_k:"Digital product · Funnel · Paid traffic",
   p3_t:"WordPress sites", p3_l:"And WordPress sites, designed to guide the customer from the first click to checkout.", p3_k:"Web · Design · Copy",
   tabs_drop:["Viral video","TikTok","Shopify","Amazon","Sales"], tabs_info:["Sales","Funnel","Campaigns"], tabs_wp:["Pages","Design","Copy"],
@@ -170,7 +168,7 @@ en: {
   q2:"What have you done?", a2:"I ran dropshipping stores on organic traffic and built an info product from scratch, with my own operation and sales through paid ads. I also build WordPress sites.",
   q3:"What else are you into?", a3:"Leadership, people management, body language and sales psychology. Every business depends on understanding how people decide.",
   q4:"How do we start?", a4:"Fill in the form above or email me. I'll write back.",
-  ft_say:"Digital marketing with<br>a management mindset.", ft_loc:"Business Administration", ft_top:"Back to top ↑", copied:"Copied",
+  ft_say:"Digital marketing with<br>a management mindset.", ft_top:"Back to top ↑", copied:"Copied",
   stk:{app_in:"IN.",app_swap:"InsperSwap",app_pz:"Presenza",traffic:"Paid traffic",copy:"Copywriting",design:"Design",wp:"WordPress",funnel:"Funnels",persuasion:"Persuasion",leader:"Leadership",body:"Body language",psych:"Sales psychology",insper:"Insper",y2022:"4 years of experience",organic:"Organic traffic"},
   tip_help:"Keys & gestures",
   mq_t:"Platforms I've worked on",
@@ -183,7 +181,7 @@ en: {
   hp_rows:[["Drag","Look around (or move the stickers)"],["3 clicks on the TV","Please don't."],["1 – 3","Switch channel"],["L","Language PT / EN"],["M","Reduce motion"],["?","This help"],["Shift + scroll","Pan the world sideways"]],
   ab_k:"About me", ab_t:"Hi, I'm Guilherme.",
   ab_c1:"19 y/o", ab_c2:"4 years of experience", ab_c3:"Business Admin",
-  ab_p1:"I'm 19 and started in digital marketing in 2022. First with dropshipping, then info products. I learned by doing: paid and organic traffic, copy, design, persuasion, content and WordPress sites.",
+  ab_p1:"I'm 19 and started in digital marketing in 2022. First with dropshipping, where it took 1 year to get my first sale, then info products. I learned by doing: paid and organic traffic, copy, design, persuasion, content and WordPress sites.",
   ab_p2:"In one of those projects I built a product from scratch, set up the operation and sold it with paid ads. That's how I started seeing the whole funnel and the customer journey.",
   ab_p3:"Today I study Business Administration at Insper and I'm still figuring out where to go. What pulls me most is leadership, people management, body language and sales psychology, because every good business starts with understanding people.",
   ab_f1:"Business Administration, finding my way", ab_f2:"Junior consulting company",
@@ -221,8 +219,6 @@ en: {
   me_wk_t:"Watch-outs",
   me_wk:["Scattered focus","Hard to commit to a single path","Inconsistent execution","Volatile interests","High self-pressure","Prone to idealizing"],
   me_wk_n:"I know where I get stuck. My antidote: written criteria, deadlines on goals and projects I actually put live.",
-  me_pa_t:"Paths I weighed", me_pa_s:"Ranking from a scale that crosses criteria and professions",
-  me_pa:[[1,"Business administration"],[2,"Digital strategist"],[2,"Marketing & sales management"],[3,"Salesperson"],[4,"Content producer"],[5,"Investment analyst"],[6,"Foreign trade"]],
   title:"Guilherme Balestrin | Digital marketing and Business Administration",
   desc:"Guilherme Balestrin, 19. 4 years of digital marketing experience: traffic, copy, design and websites. Business Administration at Insper.",
   story:["I","create","funnels","websites","and","campaigns","that","SELL"]
@@ -300,7 +296,7 @@ if (knob) { knob.style.pointerEvents = "auto"; knob.style.cursor = "pointer"; kn
 const STK = [
   { k:"traffic", fx:.2, fy:.27, r:-5, c:"" },     { k:"copy", fx:.8, fy:.26, r:4, c:"alt" },
   { k:"design", fx:.84, fy:.6, r:-3, c:"ink" },   { k:"wp", fx:.16, fy:.58, r:3, c:"alt" },
-  { k:"kf", img:"assets/kf-me.webp", cap:"Kiwify 2023", c:"photo me", fx:.25, fy:.8, r:-5 },     { k:"tt", img:"assets/tiktok.webp", cap:"TikTok", c:"photo me tall", fx:.76, fy:.78, r:4 },
+  { k:"funnel", fx:.27, fy:.82, r:-3, c:"" },     { k:"persuasion", fx:.73, fy:.82, r:3, c:"ink" },
   { k:"insper", fx:.35, fy:.13, r:-3, c:"" },     { k:"y2022", fx:.65, fy:.13, r:3, c:"alt" },
 ];
 const ICO = {
@@ -840,7 +836,6 @@ function buildMe() {
   const fill = (id, items, fn) => { const ul = $(id); ul.textContent = ""; items.forEach((x, i) => { const li = fn(x, i); li.style.setProperty("--k", i); ul.appendChild(li); }); };
   fill("#me-str", t.me_str, x => mk("li", "", x));
   fill("#me-wk", t.me_wk, x => mk("li", "", x));
-  fill("#me-pa", t.me_pa, ([n, x]) => { const li = mk("li"); li.append(mk("b", "", n + "º"), mk("span", "", x)); return li; });
 }
 function buildChips() { const ul = $("#ij-chips"); ul.textContent = ""; T[lang].ij_chips.forEach((c, i) => { const li = mk("li", "", c); li.style.setProperty("--k", i); ul.appendChild(li); }); }
 const rvio = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add("in"); rvio.unobserve(en.target); } }), { threshold: .15 });

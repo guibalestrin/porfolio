@@ -401,8 +401,6 @@ html:not([data-still]) .rv:not(.in){opacity:0;translate:0 34px}
 .logo-chip.jr{background:var(--ink);color:#fff;grid-auto-flow:column;gap:6px;align-content:center}
 .logo-chip.jr b{font:600 17px/1 "Times New Roman",Georgia,serif;font-style:italic;letter-spacing:.01em}
 .logo-chip.jr i{font:800 11px/1 var(--text);font-style:normal;padding:4px 6px;border-radius:6px;background:var(--accent);color:#000}
-.ft-insper{display:flex;align-items:center;gap:12px}
-.ft-insper img{height:24px;width:auto;display:block}
 
 .ab{padding:clamp(90px,14svh,170px) max(24px,7vw) clamp(40px,8svh,100px);color:var(--ink)}
 .ab-in{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(36px,6vw,110px);align-items:center}
@@ -672,8 +670,6 @@ html[data-still] .sticker:not(.photo)::before{animation:none}
 .me-rank:not(.paths) li{counter-increment:r}
 .me-rank:not(.paths) li::before{content:counter(r,decimal-leading-zero);font:800 22px/1 var(--display);letter-spacing:.04em;color:#b5b5bb;min-width:30px}
 .me-rank:not(.paths) li:nth-child(-n+3)::before{color:var(--blue)}
-.me-rank.paths b{min-width:34px;font:800 22px/1 var(--display);letter-spacing:.04em;color:#b5b5bb}
-.me-rank.paths li:first-child{font-weight:600}.me-rank.paths li:first-child b{color:var(--blue)}
 
 @media (max-width:760px){.me-grid{grid-template-columns:minmax(0,1fr)}.me-wide{grid-column:auto}}
 .me ol{list-style:none}
@@ -753,3 +749,9 @@ html[data-still] .sm{opacity:1!important;transform:rotate(var(--r))!important}
   .sm-3{left:6vw;bottom:9svh;width:26vw}
   .sm-4{bottom:12svh}
 }
+
+/* hero CH2: recorte de pessoa ao lado do texto */
+.ch-cutwrap>small,.ch-cutwrap>b,.ch-cutwrap>em,.ch-cutwrap>.logo-insper{position:relative;z-index:2;max-width:60%}
+.ch-cutwrap b{font-size:8.4cqw;line-height:1.05}
+.ch-cut{position:absolute;right:2cqw;bottom:0;height:92%;width:auto;z-index:1;filter:drop-shadow(0 2cqw 3cqw rgba(0,0,0,.55))}
+.ch-2.ch-cutwrap{background:radial-gradient(80% 90% at 78% 55%,#2a2a0a 0%,#000 70%)}
