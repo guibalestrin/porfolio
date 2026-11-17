@@ -46,10 +46,27 @@ pt: {
   work_h:"Trabalhos",
   p1_t:"Dropshipping", p1_l:"Tudo começou em 2022, com uma loja online. Demorou 1 ano até a primeira venda. Pelo caminho, um vídeo no TikTok passou de 2,3 milhões de views.", p1_k:"E-commerce · Tráfego orgânico",
   p2_t:"Infoprodutos", p2_l:"Depois criei meu próprio produto, montei a operação inteira e passei a vender com anúncios pagos.", p2_k:"Produto digital · Funil · Tráfego pago",
-  p3_t:"Sites em WordPress", p3_l:"E sites em WordPress, pensados para guiar o cliente do primeiro clique até a compra.", p3_k:"Web · Design · Copy",
-  tabs_drop:["Vídeo viral","TikTok","Shopify","Amazon","Vendas"], tabs_info:["Vendas","Funil","Campanhas"], tabs_wp:["Páginas","Design","Copy"],
+  p3_t:"Meta Ads", p3_l:"Campanhas no Facebook e no Instagram: criativo, público e métrica trabalhando juntos para trazer o cliente certo.", p3_k:"Meta Ads · Criativo · Público",
+  tabs_drop:["Vídeo viral","TikTok","Shopify","Amazon","Vendas"], tabs_info:["Vendas","Funil","Campanhas"], tabs_meta:["Criativos","Públicos","Resultados"],
   sub_drop:["views. O vídeo da garrafinha na escola, o produto que eu vendia.","novos seguidores e 132K curtidas no mesmo vídeo (TikTok Studio).","sessões em uma semana na loja Shopify · R$161,49 em vendas, 3 pedidos.","de conversão em links de afiliado: 38 cliques, 6 pedidos, R$169,72.","venda paga no crédito (Yampi) + Reel com 5 mil curtidas."], big_drop:["2,3M","+3.375","944","15,79%","R$155,96"],
-  sub_info:["notificações reais de Venda Aprovada e Pix Gerado no Kiwify.","Da atenção à compra","Tráfego pago em escala"], big_info:["Kiwify","",""], sub_wp:["Páginas que convertem","Visual com intenção","Texto que persuade"],
+  sub_info:["notificações reais de Venda Aprovada e Pix Gerado no Kiwify.","Da atenção à compra","Tráfego pago em escala"], big_info:["Kiwify","",""], sub_meta:["Anúncios feitos para parar o scroll","Segmentação para falar com quem decide","Números acompanhados para otimizar"],
+  nav_jn:"Minha história", jn_k:"Fora do trabalho", jn_t:"Repetir até ficar bom.",
+  jn_l:"Quase tudo o que eu sei fazer bem veio da mesma regra: fazer a mesma coisa de novo e de novo, enquanto o resto desiste.",
+  jn1_t:"Quase fui pro player de CS2.",
+  jn1_p1:"Joguei mais de 3 mil horas de CS2. Eu via minha evolução de perto e era bom naquilo. Ali eu entendi que talento não é dom: ele nasce de repetir a mesma coisa muitas vezes enquanto os outros estão desistindo.",
+  jn1_p2:"Por isso eu acredito que, em tudo o que eu me dedicar com energia e tempo suficientes, eu sou capaz de chegar lá. Foi a mesma conta nos negócios: demorou 1 ano até a primeira venda e eu continuei.",
+  jn1_big:"3.000+", jn1_bigl:"horas de CS2", jn1_yt:"Alguns vídeos meus no YouTube",
+  jn2_t:"Não tenho vergonha de aparecer.",
+  jn2_p1:"Eu crio conteúdo no meu perfil pessoal, de frente para a câmera. Uma das séries foi o “Do Zero ao Milhão”, em que eu mostrava o dia a dia construindo minha loja: criativos, copy, treino, estudo e devocional.",
+  jn2_p2:"Quem vende para gente precisa saber ser visto por gente. Gravar, errar em público e continuar é parte do treino.",
+  jn2_cap:"Dia 5 da série “Do Zero ao Milhão”, no meu perfil pessoal. Toque para ouvir.",
+  jn3_t:"Gosto de desafio. O de agora é o russo.",
+  jn3_p1:"Estou estudando russo: alfabeto novo, sons novos, tudo do zero. Escolhi justamente porque é difícil.",
+  jn3_p2:"É a mesma regra de sempre. Não existe atalho, existe repetição até soltar.",
+  jn3_ru:"privet · oi", jn3_rul:"Estudando russo agora",
+  jn4_t:"Leio para entender gente.", jn4_p:"Gosto de ler sobre neurociência, psicologia e filosofia. Quero entender como as pessoas pensam, sentem e decidem, porque todo negócio bom começa aí.",
+  jn4_c1:"Neurociência", jn4_c2:"Psicologia", jn4_c3:"Filosofia",
+  jn5_t:"Sou cristão.", jn5_p:"Minha fé aparece no jeito como eu ajo e trabalho. Nos meus vídeos, o devocional fazia parte do dia, junto com o trabalho.",
   rw_sr:"O que me move", rw_head:"No fundo, o que me interessa é gente.", rw_sub:"Toque em um rosto.",
   rw:[
     {t:"Liderança", x:"Quero entender o que faz um time seguir alguém e como isso se aprende."},
@@ -60,9 +77,9 @@ pt: {
     {t:"Funil & jornada", x:"Cada clique é uma etapa da jornada do cliente. Eu desenho o caminho todo."}
   ],
   sv_a:"Tudo o que eu", sv_b:"faço.", sv_lede:"Do primeiro anúncio ao site no ar, eu cuido do caminho inteiro do cliente.",
-  s1_n:"Tráfego", s1_l:"Pago e orgânico, do teste à escala.", s1_1:"Campanhas pagas", s1_2:"Orgânico", s1_3:"Conteúdo", s1_4:"Análise",
+  s1_n:"Tráfego", s1_l:"Pago e orgânico, do teste à escala.", s1_1:"Meta Ads", s1_2:"Orgânico", s1_3:"Criação de conteúdo", s1_4:"Análise",
   s2_n:"Copy & persuasão", s2_l:"Palavras que levam à decisão.", s2_1:"Copywriting", s2_2:"Páginas de venda", s2_3:"Anúncios", s2_4:"Psicologia aplicada",
-  s3_n:"Design & sites", s3_l:"Visual claro, site que converte.", s3_1:"WordPress", s3_2:"Landing pages", s3_3:"Criativos", s3_4:"Identidade",
+  s3_n:"Design & sites", s3_l:"Visual claro, site que converte.", s3_1:"Sites e apps", s3_2:"Landing pages", s3_3:"Criativos", s3_4:"Identidade",
   s4_n:"Funis & produto", s4_l:"Da ideia à operação rodando.", s4_1:"Infoprodutos", s4_2:"Estrutura de funil", s4_3:"Jornada do cliente", s4_4:"Operação",
   bf_t:"Vamos conversar", bf_l:"Conte o que você está construindo. Eu respondo.", bf_name:"Nome", bf_email:"E-mail", bf_need:"Do que você precisa?",
   pill_site:"Site", pill_traffic:"Tráfego", pill_copy:"Copy", pill_funnel:"Funil", pill_other:"Outro", bf_about:"Conte mais", bf_send:"Enviar",
@@ -70,11 +87,11 @@ pt: {
   rg_ask:"Tem uma ideia?", rg_say:"Vamos fazer sua ideia vender.", rg_book:"Aberto a conversas",
   fq_t:"Perguntas, respondidas.",
   q1:"Quem é você?", a1:"Guilherme, 19 anos. Comecei no marketing digital em 2022, com dropshipping, e depois fiz infoprodutos. Hoje estudo Administração no Insper.",
-  q2:"O que você já fez?", a2:"Montei lojas de dropshipping com tráfego orgânico e criei um infoproduto do zero, com operação própria e vendas por anúncios pagos. Também faço sites em WordPress.",
+  q2:"O que você já fez?", a2:"Montei lojas de dropshipping com tráfego orgânico e criei um infoproduto do zero, com operação própria e vendas por anúncios pagos. Também rodo campanhas no Meta Ads e crio conteúdo no meu perfil pessoal.",
   q3:"O que te interessa além de marketing?", a3:"Liderança, gestão de pessoas, linguagem corporal e psicologia nas vendas. Todo negócio depende de entender como as pessoas decidem.",
   q4:"Como começamos?", a4:"Preencha o formulário acima ou me escreva por e-mail. Eu respondo.",
   ft_say:"Marketing digital com<br>visão de gestão.", ft_top:"Voltar ao topo ↑", copied:"Copiado",
-  stk:{app_in:"IN.",app_swap:"InsperSwap",app_pz:"Presenza",traffic:"Tráfego pago",copy:"Copywriting",design:"Design",wp:"WordPress",funnel:"Funis",persuasion:"Persuasão",leader:"Liderança",body:"Linguagem corporal",psych:"Psicologia de vendas",insper:"Insper",y2022:"4 anos de experiência",organic:"Tráfego orgânico"},
+  stk:{app_in:"IN.",app_swap:"InsperSwap",app_pz:"Presenza",traffic:"Tráfego pago",copy:"Copywriting",design:"Design",meta:"Meta Ads",funnel:"Funis",persuasion:"Persuasão",leader:"Liderança",body:"Linguagem corporal",psych:"Psicologia de vendas",insper:"Insper",y2022:"4 anos de experiência",organic:"Tráfego orgânico"},
   tip_help:"Teclas e gestos",
   mq_t:"Plataformas por onde já passei",
   st_t:"Números de verdade.", st_l:"Prints e métricas das minhas próprias operações. Sem maquiagem.",
@@ -86,9 +103,9 @@ pt: {
   hp_rows:[["Arrastar","Olhar em volta (ou mover os adesivos)"],["3 cliques no monitor","Não faça isso."],["1 – 3","Trocar de canal"],["L","Idioma PT / EN"],["M","Reduzir movimento"],["?","Esta ajuda"],["Shift + rolar","Mover o mundo na horizontal"]],
   ab_k:"Sobre mim", ab_t:"Oi, eu sou o Guilherme.",
   ab_c1:"19 anos", ab_c2:"4 anos de experiência", ab_c3:"Administração",
-  ab_p1:"Tenho 19 anos e comecei no marketing digital em 2022. Primeiro com dropshipping, onde demorou 1 ano até a primeira venda, depois com infoprodutos. Aprendi fazendo: tráfego pago e orgânico, copy, design, persuasão, conteúdo e sites em WordPress.",
+  ab_p1:"Tenho 19 anos e comecei no marketing digital em 2022. Primeiro com dropshipping, onde demorou 1 ano até a primeira venda, depois com infoprodutos. Aprendi fazendo: tráfego pago e orgânico, copy, design, persuasão, conteúdo e Meta Ads.",
   ab_p2:"Em um desses projetos criei um produto do zero, montei a operação e vendi com anúncios pagos. Foi assim que passei a enxergar o funil inteiro e a jornada do cliente.",
-  ab_p3:"Hoje estudo Administração no Insper e ainda estou descobrindo para onde ir. O que mais me puxa é liderança, gestão de pessoas, linguagem corporal e psicologia nas vendas, porque todo negócio bom começa em entender gente.",
+  ab_p3:"Hoje estudo Administração no Insper e gosto de desafio: estou estudando russo, leio sobre neurociência, psicologia e filosofia e sigo uma regra simples, repetir até ficar bom. O que mais me puxa é liderança, gestão de pessoas, linguagem corporal e psicologia nas vendas, porque todo negócio bom começa em entender gente. Sou cristão, e isso aparece no jeito como eu ajo e trabalho.",
   ab_f1:"Administração, descobrindo o caminho", ab_f2:"Empresa júnior de consultoria",
   ij_k:"Experiência", ij_t:"Consultoria de verdade, na Insper Jr.",
   ij_l:"Na faculdade entrei na Insper Jr, a empresa júnior de consultoria do Insper. Lá vivi, na prática, os 4 escopos de um projeto de consultoria.",
@@ -141,10 +158,27 @@ en: {
   work_h:"Work",
   p1_t:"Dropshipping", p1_l:"It all started in 2022, with an online store. It took 1 year to get my first sale. Along the way, a TikTok video passed 2.3 million views.", p1_k:"E-commerce · Organic traffic",
   p2_t:"Info products", p2_l:"Then I built my own product, set up the whole operation and started selling with paid ads.", p2_k:"Digital product · Funnel · Paid traffic",
-  p3_t:"WordPress sites", p3_l:"And WordPress sites, designed to guide the customer from the first click to checkout.", p3_k:"Web · Design · Copy",
-  tabs_drop:["Viral video","TikTok","Shopify","Amazon","Sales"], tabs_info:["Sales","Funnel","Campaigns"], tabs_wp:["Pages","Design","Copy"],
+  p3_t:"Meta Ads", p3_l:"Campaigns on Facebook and Instagram: creative, audience and metrics working together to bring in the right customer.", p3_k:"Meta Ads · Creative · Audience",
+  tabs_drop:["Viral video","TikTok","Shopify","Amazon","Sales"], tabs_info:["Sales","Funnel","Campaigns"], tabs_meta:["Creatives","Audiences","Results"],
   sub_drop:["views. The school bottle video, the product I was selling.","new followers and 132K likes on the same video (TikTok Studio).","sessions in one week on the Shopify store · R$161.49 in sales, 3 orders.","conversion on affiliate links: 38 clicks, 6 orders, R$169.72.","a sale paid by credit card (Yampi) + a Reel with 5K likes."], big_drop:["2.3M","+3,375","944","15.79%","R$155.96"],
-  sub_info:["real Approved Sale and Pix Generated notifications from Kiwify.","From attention to purchase","Paid traffic at scale"], big_info:["Kiwify","",""], sub_wp:["Pages that convert","Design with intent","Copy that persuades"],
+  sub_info:["real Approved Sale and Pix Generated notifications from Kiwify.","From attention to purchase","Paid traffic at scale"], big_info:["Kiwify","",""], sub_meta:["Ads built to stop the scroll","Targeting to reach decision makers","Metrics tracked to optimize"],
+  nav_jn:"My story", jn_k:"Off the clock", jn_t:"Repeat until you're good.",
+  jn_l:"Almost everything I do well came from the same rule: do the same thing again and again while everyone else quits.",
+  jn1_t:"I almost went pro in CS2.",
+  jn1_p1:"I played over 3,000 hours of CS2. I watched myself improve up close, and I was good at it. That's where I learned talent isn't a gift: it comes from repeating the same thing many times while everyone else is giving up.",
+  jn1_p2:"That's why I believe that in anything I put enough energy and time into, I can get there. Same math in business: it took 1 year to my first sale and I kept going.",
+  jn1_big:"3,000+", jn1_bigl:"hours of CS2", jn1_yt:"Some of my videos on YouTube",
+  jn2_t:"I'm not ashamed to show up.",
+  jn2_p1:"I create content on my personal profile, in front of the camera. One of the series was “From Zero to a Million”, where I showed the day to day of building my store: creatives, copy, workouts, studying and devotional time.",
+  jn2_p2:"If you sell to people, you need to be comfortable being seen by people. Recording, getting it wrong in public and keeping going is part of the training.",
+  jn2_cap:"Day 5 of the “From Zero to a Million” series, on my personal profile. Tap to hear it.",
+  jn3_t:"I like a challenge. Right now it's Russian.",
+  jn3_p1:"I'm studying Russian: new alphabet, new sounds, everything from scratch. I picked it precisely because it's hard.",
+  jn3_p2:"Same rule as always. There's no shortcut, only repetition until it flows.",
+  jn3_ru:"privet · hi", jn3_rul:"Studying Russian right now",
+  jn4_t:"I read to understand people.", jn4_p:"I like reading about neuroscience, psychology and philosophy. I want to understand how people think, feel and decide, because every good business starts there.",
+  jn4_c1:"Neuroscience", jn4_c2:"Psychology", jn4_c3:"Philosophy",
+  jn5_t:"I'm a Christian.", jn5_p:"My faith shows in how I act and work. In my videos, devotional time was part of the day, right alongside the work.",
   rw_sr:"What drives me", rw_head:"At the end of the day, I care about people.", rw_sub:"Tap a face.",
   rw:[
     {t:"Leadership", x:"I want to understand what makes a team follow someone and how that is learned."},
@@ -155,9 +189,9 @@ en: {
     {t:"Funnel & journey", x:"Every click is a step in the customer journey. I design the whole path."}
   ],
   sv_a:"Everything I", sv_b:"do.", sv_lede:"From the first ad to the live site, I take care of the customer's whole path.",
-  s1_n:"Traffic", s1_l:"Paid and organic, from test to scale.", s1_1:"Paid campaigns", s1_2:"Organic", s1_3:"Content", s1_4:"Analysis",
+  s1_n:"Traffic", s1_l:"Paid and organic, from test to scale.", s1_1:"Meta Ads", s1_2:"Organic", s1_3:"Content creation", s1_4:"Analysis",
   s2_n:"Copy & persuasion", s2_l:"Words that lead to a decision.", s2_1:"Copywriting", s2_2:"Sales pages", s2_3:"Ads", s2_4:"Applied psychology",
-  s3_n:"Design & sites", s3_l:"Clear visuals, a site that converts.", s3_1:"WordPress", s3_2:"Landing pages", s3_3:"Creatives", s3_4:"Identity",
+  s3_n:"Design & sites", s3_l:"Clear visuals, a site that converts.", s3_1:"Sites and apps", s3_2:"Landing pages", s3_3:"Creatives", s3_4:"Identity",
   s4_n:"Funnels & product", s4_l:"From idea to a running operation.", s4_1:"Info products", s4_2:"Funnel structure", s4_3:"Customer journey", s4_4:"Operations",
   bf_t:"Let's talk", bf_l:"Tell me what you're building. I'll write back.", bf_name:"Name", bf_email:"Email", bf_need:"What do you need?",
   pill_site:"Website", pill_traffic:"Traffic", pill_copy:"Copy", pill_funnel:"Funnel", pill_other:"Other", bf_about:"Tell me more", bf_send:"Send",
@@ -165,11 +199,11 @@ en: {
   rg_ask:"Got an idea?", rg_say:"Let's make your idea sell.", rg_book:"Open to conversations",
   fq_t:"Questions, answered.",
   q1:"Who are you?", a1:"Guilherme, 19. I started in digital marketing in 2022 with dropshipping, then moved on to info products. Today I study Business Administration at Insper.",
-  q2:"What have you done?", a2:"I ran dropshipping stores on organic traffic and built an info product from scratch, with my own operation and sales through paid ads. I also build WordPress sites.",
+  q2:"What have you done?", a2:"I ran dropshipping stores on organic traffic and built an info product from scratch, with my own operation and sales through paid ads. I also run Meta Ads campaigns and create content on my personal profile.",
   q3:"What else are you into?", a3:"Leadership, people management, body language and sales psychology. Every business depends on understanding how people decide.",
   q4:"How do we start?", a4:"Fill in the form above or email me. I'll write back.",
   ft_say:"Digital marketing with<br>a management mindset.", ft_top:"Back to top ↑", copied:"Copied",
-  stk:{app_in:"IN.",app_swap:"InsperSwap",app_pz:"Presenza",traffic:"Paid traffic",copy:"Copywriting",design:"Design",wp:"WordPress",funnel:"Funnels",persuasion:"Persuasion",leader:"Leadership",body:"Body language",psych:"Sales psychology",insper:"Insper",y2022:"4 years of experience",organic:"Organic traffic"},
+  stk:{app_in:"IN.",app_swap:"InsperSwap",app_pz:"Presenza",traffic:"Paid traffic",copy:"Copywriting",design:"Design",meta:"Meta Ads",funnel:"Funnels",persuasion:"Persuasion",leader:"Leadership",body:"Body language",psych:"Sales psychology",insper:"Insper",y2022:"4 years of experience",organic:"Organic traffic"},
   tip_help:"Keys & gestures",
   mq_t:"Platforms I've worked on",
   st_t:"Real numbers.", st_l:"Screenshots and metrics from my own operations. No makeup.",
@@ -181,9 +215,9 @@ en: {
   hp_rows:[["Drag","Look around (or move the stickers)"],["3 clicks on the TV","Please don't."],["1 – 3","Switch channel"],["L","Language PT / EN"],["M","Reduce motion"],["?","This help"],["Shift + scroll","Pan the world sideways"]],
   ab_k:"About me", ab_t:"Hi, I'm Guilherme.",
   ab_c1:"19 y/o", ab_c2:"4 years of experience", ab_c3:"Business Admin",
-  ab_p1:"I'm 19 and started in digital marketing in 2022. First with dropshipping, where it took 1 year to get my first sale, then info products. I learned by doing: paid and organic traffic, copy, design, persuasion, content and WordPress sites.",
+  ab_p1:"I'm 19 and started in digital marketing in 2022. First with dropshipping, where it took 1 year to get my first sale, then info products. I learned by doing: paid and organic traffic, copy, design, persuasion, content and Meta Ads.",
   ab_p2:"In one of those projects I built a product from scratch, set up the operation and sold it with paid ads. That's how I started seeing the whole funnel and the customer journey.",
-  ab_p3:"Today I study Business Administration at Insper and I'm still figuring out where to go. What pulls me most is leadership, people management, body language and sales psychology, because every good business starts with understanding people.",
+  ab_p3:"Today I study Business Administration at Insper and I like a challenge: I'm studying Russian, I read about neuroscience, psychology and philosophy, and I follow a simple rule, repeat until I'm good. What pulls me most is leadership, people management, body language and sales psychology, because every good business starts with understanding people. I'm a Christian, and that shows in how I act and work.",
   ab_f1:"Business Administration, finding my way", ab_f2:"Junior consulting company",
   ij_k:"Experience", ij_t:"Real consulting, at Insper Jr.",
   ij_l:"In college I joined Insper Jr, Insper's junior consulting company. There I lived, hands-on, the 4 scopes of a consulting project.",
@@ -295,7 +329,7 @@ if (knob) { knob.style.pointerEvents = "auto"; knob.style.cursor = "pointer"; kn
 /* stickers (arrastáveis, com inércia) */
 const STK = [
   { k:"traffic", fx:.2, fy:.27, r:-5, c:"" },     { k:"copy", fx:.8, fy:.26, r:4, c:"alt" },
-  { k:"design", fx:.84, fy:.6, r:-3, c:"ink" },   { k:"wp", fx:.16, fy:.58, r:3, c:"alt" },
+  { k:"design", fx:.84, fy:.6, r:-3, c:"ink" },   { k:"meta", fx:.16, fy:.58, r:3, c:"alt" },
   { k:"funnel", fx:.27, fy:.82, r:-3, c:"" },     { k:"persuasion", fx:.73, fy:.82, r:3, c:"ink" },
   { k:"insper", fx:.35, fy:.13, r:-3, c:"" },     { k:"y2022", fx:.65, fy:.13, r:3, c:"alt" },
 ];
@@ -303,7 +337,7 @@ const ICO = {
   traffic:'<path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/>',
   copy:'<path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/>',
   design:'<path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.6 7.6"/><circle cx="11" cy="11" r="2"/>',
-  wp:'<rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8M12 17v4"/>',
+  meta:'<path d="M2 12c0-3 2-6 4.5-6C9 6 11 12 12 12s3-6 5.5-6C20 6 22 9 22 12s-2 6-4.5 6C15 18 13 12 12 12s-3 6-5.5 6C4 18 2 15 2 12z"/>',
   funnel:'<path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/>',
   persuasion:'<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',
   body:'<circle cx="12" cy="4" r="2"/><path d="m5 8 7 1 7-1M12 9v5m0 0-3 7m3-7 3 7"/>',
@@ -347,7 +381,7 @@ function bindSticker(o) {
 }
 /* no celular, empurra os stickers para fora da faixa onde fica a TV */
 function stkY(fy) { return vw < 700 && fy > .18 && fy < .82 ? (fy < .5 ? fy * .45 : 1 - (1 - fy) * .45) : fy; }
-const MOB = { traffic:[.28,.15], copy:[.72,.23], design:[.72,.73], wp:[.28,.81] };
+const MOB = { traffic:[.28,.15], copy:[.72,.23], design:[.72,.73], meta:[.28,.81] };
 function layoutStickers() { stickers.forEach(o => { const m = vw < 700; const mp = MOB[o.k]; o.el.style.display = m && !mp ? "none" : ""; o.x = (m && mp ? mp[0] : o.fx) * vw; o.y = (m && mp ? mp[1] : stkY(o.fy)) * vh; o.vx = o.vy = 0; paintSticker(o); }); }
 
 /* pan (arrastar para olhar em volta) */
@@ -608,10 +642,10 @@ const PJ = {
     { g:"linear-gradient(135deg,#00b894,#0a84ff)", mock:"funnel" },
     { g:"linear-gradient(135deg,#ff9500,#ff3b30)", mock:"bars" }
   ] },
-  wp: { items: [
-    { g:"linear-gradient(135deg,#1f2a44,#4a6fa5)", mock:"cards" },
-    { g:"linear-gradient(135deg,#f9d423,#ff4e50)", mock:"lines" },
-    { g:"linear-gradient(135deg,#5856d6,#af52de)", mock:"lines" }
+  meta: { items: [
+    { g:"linear-gradient(135deg,#0866ff,#4cc9f0)", mock:"cards" },
+    { g:"linear-gradient(135deg,#7b2ff7,#f107a3)", mock:"funnel" },
+    { g:"linear-gradient(135deg,#ff9500,#ff3b30)", mock:"bars" }
   ] }
 };
 const pjState = {};
@@ -829,6 +863,13 @@ $$(".pj-window").forEach(el => {
 /* marquee: duplica a lista para loop contínuo */
 { const ml = $("#mq-list"); if (ml) { const c = ml.cloneNode(true); c.removeAttribute("id"); c.setAttribute("aria-hidden", "true"); ml.parentNode.appendChild(c); } }
 
+
+/* vídeo do "Do Zero ao Milhão": só carrega/toca quando está na tela */
+const zv = $("#zvid");
+if (zv) {
+  const zsync = on => { if (on) { if (!zv.getAttribute("src")) zv.src = zv.dataset.src; if (!root.dataset.still && !document.hidden) zv.play().catch(() => {}); } else zv.pause(); };
+  new IntersectionObserver(([en]) => zsync(en.isIntersecting), { threshold: .5 }).observe(zv);
+}
 /* chips de skills + reveals genéricos (.rv) */
 /* ---------- autoconhecimento ---------- */
 function buildMe() {
