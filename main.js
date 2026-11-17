@@ -36,11 +36,11 @@ const T = {
 pt: {
   skip:"Pular para o conteúdo", nav_work:"Trabalhos", nav_about:"Sobre", nav_services:"O que faço", nav_contact:"Contato", nav_faq:"FAQ",
   tip_still:"Reduzir movimento",
-  h1:"Guilherme Balestrin, 19 anos. Marketing digital desde 2022 e aluno de Administração no Insper.",
-  ch1_k:"Olá, eu sou", ch1_v:"Marketing digital desde 2022",
+  h1:"Guilherme Balestrin, 19 anos. 4 anos de experiência em marketing digital e aluno de Administração no Insper.",
+  ch1_k:"Olá, eu sou", ch1_v:"4 anos de experiência em marketing digital",
   ch2_k:"Faculdade", ch2_b:"Administração<br>no Insper", ch2_v:"Marketing com visão de gestão",
   ch3_k:"O que eu faço", ch3_b:"Tráfego, copy<br>e sites", ch3_v:"Do anúncio à página de venda",
-  hint_drag:"Arraste para olhar em volta", hint_scroll:"Role para mudar de canal", rail:["Olá","Faculdade","Serviços"],
+  hint_drag:"Arraste para olhar em volta", cta1:"Ver trabalhos", cta2:"Falar comigo", hint_scroll:"Role para mudar de canal", rail:["Olá","Faculdade","Serviços"],
   hit_msg:"Por favor, não bata nele.",
   story_sr:"eu crio funis, sites e campanhas que vendem",
   work_h:"Trabalhos",
@@ -74,7 +74,7 @@ pt: {
   q3:"O que te interessa além de marketing?", a3:"Liderança, gestão de pessoas, linguagem corporal e psicologia nas vendas. Todo negócio depende de entender como as pessoas decidem.",
   q4:"Como começamos?", a4:"Preencha o formulário acima ou me escreva por e-mail. Eu respondo.",
   ft_say:"Marketing digital com<br>visão de gestão.", ft_loc:"Administração", ft_top:"Voltar ao topo ↑", copied:"Copiado",
-  stk:{app_in:"IN.",app_swap:"InsperSwap",app_pz:"Presenza",traffic:"Tráfego pago",copy:"Copywriting",design:"Design",wp:"WordPress",funnel:"Funis",persuasion:"Persuasão",leader:"Liderança",body:"Linguagem corporal",psych:"Psicologia de vendas",insper:"Insper",y2022:"Desde 2022",organic:"Tráfego orgânico"},
+  stk:{app_in:"IN.",app_swap:"InsperSwap",app_pz:"Presenza",traffic:"Tráfego pago",copy:"Copywriting",design:"Design",wp:"WordPress",funnel:"Funis",persuasion:"Persuasão",leader:"Liderança",body:"Linguagem corporal",psych:"Psicologia de vendas",insper:"Insper",y2022:"4 anos de experiência",organic:"Tráfego orgânico"},
   tip_help:"Teclas e gestos",
   mq_t:"Plataformas por onde já passei",
   st_t:"Números de verdade.", st_l:"Prints e métricas das minhas próprias operações. Sem maquiagem.",
@@ -85,7 +85,7 @@ pt: {
   hp_t:"Teclas e gestos", hp_keys:"Atalhos de uma tecla", hp_close:"Fechar",
   hp_rows:[["Arrastar","Olhar em volta (ou mover os adesivos)"],["3 cliques no monitor","Não faça isso."],["1 – 3","Trocar de canal"],["L","Idioma PT / EN"],["M","Reduzir movimento"],["?","Esta ajuda"],["Shift + rolar","Mover o mundo na horizontal"]],
   ab_k:"Sobre mim", ab_t:"Oi, eu sou o Guilherme.",
-  ab_c1:"19 anos", ab_c2:"Marketing digital desde 2022", ab_c3:"Administração",
+  ab_c1:"19 anos", ab_c2:"4 anos de experiência", ab_c3:"Administração",
   ab_p1:"Tenho 19 anos e comecei no marketing digital em 2022. Primeiro com dropshipping, depois com infoprodutos. Aprendi fazendo: tráfego pago e orgânico, copy, design, persuasão, conteúdo e sites em WordPress.",
   ab_p2:"Em um desses projetos criei um produto do zero, montei a operação e vendi com anúncios pagos. Foi assim que passei a enxergar o funil inteiro e a jornada do cliente.",
   ab_p3:"Hoje estudo Administração no Insper e ainda estou descobrindo para onde ir. O que mais me puxa é liderança, gestão de pessoas, linguagem corporal e psicologia nas vendas, porque todo negócio bom começa em entender gente.",
@@ -127,17 +127,17 @@ pt: {
   me_pa_t:"Caminhos que pesei", me_pa_s:"Ranking de uma balança que cruza critérios e profissões",
   me_pa:[[1,"Administração"],[2,"Estrategista digital"],[2,"Gestão de marketing e vendas"],[3,"Vendedor"],[4,"Produtor de conteúdo"],[5,"Analista de investimentos"],[6,"Comércio exterior"]],
   title:"Guilherme Balestrin | Marketing digital e Administração",
-  desc:"Guilherme Balestrin, 19. Marketing digital desde 2022: tráfego, copy, design e sites. Administração no Insper.",
+  desc:"Guilherme Balestrin, 19. 4 anos de experiência em marketing digital: tráfego, copy, design e sites. Administração no Insper.",
   story:["eu","crio","funis","sites","e","campanhas","que","VENDEM"]
 },
 en: {
   skip:"Skip to content", nav_work:"Work", nav_about:"About", nav_services:"Services", nav_contact:"Contact", nav_faq:"FAQ",
   tip_still:"Reduce motion",
-  h1:"Guilherme Balestrin, 19. Digital marketing since 2022, studying Business Administration at Insper.",
-  ch1_k:"Hi, I'm", ch1_v:"Digital marketing since 2022",
+  h1:"Guilherme Balestrin, 19. 4 years of digital marketing experience, studying Business Administration at Insper.",
+  ch1_k:"Hi, I'm", ch1_v:"4 years of digital marketing experience",
   ch2_k:"College", ch2_b:"Business Admin<br>at Insper", ch2_v:"Marketing with a management view",
   ch3_k:"What I do", ch3_b:"Traffic, copy<br>and websites", ch3_v:"From the ad to the sales page",
-  hint_drag:"Drag to look around", hint_scroll:"Scroll to change channel", rail:["Hello","College","Skills"],
+  hint_drag:"Drag to look around", cta1:"See my work", cta2:"Talk to me", hint_scroll:"Scroll to change channel", rail:["Hello","College","Skills"],
   hit_msg:"Please do not hit it.",
   story_sr:"I create funnels, websites and campaigns that sell",
   work_h:"Work",
@@ -171,7 +171,7 @@ en: {
   q3:"What else are you into?", a3:"Leadership, people management, body language and sales psychology. Every business depends on understanding how people decide.",
   q4:"How do we start?", a4:"Fill in the form above or email me. I'll write back.",
   ft_say:"Digital marketing with<br>a management mindset.", ft_loc:"Business Administration", ft_top:"Back to top ↑", copied:"Copied",
-  stk:{app_in:"IN.",app_swap:"InsperSwap",app_pz:"Presenza",traffic:"Paid traffic",copy:"Copywriting",design:"Design",wp:"WordPress",funnel:"Funnels",persuasion:"Persuasion",leader:"Leadership",body:"Body language",psych:"Sales psychology",insper:"Insper",y2022:"Since 2022",organic:"Organic traffic"},
+  stk:{app_in:"IN.",app_swap:"InsperSwap",app_pz:"Presenza",traffic:"Paid traffic",copy:"Copywriting",design:"Design",wp:"WordPress",funnel:"Funnels",persuasion:"Persuasion",leader:"Leadership",body:"Body language",psych:"Sales psychology",insper:"Insper",y2022:"4 years of experience",organic:"Organic traffic"},
   tip_help:"Keys & gestures",
   mq_t:"Platforms I've worked on",
   st_t:"Real numbers.", st_l:"Screenshots and metrics from my own operations. No makeup.",
@@ -182,7 +182,7 @@ en: {
   hp_t:"Keys & gestures", hp_keys:"Single-key shortcuts", hp_close:"Close",
   hp_rows:[["Drag","Look around (or move the stickers)"],["3 clicks on the TV","Please don't."],["1 – 3","Switch channel"],["L","Language PT / EN"],["M","Reduce motion"],["?","This help"],["Shift + scroll","Pan the world sideways"]],
   ab_k:"About me", ab_t:"Hi, I'm Guilherme.",
-  ab_c1:"19 y/o", ab_c2:"Digital marketing since 2022", ab_c3:"Business Admin",
+  ab_c1:"19 y/o", ab_c2:"4 years of experience", ab_c3:"Business Admin",
   ab_p1:"I'm 19 and started in digital marketing in 2022. First with dropshipping, then info products. I learned by doing: paid and organic traffic, copy, design, persuasion, content and WordPress sites.",
   ab_p2:"In one of those projects I built a product from scratch, set up the operation and sold it with paid ads. That's how I started seeing the whole funnel and the customer journey.",
   ab_p3:"Today I study Business Administration at Insper and I'm still figuring out where to go. What pulls me most is leadership, people management, body language and sales psychology, because every good business starts with understanding people.",
@@ -224,7 +224,7 @@ en: {
   me_pa_t:"Paths I weighed", me_pa_s:"Ranking from a scale that crosses criteria and professions",
   me_pa:[[1,"Business administration"],[2,"Digital strategist"],[2,"Marketing & sales management"],[3,"Salesperson"],[4,"Content producer"],[5,"Investment analyst"],[6,"Foreign trade"]],
   title:"Guilherme Balestrin | Digital marketing and Business Administration",
-  desc:"Guilherme Balestrin, 19. Digital marketing since 2022: traffic, copy, design and websites. Business Administration at Insper.",
+  desc:"Guilherme Balestrin, 19. 4 years of digital marketing experience: traffic, copy, design and websites. Business Administration at Insper.",
   story:["I","create","funnels","websites","and","campaigns","that","SELL"]
 }};
 
@@ -300,7 +300,7 @@ if (knob) { knob.style.pointerEvents = "auto"; knob.style.cursor = "pointer"; kn
 const STK = [
   { k:"traffic", fx:.2, fy:.27, r:-5, c:"" },     { k:"copy", fx:.8, fy:.26, r:4, c:"alt" },
   { k:"design", fx:.84, fy:.6, r:-3, c:"ink" },   { k:"wp", fx:.16, fy:.58, r:3, c:"alt" },
-  { k:"funnel", fx:.27, fy:.82, r:-3, c:"" },     { k:"persuasion", fx:.73, fy:.82, r:3, c:"ink" },
+  { k:"kf", img:"assets/kf-me.webp", cap:"Kiwify 2023", c:"photo me", fx:.25, fy:.8, r:-5 },     { k:"tt", img:"assets/tiktok.webp", cap:"TikTok", c:"photo me tall", fx:.76, fy:.78, r:4 },
   { k:"insper", fx:.35, fy:.13, r:-3, c:"" },     { k:"y2022", fx:.65, fy:.13, r:3, c:"alt" },
 ];
 const ICO = {
@@ -362,7 +362,7 @@ function paintWorld() {
 function hideHint() { if (!draghint.classList.contains("gone")) { draghint.classList.add("gone"); store.set("gb-hint", "1"); } }
 if (store.get("gb-hint")) draghint.classList.add("gone");
 hero.addEventListener("pointerdown", e => {
-  if (e.target.closest(".dock") || e.target.closest(".sticker") || e.target.closest(".rail")) return;
+  if (e.target.closest(".dock") || e.target.closest(".sticker") || e.target.closest(".rail") || e.target.closest(".hero-cta")) return;
   pan.downOnTv = !!e.target.closest("#tv");
   pan.drag = true; pan.lx = e.clientX; pan.ly = e.clientY; pan.moved = 0; pan.vx = pan.vy = 0;
   hero.classList.add("dragging"); hero.setPointerCapture(e.pointerId);
