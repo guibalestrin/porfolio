@@ -36,9 +36,9 @@ const T = {
 pt: {
   skip:"Pular para o conteúdo", nav_work:"Trabalhos", nav_about:"Sobre", nav_services:"O que faço", nav_contact:"Contato", nav_faq:"FAQ",
   tip_still:"Reduzir movimento",
-  h1:"Guilherme Balestrin, 19 anos. 4 anos de experiência em marketing digital e aluno de Administração no Insper.",
+  h1:"Guilherme Balestrin, 19 anos. 4 anos de experiência em marketing digital e aluno de Administração de Empresas no Insper.",
   ch1_k:"Olá, eu sou", ch1_v:"4 anos de experiência em marketing digital",
-  ch2_k:"Faculdade", ch2_b:"Administração<br>no Insper", ch2_v:"Marketing com visão de gestão",
+  ch2_k:"Faculdade", ch2_b:"Administração<br>de Empresas", ch2_v:"Graduação em São Paulo",
   ch3_k:"O que eu faço", ch3_b:"Tráfego, copy<br>e sites", ch3_v:"Do anúncio à página de venda",
   hint_drag:"Arraste para olhar em volta", stp1:"TikTok Studio", stp2:"Amazon Associados", cta1:"Ver trabalhos", cta2:"Falar comigo", hint_scroll:"Role para mudar de canal", rail:["Olá","Faculdade","Serviços"],
   hit_msg:"Por favor, não bata nele.",
@@ -57,7 +57,7 @@ pt: {
   jn1_p2:"Por isso eu acredito que, em tudo o que eu me dedicar com energia e tempo suficientes, eu sou capaz de chegar lá. Foi a mesma conta nos negócios: demorou 1 ano até a primeira venda e eu continuei.",
   jn1_big:"3.000+", jn1_bigl:"horas de CS2", jn1_yt:"Alguns vídeos meus no YouTube",
   jn2_t:"Não tenho vergonha de aparecer.",
-  jn2_p1:"Eu crio conteúdo no meu perfil pessoal, de frente para a câmera. Uma das séries foi o “Do Zero ao Milhão”, em que eu mostrava o dia a dia construindo minha loja: criativos, copy, treino, estudo e devocional.",
+  jn2_p1:"Eu criei conteúdo no meu perfil pessoal, de frente para a câmera. Uma das séries foi o “Do Zero ao Milhão”, em que eu mostrava o dia a dia construindo minha loja: criativos, copy, treino, estudo e devocional.",
   jn2_p2:"Quem vende para gente precisa saber ser visto por gente. Gravar, errar em público e continuar é parte do treino.",
   jn2_cap:"Dia 5 da série “Do Zero ao Milhão”, no meu perfil pessoal. Toque para ouvir.",
   jn3_t:"Gosto de desafio. O de agora é o russo.",
@@ -80,6 +80,8 @@ pt: {
   xp3_tag:"Experiência pontual", xp3_t:"Afiliado digital", xp3_d:"Plataformas de infoprodutos.",
   xp3_b1:"Atuei como afiliado para validar estratégias de tráfego e depois migrei para construir uma marca própria.",
   xp_tools:"Ferramentas", xp_lang:"Idiomas", xp_l1:"Português · nativo", xp_l2:"Inglês · fluente", xp_l3:"Russo · básico",
+  jn1_evo:"evolução, hora após hora", jn5_cap:"Meu devocional, num dos vídeos.",
+  xp_s1:"vendas", xp_s2:"views em um vídeo", xp_s3:"produto validado",
   rw_sr:"O que me move", rw_head:"No fundo, o que me interessa é gente.", rw_sub:"Toque em um rosto.",
   rw:[
     {t:"Liderança", x:"Quero entender o que faz um time seguir alguém e como isso se aprende."},
@@ -94,16 +96,16 @@ pt: {
   s2_n:"Copy & persuasão", s2_l:"Palavras que levam à decisão.", s2_1:"Copywriting", s2_2:"Páginas de venda", s2_3:"Anúncios", s2_4:"Psicologia aplicada",
   s3_n:"Design & sites", s3_l:"Visual claro, site que converte.", s3_1:"Sites e apps", s3_2:"Landing pages", s3_3:"Criativos (estáticos e vídeo)", s3_4:"Identidade",
   s4_n:"Funis & produto", s4_l:"Da ideia à operação rodando.", s4_1:"Infoprodutos", s4_2:"Funis e jornada do cliente", s4_3:"Automação com Typebot", s4_4:"Parcerias com influenciadores",
-  bf_t:"Vamos conversar", bf_l:"Conte o que você está construindo. Eu respondo.", bf_name:"Nome", bf_email:"E-mail", bf_need:"Do que você precisa?",
+  bf_t:"Vamos conversar", bf_l:"Tem uma oportunidade ligada a marketing digital, tráfego ou conteúdo? Conte aqui. Eu respondo.", bf_name:"Nome", bf_email:"E-mail", bf_need:"Do que você precisa?",
   pill_site:"Site", pill_traffic:"Tráfego", pill_copy:"Copy", pill_funnel:"Funil", pill_other:"Outro", bf_about:"Conte mais", bf_send:"Enviar",
   bf_err:"Preencha nome e um e-mail válido.", bf_ok:"Abrindo seu app de e-mail…", bf_subject:"Contato pelo portfólio", bf_body_need:"Preciso de",
-  rg_ask:"Tem uma ideia?", rg_say:"Vamos fazer sua ideia vender.", rg_book:"Aberto a conversas · remoto ou híbrido, São Paulo",
+  rg_ask:"Minha proposta", rg_say:"Aberto a oportunidades alinhadas ao que eu gosto e já fiz.", rg_book:"Remoto ou híbrido · São Paulo",
   fq_t:"Perguntas, respondidas.",
-  q1:"Quem é você?", a1:"Guilherme, 19 anos. Comecei no marketing digital em 2022, com dropshipping, e depois fiz infoprodutos. Hoje estudo Administração no Insper.",
-  q2:"O que você já fez?", a2:"Montei e operei uma loja de dropshipping do zero, com campanhas no Meta Ads e TikTok Ads, criativos e parcerias com micro influenciadores, e passei de 20 vendas. Depois estruturei o infoproduto Caverna de Alexandria, com funis, copy e automações no Typebot. Também crio conteúdo no meu perfil pessoal.",
+  q1:"Quem é você?", a1:"Guilherme, 19 anos. Comecei no marketing digital em 2022, com dropshipping, e depois fiz infoprodutos. Hoje estudo Administração de Empresas no Insper.",
+  q2:"O que você já fez?", a2:"Montei e operei uma loja de dropshipping do zero, com campanhas no Meta Ads e TikTok Ads, criativos e parcerias com micro influenciadores, e passei de 20 vendas. Depois estruturei o infoproduto Caverna de Alexandria, com funis, copy e automações no Typebot. Também já criei conteúdo no meu perfil pessoal.",
   q3:"O que te interessa além de marketing?", a3:"Liderança, gestão de pessoas, linguagem corporal e psicologia nas vendas. Todo negócio depende de entender como as pessoas decidem.",
   q4:"Como começamos?", a4:"Preencha o formulário acima ou me escreva por e-mail. Eu respondo.",
-  ft_say:"Marketing digital com<br>visão de gestão.", ft_top:"Voltar ao topo ↑", copied:"Copiado",
+  ft_say:"Marketing digital e<br>Administração de Empresas.", ft_top:"Voltar ao topo ↑", copied:"Copiado",
   stk:{app_in:"IN.",app_swap:"InsperSwap",app_pz:"Presenza",traffic:"Tráfego pago",copy:"Copywriting",design:"Design",meta:"Meta Ads",funnel:"Funis",persuasion:"Persuasão",leader:"Liderança",body:"Linguagem corporal",psych:"Psicologia de vendas",insper:"Insper",y2022:"4 anos de experiência",organic:"Tráfego orgânico"},
   tip_help:"Teclas e gestos",
   mq_t:"Plataformas por onde já passei",
@@ -115,11 +117,11 @@ pt: {
   hp_t:"Teclas e gestos", hp_keys:"Atalhos de uma tecla", hp_close:"Fechar",
   hp_rows:[["Arrastar","Olhar em volta (ou mover os adesivos)"],["3 cliques no monitor","Não faça isso."],["1 – 3","Trocar de canal"],["L","Idioma PT / EN"],["M","Reduzir movimento"],["?","Esta ajuda"],["Shift + rolar","Mover o mundo na horizontal"]],
   ab_k:"Sobre mim", ab_t:"Oi, eu sou o Guilherme.",
-  ab_c1:"19 anos", ab_c2:"4 anos de experiência", ab_c3:"Administração",
+  ab_c1:"19 anos", ab_c2:"4 anos de experiência", ab_c3:"Administração de Empresas",
   ab_p1:"Tenho 19 anos e comecei no marketing digital em 2022. Primeiro com dropshipping, onde demorou 1 ano até a primeira venda, depois com infoprodutos. Aprendi fazendo: tráfego pago e orgânico, copy, design, persuasão, conteúdo e Meta Ads.",
   ab_p2:"Em um desses projetos criei um produto do zero, montei a operação e vendi com anúncios pagos. Foi assim que passei a enxergar o funil inteiro e a jornada do cliente.",
-  ab_p3:"Hoje estudo Administração no Insper e gosto de desafio: estou estudando russo, leio sobre neurociência, psicologia e filosofia e sigo uma regra simples, repetir até ficar bom. O que mais me puxa é liderança, gestão de pessoas, linguagem corporal e psicologia nas vendas, porque todo negócio bom começa em entender gente. Sou cristão, e isso aparece no jeito como eu ajo e trabalho.",
-  ab_f1:"Administração, descobrindo o caminho", ab_f2:"Empresa júnior de consultoria",
+  ab_p3:"Hoje estudo Administração de Empresas no Insper e gosto de desafio: estou estudando russo, leio sobre neurociência, psicologia e filosofia e sigo uma regra simples, repetir até ficar bom. O que mais me puxa é liderança, gestão de pessoas, linguagem corporal e psicologia nas vendas, porque todo negócio bom começa em entender gente. Sou cristão, e isso aparece no jeito como eu ajo e trabalho.",
+  ab_f1:"Administração de Empresas", ab_f2:"Empresa júnior de consultoria",
   ij_k:"Experiência", ij_t:"Consultoria de verdade, na Insper Jr.",
   ij_l:"Na faculdade entrei na Insper Jr, a empresa júnior de consultoria do Insper. Lá vivi, na prática, os 4 escopos de um projeto de consultoria.",
   ij1_t:"Mercadológico", ij1_d:"Entender mercado, concorrência e público antes de qualquer decisão.",
@@ -146,16 +148,8 @@ pt: {
   pz_f1:"Guarda-roupa digital", pz_f2:"6 ocasiões", pz_f3:"6 estilos", pz_f4:"Nível de presença e impacto", pz_f5:"Modo Análise e Construir", pz_f6:"Como você será percebido",
   pz_n:"Também criei a identidade visual (Ônix, Ouro Antigo e Marfim) e o manual do código. O motor de recomendação por regras é isolado e pronto para plugar IA.",
   pz_cta:"Quer ver? Me chama", pz_chip_k:"PRESENÇA", pz_chip_v:"Médio",
-  nav_me:"Autoconhecimento",
-  me_k:"Autoconhecimento", me_t:"Eu me conheço, e levo isso a sério.",
-  me_l:"Fiz um processo de orientação profissional e mapeei minhas forças, pontos de atenção, valores e critérios de carreira. Está tudo aqui, sem filtro: é assim que eu decido e para onde quero ir.",
-  me_str_t:"Forças",
-  me_str:["Ambicioso","Autêntico","Corajoso","Tolerante a risco","Empático","Autodidata","Mentalidade de crescimento","Observador de comportamento","Pensador estratégico","Conector de pessoas","Curioso intelectualmente","Proativo","Versátil","Adaptável socialmente","Humilde","Inteligência emocional","Movido por propósito","Autocorreção de rota"],
-  me_wk_t:"Pontos de atenção",
-  me_wk:["Foco disperso","Dificuldade de me comprometer com um só caminho","Execução inconsistente","Interesses voláteis","Autocobrança alta","Tendência a idealizar"],
-  me_wk_n:"Sei onde eu travo. Meu antídoto: critérios escritos, metas com prazo e projetos que eu realmente coloco no ar.",
   title:"Guilherme Balestrin | Marketing digital e Administração",
-  desc:"Guilherme Balestrin, 19. 4 anos de experiência em marketing digital: tráfego, copy, design e sites. Administração no Insper.",
+  desc:"Guilherme Balestrin, 19. 4 anos de experiência em marketing digital: tráfego, copy, design e sites. Administração de Empresas no Insper.",
   story:["eu","crio","funis","sites","e","campanhas","que","VENDEM"]
 },
 en: {
@@ -163,7 +157,7 @@ en: {
   tip_still:"Reduce motion",
   h1:"Guilherme Balestrin, 19. 4 years of digital marketing experience, studying Business Administration at Insper.",
   ch1_k:"Hi, I'm", ch1_v:"4 years of digital marketing experience",
-  ch2_k:"College", ch2_b:"Business Admin<br>at Insper", ch2_v:"Marketing with a management view",
+  ch2_k:"College", ch2_b:"Business<br>Administration", ch2_v:"Undergraduate, São Paulo",
   ch3_k:"What I do", ch3_b:"Traffic, copy<br>and websites", ch3_v:"From the ad to the sales page",
   hint_drag:"Drag to look around", stp1:"TikTok Studio", stp2:"Amazon Associates", cta1:"See my work", cta2:"Talk to me", hint_scroll:"Scroll to change channel", rail:["Hello","College","Skills"],
   hit_msg:"Please do not hit it.",
@@ -182,7 +176,7 @@ en: {
   jn1_p2:"That's why I believe that in anything I put enough energy and time into, I can get there. Same math in business: it took 1 year to my first sale and I kept going.",
   jn1_big:"3,000+", jn1_bigl:"hours of CS2", jn1_yt:"Some of my videos on YouTube",
   jn2_t:"I'm not ashamed to show up.",
-  jn2_p1:"I create content on my personal profile, in front of the camera. One of the series was “From Zero to a Million”, where I showed the day to day of building my store: creatives, copy, workouts, studying and devotional time.",
+  jn2_p1:"I made content on my personal profile, in front of the camera. One of the series was “From Zero to a Million”, where I showed the day to day of building my store: creatives, copy, workouts, studying and devotional time.",
   jn2_p2:"If you sell to people, you need to be comfortable being seen by people. Recording, getting it wrong in public and keeping going is part of the training.",
   jn2_cap:"Day 5 of the “From Zero to a Million” series, on my personal profile. Tap to hear it.",
   jn3_t:"I like a challenge. Right now it's Russian.",
@@ -205,6 +199,8 @@ en: {
   xp3_tag:"One-off experience", xp3_t:"Digital affiliate", xp3_d:"Info product platforms.",
   xp3_b1:"I worked as an affiliate to validate traffic strategies, then moved on to building my own brand.",
   xp_tools:"Tools", xp_lang:"Languages", xp_l1:"Portuguese · native", xp_l2:"English · fluent", xp_l3:"Russian · basic",
+  jn1_evo:"progress, hour after hour", jn5_cap:"My devotional time, in one of the videos.",
+  xp_s1:"sales", xp_s2:"views on one video", xp_s3:"product validated",
   rw_sr:"What drives me", rw_head:"At the end of the day, I care about people.", rw_sub:"Tap a face.",
   rw:[
     {t:"Leadership", x:"I want to understand what makes a team follow someone and how that is learned."},
@@ -219,16 +215,16 @@ en: {
   s2_n:"Copy & persuasion", s2_l:"Words that lead to a decision.", s2_1:"Copywriting", s2_2:"Sales pages", s2_3:"Ads", s2_4:"Applied psychology",
   s3_n:"Design & sites", s3_l:"Clear visuals, a site that converts.", s3_1:"Sites and apps", s3_2:"Landing pages", s3_3:"Creatives (static and video)", s3_4:"Identity",
   s4_n:"Funnels & product", s4_l:"From idea to a running operation.", s4_1:"Info products", s4_2:"Funnels and customer journey", s4_3:"Automation with Typebot", s4_4:"Influencer partnerships",
-  bf_t:"Let's talk", bf_l:"Tell me what you're building. I'll write back.", bf_name:"Name", bf_email:"Email", bf_need:"What do you need?",
+  bf_t:"Let's talk", bf_l:"Got an opportunity in digital marketing, traffic or content? Tell me here. I'll write back.", bf_name:"Name", bf_email:"Email", bf_need:"What do you need?",
   pill_site:"Website", pill_traffic:"Traffic", pill_copy:"Copy", pill_funnel:"Funnel", pill_other:"Other", bf_about:"Tell me more", bf_send:"Send",
   bf_err:"Please add your name and a valid email.", bf_ok:"Opening your email app…", bf_subject:"Contact from portfolio", bf_body_need:"I need",
-  rg_ask:"Got an idea?", rg_say:"Let's make your idea sell.", rg_book:"Open to talk · remote or hybrid, São Paulo",
+  rg_ask:"My proposal", rg_say:"Open to opportunities aligned with what I like and have done.", rg_book:"Remote or hybrid · São Paulo",
   fq_t:"Questions, answered.",
   q1:"Who are you?", a1:"Guilherme, 19. I started in digital marketing in 2022 with dropshipping, then moved on to info products. Today I study Business Administration at Insper.",
-  q2:"What have you done?", a2:"I built and ran a dropshipping store from scratch, with Meta Ads and TikTok Ads campaigns, creatives and micro-influencer partnerships, and passed 20 sales. Then I structured the Caverna de Alexandria info product, with funnels, copy and Typebot automations. I also create content on my personal profile.",
+  q2:"What have you done?", a2:"I built and ran a dropshipping store from scratch, with Meta Ads and TikTok Ads campaigns, creatives and micro-influencer partnerships, and passed 20 sales. Then I structured the Caverna de Alexandria info product, with funnels, copy and Typebot automations. I also made content on my personal profile.",
   q3:"What else are you into?", a3:"Leadership, people management, body language and sales psychology. Every business depends on understanding how people decide.",
   q4:"How do we start?", a4:"Fill in the form above or email me. I'll write back.",
-  ft_say:"Digital marketing with<br>a management mindset.", ft_top:"Back to top ↑", copied:"Copied",
+  ft_say:"Digital marketing and<br>Business Administration.", ft_top:"Back to top ↑", copied:"Copied",
   stk:{app_in:"IN.",app_swap:"InsperSwap",app_pz:"Presenza",traffic:"Paid traffic",copy:"Copywriting",design:"Design",meta:"Meta Ads",funnel:"Funnels",persuasion:"Persuasion",leader:"Leadership",body:"Body language",psych:"Sales psychology",insper:"Insper",y2022:"4 years of experience",organic:"Organic traffic"},
   tip_help:"Keys & gestures",
   mq_t:"Platforms I've worked on",
@@ -240,11 +236,11 @@ en: {
   hp_t:"Keys & gestures", hp_keys:"Single-key shortcuts", hp_close:"Close",
   hp_rows:[["Drag","Look around (or move the stickers)"],["3 clicks on the TV","Please don't."],["1 – 3","Switch channel"],["L","Language PT / EN"],["M","Reduce motion"],["?","This help"],["Shift + scroll","Pan the world sideways"]],
   ab_k:"About me", ab_t:"Hi, I'm Guilherme.",
-  ab_c1:"19 y/o", ab_c2:"4 years of experience", ab_c3:"Business Admin",
+  ab_c1:"19 y/o", ab_c2:"4 years of experience", ab_c3:"Business Administration",
   ab_p1:"I'm 19 and started in digital marketing in 2022. First with dropshipping, where it took 1 year to get my first sale, then info products. I learned by doing: paid and organic traffic, copy, design, persuasion, content and Meta Ads.",
   ab_p2:"In one of those projects I built a product from scratch, set up the operation and sold it with paid ads. That's how I started seeing the whole funnel and the customer journey.",
   ab_p3:"Today I study Business Administration at Insper and I like a challenge: I'm studying Russian, I read about neuroscience, psychology and philosophy, and I follow a simple rule, repeat until I'm good. What pulls me most is leadership, people management, body language and sales psychology, because every good business starts with understanding people. I'm a Christian, and that shows in how I act and work.",
-  ab_f1:"Business Administration, finding my way", ab_f2:"Junior consulting company",
+  ab_f1:"Business Administration", ab_f2:"Junior consulting company",
   ij_k:"Experience", ij_t:"Real consulting, at Insper Jr.",
   ij_l:"In college I joined Insper Jr, Insper's junior consulting company. There I lived, hands-on, the 4 scopes of a consulting project.",
   ij1_t:"Market", ij1_d:"Understand the market, competitors and audience before any decision.",
@@ -271,14 +267,6 @@ en: {
   pz_f1:"Digital wardrobe", pz_f2:"6 occasions", pz_f3:"6 styles", pz_f4:"Presence & impact level", pz_f5:"Analysis & Build modes", pz_f6:"How you'll be perceived",
   pz_n:"I also created the visual identity (Onyx, Antique Gold and Ivory) and the code manual. The rule-based recommendation engine is isolated and ready to plug in AI.",
   pz_cta:"Want to see it? Message me", pz_chip_k:"PRESENCE", pz_chip_v:"Medium",
-  nav_me:"Self-knowledge",
-  me_k:"Self-knowledge", me_t:"I know myself, and I take it seriously.",
-  me_l:"I went through a career-guidance process and mapped my strengths, watch-outs, values and career criteria. It's all here, unfiltered: this is how I decide and where I'm headed.",
-  me_str_t:"Strengths",
-  me_str:["Ambitious","Authentic","Courageous","Risk-tolerant","Empathetic","Self-taught","Growth mindset","Behavior observer","Strategic thinker","People connector","Intellectually curious","Proactive","Versatile","Socially adaptable","Humble","Emotional intelligence","Purpose-driven","Self-correcting course"],
-  me_wk_t:"Watch-outs",
-  me_wk:["Scattered focus","Hard to commit to a single path","Inconsistent execution","Volatile interests","High self-pressure","Prone to idealizing"],
-  me_wk_n:"I know where I get stuck. My antidote: written criteria, deadlines on goals and projects I actually put live.",
   title:"Guilherme Balestrin | Digital marketing and Business Administration",
   desc:"Guilherme Balestrin, 19. 4 years of digital marketing experience: traffic, copy, design and websites. Business Administration at Insper.",
   story:["I","create","funnels","websites","and","campaigns","that","SELL"]
@@ -783,7 +771,12 @@ $$(".pj, .sv, #rg-say").forEach(el => io.observe(el));
 
 function splitCTA() {
   const el = $("#rg-say"), txt = T[lang].rg_say; el.textContent = ""; el.classList.remove("in"); el.setAttribute("aria-label", txt);
-  [...txt].forEach((c, i) => { const s = mk("span", "tc", c === " " ? " " : c); s.style.setProperty("--k", i); s.setAttribute("aria-hidden", "true"); el.appendChild(s); });
+  let k = 0;
+  txt.split(" ").forEach((word, wi, arr) => {
+    const w = mk("span", "tw"); w.setAttribute("aria-hidden", "true");
+    [...word].forEach(c => { const s = mk("span", "tc", c); s.style.setProperty("--k", k++); w.appendChild(s); });
+    el.appendChild(w); if (wi < arr.length - 1) { el.appendChild(document.createTextNode(" ")); k++; }
+  });
   if (root.dataset.still) el.classList.add("in"); else io.unobserve(el), io.observe(el);
 }
 
@@ -816,6 +809,29 @@ mailBtn.addEventListener("click", async () => {
 $("#ft-top").addEventListener("click", () => scrollTo({ top: 0, behavior: root.dataset.still ? "auto" : "smooth" }));
 
 /* idioma */
+
+/* logos no lugar da palavra "Insper" / "Insper Jr" nos textos */
+function brandify() {
+  const re = /Insper Jr\.?|Insper(?!Swap)/g;
+  const skip = "script,style,.sr-only,.lg,.logo-sw,.logo-chip,.ij-brand,.ab-chip,dialog,[data-nobrand]";
+  const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, { acceptNode(n) {
+    if (!n.parentElement || n.parentElement.closest(skip)) return NodeFilter.FILTER_REJECT;
+    return /Insper/.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+  } });
+  const nodes = []; while (w.nextNode()) nodes.push(w.currentNode);
+  nodes.forEach(n => {
+    const txt = n.nodeValue, frag = document.createDocumentFragment(); let last = 0, m;
+    re.lastIndex = 0;
+    while ((m = re.exec(txt))) {
+      frag.appendChild(document.createTextNode(txt.slice(last, m.index)));
+      const jr = m[0].startsWith("Insper Jr"), sp = mk("span", "lg " + (jr ? "lg-jr" : "lg-i")), im = mk("img");
+      im.src = jr ? "assets/insperjr-logo.png" : "assets/insper-w.png"; im.alt = ""; im.draggable = false;
+      sp.append(im, mk("span", "sr-only", m[0])); frag.appendChild(sp); last = m.index + m[0].length;
+    }
+    frag.appendChild(document.createTextNode(txt.slice(last)));
+    n.replaceWith(frag);
+  });
+}
 function setLang(l) {
   lang = l; store.set("gb-lang", l);
   root.lang = l === "pt" ? "pt-BR" : "en"; root.dataset.lang = l;
@@ -826,7 +842,8 @@ function setLang(l) {
   $("#mail-t").textContent = CONFIG.email; mailBtn.dataset.copied = T[l].copied;
   $("#btn-still").setAttribute("aria-label", T[l].tip_still);
   buildWork(); buildWheel(); splitCTA(); buildStory();
-  buildHelp(); setCounters(false); buildChips(); buildMe();
+  buildHelp(); setCounters(false); buildChips();
+  brandify();
 }
 $("#btn-lang").addEventListener("click", () => setLang(lang === "pt" ? "en" : "pt"));
 
@@ -897,13 +914,6 @@ if (zv) {
   new IntersectionObserver(([en]) => zsync(en.isIntersecting), { threshold: .5 }).observe(zv);
 }
 /* chips de skills + reveals genéricos (.rv) */
-/* ---------- autoconhecimento ---------- */
-function buildMe() {
-  const t = T[lang];
-  const fill = (id, items, fn) => { const ul = $(id); ul.textContent = ""; items.forEach((x, i) => { const li = fn(x, i); li.style.setProperty("--k", i); ul.appendChild(li); }); };
-  fill("#me-str", t.me_str, x => mk("li", "", x));
-  fill("#me-wk", t.me_wk, x => mk("li", "", x));
-}
 function buildChips() { const ul = $("#ij-chips"); ul.textContent = ""; T[lang].ij_chips.forEach((c, i) => { const li = mk("li", "", c); li.style.setProperty("--k", i); ul.appendChild(li); }); }
 const rvio = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add("in"); rvio.unobserve(en.target); } }), { threshold: .15 });
 $$(".rv").forEach(el => rvio.observe(el));
