@@ -97,7 +97,7 @@ pt: {
   s3_n:"Design & sites", s3_l:"Visual claro, site que converte.", s3_1:"Sites e apps", s3_2:"Landing pages", s3_3:"Criativos (estáticos e vídeo)", s3_4:"Identidade",
   s4_n:"Funis & produto", s4_l:"Da ideia à operação rodando.", s4_1:"Infoprodutos", s4_2:"Funis e jornada do cliente", s4_3:"Automação com Typebot", s4_4:"Parcerias com influenciadores",
   bf_t:"Vamos conversar", bf_l:"Tem uma oportunidade ligada a marketing digital, tráfego ou conteúdo? Conte aqui. Eu respondo.", bf_name:"Nome", bf_email:"E-mail", bf_need:"Do que você precisa?",
-  pill_site:"Site", pill_traffic:"Tráfego", pill_copy:"Copy", pill_funnel:"Funil", pill_other:"Outro", bf_about:"Conte mais", bf_send:"Enviar",
+  pill_site:"Site", pill_traffic:"Tráfego", pill_copy:"Copy", pill_funnel:"Funil", pill_other:"Outro", bf_about:"Conte mais", bf_send:"Dobrar e enviar", pill_cr:"Criativos", bf_co:"Empresa", bf_opt:"Opcional", bf_kind:"Tipo de oportunidade", kind_1:"Estágio", kind_2:"Freela", kind_3:"Projeto", kind_4:"Parceria", bf_sent:"Tá na caixa.", bf_sent_n:"Abri seu app de e-mail com a mensagem pronta. É só apertar enviar.", bf_again:"Escrever outra",
   bf_err:"Preencha nome e um e-mail válido.", bf_ok:"Abrindo seu app de e-mail…", bf_subject:"Contato pelo portfólio", bf_body_need:"Preciso de",
   rg_ask:"Minha proposta", rg_say:"Aberto a oportunidades alinhadas ao que eu gosto e já fiz.", rg_book:"Remoto ou híbrido, em São Paulo",
   fq_t:"Perguntas, respondidas.",
@@ -232,7 +232,7 @@ en: {
   s3_n:"Design & sites", s3_l:"Clear visuals, a site that converts.", s3_1:"Sites and apps", s3_2:"Landing pages", s3_3:"Creatives (static and video)", s3_4:"Identity",
   s4_n:"Funnels & product", s4_l:"From idea to a running operation.", s4_1:"Info products", s4_2:"Funnels and customer journey", s4_3:"Automation with Typebot", s4_4:"Influencer partnerships",
   bf_t:"Let's talk", bf_l:"Got an opportunity in digital marketing, traffic or content? Tell me here. I'll write back.", bf_name:"Name", bf_email:"Email", bf_need:"What do you need?",
-  pill_site:"Website", pill_traffic:"Traffic", pill_copy:"Copy", pill_funnel:"Funnel", pill_other:"Other", bf_about:"Tell me more", bf_send:"Send",
+  pill_site:"Website", pill_traffic:"Traffic", pill_copy:"Copy", pill_funnel:"Funnel", pill_other:"Other", bf_about:"Tell me more", bf_send:"Fold & send", pill_cr:"Creatives", bf_co:"Company", bf_opt:"Optional", bf_kind:"Type of opportunity", kind_1:"Internship", kind_2:"Freelance", kind_3:"Project", kind_4:"Partnership", bf_sent:"It's in the box.", bf_sent_n:"I opened your email app with the message ready. Just hit send.", bf_again:"Write another",
   bf_err:"Please add your name and a valid email.", bf_ok:"Opening your email app…", bf_subject:"Contact from portfolio", bf_body_need:"I need",
   rg_ask:"My proposal", rg_say:"Open to opportunities aligned with what I like and have done.", rg_book:"Remote or hybrid, São Paulo",
   fq_t:"Questions, answered.",
@@ -818,19 +818,65 @@ $$(".fq-q button").forEach(btn => btn.addEventListener("click", () => {
   item.classList.toggle("open", open); btn.setAttribute("aria-expanded", open);
 }));
 
-/* form → mailto */
-const bf = $("#bf"), bfNote = $("#bf-note");
-bf.addEventListener("submit", e => {
+/* form: folha → envelope → caixa de correio (estilo wowww.art) → mailto */
+const bf = $("#bf"), bfNote = $("#bf-note"), bfSent = $("#bf-sent"), bfLayout = $(".bf-layout"), mb = $("#mb");
+new IntersectionObserver(([en], ob) => { if (en.isIntersecting) { bfLayout.dataset.seen = ""; ob.disconnect(); } }, { threshold: .15 }).observe(bfLayout);
+const ENV_SVG = '<svg viewBox="0 0 150 96"><rect x=".75" y=".75" width="148.5" height="94.5" rx="7" fill="#fff" stroke="#d9d9de" stroke-width="1.5"/><path d="M1 94 63 46M149 94 87 46" stroke="#e3e3e8" stroke-width="1.5" fill="none"/><rect x="114" y="12" width="22" height="26" rx="3" fill="#dfcd2e"/><path d="M129 21a5 5 0 1 0 0 8v-3h-3" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/><path class="flap" d="M1 1 75 54 149 1Z" fill="#f5f5f7" stroke="#d9d9de" stroke-width="1.5" stroke-linejoin="round"/></svg>';
+const wait = ms => new Promise(r => setTimeout(r, ms));
+function bfFly() {
+  return new Promise(async done => {
+    const fr = bf.getBoundingClientRect(), sl = $(".mb-slot", mb).getBoundingClientRect();
+    const slotOnScreen = sl.top > 0 && sl.bottom < innerHeight && sl.width > 0;
+    if (root.dataset.still || reduceMQ.matches || !slotOnScreen) { bf.dataset.phase = "send"; await wait(260); return done(); }
+    const env = mk("div", "bf-env"); env.innerHTML = ENV_SVG; document.body.appendChild(env);
+    const x0 = fr.left + fr.width / 2 - 75, y0 = Math.min(Math.max(fr.top + fr.height / 2, 140), innerHeight - 140) - 48;
+    const s1 = sl.width / 150, x1 = sl.left + sl.width / 2 - 75, y1 = sl.top + sl.height / 2 - 48;
+    const at = (x, y, s, r) => `translate(${x}px,${y}px) rotate(${r}deg) scale(${s})`;
+    bf.dataset.phase = "send";
+    await env.animate([{ transform: at(x0, y0 + 40, 1.9, 0), opacity: 0 }, { transform: at(x0, y0, 1, 0), opacity: 1 }], { duration: 420, easing: "cubic-bezier(.22,1,.36,1)", fill: "forwards" }).finished;
+    env.dataset.closed = ""; await wait(360);
+    const mx = (x0 + x1) / 2, my = Math.min(y0, y1) - Math.min(160, innerHeight * .18);
+    await env.animate([
+      { transform: at(x0, y0, 1, 0) },
+      { transform: at(mx, my, .78, -14), offset: .5 },
+      { transform: at(x1, y1 - 40, s1 * 1.05, -2), offset: .82 },
+      { transform: at(x1, y1 - 6, s1, 0), opacity: 1, offset: .9 },
+      { transform: at(x1, y1 + 4, s1 * .95, 0), opacity: 0 }
+    ], { duration: 1150, easing: "cubic-bezier(.45,0,.25,1)", fill: "forwards" }).finished;
+    env.remove(); done();
+  });
+}
+async function bfSend(e) {
   e.preventDefault();
   const f = new FormData(bf);
   if (f.get("website")) return;
   const name = (f.get("name") || "").trim(), mail = (f.get("email") || "").trim();
-  if (!name || !/^\S+@\S+\.\S+$/.test(mail)) { bfNote.textContent = T[lang].bf_err; bfNote.className = "bf-note err"; return; }
-  const what = f.getAll("what").join(", "), about = (f.get("about") || "").trim();
-  const body = `${name} <${mail}>\n${what ? T[lang].bf_body_need + ": " + what + "\n" : ""}\n${about}`;
-  bfNote.className = "bf-note"; bfNote.textContent = T[lang].bf_ok;
+  if (!name || !/^\S+@\S+\.\S+$/.test(mail)) {
+    bfNote.textContent = T[lang].bf_err; bfNote.className = "bf-note err";
+    const btn = $(".bf-send", bf); btn.classList.remove("bf-shake"); void btn.offsetWidth; btn.classList.add("bf-shake");
+    return;
+  }
+  bfNote.textContent = ""; bfNote.className = "bf-note";
+  const what = f.getAll("what").join(", "), kind = f.get("kind") || "", co = (f.get("company") || "").trim(), about = (f.get("about") || "").trim();
+  const body = `${name} <${mail}>${co ? "\n" + co : ""}\n${kind ? T[lang].bf_kind + ": " + kind + "\n" : ""}${what ? T[lang].bf_body_need + ": " + what + "\n" : ""}\n${about}`;
+  await bfFly();
+  mb.dataset.flag = ""; mb.classList.remove("bump"); void mb.offsetWidth; mb.classList.add("bump");
+  bfSent.inert = false; bf.inert = true; bfSent.dataset.in = "";
+  setTimeout(() => $("#bf-again").focus({ preventScroll: true }), 700);
   location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent(T[lang].bf_subject)}&body=${encodeURIComponent(body)}`;
+}
+bf.addEventListener("submit", bfSend);
+$("#bf-again").addEventListener("click", () => {
+  bf.reset(); delete bfSent.dataset.in; bfSent.inert = true; bf.inert = false;
+  delete mb.dataset.flag; bf.dataset.phase = "edit";
+  setTimeout(() => $(".bf-input", bf).focus({ preventScroll: true }), 300);
 });
+function splitBf() {
+  const h = $("#bf-title"); if (!h) return;
+  const words = h.textContent.trim().split(/\s+/);
+  h.setAttribute("aria-label", words.join(" "));
+  h.innerHTML = words.map((w, i) => `<span class="w" aria-hidden="true" style="--w:${i}"><span>${w}</span></span>`).join(" ");
+}
 
 /* copiar e-mail */
 const mailBtn = $("#mail");
@@ -868,6 +914,7 @@ function setLang(l) {
   lang = l; store.set("gb-lang", l);
   root.lang = l === "pt" ? "pt-BR" : "en"; root.dataset.lang = l;
   $$("[data-i]").forEach(el => { const v = T[l][el.dataset.i]; if (typeof v === "string") el.innerHTML = v; });
+  splitBf();
   document.title = T[l].title; $('meta[name="description"]').setAttribute("content", T[l].desc);
   stickers.forEach(o => { if (!o.img) o.el.querySelector(".stk-t").textContent = T[l].stk[o.k]; });
   buildRail();

@@ -583,26 +583,103 @@
 
 <!-- ============ CONTACT / BRIEF ============ -->
 <section id="contact" class="brief" aria-label="Contato">
-  <form id="bf" class="bf" novalidate>
-    <input class="bf-trap" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" name="website">
-    <h2 class="bf-title" data-i="bf_t">Vamos conversar</h2>
-    <p class="bf-lede" data-i="bf_l">Tem uma oportunidade ligada a marketing digital, tráfego ou conteúdo? Conte aqui. Eu respondo.</p>
+  <div class="bf-layout">
+    <div class="bf-desk">
+      <form id="bf" class="bf" data-phase="edit" novalidate>
+        <input class="bf-trap" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" name="website">
+        <div class="bf-intro" style="--i:0">
+          <h2 class="bf-title" id="bf-title" data-i="bf_t">Vamos conversar</h2>
+          <p class="bf-lede" data-i="bf_l">Tem uma oportunidade ligada a marketing digital, tráfego ou conteúdo? Conte aqui. Eu respondo.</p>
+        </div>
 
-    <label class="bf-field"><input class="bf-input" name="name" placeholder=" " required autocomplete="name"><span data-i="bf_name">Nome</span></label>
-    <label class="bf-field"><input class="bf-input" name="email" type="email" placeholder=" " required autocomplete="email"><span data-i="bf_email">E-mail</span></label>
+        <div class="bf-group" style="--i:1">
+          <label class="bf-field"><input class="bf-input" name="name" placeholder=" " required autocomplete="name"><span class="bf-label" data-i="bf_name">Nome</span></label>
+          <label class="bf-field"><input class="bf-input" name="email" type="email" placeholder=" " required autocomplete="email"><span class="bf-label" data-i="bf_email">E-mail</span></label>
+          <label class="bf-field"><input class="bf-input" name="company" placeholder=" " autocomplete="organization"><span class="bf-label" data-i="bf_co">Empresa</span><span class="bf-hint" data-i="bf_opt">Opcional</span></label>
+        </div>
 
-    <fieldset class="bf-set"><legend data-i="bf_need">Do que você precisa?</legend>
-      <label class="bf-pill"><input type="checkbox" name="what" value="Site"><span data-i="pill_site">Site</span></label>
-      <label class="bf-pill"><input type="checkbox" name="what" value="Tráfego"><span data-i="pill_traffic">Tráfego</span></label>
-      <label class="bf-pill"><input type="checkbox" name="what" value="Copy"><span data-i="pill_copy">Copy</span></label>
-      <label class="bf-pill"><input type="checkbox" name="what" value="Funil"><span data-i="pill_funnel">Funil</span></label>
-      <label class="bf-pill"><input type="checkbox" name="what" value="Outro"><span data-i="pill_other">Outro</span></label>
-    </fieldset>
+        <fieldset class="bf-set" style="--i:2"><legend data-i="bf_need">Do que você precisa?</legend>
+          <div class="bf-pills">
+            <label class="bf-pill" style="--j:0"><input type="checkbox" name="what" value="Site"><span data-i="pill_site">Site</span></label>
+            <label class="bf-pill" style="--j:1"><input type="checkbox" name="what" value="Tráfego"><span data-i="pill_traffic">Tráfego</span></label>
+            <label class="bf-pill" style="--j:2"><input type="checkbox" name="what" value="Copy"><span data-i="pill_copy">Copy</span></label>
+            <label class="bf-pill" style="--j:3"><input type="checkbox" name="what" value="Criativos"><span data-i="pill_cr">Criativos</span></label>
+            <label class="bf-pill" style="--j:4"><input type="checkbox" name="what" value="Funil"><span data-i="pill_funnel">Funil</span></label>
+            <label class="bf-pill" style="--j:5"><input type="checkbox" name="what" value="Outro"><span data-i="pill_other">Outro</span></label>
+          </div>
+        </fieldset>
 
-    <label class="bf-field bf-tall"><textarea class="bf-input" name="about" rows="4" placeholder=" "></textarea><span data-i="bf_about">Conte mais</span></label>
-    <button class="bf-send" type="submit"><span data-i="bf_send">Enviar</span></button>
-    <p class="bf-note" id="bf-note" role="status"></p>
-  </form>
+        <fieldset class="bf-set" style="--i:3"><legend data-i="bf_kind">Tipo de oportunidade</legend>
+          <div class="bf-pills">
+            <label class="bf-pill" style="--j:0"><input type="radio" name="kind" value="Estágio"><span data-i="kind_1">Estágio</span></label>
+            <label class="bf-pill" style="--j:1"><input type="radio" name="kind" value="Freela"><span data-i="kind_2">Freela</span></label>
+            <label class="bf-pill" style="--j:2"><input type="radio" name="kind" value="Projeto"><span data-i="kind_3">Projeto</span></label>
+            <label class="bf-pill" style="--j:3"><input type="radio" name="kind" value="Parceria"><span data-i="kind_4">Parceria</span></label>
+          </div>
+        </fieldset>
+
+        <div class="bf-group" style="--i:4">
+          <label class="bf-field bf-tall"><textarea class="bf-input" name="about" rows="4" placeholder=" "></textarea><span class="bf-label" data-i="bf_about">Conte mais</span></label>
+        </div>
+
+        <button class="bf-send" type="submit" style="--i:5"><span data-i="bf_send">Dobrar e enviar</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.9 9.6 17 3.4c.4-.2.8.2.6.6L11.4 17.8c-.2.4-.8.4-.9 0L8.6 12.2 3 10.5c-.5-.1-.5-.7-.1-.9Z"/><path d="m8.6 12.2 8.8-8.6"/></svg></button>
+        <p class="bf-note" id="bf-note" role="status"></p>
+      </form>
+
+      <div class="bf-sent" id="bf-sent" inert>
+        <span class="bf-done" style="--i:0" aria-hidden="true"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="26"/><path d="m15.5 27 7 7 14-15"/></svg></span>
+        <p class="bf-sent-say" style="--i:1" data-i="bf_sent">Tá na caixa.</p>
+        <p class="bf-sent-note" style="--i:2" data-i="bf_sent_n">Abri seu app de e-mail com a mensagem pronta. É só apertar enviar.</p>
+        <button class="bf-again" id="bf-again" type="button" style="--i:3" data-i="bf_again">Escrever outra</button>
+      </div>
+    </div>
+
+    <div class="bf-box" aria-hidden="true">
+      <div class="mb" id="mb">
+        <svg class="mb-svg" viewBox="0 0 320 380">
+          <defs>
+            <linearGradient id="mbFront" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#e6e8ee"/><stop offset="1" stop-color="#b9bdc7"/></linearGradient>
+            <linearGradient id="mbSide" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d5d8df"/><stop offset=".45" stop-color="#f3f4f7"/><stop offset="1" stop-color="#a9aeb8"/></linearGradient>
+            <linearGradient id="mbPost" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8b909b"/><stop offset=".4" stop-color="#e9ebef"/><stop offset="1" stop-color="#7c818c"/></linearGradient>
+            <radialGradient id="mbBase" cx=".45" cy=".35" r=".7"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#a7acb6"/></radialGradient>
+            <pattern id="mbDots" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.1" fill="#000" opacity=".07"/></pattern>
+          </defs>
+          <ellipse cx="168" cy="352" rx="96" ry="16" fill="#000" opacity=".08"/>
+          <!-- poste -->
+          <ellipse cx="166" cy="340" rx="62" ry="15" fill="url(#mbBase)"/>
+          <path d="M104 340a62 15 0 0 0 124 0v5a62 15 0 0 1-124 0z" fill="#8f949f"/>
+          <rect x="154" y="210" width="24" height="132" rx="4" fill="url(#mbPost)"/>
+          <!-- lateral -->
+          <path d="M98 70 L222 50 A62 62 0 0 1 284 112 L284 212 L160 232 L160 132 A62 62 0 0 0 98 70Z" fill="url(#mbSide)"/>
+          <path d="M98 70 L222 50 A62 62 0 0 1 284 112 L284 212 L160 232 L160 132 A62 62 0 0 0 98 70Z" fill="url(#mbDots)"/>
+          <path d="M160 206 L284 186 L284 212 L160 232Z" fill="#1d1d1f"/>
+          <path d="M100 71 L222 51" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+          <!-- adesivo G -->
+          <g class="mb-sticker" transform="rotate(-10 208 166)">
+            <circle cx="208" cy="166" r="25" fill="#dfcd2e"/>
+            <circle cx="208" cy="166" r="25" fill="none" stroke="#fff" stroke-width="4"/>
+            <path d="M216 158a11 11 0 1 0 0 16v-7h-7" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <!-- frente / porta -->
+          <path d="M36 232 V132 A62 62 0 0 1 160 132 V232Z" fill="url(#mbFront)"/>
+          <path d="M36 232 V132 A62 62 0 0 1 160 132 V232Z" fill="url(#mbDots)"/>
+          <path d="M36 206 H160 V232 H36Z" fill="#1d1d1f"/>
+          <path d="M48 200 V134 A50 50 0 0 1 148 134 V200" fill="none" stroke="#fff" stroke-width="2.5" opacity=".75"/>
+          <rect class="mb-slot" x="62" y="124" width="72" height="13" rx="6.5" fill="#1d1d1f"/>
+          <rect x="62" y="124" width="72" height="5" rx="2.5" fill="#000" opacity=".35"/>
+          <rect x="64" y="152" width="68" height="10" rx="5" fill="#fff" opacity=".85"/>
+          <rect x="64" y="170" width="68" height="10" rx="5" fill="#fff" opacity=".85"/>
+          <!-- bandeira -->
+          <g class="mb-flag">
+            <rect x="257.5" y="58" width="9" height="68" rx="4.5" fill="#ff3b30"/>
+            <path d="M266.5 58h28a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4h-28z" fill="#ff3b30"/>
+            <circle cx="262" cy="120" r="9" fill="#d5d8df" stroke="#9aa0ab" stroke-width="2"/>
+            <circle cx="262" cy="120" r="3" fill="#7c818c"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="rg">
