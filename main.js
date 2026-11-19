@@ -82,15 +82,6 @@ pt: {
   xp_tools:"Ferramentas", xp_lang:"Idiomas", xp_l1:"Português (nativo)", xp_l2:"Inglês (fluente)", xp_l3:"Russo (básico)",
   jn1_evo:"evolução, hora após hora", awp_fire:"Clique para atirar", jn5_cap:"Meu devocional, num dos vídeos.",
   xp_s1:"vendas", xp_s2:"views em um vídeo", xp_s3:"produto validado",
-  rw_sr:"O que me move", rw_head:"No fundo, o que me interessa é gente.", rw_sub:"Toque em um rosto.",
-  rw:[
-    {t:"Liderança", x:"Quero entender o que faz um time seguir alguém e como isso se aprende."},
-    {t:"Gestão de pessoas", x:"Empresas são feitas de gente. Resultado vem de pessoas bem geridas."},
-    {t:"Linguagem corporal", x:"O que a pessoa não diz muitas vezes conta mais do que o que ela diz."},
-    {t:"Psicologia nas vendas", x:"Venda é decisão humana. Entender o porquê vale mais que qualquer script."},
-    {t:"Persuasão", x:"Copy boa é clareza, emoção e o próximo passo certo."},
-    {t:"Funil & jornada", x:"Cada clique é uma etapa da jornada do cliente. Eu desenho o caminho todo."}
-  ],
   sv_a:"Tudo o que eu", sv_b:"faço.", sv_lede:"Do primeiro anúncio ao site no ar, eu cuido do caminho inteiro do cliente.",
   s1_n:"Tráfego", s1_l:"Pago e orgânico, do teste à escala.", s1_1:"Meta Ads e TikTok Ads", s1_2:"Testes A/B", s1_3:"Conteúdo orgânico", s1_4:"Análise de métricas",
   s2_n:"Copy & persuasão", s2_l:"Palavras que levam à decisão.", s2_1:"Copywriting", s2_2:"Páginas de venda", s2_3:"Anúncios", s2_4:"Psicologia aplicada",
@@ -217,15 +208,6 @@ en: {
   xp_tools:"Tools", xp_lang:"Languages", xp_l1:"Portuguese (native)", xp_l2:"English (fluent)", xp_l3:"Russian (basic)",
   jn1_evo:"progress, hour after hour", awp_fire:"Click to fire", jn5_cap:"My devotional time, in one of the videos.",
   xp_s1:"sales", xp_s2:"views on one video", xp_s3:"product validated",
-  rw_sr:"What drives me", rw_head:"At the end of the day, I care about people.", rw_sub:"Tap a face.",
-  rw:[
-    {t:"Leadership", x:"I want to understand what makes a team follow someone and how that is learned."},
-    {t:"People management", x:"Companies are made of people. Results come from people who are well led."},
-    {t:"Body language", x:"What someone doesn't say often tells you more than what they do."},
-    {t:"Sales psychology", x:"Selling is a human decision. Knowing the why beats any script."},
-    {t:"Persuasion", x:"Good copy is clarity, emotion and the right next step."},
-    {t:"Funnel & journey", x:"Every click is a step in the customer journey. I design the whole path."}
-  ],
   sv_a:"Everything I", sv_b:"do.", sv_lede:"From the first ad to the live site, I take care of the customer's whole path.",
   s1_n:"Traffic", s1_l:"Paid and organic, from test to scale.", s1_1:"Meta Ads and TikTok Ads", s1_2:"A/B tests", s1_3:"Organic content", s1_4:"Metrics analysis",
   s2_n:"Copy & persuasion", s2_l:"Words that lead to a decision.", s2_1:"Copywriting", s2_2:"Sales pages", s2_3:"Ads", s2_4:"Applied psychology",
@@ -745,53 +727,6 @@ function buildWork() {
 setInterval(() => { if (root.dataset.still || document.hidden) return; Object.values(pjState).forEach(x => { if (x.auto && x.visible) x.select((x.i + 1) % x.n); }); }, 5600);
 
 /* ============================================================
-   5) ROLA — roda de interesses com balões estilo iMessage
-   ============================================================ */
-const wheel = $("#rw-wheel"), rwStage = $("#rw-stage");
-const FACES = [["🧭","#ffd6a5","#ffadad"],["👥","#caffbf","#9bf6ff"],["🕴️","#bdb2ff","#ffc6ff"],["🧠","#a0c4ff","#9bf6ff"],["🎯","#fdffb6","#ffd6a5"],["🧩","#ffc6ff","#a0c4ff"]];
-let seats = [], theta = 0, hot = -1, rwVisible = false, resumeAt = 0, rwW = 0;
-function buildWheel() {
-  wheel.textContent = ""; seats = [];
-  T[lang].rw.forEach((r, i) => {
-    const seat = mk("div", "rw-seat"), face = mk("button", "rw-face", FACES[i][0]), bub = mk("div", "rw-bubble");
-    face.type = "button"; face.style.setProperty("--a", FACES[i][1]); face.style.setProperty("--b", FACES[i][2]); face.setAttribute("aria-label", r.t);
-    bub.innerHTML = `<b></b><span></span>`; $("b", bub).textContent = r.t; $("span", bub).textContent = r.x;
-    seat.append(face, bub); wheel.appendChild(seat); seats.push(seat);
-    face.addEventListener("click", e => { e.stopPropagation(); setHot(hot === i ? -1 : i); });
-  });
-  layoutWheel(); paintWheel();
-}
-function setHot(i) {
-  hot = i; rwStage.classList.toggle("is-focused", i >= 0);
-  seats.forEach((s, j) => s.classList.toggle("is-hot", j === i));
-  if (i >= 0) { const s = seats[i]; theta = ((theta % 360) + 360) % 360; }
-  resumeAt = performance.now() + 4500;
-}
-document.addEventListener("click", e => { if (hot >= 0 && !e.target.closest(".rw-face")) setHot(-1); });
-document.addEventListener("keydown", e => { if (e.key === "Escape" && hot >= 0) setHot(-1); });
-function layoutWheel() { rwW = rwStage.clientWidth; }
-function paintWheel() {
-  const R = Math.min(560, rwW * .7), cx = rwW / 2, cy = R + 80, n = seats.length;
-  rwStage.style.setProperty("--R", R + "px");
-  seats.forEach((s, i) => {
-    const a = (theta + i * (360 / n)) * Math.PI / 180, x = cx + R * Math.sin(a), y = cy - R * Math.cos(a);
-    s.style.transform = `translate(${x}px,${y}px)`; s.dataset.side = x > cx ? "left" : "right";
-    s.style.opacity = hot >= 0 ? "" : String(clamp01(Math.cos(a) * 1.6 + .6));
-    s.style.pointerEvents = Math.cos(a) > -.1 ? "auto" : "none";
-  });
-}
-let lastW = performance.now();
-function wheelTick(now) {
-  const dt = Math.min(64, now - lastW) / 1000; lastW = now;
-  if (rwVisible && !document.hidden) {
-    if (hot < 0 && !root.dataset.still && now > resumeAt) { theta += dt * 7; paintWheel(); }
-    else if (hot >= 0 && !root.dataset.still && now > resumeAt + 4000) { /* mantém */ }
-  }
-  requestAnimationFrame(wheelTick);
-}
-new IntersectionObserver(([en]) => { rwVisible = en.isIntersecting; }, { threshold: 0 }).observe(rwStage);
-
-/* ============================================================
    6) reveals, FAQ, form, copiar e-mail, dock, idioma
    ============================================================ */
 const io = new IntersectionObserver(es => es.forEach(en => {
@@ -920,7 +855,7 @@ function setLang(l) {
   buildRail();
   $("#mail-t").textContent = CONFIG.email; mailBtn.dataset.copied = T[l].copied;
   $("#btn-still").setAttribute("aria-label", T[l].tip_still);
-  buildWork(); buildWheel(); splitCTA(); buildStory();
+  buildWork(); splitCTA(); buildStory();
   buildHelp(); setCounters(false); buildChips();
   brandify();
 }
@@ -957,7 +892,7 @@ function heroScroll() {
   document.body.classList.toggle("on-light", st < 40 && ft > 40);
 }
 addEventListener("scroll", heroScroll, { passive: true });
-addEventListener("resize", () => { vw = innerWidth; vh = innerHeight; layoutStickers(); layoutStory(); layoutWheel(); paintWheel(); heroScroll(); });
+addEventListener("resize", () => { vw = innerWidth; vh = innerHeight; layoutStickers(); layoutStory(); heroScroll(); });
 
 /* ---------- contadores animados (padrão "stats" do 21st) ---------- */
 const counted = new WeakSet();
@@ -1045,6 +980,6 @@ lb.addEventListener("close", () => root.classList.remove("lb-open"));
 
 setLang(lang);
 layoutStickers(); paintWorld(); heroScroll();
-requestAnimationFrame(heroTick); requestAnimationFrame(storyTick); requestAnimationFrame(wheelTick);
-if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { layoutStory(); renderStory(true); layoutWheel(); paintWheel(); });
+requestAnimationFrame(heroTick); requestAnimationFrame(storyTick);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { layoutStory(); renderStory(true); });
 })();
