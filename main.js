@@ -153,7 +153,8 @@ pt: {
   cr_s4_t:"Dar nome ao inimigo", cr_s4:"“O Perfil Genérico™” transforma uma sensação vaga num conceito com nome, fácil de lembrar e de repetir.",
   cr_s5_t:"Virada sem promessa fácil", cr_s5:"Fecha mudando o jeito de enxergar o problema, sem prometer resultado mágico. Mais confiança, menos cara de golpe.",
   cr_b_tag:"Os produtos", cr_b_t:"Os infoprodutos que eu vendia sob a marca.", cr_b_l:"Toque numa capa para ver de perto. Cada um tem conceito visual próprio, mas todos falam a mesma língua da marca.", cr_pages:"+2 páginas", cr_b4:"31 Lições Estoicas",
-  cr_i_tag:"Identidade de marca", cr_i_t:"Uma identidade própria, reconhecível.", cr_i_l:"Paleta 90% escuro e 10% dourado, Playfair com Inter, conceitos de logo, voz da marca e templates de conteúdo. É o que faz tudo ter cara de uma marca só.",
+  cr_i_tag:"Identidade de marca", cr_i_t:"Uma identidade própria, reconhecível.", cr_i_l:"Logo com monograma C e A, paleta 90% escuro e 10% dourado, Playfair com Inter e uma voz própria. É o que faz tudo ter cara de uma marca só.",
+  bk_logo:"Logo principal", bk_mono:"Monograma", bk_pal:"Paleta · 90% escuro, 10% dourado", bk_type:"Tipografia", bk_voice:"Voz da marca", bk_v1:"Analítica", bk_v2:"Calma", bk_v3:"Precisa", bk_v4:"Estratégica", bk_tag:"Um sistema. Uma mentalidade. Uma transformação.",
   title:"Guilherme Balestrin | Marketing digital e Administração",
   desc:"Guilherme Balestrin, 19. 4 anos de experiência em marketing digital: tráfego, copy, design e sites. Administração de Empresas no Insper.",
   story:["eu","crio","funis","sites","e","campanhas","que","VENDEM"]
@@ -278,7 +279,8 @@ en: {
   cr_s4_t:"Name the enemy", cr_s4:"“The Generic Profile™” turns a vague feeling into a named concept, easy to remember and repeat.",
   cr_s5_t:"A turn without easy promises", cr_s5:"It closes by changing how he sees the problem, with no magic result promised. More trust, less scam vibe.",
   cr_b_tag:"The products", cr_b_t:"The info products I sold under the brand.", cr_b_l:"Tap a cover to see it up close. Each has its own visual concept, but they all speak the brand's language.", cr_pages:"+2 pages", cr_b4:"31 Stoic Lessons",
-  cr_i_tag:"Brand identity", cr_i_t:"Its own identity, easy to recognize.", cr_i_l:"A 90% dark and 10% gold palette, Playfair with Inter, logo concepts, brand voice and content templates. It's what makes everything look like one brand.",
+  cr_i_tag:"Brand identity", cr_i_t:"Its own identity, easy to recognize.", cr_i_l:"A logo with a C and A monogram, a 90% dark and 10% gold palette, Playfair with Inter and a voice of its own. It's what makes everything look like one brand.",
+  bk_logo:"Main logo", bk_mono:"Monogram", bk_pal:"Palette · 90% dark, 10% gold", bk_type:"Typography", bk_voice:"Brand voice", bk_v1:"Analytical", bk_v2:"Calm", bk_v3:"Precise", bk_v4:"Strategic", bk_tag:"One system. One mindset. One transformation.",
   title:"Guilherme Balestrin | Digital marketing and Business Administration",
   desc:"Guilherme Balestrin, 19. 4 years of digital marketing experience: traffic, copy, design and websites. Business Administration at Insper.",
   story:["I","create","funnels","websites","and","campaigns","that","SELL"]
