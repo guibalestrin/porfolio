@@ -80,7 +80,7 @@ pt: {
   xp3_tag:"Experiência pontual", xp3_t:"Afiliado digital", xp3_d:"Plataformas de infoprodutos.",
   xp3_b1:"Atuei como afiliado para validar estratégias de tráfego e depois migrei para construir uma marca própria.",
   xp_tools:"Ferramentas", xp_lang:"Idiomas", xp_l1:"Português · nativo", xp_l2:"Inglês · fluente", xp_l3:"Russo · básico",
-  jn1_evo:"evolução, hora após hora", jn5_cap:"Meu devocional, num dos vídeos.",
+  jn1_evo:"evolução, hora após hora", awp_fire:"Clique para atirar", jn5_cap:"Meu devocional, num dos vídeos.",
   xp_s1:"vendas", xp_s2:"views em um vídeo", xp_s3:"produto validado",
   rw_sr:"O que me move", rw_head:"No fundo, o que me interessa é gente.", rw_sub:"Toque em um rosto.",
   rw:[
@@ -199,7 +199,7 @@ en: {
   xp3_tag:"One-off experience", xp3_t:"Digital affiliate", xp3_d:"Info product platforms.",
   xp3_b1:"I worked as an affiliate to validate traffic strategies, then moved on to building my own brand.",
   xp_tools:"Tools", xp_lang:"Languages", xp_l1:"Portuguese · native", xp_l2:"English · fluent", xp_l3:"Russian · basic",
-  jn1_evo:"progress, hour after hour", jn5_cap:"My devotional time, in one of the videos.",
+  jn1_evo:"progress, hour after hour", awp_fire:"Click to fire", jn5_cap:"My devotional time, in one of the videos.",
   xp_s1:"sales", xp_s2:"views on one video", xp_s3:"product validated",
   rw_sr:"What drives me", rw_head:"At the end of the day, I care about people.", rw_sub:"Tap a face.",
   rw:[
