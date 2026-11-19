@@ -1,5 +1,5 @@
 /* ============================================================
-   Guilherme Balestrin — portfolio · JS puro, sem dependências
+   Guilherme Balestrin — portfolio, JS puro, sem dependências
    1) i18n PT/EN   2) hero CRT arrastável   3) frase animada por scroll
    4) janelas com abas  5) roda de interesses  6) reveals, FAQ, form
    ============================================================ */
@@ -44,12 +44,12 @@ pt: {
   hit_msg:"Por favor, não bata nele.",
   story_sr:"eu crio funis, sites e campanhas que vendem",
   work_h:"Trabalhos",
-  p1_t:"Dropshipping", p1_l:"Tudo começou em 2022, com uma loja online. Demorou 1 ano até a primeira venda. Pelo caminho, um vídeo no TikTok passou de 2,3 milhões de views.", p1_k:"E-commerce · Tráfego orgânico",
-  p2_t:"Infoprodutos", p2_l:"Depois criei meu próprio produto, montei a operação inteira e passei a vender com anúncios pagos.", p2_k:"Produto digital · Funil · Tráfego pago",
-  p3_t:"Meta e TikTok Ads", p3_l:"Campanhas no Meta Ads e no TikTok Ads: segmentação de público, teste de criativos e otimização de verba para trazer o cliente certo.", p3_k:"Meta Ads · TikTok Ads · Criativo",
-  tabs_drop:["Vídeo viral","TikTok","Shopify","Amazon","Vendas"], tabs_info:["Vendas","Funil","Campanhas"], tabs_meta:["Criativos","Públicos","Verba"],
-  sub_drop:["views. O vídeo da garrafinha na escola, o produto que eu vendia.","novos seguidores e 132K curtidas no mesmo vídeo (TikTok Studio).","sessões em uma semana na loja Shopify · R$161,49 em vendas, 3 pedidos.","de conversão em links de afiliado: 38 cliques, 6 pedidos, R$169,72.","venda paga no crédito (Yampi) + Reel com 5 mil curtidas."], big_drop:["2,3M","+3.375","944","15,79%","R$155,96"],
-  sub_info:["notificações reais de Venda Aprovada e Pix Gerado no Kiwify.","Da atenção à compra","Tráfego pago em escala"], big_info:["Kiwify","",""], sub_meta:["Criativos estáticos e em vídeo, com testes A/B","Segmentação para falar com quem compra","Verba otimizada com base nas métricas"],
+  p1_t:"Dropshipping", p1_l:"Tudo começou em 2022, com uma loja online. Demorou 1 ano até a primeira venda. Pelo caminho, um vídeo no TikTok passou de 2,3 milhões de views.", p1_k:"E-commerce e tráfego orgânico",
+  p2_t:"Infoprodutos", p2_l:"Depois criei meu próprio produto, montei a operação inteira e passei a vender com anúncios pagos.", p2_k:"Produto digital, funil e tráfego pago",
+  p3_t:"Meta e TikTok Ads", p3_l:"Campanhas no Meta Ads e no TikTok Ads: segmentação de público, teste de criativos e otimização de verba para trazer o cliente certo.", p3_k:"Meta Ads, TikTok Ads e criativos",
+  tabs_drop:["Vídeo viral","TikTok","Shopify","Amazon","Vendas"], tabs_info:["Vendas","E-books","Anúncio"], tabs_meta:["Criativos","Públicos","Verba"],
+  sub_drop:["views. O vídeo da garrafinha na escola, o produto que eu vendia.","novos seguidores e 132K curtidas no mesmo vídeo (TikTok Studio).","sessões em uma semana na loja Shopify, com R$161,49 em vendas, 3 pedidos.","de conversão em links de afiliado: 38 cliques, 6 pedidos, R$169,72.","venda paga no crédito (Yampi) + Reel com 5 mil curtidas."], big_drop:["2,3M","+3.375","944","15,79%","R$155,96"],
+  sub_info:["notificações reais de Venda Aprovada e Pix Gerado no Kiwify.","capas e páginas dos e-books que eu vendia. Design e texto meus.","anúncio em vídeo que eu editei: gancho, lista e chamada para o saiba mais."], big_info:["Kiwify","E‑books","Vídeo"], big_meta:["Criativo"], sub_meta:["anúncio estático que eu fiz: dor, contraste e virada numa peça só.","Segmentação para falar com quem compra","Verba otimizada com base nas métricas"],
   nav_jn:"Minha história", jn_k:"Fora do trabalho", jn_t:"Repetir até ficar bom.",
   jn_l:"Quase tudo o que eu sei fazer bem veio da mesma regra: fazer a mesma coisa de novo e de novo, enquanto o resto desiste.",
   jn1_t:"Quase fui pro player de CS2.",
@@ -63,12 +63,12 @@ pt: {
   jn3_t:"Gosto de desafio. O de agora é o russo.",
   jn3_p1:"Estou estudando russo e já saí do zero: hoje estou no nível básico. Alfabeto novo, sons novos. Escolhi justamente porque é difícil.",
   jn3_p2:"É a mesma regra de sempre. Não existe atalho, existe repetição até soltar.",
-  jn3_ru:"privet · oi", jn3_rul:"Estudando russo agora",
+  jn3_ru:"privet = oi", jn3_rul:"Estudando russo agora",
   jn4_t:"Leio para entender gente.", jn4_p:"Gosto de ler sobre neurociência, psicologia e filosofia. Quero entender como as pessoas pensam, sentem e decidem, porque todo negócio bom começa aí.",
   jn4_c1:"Neurociência", jn4_c2:"Psicologia", jn4_c3:"Filosofia",
   jn5_t:"Sou cristão.", jn5_p:"Minha fé aparece no jeito como eu ajo e trabalho. Nos meus vídeos, o devocional fazia parte do dia, junto com o trabalho.",
   xp_k:"Experiência prática", xp_t:"O que eu já fiz, na prática.", xp_l:"Do anúncio ao funil, sempre em projeto próprio e com resultado que dá para conferir.",
-  xp1_tag:"Projeto próprio", xp1_t:"Fundador e operador · E‑commerce dropshipping", xp1_d:"Criei e gerenciei a loja inteira, do marketing às vendas.",
+  xp1_tag:"Projeto próprio", xp1_t:"Fundador e operador de e‑commerce (dropshipping)", xp1_d:"Criei e gerenciei a loja inteira, do marketing às vendas.",
   xp1_b1:"Campanhas no Meta Ads e TikTok Ads: segmentação de público, teste de criativos e otimização de verba.",
   xp1_b2:"Conteúdo orgânico com foco em conversão, com um vídeo que passou de 2,3 milhões de views no TikTok.",
   xp1_b3:"Parcerias com micro influenciadores: busca de perfis, briefing e acompanhamento das entregas.",
@@ -79,7 +79,7 @@ pt: {
   xp2_b2:"Conteúdo para redes sociais (Reels, posts e copy de vendas) para construir audiência.",
   xp3_tag:"Experiência pontual", xp3_t:"Afiliado digital", xp3_d:"Plataformas de infoprodutos.",
   xp3_b1:"Atuei como afiliado para validar estratégias de tráfego e depois migrei para construir uma marca própria.",
-  xp_tools:"Ferramentas", xp_lang:"Idiomas", xp_l1:"Português · nativo", xp_l2:"Inglês · fluente", xp_l3:"Russo · básico",
+  xp_tools:"Ferramentas", xp_lang:"Idiomas", xp_l1:"Português (nativo)", xp_l2:"Inglês (fluente)", xp_l3:"Russo (básico)",
   jn1_evo:"evolução, hora após hora", jn5_cap:"Meu devocional, num dos vídeos.",
   xp_s1:"vendas", xp_s2:"views em um vídeo", xp_s3:"produto validado",
   rw_sr:"O que me move", rw_head:"No fundo, o que me interessa é gente.", rw_sub:"Toque em um rosto.",
@@ -99,7 +99,7 @@ pt: {
   bf_t:"Vamos conversar", bf_l:"Tem uma oportunidade ligada a marketing digital, tráfego ou conteúdo? Conte aqui. Eu respondo.", bf_name:"Nome", bf_email:"E-mail", bf_need:"Do que você precisa?",
   pill_site:"Site", pill_traffic:"Tráfego", pill_copy:"Copy", pill_funnel:"Funil", pill_other:"Outro", bf_about:"Conte mais", bf_send:"Enviar",
   bf_err:"Preencha nome e um e-mail válido.", bf_ok:"Abrindo seu app de e-mail…", bf_subject:"Contato pelo portfólio", bf_body_need:"Preciso de",
-  rg_ask:"Minha proposta", rg_say:"Aberto a oportunidades alinhadas ao que eu gosto e já fiz.", rg_book:"Remoto ou híbrido · São Paulo",
+  rg_ask:"Minha proposta", rg_say:"Aberto a oportunidades alinhadas ao que eu gosto e já fiz.", rg_book:"Remoto ou híbrido, em São Paulo",
   fq_t:"Perguntas, respondidas.",
   q1:"Quem é você?", a1:"Guilherme, 19 anos. Comecei no marketing digital em 2022, com dropshipping, e depois fiz infoprodutos. Hoje estudo Administração de Empresas no Insper.",
   q2:"O que você já fez?", a2:"Montei e operei uma loja de dropshipping do zero, com campanhas no Meta Ads e TikTok Ads, criativos e parcerias com micro influenciadores, e passei de 20 vendas. Depois estruturei o infoproduto Caverna de Alexandria, com funis, copy e automações no Typebot. Também já criei conteúdo no meu perfil pessoal.",
@@ -110,10 +110,10 @@ pt: {
   tip_help:"Teclas e gestos",
   mq_t:"Plataformas por onde já passei",
   st_t:"Números de verdade.", st_l:"Prints e métricas das minhas próprias operações. Sem maquiagem.",
-  st1:"views em um único vídeo no TikTok", st1s:"Maio/2023 · dropshipping",
+  st1:"views em um único vídeo no TikTok", st1s:"Maio/2023, dropshipping",
   st2:"curtidas no mesmo vídeo", st2s:"Produto que eu vendia",
   st3:"novos seguidores vindos dele", st3s:"Dados do TikTok Studio",
-  st4:"de conversão em links de afiliado", st4s:"Amazon Associados · 38 cliques, 6 pedidos",
+  st4:"de conversão em links de afiliado", st4s:"Amazon Associados: 38 cliques, 6 pedidos",
   hp_t:"Teclas e gestos", hp_keys:"Atalhos de uma tecla", hp_close:"Fechar",
   hp_rows:[["Arrastar","Olhar em volta (ou mover os adesivos)"],["3 cliques no monitor","Não faça isso."],["1 – 3","Trocar de canal"],["L","Idioma PT / EN"],["M","Reduzir movimento"],["?","Esta ajuda"],["Shift + rolar","Mover o mundo na horizontal"]],
   ab_k:"Sobre mim", ab_t:"Oi, eu sou o Guilherme.",
@@ -134,20 +134,36 @@ pt: {
   nav_projects:"Projetos", ab_gt:"Um pouco mais de mim", g1:"Escritório é onde der.", g2:"Quando pede formalidade.", g3:"Rotina de faculdade.",
   vn_k:"Projetos paralelos", vn_t:"Ideias que viram produto.",
   vn_l:"Além do marketing e da faculdade, gosto de pegar uma ideia, desenhar a solução e colocar no ar. Estes são projetos que construí por conta própria.",
-  in_s:"Projeto atual · em construção",
+  in_s:"Projeto atual, em construção",
   in_l:"Uma rede social fechada para quem estuda no Insper: o que está acontecendo no campus, só para quem é de dentro. Hoje está com lista de espera aberta.",
   in_f1:"Spotted anônimo", in_f2:"Festas e lotes", in_f3:"Caronas", in_f4:"Dúvidas da turma", in_f5:"Quem mora perto", in_f6:"Fila do Sodexo",
   in_n:"Entrada só com e-mail do Insper, sem senha.", in_cta:"Ver o IN.",
-  sw_s:"No ar · projeto independente",
+  sw_s:"No ar, projeto independente",
   sw_l:"Plataforma que junta alunos que querem trocar de turma e encontra as melhores combinações: diretas, em grupo ou em ciclo, para ajudar o máximo de gente.",
   sw_1:"Informe semestre, curso, turma atual e para onde quer ir.", sw_2:"O algoritmo procura o melhor match: direto, em grupo ou em ciclo.", sw_3:"Acompanhe o status e combine a troca com quem fechou match.",
   sw_n:"Projeto de alunos, sem fins lucrativos e sem vínculo oficial com o Insper.", sw_cta:"Ver o InsperSwap",
   sw_c1:"Match direto", sw_c2:"Em grupo", sw_c3:"Em ciclo",
-  pz_s:"MVP · web app + API",
+  pz_s:"MVP com web app e API",
   pz_l:"Um consultor de look masculino digital. A tese: as pessoas te julgam em segundos, e a roupa define esse julgamento. O app mostra como cada look será percebido e deixa você montar o seu, peça por peça.",
   pz_f1:"Guarda-roupa digital", pz_f2:"6 ocasiões", pz_f3:"6 estilos", pz_f4:"Nível de presença e impacto", pz_f5:"Modo Análise e Construir", pz_f6:"Como você será percebido",
   pz_n:"Também criei a identidade visual (Ônix, Ouro Antigo e Marfim) e o manual do código. O motor de recomendação por regras é isolado e pronto para plugar IA.",
   pz_cta:"Quer ver? Me chama", pz_chip_k:"PRESENÇA", pz_chip_v:"Médio",
+  nav_cr:"Criativos",
+  cr_k:"Caverna de Alexandria, meu infoproduto", cr_t:"Eu podia dizer que sei fazer criativo. Prefiro mostrar.",
+  cr_l:"Tudo aqui saiu da Caverna de Alexandria, o infoproduto que eu criei e vendia: anúncios, e-books e a identidade da marca. Ideia, texto, design e edição feitos por mim.",
+  cr_s_tag:"Anúncio estático", cr_s_t:"Por que cada parte está ali.",
+  cr_s1_t:"Gancho que contradiz", cr_s1:"Abre negando o que ele já acredita (“não é a aparência”). A curiosidade segura a leitura nos primeiros segundos.",
+  cr_s2_t:"Espelho", cr_s2:"Os quatro rostos mostram como o perfil dele é classificado. Ele se reconhece sem eu precisar acusar ninguém.",
+  cr_s3_t:"Contraste visual", cr_s3:"A mesma foto com duas leituras, lado a lado. O olho entende a ideia antes de ler o texto.",
+  cr_s4_t:"Dar nome ao inimigo", cr_s4:"“O Perfil Genérico™” transforma uma sensação vaga num conceito com nome, fácil de lembrar e de repetir.",
+  cr_s5_t:"Virada sem promessa fácil", cr_s5:"Fecha mudando o jeito de enxergar o problema, sem prometer resultado mágico. Mais confiança, menos cara de golpe.",
+  cr_v_tag:"Anúncios em vídeo", cr_v_t:"Editados para segurar o polegar.", cr_snd:"Ativar som", cr_snd_off:"Tirar som",
+  cr_v1_t:"As 4 habilidades", cr_v1:"Abre com uma cena de status e revela a lista um item por vez, para a pessoa ficar até o fim. No final, manda para o “Saiba mais”.",
+  cr_v1_c1:"Gancho de status", cr_v1_c2:"Lista progressiva", cr_v1_c3:"CTA no saiba mais",
+  cr_v2_t:"Escape da Manada, formato meme", cr_v2:"A objeção fica na legenda de cima e a reação na de baixo. Parece conteúdo, não anúncio, e por isso não é pulado.",
+  cr_v2_c1:"Formato nativo", cr_v2_c2:"Quebra de objeção", cr_v2_c3:"Humor",
+  cr_b_tag:"Os produtos", cr_b_t:"E-books que eu escrevi, diagramei e vendi.", cr_b_l:"Toque numa capa para ver de perto. Cada um tem conceito visual próprio, mas todos falam a mesma língua da marca.", cr_pages:"+2 páginas", cr_b4:"31 Lições Estoicas",
+  cr_i_tag:"Identidade de marca", cr_i_t:"A marca inteira, não só o post.", cr_i_l:"Paleta 90% escuro e 10% dourado, Playfair com Inter, conceitos de logo, voz da marca e templates de conteúdo. É o que deixa tudo acima com cara de uma marca só.",
   title:"Guilherme Balestrin | Marketing digital e Administração",
   desc:"Guilherme Balestrin, 19. 4 anos de experiência em marketing digital: tráfego, copy, design e sites. Administração de Empresas no Insper.",
   story:["eu","crio","funis","sites","e","campanhas","que","VENDEM"]
@@ -163,12 +179,12 @@ en: {
   hit_msg:"Please do not hit it.",
   story_sr:"I create funnels, websites and campaigns that sell",
   work_h:"Work",
-  p1_t:"Dropshipping", p1_l:"It all started in 2022, with an online store. It took 1 year to get my first sale. Along the way, a TikTok video passed 2.3 million views.", p1_k:"E-commerce · Organic traffic",
-  p2_t:"Info products", p2_l:"Then I built my own product, set up the whole operation and started selling with paid ads.", p2_k:"Digital product · Funnel · Paid traffic",
-  p3_t:"Meta and TikTok Ads", p3_l:"Campaigns on Meta Ads and TikTok Ads: audience targeting, creative testing and budget optimization to bring in the right customer.", p3_k:"Meta Ads · TikTok Ads · Creative",
-  tabs_drop:["Viral video","TikTok","Shopify","Amazon","Sales"], tabs_info:["Sales","Funnel","Campaigns"], tabs_meta:["Creatives","Audiences","Budget"],
-  sub_drop:["views. The school bottle video, the product I was selling.","new followers and 132K likes on the same video (TikTok Studio).","sessions in one week on the Shopify store · R$161.49 in sales, 3 orders.","conversion on affiliate links: 38 clicks, 6 orders, R$169.72.","a sale paid by credit card (Yampi) + a Reel with 5K likes."], big_drop:["2.3M","+3,375","944","15.79%","R$155.96"],
-  sub_info:["real Approved Sale and Pix Generated notifications from Kiwify.","From attention to purchase","Paid traffic at scale"], big_info:["Kiwify","",""], sub_meta:["Static and video creatives, with A/B tests","Targeting to reach the people who buy","Budget optimized from the metrics"],
+  p1_t:"Dropshipping", p1_l:"It all started in 2022, with an online store. It took 1 year to get my first sale. Along the way, a TikTok video passed 2.3 million views.", p1_k:"E-commerce and organic traffic",
+  p2_t:"Info products", p2_l:"Then I built my own product, set up the whole operation and started selling with paid ads.", p2_k:"Digital product, funnel and paid traffic",
+  p3_t:"Meta and TikTok Ads", p3_l:"Campaigns on Meta Ads and TikTok Ads: audience targeting, creative testing and budget optimization to bring in the right customer.", p3_k:"Meta Ads, TikTok Ads and creatives",
+  tabs_drop:["Viral video","TikTok","Shopify","Amazon","Sales"], tabs_info:["Sales","E-books","Ad"], tabs_meta:["Creatives","Audiences","Budget"],
+  sub_drop:["views. The school bottle video, the product I was selling.","new followers and 132K likes on the same video (TikTok Studio).","sessions in one week on the Shopify store, with R$161.49 in sales, 3 orders.","conversion on affiliate links: 38 clicks, 6 orders, R$169.72.","a sale paid by credit card (Yampi) + a Reel with 5K likes."], big_drop:["2.3M","+3,375","944","15.79%","R$155.96"],
+  sub_info:["real Approved Sale and Pix Generated notifications from Kiwify.","covers and pages of the e-books I sold. My design and my copy.","a video ad I edited: hook, list and a call to learn more."], big_info:["Kiwify","E‑books","Video"], big_meta:["Creative"], sub_meta:["a static ad I made: pain, contrast and the turn, in one piece.","Targeting to reach the people who buy","Budget optimized from the metrics"],
   nav_jn:"My story", jn_k:"Off the clock", jn_t:"Repeat until you're good.",
   jn_l:"Almost everything I do well came from the same rule: do the same thing again and again while everyone else quits.",
   jn1_t:"I almost went pro in CS2.",
@@ -182,12 +198,12 @@ en: {
   jn3_t:"I like a challenge. Right now it's Russian.",
   jn3_p1:"I'm studying Russian and I'm already past zero: I'm at a basic level now. New alphabet, new sounds. I picked it precisely because it's hard.",
   jn3_p2:"Same rule as always. There's no shortcut, only repetition until it flows.",
-  jn3_ru:"privet · hi", jn3_rul:"Studying Russian right now",
+  jn3_ru:"privet = hi", jn3_rul:"Studying Russian right now",
   jn4_t:"I read to understand people.", jn4_p:"I like reading about neuroscience, psychology and philosophy. I want to understand how people think, feel and decide, because every good business starts there.",
   jn4_c1:"Neuroscience", jn4_c2:"Psychology", jn4_c3:"Philosophy",
   jn5_t:"I'm a Christian.", jn5_p:"My faith shows in how I act and work. In my videos, devotional time was part of the day, right alongside the work.",
   xp_k:"Hands-on experience", xp_t:"What I've actually done.", xp_l:"From the ad to the funnel, always on my own projects and with results you can check.",
-  xp1_tag:"Own project", xp1_t:"Founder and operator · Dropshipping e‑commerce", xp1_d:"I built and managed the whole store, from marketing to sales.",
+  xp1_tag:"Own project", xp1_t:"Founder and operator of a dropshipping e‑commerce", xp1_d:"I built and managed the whole store, from marketing to sales.",
   xp1_b1:"Meta Ads and TikTok Ads campaigns: audience targeting, creative testing and budget optimization.",
   xp1_b2:"Organic content built for conversion, with a video that passed 2.3 million views on TikTok.",
   xp1_b3:"Micro-influencer partnerships: finding profiles, briefing and following the deliveries.",
@@ -198,7 +214,7 @@ en: {
   xp2_b2:"Social media content (Reels, posts and sales copy) to build an audience.",
   xp3_tag:"One-off experience", xp3_t:"Digital affiliate", xp3_d:"Info product platforms.",
   xp3_b1:"I worked as an affiliate to validate traffic strategies, then moved on to building my own brand.",
-  xp_tools:"Tools", xp_lang:"Languages", xp_l1:"Portuguese · native", xp_l2:"English · fluent", xp_l3:"Russian · basic",
+  xp_tools:"Tools", xp_lang:"Languages", xp_l1:"Portuguese (native)", xp_l2:"English (fluent)", xp_l3:"Russian (basic)",
   jn1_evo:"progress, hour after hour", jn5_cap:"My devotional time, in one of the videos.",
   xp_s1:"sales", xp_s2:"views on one video", xp_s3:"product validated",
   rw_sr:"What drives me", rw_head:"At the end of the day, I care about people.", rw_sub:"Tap a face.",
@@ -218,7 +234,7 @@ en: {
   bf_t:"Let's talk", bf_l:"Got an opportunity in digital marketing, traffic or content? Tell me here. I'll write back.", bf_name:"Name", bf_email:"Email", bf_need:"What do you need?",
   pill_site:"Website", pill_traffic:"Traffic", pill_copy:"Copy", pill_funnel:"Funnel", pill_other:"Other", bf_about:"Tell me more", bf_send:"Send",
   bf_err:"Please add your name and a valid email.", bf_ok:"Opening your email app…", bf_subject:"Contact from portfolio", bf_body_need:"I need",
-  rg_ask:"My proposal", rg_say:"Open to opportunities aligned with what I like and have done.", rg_book:"Remote or hybrid · São Paulo",
+  rg_ask:"My proposal", rg_say:"Open to opportunities aligned with what I like and have done.", rg_book:"Remote or hybrid, São Paulo",
   fq_t:"Questions, answered.",
   q1:"Who are you?", a1:"Guilherme, 19. I started in digital marketing in 2022 with dropshipping, then moved on to info products. Today I study Business Administration at Insper.",
   q2:"What have you done?", a2:"I built and ran a dropshipping store from scratch, with Meta Ads and TikTok Ads campaigns, creatives and micro-influencer partnerships, and passed 20 sales. Then I structured the Caverna de Alexandria info product, with funnels, copy and Typebot automations. I also made content on my personal profile.",
@@ -229,10 +245,10 @@ en: {
   tip_help:"Keys & gestures",
   mq_t:"Platforms I've worked on",
   st_t:"Real numbers.", st_l:"Screenshots and metrics from my own operations. No makeup.",
-  st1:"views on a single TikTok video", st1s:"May 2023 · dropshipping",
+  st1:"views on a single TikTok video", st1s:"May 2023, dropshipping",
   st2:"likes on the same video", st2s:"A product I was selling",
   st3:"new followers from it", st3s:"TikTok Studio data",
-  st4:"conversion on affiliate links", st4s:"Amazon Associates · 38 clicks, 6 orders",
+  st4:"conversion on affiliate links", st4s:"Amazon Associates: 38 clicks, 6 orders",
   hp_t:"Keys & gestures", hp_keys:"Single-key shortcuts", hp_close:"Close",
   hp_rows:[["Drag","Look around (or move the stickers)"],["3 clicks on the TV","Please don't."],["1 – 3","Switch channel"],["L","Language PT / EN"],["M","Reduce motion"],["?","This help"],["Shift + scroll","Pan the world sideways"]],
   ab_k:"About me", ab_t:"Hi, I'm Guilherme.",
@@ -253,20 +269,36 @@ en: {
   nav_projects:"Projects", ab_gt:"A little more of me", g1:"Office is wherever it works.", g2:"When it calls for a suit.", g3:"College routine.",
   vn_k:"Side projects", vn_t:"Ideas that become products.",
   vn_l:"Beyond marketing and college, I like to take an idea, design the solution and put it live. These are projects I built on my own.",
-  in_s:"Current project · in the making",
+  in_s:"Current project, in the making",
   in_l:"A closed social network for people who study at Insper: what's happening on campus, only for those inside. It currently has an open waitlist.",
   in_f1:"Anonymous Spotted", in_f2:"Parties & tickets", in_f3:"Rides", in_f4:"Class questions", in_f5:"Who lives nearby", in_f6:"Cafeteria queue",
   in_n:"Sign-in with your Insper email only, no password.", in_cta:"See IN.",
-  sw_s:"Live · independent project",
+  sw_s:"Live, independent project",
   sw_l:"A platform that brings together students who want to swap classes and finds the best matches: direct, group or cycle, to help as many people as possible.",
   sw_1:"Enter semester, course, current class and where you want to go.", sw_2:"The algorithm finds the best match: direct, group or cycle.", sw_3:"Track the status and arrange the swap with whoever matched.",
   sw_n:"A student project, non-profit and with no official link to Insper.", sw_cta:"See InsperSwap",
   sw_c1:"Direct match", sw_c2:"Group", sw_c3:"Cycle",
-  pz_s:"MVP · web app + API",
+  pz_s:"MVP com web app e API",
   pz_l:"A digital menswear look consultant. The thesis: people judge you in seconds, and your clothes shape that judgment. The app shows how each look will be perceived and lets you build yours, piece by piece.",
   pz_f1:"Digital wardrobe", pz_f2:"6 occasions", pz_f3:"6 styles", pz_f4:"Presence & impact level", pz_f5:"Analysis & Build modes", pz_f6:"How you'll be perceived",
   pz_n:"I also created the visual identity (Onyx, Antique Gold and Ivory) and the code manual. The rule-based recommendation engine is isolated and ready to plug in AI.",
   pz_cta:"Want to see it? Message me", pz_chip_k:"PRESENCE", pz_chip_v:"Medium",
+  nav_cr:"Creatives",
+  cr_k:"Caverna de Alexandria, my info product", cr_t:"I could tell you I make good creatives. I'd rather show you.",
+  cr_l:"Everything here came from Caverna de Alexandria, the info product I created and sold: ads, e-books and the brand identity. Idea, copy, design and editing by me.",
+  cr_s_tag:"Static ad", cr_s_t:"Why every part is there.",
+  cr_s1_t:"A hook that contradicts", cr_s1:"It opens by denying what he already believes (“it's not your looks”). Curiosity holds the read in the first seconds.",
+  cr_s2_t:"Mirror", cr_s2:"The four faces show how his profile gets classified. He recognizes himself without me accusing anyone.",
+  cr_s3_t:"Visual contrast", cr_s3:"The same photo with two readings, side by side. The eye gets the idea before reading the text.",
+  cr_s4_t:"Name the enemy", cr_s4:"“The Generic Profile™” turns a vague feeling into a named concept, easy to remember and repeat.",
+  cr_s5_t:"A turn without easy promises", cr_s5:"It closes by changing how he sees the problem, with no magic result promised. More trust, less scam vibe.",
+  cr_v_tag:"Video ads", cr_v_t:"Edited to stop the thumb.", cr_snd:"Sound on", cr_snd_off:"Sound off",
+  cr_v1_t:"The 4 skills", cr_v1:"Opens with a status scene and reveals the list one item at a time, so people stay until the end. Then it sends them to “Learn more”.",
+  cr_v1_c1:"Status hook", cr_v1_c2:"Progressive list", cr_v1_c3:"CTA to learn more",
+  cr_v2_t:"Escape da Manada, meme format", cr_v2:"The objection sits in the top caption and the reaction below. It looks like content, not an ad, so it doesn't get skipped.",
+  cr_v2_c1:"Native format", cr_v2_c2:"Objection handling", cr_v2_c3:"Humor",
+  cr_b_tag:"The products", cr_b_t:"E-books I wrote, designed and sold.", cr_b_l:"Tap a cover to see it up close. Each has its own visual concept, but they all speak the brand's language.", cr_pages:"+2 pages", cr_b4:"31 Stoic Lessons",
+  cr_i_tag:"Brand identity", cr_i_t:"The whole brand, not just the post.", cr_i_l:"A 90% dark and 10% gold palette, Playfair with Inter, logo concepts, brand voice and content templates. It's what makes everything above look like one brand.",
   title:"Guilherme Balestrin | Digital marketing and Business Administration",
   desc:"Guilherme Balestrin, 19. 4 years of digital marketing experience: traffic, copy, design and websites. Business Administration at Insper.",
   story:["I","create","funnels","websites","and","campaigns","that","SELL"]
@@ -319,7 +351,7 @@ function buildRail() {
   rail.textContent = "";
   T[lang].rail.forEach((name, i) => {
     const b = mk("button", "rail-i"); b.type = "button"; b.dataset.i = i;
-    b.setAttribute("aria-label", "CH 0" + (i + 1) + " · " + name);
+    b.setAttribute("aria-label", "CH 0" + (i + 1) + ", " + name);
     b.append(mk("b", "", "0" + (i + 1)), mk("span", "", name));
     b.addEventListener("click", e => { e.stopPropagation(); goCh(i); });
     b.addEventListener("pointerdown", e => e.stopPropagation());
@@ -653,11 +685,11 @@ const PJ = {
   ] },
   info: { items: [
     { g:"linear-gradient(135deg,#0b8a5a,#19c37d)", src:"assets/kiwify.webp", ar:"591/813" },
-    { g:"linear-gradient(135deg,#00b894,#0a84ff)", mock:"funnel" },
-    { g:"linear-gradient(135deg,#ff9500,#ff3b30)", mock:"bars" }
+    { g:"linear-gradient(135deg,#1a1408,#6b5220)", src:"assets/cr-7erros.webp", ar:"700/1049" },
+    { g:"linear-gradient(135deg,#2a0a0a,#b3122e)", v:1, src:"assets/cr-ad-4hab.mp4", poster:"assets/cr-ad-4hab.webp", ar:"9/16" }
   ] },
   meta: { items: [
-    { g:"linear-gradient(135deg,#0866ff,#4cc9f0)", mock:"cards" },
+    { g:"linear-gradient(135deg,#140606,#d7263d)", src:"assets/cr-perfil.webp", ar:"900/1350" },
     { g:"linear-gradient(135deg,#7b2ff7,#f107a3)", mock:"funnel" },
     { g:"linear-gradient(135deg,#ff9500,#ff3b30)", mock:"bars" }
   ] }
@@ -931,6 +963,39 @@ $("#help-keys").addEventListener("click", () => { keysOn = !keysOn; store.set("g
 /* ---------- init ---------- */
 const savedStill = store.get("gb-still");
 if (savedStill === "1" || (savedStill == null && reduceMQ.matches)) { root.dataset.still = "1"; $("#btn-still").setAttribute("aria-pressed", "true"); }
+/* ============================================================
+   7) CRIATIVOS: vídeos que tocam quando visíveis + lightbox
+   ============================================================ */
+const crVids = $$(".cr-vid video");
+const crPlay = (v, on) => { if (on) { if (!v.getAttribute("src")) v.src = v.dataset.src; v.play().catch(() => {}); } else v.pause(); };
+const crCan = v => v._vis && !document.hidden && (!root.dataset.still || v._user);
+const crio = new IntersectionObserver(es => es.forEach(en => { en.target._vis = en.isIntersecting; crPlay(en.target, crCan(en.target)); }), { threshold: .45 });
+const crLabel = (b, on) => { const l = $("span", b); b.setAttribute("aria-pressed", String(on)); l.dataset.i = on ? "cr_snd_off" : "cr_snd"; l.textContent = T[lang][l.dataset.i]; };
+crVids.forEach(v => {
+  crio.observe(v);
+  const b = $(".cr-snd", v.parentNode);
+  b.addEventListener("click", () => {
+    const turnOn = v.muted;
+    crVids.forEach(o => { if (o !== v && !o.muted) { o.muted = true; crLabel($(".cr-snd", o.parentNode), false); } });
+    v.muted = !turnOn; v._user = true;
+    if (turnOn) { v.currentTime = 0; crPlay(v, true); }
+    crLabel(b, turnOn);
+  });
+  v.addEventListener("click", () => { v._user = true; crPlay(v, v.paused); });
+});
+document.addEventListener("visibilitychange", () => crVids.forEach(v => crPlay(v, crCan(v))));
+
+const lb = $("#lb"), lbIn = $("#lb-in");
+$$("[data-lb]").forEach(b => b.addEventListener("click", () => {
+  lbIn.textContent = "";
+  const alt = ($("img", b) || {}).alt || "";
+  b.dataset.lb.split("|").forEach(src => { const im = mk("img"); im.src = src; im.alt = alt; im.decoding = "async"; lbIn.appendChild(im); });
+  lbIn.scrollTop = 0; lb.showModal(); root.classList.add("lb-open");
+}));
+$("#lb-x").addEventListener("click", () => lb.close());
+lb.addEventListener("click", e => { if (e.target === lb || e.target === lbIn) lb.close(); });
+lb.addEventListener("close", () => root.classList.remove("lb-open"));
+
 setLang(lang);
 layoutStickers(); paintWorld(); heroScroll();
 requestAnimationFrame(heroTick); requestAnimationFrame(storyTick); requestAnimationFrame(wheelTick);
