@@ -60,12 +60,23 @@ function boot() {
   /* ---------- e-books orbitando ---------- */
   const BOOKS = [
     { src: "assets/cr-escape.webp", w: 518, h: 751 },
-    { src: "assets/cr-anti-mock.webp", w: 500, h: 805 }
+    { src: "assets/cr-anti-mock.webp", w: 500, h: 805 },
+    { src: "assets/cr-estoicismo.webp", w: 640, h: 960, flat: true }   // capa plana: vira um livro 3D com lombada e páginas
   ];
   const books = BOOKS.map((b, i) => {
-    const H = 2.15, W = H * b.w / b.h;
-    const m = new THREE.Mesh(new THREE.PlaneGeometry(W, H),
-      new THREE.MeshBasicMaterial({ map: tex(b.src), transparent: true, side: THREE.DoubleSide, alphaTest: .02 }));
+    let m;
+    if (b.flat) {
+      const H = 1.95, W = H * b.w / b.h, D = .18;
+      const c = col => new THREE.MeshBasicMaterial({ color: col });
+      const pages = c("#d9d2c2"), spine = c("#0d0d14");
+      m = new THREE.Mesh(new THREE.BoxGeometry(W, H, D), [pages, spine, pages, pages, new THREE.MeshBasicMaterial({ map: tex(b.src) }), spine]);
+      m.userData.tilt = .42;
+    } else {
+      const H = 2.15, W = H * b.w / b.h;
+      m = new THREE.Mesh(new THREE.PlaneGeometry(W, H),
+        new THREE.MeshBasicMaterial({ map: tex(b.src), transparent: true, side: THREE.DoubleSide, alphaTest: .02 }));
+    }
+    m.userData.base = (Array.isArray(m.material) ? m.material : [m.material]).map(x => x.color.clone());
     m.userData.a0 = i / BOOKS.length * Math.PI * 2;
     world.add(m); return m;
   });
@@ -136,9 +147,11 @@ function boot() {
       v.applyEuler(spin.rotation);
       b.position.copy(v);
       b.quaternion.copy(camera.quaternion);
+      if (b.userData.tilt) b.rotateY(-b.userData.tilt + Math.sin(t * .6) * .12);
       b.rotateZ(Math.sin(t * .7 + i) * .06);
       const front = (v.z + R) / (2 * R);            // 0 atrás, 1 na frente
-      b.material.color.setScalar(.38 + front * .62);
+      const k = .38 + front * .62;
+      (Array.isArray(b.material) ? b.material : [b.material]).forEach((mt, q) => mt.color.copy(b.userData.base[q]).multiplyScalar(k));
       b.renderOrder = front > .5 ? 2 : 0;
       b.scale.setScalar(.82 + front * .25);
     });
