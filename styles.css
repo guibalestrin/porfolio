@@ -383,7 +383,7 @@ html:not([data-still]) .rv:not(.in){opacity:0;translate:0 34px}
 .ij-lede{margin-top:20px;max-width:36em;color:rgba(255,255,255,.7);font-size:clamp(17px,1.4vw,21px);line-height:1.45;letter-spacing:-.015em}
 .ij-scopes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:clamp(34px,6svh,60px)}
 .ij-card{--mx:50%;--my:50%;position:relative;padding:24px;border-radius:22px;background:rgba(255,255,255,.05);box-shadow:inset 0 0 0 1px rgba(255,255,255,.1);overflow:hidden;isolation:isolate;transition:transform .5s var(--pop),opacity .8s ease,translate 1s var(--ease)}
-.ij-card::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .3s;background:radial-gradient(240px circle at var(--mx) var(--my),rgba(223,205,46,.18),transparent 70%)}
+.ij-card::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;transition:opacity .3s;background:radial-gradient(240px circle at var(--mx) var(--my),rgba(232,38,46,.18),transparent 70%)}
 .ij-card:hover{transform:translateY(-4px)}.ij-card:hover::before{opacity:1}
 .ij-n{position:absolute;top:20px;right:22px;font:800 34px/1 var(--display);color:rgba(255,255,255,.22);letter-spacing:.04em}
 .ij-ico{display:grid;place-items:center;width:50px;height:50px;border-radius:14px;background:var(--accent);color:#000;margin-bottom:34px}
@@ -509,7 +509,7 @@ html[data-still] .fl,html[data-still] .tile,html[data-still] .pz-chip,html[data-
 .ab-gal-card span{position:absolute;left:18px;right:18px;bottom:16px;z-index:1;color:#fff;font:600 clamp(15px,1.3vw,19px)/1.2 var(--text);letter-spacing:-.015em}
 
 .ij-head{position:relative}
-.ij-photo{position:absolute;right:0;top:0;width:clamp(150px,21vw,290px);aspect-ratio:4/5;margin:0;border-radius:24px;overflow:hidden;rotate:4deg;box-shadow:0 0 0 1px rgba(223,205,46,.5),0 40px 70px -24px rgba(0,0,0,.8)}
+.ij-photo{position:absolute;right:0;top:0;width:clamp(150px,21vw,290px);aspect-ratio:4/5;margin:0;border-radius:24px;overflow:hidden;rotate:4deg;box-shadow:0 0 0 1px rgba(232,38,46,.5),0 40px 70px -24px rgba(0,0,0,.8)}
 .ij-photo img{display:block;width:100%;height:100%;object-fit:cover}
 .ij-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(10,10,11,.55))}
 .ij-title{max-width:11em}
@@ -773,7 +773,7 @@ html[data-still] .sm{opacity:1!important;transform:rotate(var(--r))!important}
 .ch-1.ch-ph em{max-width:44%;font-size:3.6cqw}
 
 /* ---- Insper Jr: print do Instagram em moldura de celular ---- */
-.ij-photo{width:clamp(150px,15vw,220px);aspect-ratio:560/1133;border-radius:26px;background:#000;box-shadow:0 0 0 5px #111,0 0 0 6px rgba(223,205,46,.5),0 40px 70px -24px rgba(0,0,0,.8)}
+.ij-photo{width:clamp(150px,15vw,220px);aspect-ratio:560/1133;border-radius:26px;background:#000;box-shadow:0 0 0 5px #111,0 0 0 6px rgba(232,38,46,.5),0 40px 70px -24px rgba(0,0,0,.8)}
 .ij-photo img{object-position:top}
 .ij-photo::after{display:none}
 @media (max-width:900px){.ij-photo{width:min(52%,210px)}}
@@ -1065,3 +1065,11 @@ html[data-still] .bf-sent{position:relative;top:auto}
 .logo-chip.jrl img{height:22px}
 .ij-brand{padding:0;background:none;box-shadow:none;border-radius:0}
 .ij-brand img{height:clamp(34px,3.6vw,48px);filter:drop-shadow(0 6px 18px rgba(0,0,0,.45))}
+
+/* paleta vermelha da Insper Jr. */
+.ij{--accent:#ec2b33}
+.ij-panel{background:radial-gradient(90% 70% at 88% 0%,rgba(236,43,51,.22) 0%,transparent 60%),radial-gradient(120% 90% at 85% 0%,#1f1213 0%,#0b0909 60%)}
+.ij-ico{color:#fff;box-shadow:0 10px 24px -10px rgba(236,43,51,.8)}
+.ij-chips li:hover{color:#fff}
+.ij-card:hover{box-shadow:inset 0 0 0 1px rgba(236,43,51,.45)}
+.ij-n{color:rgba(236,43,51,.35)}
