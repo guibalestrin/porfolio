@@ -823,28 +823,6 @@ $("#ft-top").addEventListener("click", () => scrollTo({ top: 0, behavior: root.d
 
 /* idioma */
 
-/* logos no lugar da palavra "Insper" / "Insper Jr" nos textos */
-function brandify() {
-  const re = /Insper Jr\.?|Insper(?!Swap)/g;
-  const skip = "script,style,.sr-only,.lg,.logo-sw,.logo-chip,.ij-brand,.ab-chip,dialog,[data-nobrand]";
-  const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, { acceptNode(n) {
-    if (!n.parentElement || n.parentElement.closest(skip)) return NodeFilter.FILTER_REJECT;
-    return /Insper/.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
-  } });
-  const nodes = []; while (w.nextNode()) nodes.push(w.currentNode);
-  nodes.forEach(n => {
-    const txt = n.nodeValue, frag = document.createDocumentFragment(); let last = 0, m;
-    re.lastIndex = 0;
-    while ((m = re.exec(txt))) {
-      frag.appendChild(document.createTextNode(txt.slice(last, m.index)));
-      const jr = m[0].startsWith("Insper Jr"), sp = mk("span", "lg " + (jr ? "lg-jr" : "lg-i")), im = mk("img");
-      im.src = jr ? "assets/insperjr-logo.png" : "assets/insper-w.png"; im.alt = ""; im.draggable = false;
-      sp.append(im, mk("span", "sr-only", m[0])); frag.appendChild(sp); last = m.index + m[0].length;
-    }
-    frag.appendChild(document.createTextNode(txt.slice(last)));
-    n.replaceWith(frag);
-  });
-}
 function setLang(l) {
   lang = l; store.set("gb-lang", l);
   root.lang = l === "pt" ? "pt-BR" : "en"; root.dataset.lang = l;
@@ -857,7 +835,6 @@ function setLang(l) {
   $("#btn-still").setAttribute("aria-label", T[l].tip_still);
   buildWork(); splitCTA(); buildStory();
   buildHelp(); setCounters(false); buildChips();
-  brandify();
 }
 $("#btn-lang").addEventListener("click", () => setLang(lang === "pt" ? "en" : "pt"));
 
