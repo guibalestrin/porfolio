@@ -140,21 +140,13 @@ pt: {
   pz_n:"Também criei a identidade visual (Ônix, Ouro Antigo e Marfim) e o manual do código. O motor de recomendação por regras é isolado e pronto para plugar IA.",
   pz_cta:"Quer ver? Me chama", pz_chip_k:"PRESENÇA", pz_chip_v:"Médio",
   nav_cr:"Caverna",
-  cr_k:"Caverna de Alexandria, minha marca", cr_t:"Criei uma marca para vender meus infoprodutos. E uma comunidade em volta dela.",
-  cr_l:"Em vez de lançar produtos soltos, criei a Caverna de Alexandria: uma marca que reunia meus e-books sob a mesma ideia de estudo, disciplina e crescimento. O plano era juntar, em volta dela, pessoas com a mesma mentalidade.",
-  cr_c_tag:"A ideia", cr_c_t:"Mais que um produto: uma marca e uma comunidade.",
-  cr_c1_t:"Uma marca, vários produtos", cr_c1:"Todos os infoprodutos saíam com o mesmo nome e a mesma cara. Quem confiava em um já chegava confiando no próximo.",
-  cr_c2_t:"Uma mentalidade", cr_c2:"A marca representava um jeito de pensar: estudar, ter disciplina e sair do automático. Quem se identificava, se sentia em casa.",
-  cr_c3_t:"Uma comunidade", cr_c3:"O produto era a porta de entrada. O destino era uma comunidade de pessoas com a mesma mentalidade, crescendo juntas.",
-  cr_s_tag:"A marca falando", cr_s_t:"Como a marca conversava com quem pensava igual.",
-  cr_s1_t:"Gancho que contradiz", cr_s1:"Abre negando o que ele já acredita (“não é a aparência”). A curiosidade segura a leitura nos primeiros segundos.",
-  cr_s2_t:"Espelho", cr_s2:"Os quatro rostos mostram como o perfil dele é classificado. Ele se reconhece sem eu precisar acusar ninguém.",
-  cr_s3_t:"Contraste visual", cr_s3:"A mesma foto com duas leituras, lado a lado. O olho entende a ideia antes de ler o texto.",
-  cr_s4_t:"Dar nome ao inimigo", cr_s4:"“O Perfil Genérico™” transforma uma sensação vaga num conceito com nome, fácil de lembrar e de repetir.",
-  cr_s5_t:"Virada sem promessa fácil", cr_s5:"Fecha mudando o jeito de enxergar o problema, sem prometer resultado mágico. Mais confiança, menos cara de golpe.",
-  cr_b_tag:"Os produtos", cr_b_t:"Os infoprodutos que eu vendia sob a marca.", cr_b_l:"Toque numa capa para ver de perto. Cada um tem conceito visual próprio, mas todos falam a mesma língua da marca.", cr_pages:"+2 páginas", cr_b4:"31 Lições Estoicas",
-  cr_i_tag:"Identidade de marca", cr_i_t:"Uma identidade própria, reconhecível.", cr_i_l:"Logo com monograma C e A, paleta 90% escuro e 10% dourado, Playfair com Inter e uma voz própria. É o que faz tudo ter cara de uma marca só.",
-  bk_logo:"Logo principal", bk_mono:"Monograma", bk_pal:"Paleta · 90% escuro, 10% dourado", bk_type:"Tipografia", bk_voice:"Voz da marca", bk_v1:"Analítica", bk_v2:"Calma", bk_v3:"Precisa", bk_v4:"Estratégica", bk_tag:"Um sistema. Uma mentalidade. Uma transformação.",
+  cr_k:"Minha marca", cr_t:"Caverna de Alexandria",
+  cr_l:"Uma marca para vender meus infoprodutos e reunir pessoas com a mesma mentalidade.",
+  cr_hint:"Role para reunir a comunidade",
+  cv1_t:"A marca", cv1:"Um nome e uma cara para todos os produtos.",
+  cv2_t:"Os produtos", cv2:"E-books de estudo, disciplina e crescimento.",
+  cv3_t:"A comunidade", cv3:"Pessoas com a mesma mentalidade, juntas.",
+  cv_words:["Estudo","Disciplina","Crescimento","Conhecimento","Presença","Mentalidade"],
   title:"Guilherme Balestrin | Marketing digital e Administração",
   desc:"Guilherme Balestrin, 19. 4 anos de experiência em marketing digital: tráfego, copy, design e sites. Administração de Empresas no Insper.",
   story:["eu","crio","funis","sites","e","campanhas","que","VENDEM"]
@@ -266,21 +258,13 @@ en: {
   pz_n:"I also created the visual identity (Onyx, Antique Gold and Ivory) and the code manual. The rule-based recommendation engine is isolated and ready to plug in AI.",
   pz_cta:"Want to see it? Message me", pz_chip_k:"PRESENCE", pz_chip_v:"Medium",
   nav_cr:"Caverna",
-  cr_k:"Caverna de Alexandria, my brand", cr_t:"I built a brand to sell my info products. And a community around it.",
-  cr_l:"Instead of launching loose products, I created Caverna de Alexandria: a brand that brought my e-books together under one idea of study, discipline and growth. The plan was to gather people with the same mindset around it.",
-  cr_c_tag:"The idea", cr_c_t:"More than a product: a brand and a community.",
-  cr_c1_t:"One brand, many products", cr_c1:"Every info product came out with the same name and look. Whoever trusted one already trusted the next.",
-  cr_c2_t:"A mindset", cr_c2:"The brand stood for a way of thinking: study, discipline and getting out of autopilot. Whoever related to it felt at home.",
-  cr_c3_t:"A community", cr_c3:"The product was the way in. The goal was a community of like-minded people, growing together.",
-  cr_s_tag:"The brand speaking", cr_s_t:"How the brand talked to people who thought alike.",
-  cr_s1_t:"A hook that contradicts", cr_s1:"It opens by denying what he already believes (“it's not your looks”). Curiosity holds the read in the first seconds.",
-  cr_s2_t:"Mirror", cr_s2:"The four faces show how his profile gets classified. He recognizes himself without me accusing anyone.",
-  cr_s3_t:"Visual contrast", cr_s3:"The same photo with two readings, side by side. The eye gets the idea before reading the text.",
-  cr_s4_t:"Name the enemy", cr_s4:"“The Generic Profile™” turns a vague feeling into a named concept, easy to remember and repeat.",
-  cr_s5_t:"A turn without easy promises", cr_s5:"It closes by changing how he sees the problem, with no magic result promised. More trust, less scam vibe.",
-  cr_b_tag:"The products", cr_b_t:"The info products I sold under the brand.", cr_b_l:"Tap a cover to see it up close. Each has its own visual concept, but they all speak the brand's language.", cr_pages:"+2 pages", cr_b4:"31 Stoic Lessons",
-  cr_i_tag:"Brand identity", cr_i_t:"Its own identity, easy to recognize.", cr_i_l:"A logo with a C and A monogram, a 90% dark and 10% gold palette, Playfair with Inter and a voice of its own. It's what makes everything look like one brand.",
-  bk_logo:"Main logo", bk_mono:"Monogram", bk_pal:"Palette · 90% dark, 10% gold", bk_type:"Typography", bk_voice:"Brand voice", bk_v1:"Analytical", bk_v2:"Calm", bk_v3:"Precise", bk_v4:"Strategic", bk_tag:"One system. One mindset. One transformation.",
+  cr_k:"My brand", cr_t:"Caverna de Alexandria",
+  cr_l:"A brand to sell my info products and bring together people with the same mindset.",
+  cr_hint:"Scroll to gather the community",
+  cv1_t:"The brand", cv1:"One name and one look for every product.",
+  cv2_t:"The products", cv2:"E-books on study, discipline and growth.",
+  cv3_t:"The community", cv3:"Like-minded people, together.",
+  cv_words:["Study","Discipline","Growth","Knowledge","Presence","Mindset"],
   title:"Guilherme Balestrin | Digital marketing and Business Administration",
   desc:"Guilherme Balestrin, 19. 4 years of digital marketing experience: traffic, copy, design and websites. Business Administration at Insper.",
   story:["I","create","funnels","websites","and","campaigns","that","SELL"]
@@ -667,7 +651,7 @@ const PJ = {
   ] },
   info: { items: [
     { g:"linear-gradient(135deg,#0b8a5a,#19c37d)", src:"assets/kiwify.webp", ar:"591/813" },
-    { g:"linear-gradient(135deg,#1a1408,#6b5220)", src:"assets/cr-7erros.webp", ar:"700/1049" }
+    { g:"linear-gradient(135deg,#1a1408,#6b5220)", src:"assets/cr-escape.webp", ar:"518/751" }
   ] },
   meta: { items: [
     { g:"linear-gradient(135deg,#7b2ff7,#f107a3)", mock:"funnel" },
@@ -821,7 +805,9 @@ $("#ft-top").addEventListener("click", () => scrollTo({ top: 0, behavior: root.d
 
 /* idioma */
 
+function cvWords(l) { const m = document.getElementById("cv-mq"); if (!m) return; const w = T[l].cv_words.map(x => `<span>${x}</span><i aria-hidden="true">✦</i>`).join(""); m.innerHTML = `<div class="cv-mq-row">${w}${w}</div>`; }
 function setLang(l) {
+  cvWords(l);
   lang = l; store.set("gb-lang", l);
   root.lang = l === "pt" ? "pt-BR" : "en"; root.dataset.lang = l;
   $$("[data-i]").forEach(el => { const v = T[l][el.dataset.i]; if (typeof v === "string") el.innerHTML = v; });
