@@ -216,7 +216,7 @@ function boot() {
         for (let i = 0; i < anim.n; i++) dolls[i].x = anim.from[i] + (anim.to[i] - anim.from[i]) * e;
         // a parte de cima sobe e tomba para trás, a de dentro sai em arco e a tampa volta
         const lift = ease(seg(p, 0, .28)) - ease(seg(p, .7, .95));
-        par.top.position.y = WAIST + lift * 1.15; par.top.position.x = -lift * .28; par.top.rotation.z = lift * .5;
+        par.top.position.y = WAIST + lift * .8; par.top.position.x = -lift * .38; par.top.rotation.z = lift * .5;
         const q = seg(p, .22, .8), eq = ease(q);
         ch.x = par.x + (anim.to[anim.n] - par.x) * eq;
         ch.y = Math.sin(Math.PI * q) * 1.05 * par.s;
