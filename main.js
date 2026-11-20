@@ -64,6 +64,7 @@ pt: {
   jn3_p1:"Estou estudando russo e já saí do zero: hoje estou no nível básico. Alfabeto novo, sons novos. Escolhi justamente porque é difícil.",
   jn3_p2:"É a mesma regra de sempre. Não existe atalho, existe repetição até soltar.",
   jn3_ru:"privet = oi", jn3_rul:"Estudando russo agora",
+  ru_k:"Camada", ru_w1:"alfabeto", ru_w2:"sons", ru_w3:"palavras", ru_w4:"oi, tudo bem?", ru_open:"Abrir a próxima", ru_close:"Guardar de novo",
   jn4_t:"Leio para entender gente.", jn4_p:"Gosto de ler sobre neurociência, psicologia e filosofia. Quero entender como as pessoas pensam, sentem e decidem, porque todo negócio bom começa aí.",
   bk:[
     {t:"Nação Dopamina", a:"Anna Lembke", p:"O cérebro cobra cada prazer com um pouco de dor. Entender a dopamina me ajuda a enxergar o que faz alguém clicar, comprar e voltar, e a vender sem explorar isso."},
@@ -213,6 +214,7 @@ en: {
   jn3_p1:"I'm studying Russian and I'm already past zero: I'm at a basic level now. New alphabet, new sounds. I picked it precisely because it's hard.",
   jn3_p2:"Same rule as always. There's no shortcut, only repetition until it flows.",
   jn3_ru:"privet = hi", jn3_rul:"Studying Russian right now",
+  ru_k:"Layer", ru_w1:"alphabet", ru_w2:"sounds", ru_w3:"words", ru_w4:"hi, how are you?", ru_open:"Open the next one", ru_close:"Nest them again",
   jn4_t:"I read to understand people.", jn4_p:"I like reading about neuroscience, psychology and philosophy. I want to understand how people think, feel and decide, because every good business starts there.",
   bk:[
     {t:"Dopamine Nation", a:"Anna Lembke", p:"The brain charges every pleasure with a bit of pain. Understanding dopamine helps me see what makes someone click, buy and come back, and how to sell without exploiting it."},

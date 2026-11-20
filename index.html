@@ -395,12 +395,25 @@
         <p data-i="jn3_p1"></p>
         <p class="jc-insight" data-i="jn3_p2"></p>
       </div>
-      <div class="jc-ru" aria-hidden="true">
-        <span class="ru-flag"><svg class="fl-svg" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" fill="#fff"/><rect y="6.67" width="28" height="6.67" fill="#0039a6"/><rect y="13.34" width="28" height="6.66" fill="#d52b1e"/></svg></span>
-        <b lang="ru">Привет</b>
-        <small data-i="jn3_ru">privet = oi</small>
-        <div class="ru-abc" lang="ru"><i>А</i><i>Б</i><i>В</i><i>Г</i><i>Д</i><i>Е</i><i>Ж</i><i>З</i><i>И</i><i>К</i><i>Л</i><i>М</i></div>
-        <span class="ru-tag" data-i="jn3_rul">Estudando russo agora</span>
+      <div class="jc-ru ru-stage" id="ru-stage">
+        <canvas class="ru-gl" id="ru-gl" aria-hidden="true"></canvas>
+        <svg class="ru-sky" viewBox="0 0 600 140" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><path d="M0 140V118H40V108H90V120H170V112H250V104H350V112H420V116H520V110H600V140ZM47.0 140V104.0H43.0C33.5 86.0 58.0 75.2 60.0 64.0C62.0 75.2 86.5 86.0 77.0 104.0H73.0V140ZM59.0 64.0h2v-12h-2zM55.0 56.0h10v2h-10zM120.0 140V96.0H117.0C109.7 82.5 128.4 74.4 130.0 66.0C131.6 74.4 150.3 82.5 143.0 96.0H140.0V140ZM129.0 66.0h2v-12h-2zM125.0 58.0h10v2h-10zM192.0 140V78.0H186.0C172.6 52.8 207.1 37.7 210.0 22.0C212.9 37.7 247.4 52.8 234.0 78.0H228.0V140ZM209.0 22.0h2v-12h-2zM205.0 14.0h10v2h-10zM278.0 140V62.0H270.0C253.2 30.5 296.4 11.6 300.0 -8.0C303.6 11.6 346.8 30.5 330.0 62.0H322.0V140ZM299.0 -8.0h2v-12h-2zM295.0 -16.0h10v2h-10zM376.0 140V82.0H370.0C357.7 58.6 389.4 44.6 392.0 30.0C394.6 44.6 426.3 58.6 414.0 82.0H408.0V140ZM391.0 30.0h2v-12h-2zM387.0 22.0h10v2h-10zM459.0 140V98.0H455.0C446.6 82.7 468.2 73.5 470.0 64.0C471.8 73.5 493.4 82.7 485.0 98.0H481.0V140ZM469.0 64.0h2v-12h-2zM465.0 56.0h10v2h-10zM531.0 140V92.0H526.0C515.4 72.2 542.7 60.3 545.0 48.0C547.3 60.3 574.6 72.2 564.0 92.0H559.0V140ZM544.0 48.0h2v-12h-2zM540.0 40.0h10v2h-10z"/></svg>
+        <div class="ru-top" aria-hidden="true">
+          <span class="ru-flag"><svg class="fl-svg" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" fill="#fff"/><rect y="6.67" width="28" height="6.67" fill="#0039a6"/><rect y="13.34" width="28" height="6.66" fill="#d52b1e"/></svg></span>
+          <span class="ru-tag" data-i="jn3_rul">Estudando russo agora</span>
+        </div>
+        <div class="ru-bar">
+          <div class="ru-card" aria-live="polite">
+            <em class="ru-k"><i data-i="ru_k">Camada</i> <i id="ru-n">1</i>/4</em>
+            <ol class="ru-ws">
+              <li class="ru-w on"><b lang="ru">Алфавит</b><small data-i="ru_w1">alfabeto</small></li>
+              <li class="ru-w"><b lang="ru">Звуки</b><small data-i="ru_w2">sons</small></li>
+              <li class="ru-w"><b lang="ru">Слова</b><small data-i="ru_w3">palavras</small></li>
+              <li class="ru-w"><b lang="ru">Привет, как дела?</b><small data-i="ru_w4">oi, tudo bem?</small></li>
+            </ol>
+          </div>
+          <button class="ru-btn" id="ru-btn" type="button"><i class="ru-b1" data-i="ru_open">Abrir a próxima</i><i class="ru-b2" data-i="ru_close">Guardar de novo</i></button>
+        </div>
       </div>
     </article>
 
@@ -619,8 +632,6 @@
           <li><i>🎩</i><span data-i="pz_f3">6 estilos</span></li><li><i>◐</i><span data-i="pz_f4">Nível de presença e impacto</span></li>
           <li><i>✦</i><span data-i="pz_f5">Modo Análise e Construir</span></li><li><i>🧠</i><span data-i="pz_f6">Como você será percebido</span></li>
         </ul>
-        <p class="vc-note" data-i="pz_n"></p>
-        <ul class="vc-tech"><li>React</li><li>Node + Fastify</li><li>Prisma</li><li>PostgreSQL</li><li>JWT</li></ul>
         <a class="vc-link" href="#contact"><span data-i="pz_cta">Quer ver? Me chama</span> →</a>
       </div>
       <div class="vc-media">
@@ -808,5 +819,6 @@
 <script type="module" src="awp.js"></script>
 <script type="module" src="faith.js"></script>
 <script type="module" src="cav.js"></script>
+<script type="module" src="ru.js"></script>
 </body>
 </html>
