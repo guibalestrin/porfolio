@@ -1,8 +1,9 @@
 /* ============================================================
-   Fé: cruz templária 3D (Three.js): cruz pattée em ouro com
-   esmalte vermelho, coroa de espinhos e auréola; raios de luz
-   em shader sobre a foto do devocional; ao acender, a luz se
-   espalha pela tela e aparece um versículo.
+   Fé (Three.js): a cruz vazia de madeira bruta, com o linho
+   dobrado sobre a trave, a coroa de espinhos e os três cravos
+   que ficaram. Ao acender, nasce a luz do amanhecer por trás,
+   o linho se ilumina, brota luz dos espinhos e aparece o
+   versículo. Só símbolos, nenhuma imagem.
    ============================================================ */
 const wrap = document.querySelector(".fa-wrap");
 const stage = document.getElementById("fa-stage");
@@ -48,7 +49,7 @@ function boot() {
     cross && cross.glory && cross.glory(s);
     if (!s) glory();
     clearTimeout(litTimer);
-    litTimer = setTimeout(() => { stage.classList.remove("lit"); rays && rays.lit(0); }, 7500);
+    litTimer = setTimeout(() => { stage.classList.remove("lit"); rays && rays.lit(0); cross && cross.unlit && cross.unlit(); }, 7500);
     setTimeout(() => { busy = false; }, s ? 600 : 2600);
   }
 
@@ -130,7 +131,7 @@ void main(){
   };
 }
 
-/* ---------- cruz templária 3D ---------- */
+/* ---------- cruz vazia 3D: madeira, linho, coroa de espinhos e cravos ---------- */
 async function makeCross(canvas) {
   const THREE = await import("three");
   const { RoomEnvironment } = await import("three/addons/environments/RoomEnvironment.js");
@@ -138,130 +139,197 @@ async function makeCross(canvas) {
   const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
   renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
   renderer.setClearColor(0x000000, 0);
-  renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.setClearColor(0x000000, 0);
-  renderer.toneMappingExposure = 1.1;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.05;
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   const scene = new THREE.Scene();
   const pm = new THREE.PMREMGenerator(renderer);
   scene.environment = pm.fromScene(new RoomEnvironment(), .04).texture;
+  scene.environmentIntensity = .45;
   const cam = new THREE.PerspectiveCamera(26, 1, .1, 100);
 
-  scene.add(new THREE.AmbientLight(0xffe2b0, .35));
-  const key = new THREE.DirectionalLight(0xfff1d6, 2.4); key.position.set(-3, 6, 8); scene.add(key);
-  const warm = new THREE.PointLight(0xffa640, 30, 20); warm.position.set(2.5, 1.5, 3); scene.add(warm);
-  const back = new THREE.PointLight(0xffd27a, 40, 20); back.position.set(0, 0, -3); scene.add(back);
+  scene.add(new THREE.AmbientLight(0xffe2b0, .3));
+  const key = new THREE.DirectionalLight(0xfff1d6, 2.2); key.position.set(-3, 5, 7); scene.add(key);
+  const warm = new THREE.PointLight(0xffa640, 18, 20); warm.position.set(2.5, 1, 3); scene.add(warm);
+  // a luz do amanhecer atrás da cruz: cresce ao "acender"
+  const dawn = new THREE.PointLight(0xffd892, 10, 12); dawn.position.set(0, .6, -1.6); scene.add(dawn);
 
-  const gold = new THREE.MeshStandardMaterial({ color: 0xe0ac48, metalness: 1, roughness: .22, emissive: 0x7a4a08, emissiveIntensity: .15 });
-  const enamel = new THREE.MeshPhysicalMaterial({ color: 0x8e0b14, metalness: .1, roughness: .25, clearcoat: 1, clearcoatRoughness: .08, emissive: 0x5a0006, emissiveIntensity: .25 });
-  const wood = new THREE.MeshStandardMaterial({ color: 0x3b2414, roughness: .85, metalness: 0 });
+  // semente fixa: a cena é sempre a mesma
+  let sd = 7; const rnd = () => (sd = (sd * 16807) % 2147483647) / 2147483647;
 
-  // perfil da cruz pattée: braços que se abrem até as pontas
-  const pattee = (a, W, L, notch) => {
-    const S = new THREE.Shape();
-    const rot = (x, y, k) => { for (let i = 0; i < k; i++) [x, y] = [y, -x]; return [x, y]; };
-    for (let k = 0; k < 4; k++) {
-      const P = (x, y) => rot(x, y, k);
-      const [sx, sy] = P(-a, a);
-      if (k === 0) S.moveTo(sx, sy);
-      S.quadraticCurveTo(...P(-a - .04, L * .72), ...P(-W, L));
-      S.quadraticCurveTo(...P(0, L - notch), ...P(W, L));
-      S.quadraticCurveTo(...P(a + .04, L * .72), ...P(a, a));
-    }
-    return S;
+  // veios de madeira desenhados em canvas
+  const wc = document.createElement("canvas"); wc.width = 256; wc.height = 512;
+  const wx = wc.getContext("2d");
+  wx.fillStyle = "#6b4527"; wx.fillRect(0, 0, 256, 512);
+  for (let i = 0; i < 140; i++) {
+    const x0 = rnd() * 256, a = .05 + rnd() * .18, wob = 2 + rnd() * 7, ph = rnd() * 9;
+    wx.strokeStyle = rnd() < .5 ? `rgba(40,22,10,${a})` : `rgba(160,112,66,${a * .7})`;
+    wx.lineWidth = .6 + rnd() * 2.2; wx.beginPath();
+    for (let y = 0; y <= 512; y += 8) { const x = x0 + Math.sin(y * .012 + ph) * wob + Math.sin(y * .05 + ph * 2) * 1.2; y ? wx.lineTo(x, y) : wx.moveTo(x, y); }
+    wx.stroke();
+  }
+  for (let i = 0; i < 5; i++) { // nós da madeira
+    const x = rnd() * 256, y = rnd() * 512, r = 4 + rnd() * 7;
+    const g = wx.createRadialGradient(x, y, 0, x, y, r * 2.2);
+    g.addColorStop(0, "rgba(30,16,6,.85)"); g.addColorStop(.45, "rgba(45,25,10,.4)"); g.addColorStop(1, "rgba(45,25,10,0)");
+    wx.fillStyle = g; wx.beginPath(); wx.ellipse(x, y, r * 1.4, r * 2.4, 0, 0, Math.PI * 2); wx.fill();
+  }
+  const woodTex = (rot) => {
+    const t = new THREE.CanvasTexture(wc); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4;
+    if (rot) { t.center.set(.5, .5); t.rotation = Math.PI / 2; }
+    return t;
   };
+  const bumpTex = (rot) => { const t = new THREE.CanvasTexture(wc); if (rot) { t.center.set(.5, .5); t.rotation = Math.PI / 2; } return t; };
+  const woodMat = (rot) => new THREE.MeshStandardMaterial({ map: woodTex(rot), bumpMap: bumpTex(rot), bumpScale: 2.2, roughness: .88, metalness: 0, emissive: 0x2a1404, emissiveIntensity: 0 });
+  const woodV = woodMat(false), woodH = woodMat(true);
+
+  // trave talhada à mão: caixa subdividida com relevo irregular
+  const hewn = (w, h, d, sx, sy) => {
+    const geo = new THREE.BoxGeometry(w, h, d, sx, sy, 2), p = geo.attributes.position;
+    for (let i = 0; i < p.count; i++) {
+      const x = p.getX(i), y = p.getY(i), z = p.getZ(i);
+      const n = Math.sin(x * 23.1 + y * 7.3) * Math.cos(z * 19.7 + y * 3.1) + .5 * Math.sin(y * 41.7 + x * 13.3 + z * 5.1);
+      const f = .012 * n;
+      p.setXYZ(i, x + Math.sign(x) * f * (Math.abs(x) > w / 2 - .001), y + Math.sign(y) * f * (Math.abs(y) > h / 2 - .001), z + Math.sign(z) * f * (Math.abs(z) > d / 2 - .001));
+    }
+    geo.computeVertexNormals(); return geo;
+  };
+
   const g = new THREE.Group(), cr = new THREE.Group(); g.add(cr);
-  const frameGeo = new THREE.ExtrudeGeometry(pattee(.17, .64, 1.5, .16), { depth: .22, bevelEnabled: true, bevelThickness: .07, bevelSize: .06, bevelSegments: 5, curveSegments: 24 });
-  frameGeo.center(); cr.add(new THREE.Mesh(frameGeo, gold));
-  const inlay = new THREE.ExtrudeGeometry(pattee(.11, .5, 1.32, .13), { depth: .06, bevelEnabled: true, bevelThickness: .02, bevelSize: .02, bevelSegments: 3, curveSegments: 24 });
-  inlay.center();
-  const front = new THREE.Mesh(inlay, enamel); front.position.z = .2; cr.add(front);
-  const backIn = front.clone(); backIn.position.z = -.2; cr.add(backIn);
-  // medalhão central
-  const boss = new THREE.Mesh(new THREE.CylinderGeometry(.2, .2, .56, 40), gold); boss.rotation.x = Math.PI / 2; cr.add(boss);
-  const gem = new THREE.Mesh(new THREE.SphereGeometry(.12, 32, 20), new THREE.MeshPhysicalMaterial({ color: 0xffe9b0, emissive: 0xffc35a, emissiveIntensity: .6, roughness: .05, transmission: .3, clearcoat: 1 }));
-  gem.scale.z = .6; gem.position.z = .29; cr.add(gem);
-  const gem2 = gem.clone(); gem2.position.z = -.29; cr.add(gem2);
+  const BW = .26, BD = .22, YB = .78, HW = 2.1;
+  cr.add(new THREE.Mesh(hewn(BW, 3.7, BD, 2, 40), woodV));
+  const beam = new THREE.Mesh(hewn(HW, .24, BD * .96, 30, 2), woodH); beam.position.set(0, YB, .005); cr.add(beam);
 
-  // coroa de espinhos: dois galhos trançados + espinhos
-  const crown = new THREE.Group(); cr.add(crown);
-  const R = .58;
-  for (let s = 0; s < 2; s++) {
+  // título no alto (INRI)
+  const tc = document.createElement("canvas"); tc.width = 256; tc.height = 96;
+  const tx = tc.getContext("2d");
+  tx.drawImage(wc, 0, 0, 96, 256, 0, 0, 256, 96); tx.fillStyle = "rgba(230,205,160,.35)"; tx.fillRect(0, 0, 256, 96);
+  tx.fillStyle = "#2a160a"; tx.font = "600 62px 'Cormorant Garamond', Georgia, serif"; tx.textAlign = "center"; tx.textBaseline = "middle";
+  tx.fillText("INRI", 128, 52);
+  const tTex = new THREE.CanvasTexture(tc); tTex.colorSpace = THREE.SRGBColorSpace;
+  const plankSide = new THREE.MeshStandardMaterial({ color: 0x5a3a20, roughness: .9 });
+  const plank = new THREE.Mesh(new THREE.BoxGeometry(.62, .23, .035), [plankSide, plankSide, plankSide, plankSide, new THREE.MeshStandardMaterial({ map: tTex, roughness: .85 }), plankSide]);
+  plank.position.set(0, 1.62, BD / 2 + .02); plank.rotation.z = -.03; cr.add(plank);
+
+  // cravos: os três ficaram, Ele não está mais ali
+  const iron = new THREE.MeshStandardMaterial({ color: 0x6a6058, metalness: .9, roughness: .45 });
+  const nailGeo = new THREE.CylinderGeometry(.02, .011, .2, 6), headGeo = new THREE.CylinderGeometry(.06, .052, .03, 10);
+  const nail = (x, y, tilt) => {
+    const n = new THREE.Group();
+    const shaft = new THREE.Mesh(nailGeo, iron); shaft.position.y = .1; n.add(shaft);
+    const head = new THREE.Mesh(headGeo, iron); head.position.y = .2; n.add(head);
+    n.rotation.set(Math.PI / 2 - .12, 0, tilt); n.position.set(x, y, BD / 2 - .07); cr.add(n);
+  };
+  nail(-HW / 2 + .2, YB, .2); nail(HW / 2 - .2, YB, -.15); nail(0, -1.05, .08);
+
+  // pano de linho dobrado sobre a trave, movido pelo vento
+  const W = .8, CU = 26, CV = 90, rr = .19, Lb = .5, arc = Math.PI * rr;
+  const cloth = new THREE.PlaneGeometry(1, 1, CU, CV), cp = cloth.attributes.position;
+  const clothMat = new THREE.MeshPhysicalMaterial({ color: 0xe6dac2, roughness: .85, sheen: 1, sheenRoughness: .55, sheenColor: 0xfff3dc, side: THREE.DoubleSide, emissive: 0xffdca0, emissiveIntensity: 0 });
+  const clothMesh = new THREE.Mesh(cloth, clothMat); cr.add(clothMesh);
+  const hem = []; for (let i = 0; i <= CU; i++) { const u = i / CU; hem.push(1.02 + .07 * Math.sin(u * 6.3 + 1) + .025 * Math.sin(u * 11)); }
+  function drape(t) {
+    for (let j = 0; j <= CV; j++) for (let i = 0; i <= CU; i++) {
+      const u = i / CU, v = 1 - j / CV, Lf = hem[i], s = v * (Lb + arc + Lf);
+      let x = (u - .5) * W, y, z, d;
+      if (s < Lb) { d = Lb - s; z = -rr; y = YB - d; }
+      else if (s < Lb + arc) { const f = (s - Lb) / rr; z = -rr * Math.cos(f); y = YB + rr * Math.sin(f); d = 0; }
+      else { d = s - Lb - arc; z = rr; y = YB - d; }
+      const side = z > 0 ? 1 : -1, k = Math.min(1, d / .35);
+      // pregas verticais e o tecido que se junta embaixo da trave
+      x *= 1 - .18 * Math.min(1, d / .9) * (1 - Math.abs(u - .5));
+      z += side * (.05 + .04 * Math.sin(u * 26 + 1.3) + .015 * Math.sin(u * 9)) * k;
+      z += side * Math.pow(d, 1.6) * .09 * Math.sin(t * 1.4 + d * 3.2 + u * 4);
+      x += Math.pow(d, 1.8) * .035 * Math.sin(t * 1.1 + d * 2.5);
+      cp.setXYZ(j * (CU + 1) + i, x, y, z);
+    }
+    cp.needsUpdate = true; cloth.computeVertexNormals();
+  }
+
+  // coroa de espinhos pousada no alto da cruz; dos espinhos brota luz
+  const crown = new THREE.Group(); crown.position.set(0, 1.2, 0); cr.add(crown);
+  const ring = new THREE.Group(); ring.rotation.set(Math.PI / 2 - .45, 0, .12); crown.add(ring);
+  const vine = new THREE.MeshStandardMaterial({ color: 0x4a2f1a, roughness: .8, emissive: 0x2a1404, emissiveIntensity: 0 });
+  const R = .3;
+  for (let s = 0; s < 3; s++) {
     const pts = [];
-    for (let i = 0; i <= 160; i++) { const t = i / 160 * Math.PI * 2; pts.push(new THREE.Vector3((R + .04 * Math.sin(t * 7 + s * Math.PI)) * Math.cos(t), (R + .04 * Math.sin(t * 7 + s * Math.PI)) * Math.sin(t), .1 * Math.sin(t * 5 + s * Math.PI))); }
-    crown.add(new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts, true), 220, .028, 6, true), wood));
+    for (let i = 0; i <= 180; i++) { const t = i / 180 * Math.PI * 2, ph = s * Math.PI * 2 / 3; const rr2 = R + .035 * Math.sin(t * 8 + ph); pts.push(new THREE.Vector3(rr2 * Math.cos(t), rr2 * Math.sin(t), .045 * Math.sin(t * 6 + ph))); }
+    ring.add(new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts, true), 240, .017, 6, true), vine));
   }
-  const thorn = new THREE.ConeGeometry(.018, .13, 5);
-  for (let i = 0; i < 46; i++) {
-    const t = Math.random() * Math.PI * 2, m = new THREE.Mesh(thorn, wood);
-    m.position.set(R * Math.cos(t), R * Math.sin(t), .1 * Math.sin(t * 5));
-    const dir = new THREE.Vector3(Math.cos(t) * (Math.random() - .2), Math.sin(t) * (Math.random() - .2), (Math.random() - .5) * 1.6).normalize();
-    m.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), dir); m.position.addScaledVector(dir, .05); crown.add(m);
+  const thorn = new THREE.ConeGeometry(.011, .09, 5), budGeo = new THREE.SphereGeometry(.024, 10, 8);
+  const budMat = new THREE.MeshStandardMaterial({ color: 0xffe4a0, emissive: 0xffbe55, emissiveIntensity: 2.2, roughness: .3 });
+  const buds = [];
+  for (let i = 0; i < 52; i++) {
+    const t = rnd() * Math.PI * 2, m = new THREE.Mesh(thorn, vine);
+    const base = new THREE.Vector3(R * Math.cos(t), R * Math.sin(t), .045 * Math.sin(t * 6));
+    const dir = new THREE.Vector3(Math.cos(t) * (rnd() - .15), Math.sin(t) * (rnd() - .15), (rnd() - .5) * 1.8).normalize();
+    m.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), dir); m.position.copy(base).addScaledVector(dir, .04); ring.add(m);
+    if (i % 2 === 0) { const b = new THREE.Mesh(budGeo, budMat); b.position.copy(base).addScaledVector(dir, .095); b.scale.setScalar(0); b.userData.d = rnd() * .9; ring.add(b); buds.push(b); }
   }
-  crown.rotation.set(.5, .25, 0);
 
-  // auréola + brilho
-  const halo = new THREE.Mesh(new THREE.TorusGeometry(1.85, .016, 8, 120), new THREE.MeshBasicMaterial({ color: 0xffd98a, transparent: true, opacity: .7, depthWrite: false }));
-  halo.position.z = -.5; g.add(halo);
+  // brilho do amanhecer atrás da cruz
   const gc = document.createElement("canvas"); gc.width = gc.height = 256;
   const gx = gc.getContext("2d"), rg = gx.createRadialGradient(128, 128, 0, 128, 128, 128);
-  rg.addColorStop(0, "rgba(255,236,190,.9)"); rg.addColorStop(.25, "rgba(255,190,90,.35)"); rg.addColorStop(1, "rgba(255,160,60,0)");
+  rg.addColorStop(0, "rgba(255,240,205,.95)"); rg.addColorStop(.22, "rgba(255,196,100,.4)"); rg.addColorStop(1, "rgba(255,160,60,0)");
   gx.fillStyle = rg; gx.fillRect(0, 0, 256, 256);
   const glowTex = new THREE.CanvasTexture(gc);
-  const glow = new THREE.Mesh(new THREE.PlaneGeometry(3.6, 3.6), new THREE.MeshBasicMaterial({ map: glowTex, transparent: true, depthWrite: false, opacity: .55 }));
-  glow.position.z = -.7; g.add(glow);
+  const glow = new THREE.Mesh(new THREE.PlaneGeometry(4.2, 4.2), new THREE.MeshBasicMaterial({ map: glowTex, transparent: true, depthWrite: false, opacity: .4 }));
+  glow.position.set(0, .7, -.8); g.add(glow);
 
   // poeira de luz
-  const N = 160, pos = new Float32Array(N * 3), seed = new Float32Array(N);
-  for (let i = 0; i < N; i++) { const a = Math.random() * Math.PI * 2, rr = .6 + Math.random() * 1.8; pos.set([Math.cos(a) * rr, Math.sin(a) * rr * 1.1, (Math.random() - .5) * 1.4], i * 3); seed[i] = Math.random(); }
+  const N = 150, pos = new Float32Array(N * 3), seed = new Float32Array(N);
+  for (let i = 0; i < N; i++) { const a = rnd() * Math.PI * 2, r2 = .5 + rnd() * 1.7; pos.set([Math.cos(a) * r2, Math.sin(a) * r2 * 1.2, (rnd() - .5) * 1.4], i * 3); seed[i] = rnd(); }
   const pg = new THREE.BufferGeometry(); pg.setAttribute("position", new THREE.BufferAttribute(pos, 3));
-  const dustMat = new THREE.PointsMaterial({ map: glowTex, size: .16, transparent: true, depthWrite: false, color: 0xffd58a, opacity: .8 });
+  const dustMat = new THREE.PointsMaterial({ map: glowTex, size: .14, transparent: true, depthWrite: false, color: 0xffd58a, opacity: .7 });
   const dust = new THREE.Points(pg, dustMat); g.add(dust);
   const base = pos.slice();
 
   scene.add(g);
+  drape(0);
 
-  let gT = 9, spin = 0;
-  const ease = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-
+  let gT = 9, lit = 0, litTo = 0;
   function resize() {
     const w = canvas.clientWidth, h = canvas.clientHeight;
     if (!w || !h) return;
     const pr = renderer.getPixelRatio();
     if (canvas.width !== Math.round(w * pr) || canvas.height !== Math.round(h * pr)) {
       renderer.setSize(w, h, false); cam.aspect = w / h;
-      const v = Math.tan(THREE.MathUtils.degToRad(cam.fov) / 2), fit = 4.3;
-      cam.position.set(0, 0, Math.max(fit / 2 / v, fit / 2 / (v * cam.aspect))); cam.updateProjectionMatrix();
+      const v = Math.tan(THREE.MathUtils.degToRad(cam.fov) / 2), fitH = 4.3, fitW = 2.7;
+      cam.position.set(0, .05, Math.max(fitH / 2 / v, fitW / 2 / (v * cam.aspect))); cam.updateProjectionMatrix();
     }
   }
 
   return {
-    glory(still) { gT = still ? 9 : 0; },
+    glory(still) { gT = still ? 9 : 0; litTo = 1; },
+    unlit() { litTo = 0; },
     draw(t, dt, mx, my, still) {
       resize();
       const tt = still ? 0 : t;
       gT += dt;
-      const k = Math.min(1, gT / 1.8), e = ease(k);
-      spin = gT < 1.8 ? e * Math.PI * 2 : 0;
+      lit += (litTo - lit) * Math.min(1, dt * (litTo > lit ? 1.6 : .9));
+      const L = still ? litTo : lit;
       const pulse = gT < 3.2 ? Math.sin(Math.min(1, gT / 3.2) * Math.PI) : 0;
-      cr.rotation.y = Math.sin(tt * .5) * .35 + mx * .6 + spin;
-      cr.rotation.x = Math.sin(tt * .4) * .08 + my * .3;
-      g.position.y = Math.sin(tt * 1.0) * .07;
-      gold.emissiveIntensity = .15 + pulse * 1.1 + (still ? 0 : Math.max(0, Math.sin(t * 1.7)) * .08);
-      enamel.emissiveIntensity = .25 + pulse * .8;
-      halo.scale.setScalar(1 + pulse * .12); halo.material.opacity = .55 + pulse * .45;
-      halo.rotation.z = tt * .1;
-      glow.scale.setScalar(1 + pulse * .15); glow.material.opacity = .45 + pulse * .55;
-      // poeira sobe devagar e explode no "acender"
+      cr.rotation.y = Math.sin(tt * .45) * .3 + mx * .55 + (still ? -.25 : 0);
+      cr.rotation.x = Math.sin(tt * .35) * .05 + my * .22;
+      g.position.y = Math.sin(tt * .9) * .05 + L * .05;
+      if (!still || !gT) drape(tt);
+      // o linho se ilumina, a madeira esquenta, a luz de trás cresce
+      clothMat.emissiveIntensity = L * .22 + pulse * .45;
+      woodV.emissiveIntensity = woodH.emissiveIntensity = vine.emissiveIntensity = L * .5 + pulse * .6;
+      dawn.intensity = 10 + L * 60 + pulse * 40;
+      glow.material.opacity = .35 + L * .45 + pulse * .2; glow.scale.setScalar(1 + L * .25 + pulse * .1);
+      for (const b of buds) { const k = Math.min(1, Math.max(0, (L - b.userData.d * .5) * 2)); b.scale.setScalar(k * (1 + .15 * Math.sin(t * 3 + b.userData.d * 20) * !still)); }
+      budMat.emissiveIntensity = 1.6 + pulse * 2;
       const p = pg.attributes.position.array;
       for (let i = 0; i < N; i++) {
-        const s = seed[i], burst = 1 + pulse * 1.2 * s;
-        const y = ((base[i * 3 + 1] + tt * (.12 + s * .2) + 2.2) % 4.4) - 2.2;
+        const s = seed[i], burst = 1 + pulse * 1.1 * s;
+        const y = ((base[i * 3 + 1] + tt * (.1 + s * .18) + 2.2) % 4.4) - 2.2;
         p[i * 3] = base[i * 3] * burst + Math.sin(tt * .8 + s * 20) * .05;
         p[i * 3 + 1] = y * burst;
         p[i * 3 + 2] = base[i * 3 + 2];
       }
       pg.attributes.position.needsUpdate = true;
-      dustMat.opacity = .55 + pulse * .45;
+      dustMat.opacity = .45 + L * .3 + pulse * .25;
       renderer.render(scene, cam);
     }
   };
