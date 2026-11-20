@@ -1233,7 +1233,8 @@ html[data-still] .ab-card3d .ab-photo{transform:none}
 .hx-n>*{transition:opacity .35s}
 .hx-n.back>*{opacity:0}
 .hx-n-ic{display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:#19c37d}
-.hx-n-ic svg{width:26px;height:26px}
+.hx-n-ic{overflow:hidden;background:#00a33a}
+.hx-n-ic img{display:block;width:100%;height:100%}
 .hx-n-tx{display:flex;flex-direction:column;gap:2px;min-width:0;font-size:14px;line-height:1.2;letter-spacing:-.01em}
 .hx-n-tx b{font-weight:600;color:#000}
 .hx-n-tx span{color:#3a3a3c;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

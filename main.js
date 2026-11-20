@@ -345,7 +345,7 @@ const hero = $("#top"), hxVisual = $("#hx-visual"), hxNotifs = $("#hx-notifs");
 let vw = innerWidth, vh = innerHeight, heroVisible = true;
 /* valores tirados do print real (assets/kiwify.webp) */
 const NOTIFS = [["Venda Aprovada!", "31,18"], ["Pix Gerado!", "10,00"], ["Venda Aprovada!", "10,00"], ["Venda Aprovada!", "8,18"], ["Pix Gerado!", "31,18"], ["Venda Aprovada!", "31,18"]];
-const KIWI = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7" fill="none" stroke="#fff" stroke-width="2.4" stroke-dasharray="33 11" transform="rotate(-140 12 12)"/><circle cx="10" cy="14" r="1.1" fill="#fff"/><circle cx="12.8" cy="13" r="1.1" fill="#fff"/><circle cx="14" cy="10.4" r="1.1" fill="#fff"/></svg>';
+const KIWI = '<img src="assets/kiwify-app.webp" alt="" width="38" height="38" draggable="false">'; /* logo oficial (app) da Kiwify */
 const MAXN = 3;
 let nIdx = 0, nTimer = 0;
 function notifEl(n) {
