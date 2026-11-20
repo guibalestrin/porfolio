@@ -1,6 +1,6 @@
 /* ============================================================
    Guilherme Balestrin — portfolio · JS puro, sem dependências
-   1) i18n PT/EN   2) hero CRT arrastável   3) frase animada por scroll
+   1) i18n PT/EN   2) hero (foto + notificações)   3) frase animada por scroll
    4) janelas com abas  5) roda de interesses  6) reveals, FAQ, form
    ============================================================ */
 (() => {
@@ -36,20 +36,18 @@ const T = {
 pt: {
   skip:"Pular para o conteúdo", nav_work:"Trabalhos", nav_about:"Sobre", nav_services:"O que faço", nav_contact:"Contato", nav_faq:"FAQ",
   tip_still:"Reduzir movimento",
-  h1:"Guilherme Balestrin, 19 anos. 4 anos de experiência em marketing digital e aluno de Administração de Empresas no Insper.",
-  ch1_k:"Olá, eu sou", ch1_v:"4 anos de experiência em marketing digital",
-  ch2_k:"Faculdade", ch2_b:"Administração<br>de Empresas", ch2_v:"Graduação em São Paulo",
-  ch3_k:"O que eu faço", ch3_b:"Tráfego, copy<br>e sites", ch3_v:"Do anúncio à página de venda",
-  hint_drag:"Arraste para olhar em volta", stp1:"TikTok Studio", stp2:"Amazon Associados", cta1:"Ver trabalhos", cta2:"Falar comigo", hint_scroll:"Role para mudar de canal", rail:["Olá","Faculdade","Serviços"],
-  hit_msg:"Por favor, não bata nele.",
+  hx_status:"Aberto a oportunidades · São Paulo",
+  hx_t1:"Eu transformo", hx_t2:"atenção", hx_t3:"em", hx_t4:"venda.",
+  hx_lede:"Sou o Guilherme, 19 anos. Desde 2022 aprendo marketing digital fazendo: conteúdo que viralizou, infoproduto vendendo e projetos que eu mesmo coloquei no ar. Hoje estudo Administração no Insper.",
+  hx_c1:"views em um vídeo", hx_c2:"Administração", hx_cap:"Notificações reais do Kiwify", hx_scroll:"Role", hx_now:"agora",
+  stp1:"TikTok Studio", stp2:"Amazon Associados", cta1:"Ver trabalhos", cta2:"Falar comigo",
   story_sr:"eu crio funis, sites e campanhas que vendem",
   work_h:"Trabalhos",
   p1_t:"Dropshipping", p1_l:"Tudo começou em 2022, com uma loja online. Demorou 1 ano até a primeira venda. Pelo caminho, um vídeo no TikTok passou de 2,3 milhões de views.", p1_k:"E-commerce · Tráfego orgânico",
   p2_t:"Infoprodutos", p2_l:"Depois criei meu próprio produto, montei a operação inteira e passei a vender com anúncios pagos.", p2_k:"Produto digital · Funil · Tráfego pago",
-  p3_t:"Meta e TikTok Ads", p3_l:"Campanhas no Meta Ads e no TikTok Ads: segmentação de público, teste de criativos e otimização de verba para trazer o cliente certo.", p3_k:"Meta Ads · TikTok Ads · Criativo",
-  tabs_drop:["Vídeo viral","TikTok","Shopify","Amazon","Vendas"], tabs_info:["Vendas","Funil","Campanhas"], tabs_meta:["Criativos","Públicos","Verba"],
+  tabs_drop:["Vídeo viral","TikTok","Shopify","Amazon","Vendas"], tabs_info:["Vendas","Funil","Campanhas"],
   sub_drop:["views. O vídeo da garrafinha na escola, o produto que eu vendia.","novos seguidores e 132K curtidas no mesmo vídeo (TikTok Studio).","sessões em uma semana na loja Shopify · R$161,49 em vendas, 3 pedidos.","de conversão em links de afiliado: 38 cliques, 6 pedidos, R$169,72.","venda paga no crédito (Yampi) + Reel com 5 mil curtidas."], big_drop:["2,3M","+3.375","944","15,79%","R$155,96"],
-  sub_info:["notificações reais de Venda Aprovada e Pix Gerado no Kiwify.","Da atenção à compra","Tráfego pago em escala"], big_info:["Kiwify","",""], sub_meta:["Criativos estáticos e em vídeo, com testes A/B","Segmentação para falar com quem compra","Verba otimizada com base nas métricas"],
+  sub_info:["notificações reais de Venda Aprovada e Pix Gerado no Kiwify.","Da atenção à compra","Tráfego pago em escala"], big_info:["Kiwify","",""],
   nav_jn:"Minha história", jn_k:"Fora do trabalho", jn_t:"Repetir até ficar bom.",
   jn_l:"Quase tudo o que eu sei fazer bem veio da mesma regra: fazer a mesma coisa de novo e de novo, enquanto o resto desiste.",
   jn1_t:"Quase fui pro player de CS2.",
@@ -106,7 +104,6 @@ pt: {
   q3:"O que te interessa além de marketing?", a3:"Liderança, gestão de pessoas, linguagem corporal e psicologia nas vendas. Todo negócio depende de entender como as pessoas decidem.",
   q4:"Como começamos?", a4:"Preencha o formulário acima ou me escreva por e-mail. Eu respondo.",
   ft_say:"Marketing digital e<br>Administração de Empresas.", ft_top:"Voltar ao topo ↑", copied:"Copiado",
-  stk:{app_in:"IN.",app_swap:"InsperSwap",app_pz:"Presenza",traffic:"Tráfego pago",copy:"Copywriting",design:"Design",meta:"Meta Ads",funnel:"Funis",persuasion:"Persuasão",leader:"Liderança",body:"Linguagem corporal",psych:"Psicologia de vendas",insper:"Insper",y2022:"4 anos de experiência",organic:"Tráfego orgânico"},
   tip_help:"Teclas e gestos",
   mq_t:"Plataformas por onde já passei",
   st_t:"Números de verdade.", st_l:"Prints e métricas das minhas próprias operações. Sem maquiagem.",
@@ -115,7 +112,7 @@ pt: {
   st3:"novos seguidores vindos dele", st3s:"Dados do TikTok Studio",
   st4:"de conversão em links de afiliado", st4s:"Amazon Associados · 38 cliques, 6 pedidos",
   hp_t:"Teclas e gestos", hp_keys:"Atalhos de uma tecla", hp_close:"Fechar",
-  hp_rows:[["Arrastar","Olhar em volta (ou mover os adesivos)"],["3 cliques no monitor","Não faça isso."],["1 – 3","Trocar de canal"],["L","Idioma PT / EN"],["M","Reduzir movimento"],["?","Esta ajuda"],["Shift + rolar","Mover o mundo na horizontal"]],
+  hp_rows:[["L","Idioma PT / EN"],["M","Reduzir movimento"],["?","Esta ajuda"]],
   ab_k:"Sobre mim", ab_t:"Oi, eu sou o Guilherme.",
   ab_c1:"19 anos", ab_c2:"4 anos de experiência", ab_c3:"Administração de Empresas",
   ab_p1:"Tenho 19 anos e comecei no marketing digital em 2022. Primeiro com dropshipping, onde demorou 1 ano até a primeira venda, depois com infoprodutos. Aprendi fazendo: tráfego pago e orgânico, copy, design, persuasão, conteúdo e Meta Ads.",
@@ -155,20 +152,18 @@ pt: {
 en: {
   skip:"Skip to content", nav_work:"Work", nav_about:"About", nav_services:"Services", nav_contact:"Contact", nav_faq:"FAQ",
   tip_still:"Reduce motion",
-  h1:"Guilherme Balestrin, 19. 4 years of digital marketing experience, studying Business Administration at Insper.",
-  ch1_k:"Hi, I'm", ch1_v:"4 years of digital marketing experience",
-  ch2_k:"College", ch2_b:"Business<br>Administration", ch2_v:"Undergraduate, São Paulo",
-  ch3_k:"What I do", ch3_b:"Traffic, copy<br>and websites", ch3_v:"From the ad to the sales page",
-  hint_drag:"Drag to look around", stp1:"TikTok Studio", stp2:"Amazon Associates", cta1:"See my work", cta2:"Talk to me", hint_scroll:"Scroll to change channel", rail:["Hello","College","Skills"],
-  hit_msg:"Please do not hit it.",
+  hx_status:"Open to opportunities · São Paulo",
+  hx_t1:"I turn", hx_t2:"attention", hx_t3:"into", hx_t4:"sales.",
+  hx_lede:"I'm Guilherme, 19. Since 2022 I've learned digital marketing by doing it: content that went viral, an info product that sells and projects I put live myself. Today I study Business Administration at Insper.",
+  hx_c1:"views on one video", hx_c2:"Business Admin", hx_cap:"Real Kiwify notifications", hx_scroll:"Scroll", hx_now:"now",
+  stp1:"TikTok Studio", stp2:"Amazon Associates", cta1:"See my work", cta2:"Talk to me",
   story_sr:"I create funnels, websites and campaigns that sell",
   work_h:"Work",
   p1_t:"Dropshipping", p1_l:"It all started in 2022, with an online store. It took 1 year to get my first sale. Along the way, a TikTok video passed 2.3 million views.", p1_k:"E-commerce · Organic traffic",
   p2_t:"Info products", p2_l:"Then I built my own product, set up the whole operation and started selling with paid ads.", p2_k:"Digital product · Funnel · Paid traffic",
-  p3_t:"Meta and TikTok Ads", p3_l:"Campaigns on Meta Ads and TikTok Ads: audience targeting, creative testing and budget optimization to bring in the right customer.", p3_k:"Meta Ads · TikTok Ads · Creative",
-  tabs_drop:["Viral video","TikTok","Shopify","Amazon","Sales"], tabs_info:["Sales","Funnel","Campaigns"], tabs_meta:["Creatives","Audiences","Budget"],
+  tabs_drop:["Viral video","TikTok","Shopify","Amazon","Sales"], tabs_info:["Sales","Funnel","Campaigns"],
   sub_drop:["views. The school bottle video, the product I was selling.","new followers and 132K likes on the same video (TikTok Studio).","sessions in one week on the Shopify store · R$161.49 in sales, 3 orders.","conversion on affiliate links: 38 clicks, 6 orders, R$169.72.","a sale paid by credit card (Yampi) + a Reel with 5K likes."], big_drop:["2.3M","+3,375","944","15.79%","R$155.96"],
-  sub_info:["real Approved Sale and Pix Generated notifications from Kiwify.","From attention to purchase","Paid traffic at scale"], big_info:["Kiwify","",""], sub_meta:["Static and video creatives, with A/B tests","Targeting to reach the people who buy","Budget optimized from the metrics"],
+  sub_info:["real Approved Sale and Pix Generated notifications from Kiwify.","From attention to purchase","Paid traffic at scale"], big_info:["Kiwify","",""],
   nav_jn:"My story", jn_k:"Off the clock", jn_t:"Repeat until you're good.",
   jn_l:"Almost everything I do well came from the same rule: do the same thing again and again while everyone else quits.",
   jn1_t:"I almost went pro in CS2.",
@@ -225,7 +220,6 @@ en: {
   q3:"What else are you into?", a3:"Leadership, people management, body language and sales psychology. Every business depends on understanding how people decide.",
   q4:"How do we start?", a4:"Fill in the form above or email me. I'll write back.",
   ft_say:"Digital marketing and<br>Business Administration.", ft_top:"Back to top ↑", copied:"Copied",
-  stk:{app_in:"IN.",app_swap:"InsperSwap",app_pz:"Presenza",traffic:"Paid traffic",copy:"Copywriting",design:"Design",meta:"Meta Ads",funnel:"Funnels",persuasion:"Persuasion",leader:"Leadership",body:"Body language",psych:"Sales psychology",insper:"Insper",y2022:"4 years of experience",organic:"Organic traffic"},
   tip_help:"Keys & gestures",
   mq_t:"Platforms I've worked on",
   st_t:"Real numbers.", st_l:"Screenshots and metrics from my own operations. No makeup.",
@@ -234,7 +228,7 @@ en: {
   st3:"new followers from it", st3s:"TikTok Studio data",
   st4:"conversion on affiliate links", st4s:"Amazon Associates · 38 clicks, 6 orders",
   hp_t:"Keys & gestures", hp_keys:"Single-key shortcuts", hp_close:"Close",
-  hp_rows:[["Drag","Look around (or move the stickers)"],["3 clicks on the TV","Please don't."],["1 – 3","Switch channel"],["L","Language PT / EN"],["M","Reduce motion"],["?","This help"],["Shift + scroll","Pan the world sideways"]],
+  hp_rows:[["L","Language PT / EN"],["M","Reduce motion"],["?","This help"]],
   ab_k:"About me", ab_t:"Hi, I'm Guilherme.",
   ab_c1:"19 y/o", ab_c2:"4 years of experience", ab_c3:"Business Administration",
   ab_p1:"I'm 19 and started in digital marketing in 2022. First with dropshipping, where it took 1 year to get my first sale, then info products. I learned by doing: paid and organic traffic, copy, design, persuasion, content and Meta Ads.",
@@ -276,214 +270,54 @@ let lang = store.get("gb-lang");
 if (lang !== "pt" && lang !== "en") lang = (navigator.language || "pt").toLowerCase().startsWith("pt") ? "pt" : "en";
 
 /* ============================================================
-   2) HERO — monitor CRT + mundo arrastável + stickers
+   2) HERO — notificações reais do Kiwify chegando + parallax leve
    ============================================================ */
-const hero = $("#top"), world = $("#world"), tv = $("#tv"), strip = $("#strip"), noiseC = $("#noise"), sysmsg = $("#sysmsg"), draghint = $("#draghint"), tvch = $("#tvch");
-const layers = $$(".layer", world).map(el => ({ el, d: parseFloat(el.dataset.depth) || 1 }));
-let vw = innerWidth, vh = innerHeight;
-let pan = { x: 0, y: 0, vx: 0, vy: 0, drag: false, lx: 0, ly: 0, moved: 0 };
-let heroVisible = true, chIdx = 0, rolling = false;
-const track = $("#heroTrack"), rail = $("#rail");
-
-/* canais: clona 3→6 para o "roll" voltar ao mesmo canal sem salto */
-const NCH = $$(".ch", strip).length;
-$$(".ch", strip).forEach(c => strip.appendChild(c.cloneNode(true)));
-$$(".ch", strip).forEach((c, i) => { c.style.top = (i * 100) + "%"; if (i >= NCH) c.setAttribute("aria-hidden", "true"); });
-strip.style.setProperty("--roll", (NCH * 100) + "%");
-/* só o vídeo do canal ativo carrega/toca (economiza banda e CPU) */
-function syncChVideo() {
-  [...strip.children].forEach((ch, idx) => {
-    const v = ch.querySelector("video"); if (!v) return;
-    const on = idx === chIdx && heroVisible && !root.dataset.still && !document.hidden && !rolling;
-    if (on) { if (!v.getAttribute("src") && v.dataset.src) v.src = v.dataset.src; v.play().catch(() => {}); } else v.pause();
-  });
+const hero = $("#top"), hxVisual = $("#hx-visual"), hxNotifs = $("#hx-notifs");
+let vw = innerWidth, vh = innerHeight, heroVisible = true;
+/* valores tirados do print real (assets/kiwify.webp) */
+const NOTIFS = [["Venda Aprovada!", "31,18"], ["Pix Gerado!", "10,00"], ["Venda Aprovada!", "10,00"], ["Venda Aprovada!", "8,18"], ["Pix Gerado!", "31,18"], ["Venda Aprovada!", "31,18"]];
+const KIWI = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7" fill="none" stroke="#fff" stroke-width="2.4" stroke-dasharray="33 11" transform="rotate(-140 12 12)"/><circle cx="10" cy="14" r="1.1" fill="#fff"/><circle cx="12.8" cy="13" r="1.1" fill="#fff"/><circle cx="14" cy="10.4" r="1.1" fill="#fff"/></svg>';
+const MAXN = 3;
+let nIdx = 0, nTimer = 0;
+function notifEl(n) {
+  const el = mk("div", "hx-n");
+  el.innerHTML = `<span class="hx-n-ic">${KIWI}</span><span class="hx-n-tx"><b></b><span></span></span><time></time>`;
+  $("b", el).textContent = n[0];
+  $(".hx-n-tx span", el).textContent = "Valor: R$ " + n[1];
+  $("time", el).textContent = T[lang].hx_now;
+  return el;
 }
-function setCh(i, flash = true) {
-  chIdx = (i + NCH) % NCH;
-  strip.style.setProperty("--y0", (-chIdx * 100) + "%");
-  strip.style.transform = `translateY(${-chIdx * 100}%)`;
-  tvch.textContent = "CH 0" + (chIdx + 1);
-  if (rail.children.length) paintRail();
-  if (flash && !root.dataset.still) { tv.classList.remove("is-flicker"); void tv.offsetWidth; tv.classList.add("is-flicker"); }
-  syncChVideo();
+function paintNotifs() {
+  const kids = [...hxNotifs.children];
+  kids.forEach((el, i) => { el.style.setProperty("--i", Math.min(i, MAXN)); el.classList.toggle("back", i > 0); el.classList.toggle("gone", i >= MAXN); });
+  kids.slice(MAXN + 1).forEach(el => hxNotifs.removeChild(el));
 }
-setCh(0, false);
-/* o scroll troca de canal: o hero fica fixo (sticky) dentro de uma pista alta */
-const trackRange = () => Math.max(1, track.offsetHeight - hero.offsetHeight);
-function goCh(i) {
-  i = (i + NCH) % NCH;
-  const top = track.getBoundingClientRect().top + scrollY;
-  scrollTo({ top: top + (i + .5) / NCH * trackRange() });
+function pushNotif() {
+  const el = notifEl(NOTIFS[nIdx++ % NOTIFS.length]);
+  hxNotifs.prepend(el); paintNotifs();
+  void el.offsetWidth; el.classList.add("in");
 }
-function buildRail() {
-  rail.textContent = "";
-  T[lang].rail.forEach((name, i) => {
-    const b = mk("button", "rail-i"); b.type = "button"; b.dataset.i = i;
-    b.setAttribute("aria-label", "CH 0" + (i + 1) + " · " + name);
-    b.append(mk("b", "", "0" + (i + 1)), mk("span", "", name));
-    b.addEventListener("click", e => { e.stopPropagation(); goCh(i); });
-    b.addEventListener("pointerdown", e => e.stopPropagation());
-    rail.appendChild(b);
-  });
-  paintRail();
+function fillNotifs() { /* estado inicial: notificações já empilhadas */
+  hxNotifs.textContent = "";
+  for (let k = MAXN - 1; k >= 0; k--) { const el = notifEl(NOTIFS[k]); el.classList.add("in"); hxNotifs.prepend(el); }
+  nIdx = MAXN; paintNotifs();
 }
-function paintRail() { [...rail.children].forEach((b, i) => { b.classList.toggle("on", i === chIdx); if (i === chIdx) b.setAttribute("aria-current", "true"); else b.removeAttribute("aria-current"); }); }
-function chFromScroll() {
-  const p = clamp01(-track.getBoundingClientRect().top / trackRange());
-  hero.classList.toggle("scrolled", p > .015);
-  const i = Math.min(NCH - 1, Math.floor(p * NCH));
-  if (i !== chIdx && !rolling) setCh(i);
+function runNotifs() {
+  clearInterval(nTimer);
+  if (root.dataset.still || !heroVisible || document.hidden) return;
+  nTimer = setInterval(pushNotif, 2600);
 }
-const knob = $(".tv-knob");
-if (knob) { knob.style.pointerEvents = "auto"; knob.style.cursor = "pointer"; knob.setAttribute("role", "button"); knob.setAttribute("tabindex", "0"); knob.setAttribute("aria-label", "Channel");
-  knob.addEventListener("click", e => { e.stopPropagation(); goCh(chIdx + 1); });
-  knob.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); goCh(chIdx + 1); } });
-  knob.addEventListener("pointerdown", e => e.stopPropagation()); }
-
-/* stickers (arrastáveis, com inércia) */
-const STK = [
-  { k:"traffic", fx:.2, fy:.27, r:-5, c:"" },     { k:"copy", fx:.8, fy:.26, r:4, c:"alt" },
-  { k:"design", fx:.84, fy:.6, r:-3, c:"ink" },   { k:"meta", fx:.16, fy:.58, r:3, c:"alt" },
-  { k:"funnel", fx:.27, fy:.82, r:-3, c:"" },     { k:"persuasion", fx:.73, fy:.82, r:3, c:"ink" },
-  { k:"insper", fx:.35, fy:.13, r:-3, c:"" },     { k:"y2022", fx:.65, fy:.13, r:3, c:"alt" },
-];
-const ICO = {
-  traffic:'<path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/>',
-  copy:'<path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/>',
-  design:'<path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.6 7.6"/><circle cx="11" cy="11" r="2"/>',
-  meta:'<path d="M2 12c0-3 2-6 4.5-6C9 6 11 12 12 12s3-6 5.5-6C20 6 22 9 22 12s-2 6-4.5 6C15 18 13 12 12 12s-3 6-5.5 6C4 18 2 15 2 12z"/>',
-  funnel:'<path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/>',
-  persuasion:'<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',
-  body:'<circle cx="12" cy="4" r="2"/><path d="m5 8 7 1 7-1M12 9v5m0 0-3 7m3-7 3 7"/>',
-  psych:'<path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6M10 22h4"/>',
-  leader:'<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
-  insper:'<path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>',
-  y2022:'<rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>',
-  organic:'<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/>',
-  app_in:'<path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.3 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>',
-  app_swap:'<path d="M8 3 4 7l4 4M4 7h16M16 21l4-4-4-4M20 17H4"/>',
-  app_pz:'<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/>'
-};
-const SVGNS = "http://www.w3.org/2000/svg";
-const stickersEl = $("#stickers");
-const stickers = STK.map(s => {
-  const el = mk("div", "sticker " + s.c); el.setAttribute("role", "note");
-  if (!s.img) { const sv = document.createElementNS(SVGNS, "svg"); sv.setAttribute("viewBox", "0 0 24 24"); sv.setAttribute("class", "stk-ico"); sv.setAttribute("aria-hidden", "true"); sv.innerHTML = ICO[s.k] || ""; el.append(sv, mk("span", "stk-t")); }
-  if (s.img) { const im = mk("img"); im.src = s.img; im.alt = ""; im.draggable = false; im.loading = "lazy"; el.appendChild(im); if (s.cap) el.appendChild(mk("span", "cap", s.cap)); }
-  stickersEl.appendChild(el);
-  const o = { ...s, el, x: s.fx * vw, y: s.fy * vh, vx: 0, vy: 0, drag: false };
-  bindSticker(o); return o;
+function heroLang() { $$("time", hxNotifs).forEach(t => { t.textContent = T[lang].hx_now; }); }
+new IntersectionObserver(([en]) => { heroVisible = en.isIntersecting; runNotifs(); }, { threshold: .1 }).observe(hero);
+document.addEventListener("visibilitychange", () => { runNotifs(); Object.values(pjState).forEach(x => x.sync && x.sync()); });
+/* parallax suave na foto (só com mouse) */
+hxVisual.addEventListener("pointermove", e => {
+  if (root.dataset.still || e.pointerType !== "mouse") return;
+  const r = hxVisual.getBoundingClientRect();
+  hxVisual.style.setProperty("--px", ((e.clientX - r.left) / r.width - .5).toFixed(3));
+  hxVisual.style.setProperty("--py", ((e.clientY - r.top) / r.height - .5).toFixed(3));
 });
-function paintSticker(o) { o.el.style.transform = `translate(${o.x}px,${o.y}px) translate(-50%,-50%) rotate(${o.r}deg)`; }
-function bindSticker(o) {
-  let ox = 0, oy = 0, lx = 0, ly = 0, lt = 0;
-  o.el.addEventListener("pointerdown", e => {
-    e.stopPropagation(); o.drag = true; o.vx = o.vy = 0; o.el.classList.add("drag"); o.el.setPointerCapture(e.pointerId);
-    const d = layers.find(l => l.el === stickersEl).d;
-    ox = e.clientX - pan.x * d - o.x; oy = e.clientY - pan.y * d - o.y; lx = e.clientX; ly = e.clientY; lt = performance.now();
-    o.el.parentNode.appendChild(o.el); hideHint();
-  });
-  o.el.addEventListener("pointermove", e => {
-    if (!o.drag) return;
-    const d = layers.find(l => l.el === stickersEl).d, now = performance.now(), dt = Math.max(1, now - lt);
-    o.x = e.clientX - pan.x * d - ox; o.y = e.clientY - pan.y * d - oy;
-    o.vx = lerp(o.vx, (e.clientX - lx) / dt * 16, .5); o.vy = lerp(o.vy, (e.clientY - ly) / dt * 16, .5);
-    lx = e.clientX; ly = e.clientY; lt = now; paintSticker(o);
-  });
-  const up = () => { o.drag = false; o.el.classList.remove("drag"); if (root.dataset.still) o.vx = o.vy = 0; };
-  o.el.addEventListener("pointerup", up); o.el.addEventListener("pointercancel", up);
-}
-/* no celular, empurra os stickers para fora da faixa onde fica a TV */
-function stkY(fy) { return vw < 700 && fy > .18 && fy < .82 ? (fy < .5 ? fy * .45 : 1 - (1 - fy) * .45) : fy; }
-const MOB = { traffic:[.28,.15], copy:[.72,.23], design:[.72,.73], meta:[.28,.81] };
-function layoutStickers() { stickers.forEach(o => { const m = vw < 700; const mp = MOB[o.k]; o.el.style.display = m && !mp ? "none" : ""; o.x = (m && mp ? mp[0] : o.fx) * vw; o.y = (m && mp ? mp[1] : stkY(o.fy)) * vh; o.vx = o.vy = 0; paintSticker(o); }); }
-
-/* pan (arrastar para olhar em volta) */
-function bounds() { return { x: vw * .38, y: vh * .32 }; }
-function paintWorld() {
-  layers.forEach(l => { l.el.style.transform = `translate3d(${pan.x * l.d}px,${pan.y * l.d}px,0)`; });
-}
-function hideHint() { if (!draghint.classList.contains("gone")) { draghint.classList.add("gone"); store.set("gb-hint", "1"); } }
-if (store.get("gb-hint")) draghint.classList.add("gone");
-hero.addEventListener("pointerdown", e => {
-  if (e.target.closest(".dock") || e.target.closest(".sticker") || e.target.closest(".rail") || e.target.closest(".hero-cta")) return;
-  pan.downOnTv = !!e.target.closest("#tv");
-  pan.drag = true; pan.lx = e.clientX; pan.ly = e.clientY; pan.moved = 0; pan.vx = pan.vy = 0;
-  hero.classList.add("dragging"); hero.setPointerCapture(e.pointerId);
-});
-hero.addEventListener("pointermove", e => {
-  if (!pan.drag) return;
-  const dx = e.clientX - pan.lx, dy = e.clientY - pan.ly; pan.lx = e.clientX; pan.ly = e.clientY;
-  pan.moved += Math.abs(dx) + Math.abs(dy);
-  const b = bounds();
-  pan.x = Math.max(-b.x, Math.min(b.x, pan.x + dx)); pan.y = Math.max(-b.y, Math.min(b.y, pan.y + dy));
-  pan.vx = lerp(pan.vx, dx, .4); pan.vy = lerp(pan.vy, dy, .4);
-  if (pan.moved > 10) hideHint();
-  paintWorld();
-});
-const hitTimes = [];
-function panEnd(e) {
-  if (!pan.drag) return; pan.drag = false; hero.classList.remove("dragging");
-  if (e && e.type === "pointerup" && pan.moved < 6 && pan.downOnTv) hit();
-  if (root.dataset.still) pan.vx = pan.vy = 0;
-}
-hero.addEventListener("pointerup", panEnd); hero.addEventListener("pointercancel", panEnd);
-hero.addEventListener("wheel", e => { if (e.shiftKey) { e.preventDefault(); const b = bounds(); pan.x = Math.max(-b.x, Math.min(b.x, pan.x - e.deltaY)); paintWorld(); } }, { passive: false });
-
-/* bater no monitor → vertical roll */
-let msgT = 0;
-function say(txt, ms = 2600) { sysmsg.textContent = txt; sysmsg.classList.add("on"); clearTimeout(msgT); msgT = setTimeout(() => sysmsg.classList.remove("on"), ms); }
-function hit() {
-  if (rolling) return;
-  const now = performance.now(); hitTimes.push(now);
-  while (hitTimes.length && now - hitTimes[0] > 1500) hitTimes.shift();
-  if (root.dataset.still) { if (hitTimes.length >= 3) { say(T[lang].hit_msg); hitTimes.length = 0; } return; }
-  if (hitTimes.length >= 3) { hitTimes.length = 0; roll(); return; }
-  tv.animate([{ transform: "translateY(0)" }, { transform: `translateY(${-2 - hitTimes.length * 1.5}px)` }, { transform: "translateY(0)" }], { duration: 200, easing: "ease-out" });
-  tv.classList.remove("is-flicker"); void tv.offsetWidth; tv.classList.add("is-flicker");
-}
-function roll() {
-  rolling = true; root.dataset.breaking = "1"; syncChVideo();
-  strip.style.setProperty("--y0", (-chIdx * 100) + "%");
-  tv.classList.add("is-rolling");
-  setTimeout(() => { delete root.dataset.breaking; }, 620);
-  setTimeout(() => { tv.classList.remove("is-rolling"); rolling = false; say(T[lang].hit_msg); syncChVideo(); }, 1200);
-}
-
-/* ruído de TV (canvas minúsculo) */
-const nctx = noiseC.getContext("2d"), nimg = nctx.createImageData(noiseC.width, noiseC.height);
-function drawNoise() {
-  const d = nimg.data;
-  for (let i = 0; i < d.length; i += 4) { const v = Math.random() * 255 | 0; d[i] = d[i + 1] = d[i + 2] = v; d[i + 3] = 255; }
-  nctx.putImageData(nimg, 0, 0);
-}
-
-/* loop do hero (só roda quando visível) */
-let frame = 0;
-function heroTick() {
-  if (heroVisible && !document.hidden) {
-    frame++;
-    if (!pan.drag && (Math.abs(pan.vx) > .05 || Math.abs(pan.vy) > .05)) {
-      const b = bounds();
-      pan.x += pan.vx; pan.y += pan.vy; pan.vx *= .93; pan.vy *= .93;
-      if (pan.x > b.x || pan.x < -b.x) { pan.x = Math.max(-b.x, Math.min(b.x, pan.x)); pan.vx = 0; }
-      if (pan.y > b.y || pan.y < -b.y) { pan.y = Math.max(-b.y, Math.min(b.y, pan.y)); pan.vy = 0; }
-      paintWorld();
-    }
-    stickers.forEach(o => {
-      if (o.drag || (Math.abs(o.vx) < .05 && Math.abs(o.vy) < .05)) return;
-      o.x += o.vx; o.y += o.vy; o.vx *= .94; o.vy *= .94;
-      const mx = vw * 1.4, my = vh * 1.3;
-      if (o.x < -vw * .4 || o.x > mx) { o.vx *= -.5; o.x = Math.max(-vw * .4, Math.min(mx, o.x)); }
-      if (o.y < -vh * .3 || o.y > my) { o.vy *= -.5; o.y = Math.max(-vh * .3, Math.min(my, o.y)); }
-      paintSticker(o);
-    });
-    if (!root.dataset.still && frame % 4 === 0) drawNoise();
-  }
-  requestAnimationFrame(heroTick);
-}
-new IntersectionObserver(([en]) => { heroVisible = en.isIntersecting; syncChVideo(); }, { threshold: 0 }).observe(hero);
-document.addEventListener("visibilitychange", () => { syncChVideo(); Object.values(pjState).forEach(x => x.sync && x.sync()); });
+hxVisual.addEventListener("pointerleave", () => { hxVisual.style.setProperty("--px", 0); hxVisual.style.setProperty("--py", 0); });
 
 /* ============================================================
    3) STORY — frase animada por scroll
@@ -612,9 +446,10 @@ function buildStory() {
   layoutStory(); renderStory(true);
 }
 function layoutStory() { words.forEach(w => w.layout()); }
+/* começa a animar enquanto o cartão preto ainda sobe (lead), para nunca haver uma tela preta vazia */
 function storyProgress() {
-  const r = story.getBoundingClientRect(), total = story.offsetHeight - innerHeight;
-  return clamp01(-r.top / Math.max(1, total));
+  const r = story.getBoundingClientRect(), lead = innerHeight * .65, total = story.offsetHeight - innerHeight + lead;
+  return clamp01((lead - r.top) / Math.max(1, total));
 }
 function renderStory(force) {
   const now = performance.now() / 1000;
@@ -654,11 +489,6 @@ const PJ = {
   info: { items: [
     { g:"linear-gradient(135deg,#0b8a5a,#19c37d)", src:"assets/kiwify.webp", ar:"591/813" },
     { g:"linear-gradient(135deg,#00b894,#0a84ff)", mock:"funnel" },
-    { g:"linear-gradient(135deg,#ff9500,#ff3b30)", mock:"bars" }
-  ] },
-  meta: { items: [
-    { g:"linear-gradient(135deg,#0866ff,#4cc9f0)", mock:"cards" },
-    { g:"linear-gradient(135deg,#7b2ff7,#f107a3)", mock:"funnel" },
     { g:"linear-gradient(135deg,#ff9500,#ff3b30)", mock:"bars" }
   ] }
 };
@@ -837,8 +667,7 @@ function setLang(l) {
   root.lang = l === "pt" ? "pt-BR" : "en"; root.dataset.lang = l;
   $$("[data-i]").forEach(el => { const v = T[l][el.dataset.i]; if (typeof v === "string") el.innerHTML = v; });
   document.title = T[l].title; $('meta[name="description"]').setAttribute("content", T[l].desc);
-  stickers.forEach(o => { if (!o.img) o.el.querySelector(".stk-t").textContent = T[l].stk[o.k]; });
-  buildRail();
+  heroLang();
   $("#mail-t").textContent = CONFIG.email; mailBtn.dataset.copied = T[l].copied;
   $("#btn-still").setAttribute("aria-label", T[l].tip_still);
   buildWork(); buildWheel(); splitCTA(); buildStory();
@@ -852,12 +681,12 @@ function setStill(on, persist = true) {
   if (on) root.dataset.still = "1"; else delete root.dataset.still;
   $("#btn-still").setAttribute("aria-pressed", on);
   if (persist) store.set("gb-still", on ? "1" : "0");
-  if (on) { pan.x = pan.y = pan.vx = pan.vy = 0; paintWorld(); }
-  renderStory(true); splitCTA(); heroScroll(); syncChVideo(); Object.values(pjState).forEach(x => x.sync && x.sync()); setCounters(false);
+  runNotifs();
+  renderStory(true); splitCTA(); heroScroll(); Object.values(pjState).forEach(x => x.sync && x.sync()); setCounters(false);
 }
 $("#btn-still").addEventListener("click", () => setStill(!root.dataset.still));
 
-/* atalhos de uma tecla (ntch-like): L idioma · M movimento · 1-3 canais */
+/* atalhos de uma tecla: L idioma · M movimento */
 addEventListener("keydown", e => {
   if (e.metaKey || e.ctrlKey || e.altKey || /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) return;
   const k = e.key.toLowerCase();
@@ -865,20 +694,18 @@ addEventListener("keydown", e => {
   if (!keysOn) return;
   if (k === "l") setLang(lang === "pt" ? "en" : "pt");
   else if (k === "m") setStill(!root.dataset.still);
-  else if (/^[1-9]$/.test(k) && +k <= NCH) goCh(+k - 1);
 });
 
-/* hero some/escala ao rolar + dock adaptativo */
+/* barra de progresso + dock adaptativo (claro no hero e na folha, escuro na frase e no rodapé) */
 const sheet = $(".sheet"), footer = $(".ft");
 function heroScroll() {
   const y = scrollY;
   $("#progress").style.transform = `scaleX(${clamp01(y / Math.max(1, document.documentElement.scrollHeight - vh))})`;
-  chFromScroll();
-  const st = sheet.getBoundingClientRect().top, ft = footer.getBoundingClientRect().top;
-  document.body.classList.toggle("on-light", st < 40 && ft > 40);
+  const st = sheet.getBoundingClientRect().top, ft = footer.getBoundingClientRect().top, sy = story.getBoundingClientRect().top;
+  document.body.classList.toggle("on-light", ft > 40 && (st < 40 || sy > 40));
 }
 addEventListener("scroll", heroScroll, { passive: true });
-addEventListener("resize", () => { vw = innerWidth; vh = innerHeight; layoutStickers(); layoutStory(); layoutWheel(); paintWheel(); heroScroll(); });
+addEventListener("resize", () => { vw = innerWidth; vh = innerHeight; layoutStory(); layoutWheel(); paintWheel(); heroScroll(); });
 
 /* ---------- contadores animados (padrão "stats" do 21st) ---------- */
 const counted = new WeakSet();
@@ -932,7 +759,7 @@ $("#help-keys").addEventListener("click", () => { keysOn = !keysOn; store.set("g
 const savedStill = store.get("gb-still");
 if (savedStill === "1" || (savedStill == null && reduceMQ.matches)) { root.dataset.still = "1"; $("#btn-still").setAttribute("aria-pressed", "true"); }
 setLang(lang);
-layoutStickers(); paintWorld(); heroScroll();
-requestAnimationFrame(heroTick); requestAnimationFrame(storyTick); requestAnimationFrame(wheelTick);
+fillNotifs(); runNotifs(); heroScroll();
+requestAnimationFrame(storyTick); requestAnimationFrame(wheelTick);
 if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { layoutStory(); renderStory(true); layoutWheel(); paintWheel(); });
 })();
