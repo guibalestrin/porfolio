@@ -121,10 +121,26 @@ pt: {
   ij4_t:"Financeiro", ij4_d:"Custos, projeções e viabilidade: o que faz o número fechar.",
   ij_gt:"O que isso agregou", ij_g:"Eu vinha do marketing digital, olhando para o anúncio e o funil. O trainee me mostrou o resto do mapa. Hoje enxergo o negócio inteiro (mercado, operação, marketing e números) e como uma parte mexe na outra.",
   ij_st:"Skills que ganhei", ij_chips:["Visão estratégica","Análise de mercado","Estruturação de processos","Viabilidade financeira","Comunicação com cliente","Trabalho em equipe","Gestão de projetos","Apresentações em PowerPoint"],
+  tm_k:"Trajetória", tm_t:"De 2018 até aqui.", nav_tm:"Trajetória",
+  tm_l:"Nenhum passo foi em linha reta. Cada um ensinou alguma coisa que eu levei para o seguinte.",
+  tm_now:"agora",
+  tm:[
+    {y:2018,t:"Meu primeiro negócio: skins de CS:GO.",d:"Comprava e vendia skins no mercado do jogo. Sem saber o nome, aprendi preço, oferta, demanda e negociação."},
+    {y:2022,t:"Descubro o dropshipping.",d:"Ouço falar pela primeira vez e monto minha loja. Foi 1 ano testando produto, anúncio e página até dar certo."},
+    {y:2023,t:"A primeira venda.",d:"Depois de um ano insistindo, sai a primeira venda. A prova de que repetir funciona."},
+    {y:2023,t:"Testei afiliado e parei por princípio.",d:"Fui afiliado de suplemento encapsulado. Quando percebi que estava vendendo placebo, parei. Não vendo o que eu não acredito."},
+    {y:2024,t:"De volta ao dropshipping, com microinfluenciadores.",d:"Mudei a divulgação: parcerias com microinfluenciadores, que têm público fiel e custo baixo, no lugar de depender só de anúncio."},
+    {y:2024,t:"O mercado muda e eu migro para infoprodutos.",d:"Com a nova taxação das compras internacionais, a conta do dropshipping deixou de fechar. Criei meus próprios infoprodutos e comecei no tráfego pago."},
+    {y:2025,t:"Pausa para estudar, com meta alta.",d:"Parei as operações para focar no vestibular. O plano era o primeiro lugar e a bolsa na FGV."},
+    {y:2026,t:"Aprovado na FGV e no Insper.",d:"Passei nas duas e conquistei bolsa no Insper, onde hoje curso Administração de Empresas. Também fiz o trainee da Insper Jr."},
+    {y:2026,t:"Ideias saindo do papel com IA.",d:"Com a IA, comecei a construir e validar ideias minhas: IN Insper, InsperSwap, Prezensa e outros testes."},
+    {y:2026,t:"De volta ao digital, agora com IA e automação.",d:"Estou voltando ao mercado digital, com foco em aprender e aplicar IA e automação no que eu já sei fazer."}
+  ],
   sd_k:"PowerPoint", sd_t:"Slides que eu fiz.", nav_sd:"Slides",
   sd_l:"Consultoria também é saber contar a história. Monto decks do zero no PowerPoint: título que já entrega a conclusão, dado que sustenta e visual que deixa a leitura leve.",
   sd_h:"Role para passar · clique para ampliar",
-  sd_caps:["Huawei · capa da análise de marketing","Huawei · Preço: o catálogo vai de R$ 999 a R$ 32.999","Dermo Clinic Primavera · capa da consultoria estratégica","Casa Lorenzi · Marketing Mix: campanha de vendas no Meta Ads"],
+  sd_caps:["Huawei · projeto autoral, aplicando sozinho o método que aprendi na Insper Jr","Huawei · Preço: o catálogo vai de R$ 999 a R$ 32.999","Dermo Clinic Primavera · capa da consultoria estratégica","Projeto pela Insper Jr, em parceria com a Bain & Company · Marketing Mix"],
+  sd_note:"Alguns projetos têm detalhes sob sigilo, por isso mostro só parte do material.",
   kf_k:"Evento", kf_t:"Kiwify Festival 2023.", kf_l:"Fui ao maior evento de infoprodutos do Brasil e vi de perto como quem vende na internet pensa, vende e escala.", kf_c1:"Na entrada do Kiwify Festival", kf_c2:"Plateia lotada, palco verde", nav_kf:"Kiwify Festival",
   nav_projects:"Projetos", ab_gt:"Um pouco mais de mim", g1:"Escritório é onde der.", g2:"Quando pede formalidade.", g3:"Rotina de faculdade.",
   vn_k:"Projetos paralelos", vn_t:"Ideias que viram produto.",
@@ -243,10 +259,26 @@ en: {
   ij4_t:"Finance", ij4_d:"Costs, projections and viability: what makes the numbers work.",
   ij_gt:"What it added", ij_g:"I came from digital marketing, looking at the ad and the funnel. The trainee program showed me the rest of the map. Now I see the whole business (market, operations, marketing and numbers) and how each part moves the others.",
   ij_st:"Skills I gained", ij_chips:["Strategic thinking","Market analysis","Process design","Financial viability","Client communication","Teamwork","Project management","PowerPoint presentations"],
+  tm_k:"Journey", tm_t:"From 2018 to now.", nav_tm:"Journey",
+  tm_l:"No step was a straight line. Each one taught me something I carried into the next.",
+  tm_now:"now",
+  tm:[
+    {y:2018,t:"My first business: CS:GO skins.",d:"I bought and sold skins on the game's market. Without knowing the words for it, I learned pricing, supply, demand and negotiation."},
+    {y:2022,t:"I discover dropshipping.",d:"I hear about it for the first time and build my store. It took 1 year of testing products, ads and pages until it worked."},
+    {y:2023,t:"The first sale.",d:"After a year of pushing, the first sale comes in. Proof that repetition works."},
+    {y:2023,t:"I tried affiliate marketing and quit on principle.",d:"I was an affiliate for a capsule supplement. When I realized I was selling a placebo, I stopped. I don't sell what I don't believe in."},
+    {y:2024,t:"Back to dropshipping, with micro-influencers.",d:"I changed how I promoted: partnerships with micro-influencers, who have loyal audiences and low cost, instead of relying only on ads."},
+    {y:2024,t:"The market shifts and I move to info products.",d:"With the new tax on international purchases, dropshipping math stopped working. I created my own info products and started running paid traffic."},
+    {y:2025,t:"A pause to study, with a high bar.",d:"I paused operations to focus on entrance exams. The plan was first place and a scholarship at FGV."},
+    {y:2026,t:"Accepted at FGV and Insper.",d:"I got into both and earned a scholarship at Insper, where I now study Business Administration. I also did the Insper Jr trainee program."},
+    {y:2026,t:"Ideas leaving the page with AI.",d:"With AI, I started building and validating my own ideas: IN Insper, InsperSwap, Prezensa and other tests."},
+    {y:2026,t:"Back to digital, now with AI and automation.",d:"I'm returning to the digital market, focused on learning and applying AI and automation to what I already know how to do."}
+  ],
   sd_k:"PowerPoint", sd_t:"Slides I made.", nav_sd:"Slides",
   sd_l:"Consulting is also about telling the story. I build decks from scratch in PowerPoint: a title that already delivers the conclusion, data that backs it and visuals that make it easy to read.",
   sd_h:"Scroll to flip · click to enlarge",
-  sd_caps:["Huawei · marketing analysis cover","Huawei · Price: the catalog goes from R$ 999 to R$ 32,999","Dermo Clinic Primavera · strategy consulting cover","Casa Lorenzi · Marketing Mix: sales campaign on Meta Ads"],
+  sd_caps:["Huawei · solo project, applying on my own the method I learned at Insper Jr","Huawei · Price: the catalog goes from R$ 999 to R$ 32,999","Dermo Clinic Primavera · strategy consulting cover","Project through Insper Jr, in partnership with Bain & Company · Marketing Mix"],
+  sd_note:"Some projects are under confidentiality, so I only show part of the material.",
   kf_k:"Event", kf_t:"Kiwify Festival 2023.", kf_l:"I went to Brazil's biggest info-product event and saw up close how people who sell online think, sell and scale.", kf_c1:"At the Kiwify Festival entrance", kf_c2:"Packed crowd, green stage", nav_kf:"Kiwify Festival",
   nav_projects:"Projects", ab_gt:"A little more of me", g1:"Office is wherever it works.", g2:"When it calls for a suit.", g3:"College routine.",
   vn_k:"Side projects", vn_t:"Ideas that become products.",
@@ -826,7 +858,7 @@ function setLang(l) {
   $("#mail-t").textContent = CONFIG.email; mailBtn.dataset.copied = T[l].copied;
   $("#btn-still").setAttribute("aria-label", T[l].tip_still);
   buildWork(); splitCTA(); buildStory();
-  buildHelp(); setCounters(false); buildChips(); buildDeck();
+  buildHelp(); setCounters(false); buildChips(); buildDeck(); buildTimeline();
 }
 $("#btn-lang").addEventListener("click", () => setLang(lang === "pt" ? "en" : "pt"));
 
@@ -927,6 +959,53 @@ $$("[data-lb]").forEach(b => b.addEventListener("click", () => {
 $("#lb-x").addEventListener("click", () => lb.close());
 lb.addEventListener("click", e => { if (e.target === lb || e.target === lbIn) lb.close(); });
 lb.addEventListener("close", () => root.classList.remove("lb-open"));
+
+/* linha do tempo: ano em odômetro preso ao lado, linha que se desenha com o scroll */
+const TM_IC = [
+  '<path d="M6 12h4M8 10v4"/><circle cx="15" cy="11" r="1"/><circle cx="18" cy="13" r="1"/><path d="M17.3 5H6.7a4 4 0 0 0-4 3.6L2 15a3 3 0 0 0 5.2 2.2L9 15h6l1.8 2.2A3 3 0 0 0 22 15l-.7-6.4A4 4 0 0 0 17.3 5z"/>',
+  '<path d="M3 9 5 4h14l2 5"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/><path d="M3 9h18"/>',
+  '<path d="M20 6 9 17l-5-5"/>',
+  '<path d="M10.5 20.5 3.5 13.5a5 5 0 0 1 7-7l7 7a5 5 0 0 1-7 7z"/><path d="m8.5 8.5 7 7"/>',
+  '<circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17.5" cy="9.5" r="2.2"/><path d="M15.5 14.4A4.5 4.5 0 0 1 22 18.5"/>',
+  '<rect x="3" y="4" width="18" height="13" rx="2"/><path d="m10 8.5 4 2-4 2z"/><path d="M8 21h8"/>',
+  '<path d="M4 19.5V5a2 2 0 0 1 2-2h14v15H6a2 2 0 0 0-2 2z"/><path d="M6 21h14"/><path d="M9 7h7M9 11h5"/>',
+  '<path d="M2 9 12 4l10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/><path d="M22 9v6"/>',
+  '<path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 10h4v4h-4z"/>',
+  '<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>'
+];
+const TM_IMG = [];   /* fotos por marco: TM_IMG[i] = "assets/arquivo.webp" */
+const tmList = $("#tm-list"), tmOdo = $("#tm-odo"), tmFill = $("#tm-fill"), tmRail = $("#tm-rail");
+let tmItems = [], tmAct = -1, tmVis = false;
+function buildTimeline() {
+  const L = T[lang].tm; tmList.textContent = "";
+  tmItems = L.map((it, i) => {
+    const li = mk("li", "tm-it"); li.style.setProperty("--k", i);
+    const last = i === L.length - 1, img = TM_IMG[i];
+    li.innerHTML = `<i class="tm-dot" aria-hidden="true"></i>
+      <article class="tm-card${img ? " has-img" : ""}">
+        <div class="tm-top"><span class="tm-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${TM_IC[i] || TM_IC[0]}</svg></span>
+        <span class="tm-y">${it.y}${last ? ` <b>${T[lang].tm_now}</b>` : ""}</span></div>
+        <h3>${it.t}</h3><p>${it.d}</p>
+        ${img ? `<figure class="tm-ph"><img src="${img}" alt="" loading="lazy"></figure>` : ""}
+      </article>`;
+    tmList.appendChild(li); return li;
+  });
+  tmAct = -1; tmRender();
+}
+function tmSetYear(y) {
+  const s = String(y);
+  if (tmOdo.children.length !== s.length) tmOdo.innerHTML = [...s].map(() => `<span class="od"><span class="od-s">${"0123456789".split("").map(n => `<i>${n}</i>`).join("")}</span></span>`).join("");
+  [...s].forEach((c, i) => { tmOdo.children[i].firstChild.style.transform = `translateY(${-c * 10}%)`; });
+}
+function tmRender() {
+  if (!tmItems.length) return;
+  const r = tmRail.getBoundingClientRect(), line = vh * .55;
+  tmFill.style.transform = `scaleY(${clamp01((line - r.top) / r.height)})`;
+  let a = 0; tmItems.forEach((li, i) => { const t = li.getBoundingClientRect().top; if (t < line) a = i; li.classList.toggle("past", t < line); if (t < vh * .92) li.classList.add("seen"); });
+  if (a !== tmAct) { tmAct = a; tmItems.forEach((li, i) => li.classList.toggle("on", i === a)); tmSetYear(T[lang].tm[a].y); $("#tm-cap").textContent = T[lang].tm[a].t; }
+}
+new IntersectionObserver(([en]) => { tmVis = en.isIntersecting; if (tmVis) tmRender(); }, { rootMargin: "20% 0px" }).observe(tmRail);
+addEventListener("scroll", () => { if (tmVis) tmRender(); }, { passive: true });
 
 /* slides de PowerPoint: coverflow 3D guiado pelo scroll + lightbox */
 const SLIDES = ["sl-huawei", "sl-huawei-preco", "sl-dermo", "sl-lorenzi"];
