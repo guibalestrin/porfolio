@@ -24,6 +24,7 @@
     <a href="#about" data-i="nav_about">Sobre</a>
     <a href="#journey" data-i="nav_jn">Minha história</a>
     <a href="#insperjr">Insper Jr</a>
+    <a href="#slides" data-i="nav_sd">Slides</a>
     <a href="#kiwify" data-i="nav_kf">Kiwify Festival</a>
     <a href="#projects" data-i="nav_projects">Projetos</a>
     <a href="#services" data-i="nav_services">O que faço</a>
@@ -420,6 +421,32 @@
     </div>
   </div>
 </section>
+
+<!-- ============ SLIDES (PowerPoint) — coverflow 3D guiado pelo scroll ============ -->
+<section id="slides" class="sd" aria-labelledby="sd-h">
+  <div class="sd-track" id="sd-track">
+    <div class="sd-stick">
+      <div class="sd-panel">
+        <div class="sd-head">
+          <p class="sd-eyebrow"><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/microsoftpowerpoint.svg" alt="" width="16" height="16"><span data-i="sd_k">PowerPoint</span></p>
+          <h2 id="sd-h" class="sd-title" data-i="sd_t">Slides que eu fiz.</h2>
+          <p class="sd-lede" data-i="sd_l"></p>
+        </div>
+        <div class="sd-stage" id="sd-stage" role="list"></div>
+        <div class="sd-foot">
+          <p class="sd-cap" id="sd-cap" aria-live="polite"></p>
+          <div class="sd-dots" id="sd-dots"></div>
+          <p class="sd-hint" data-i="sd_h"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<dialog class="sd-box" id="sd-box" aria-label="Slide">
+  <button class="sd-x" type="button" data-close aria-label="Fechar">×</button>
+  <img id="sd-box-img" alt="">
+  <div class="sd-box-bar"><button type="button" class="sd-nav" data-step="-1" aria-label="Anterior">←</button><p id="sd-box-cap"></p><button type="button" class="sd-nav" data-step="1" aria-label="Próximo">→</button></div>
+</dialog>
 
 <!-- ============ KIWIFY FESTIVAL ============ -->
 <section id="kiwify" class="kf" aria-labelledby="kf-h">

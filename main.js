@@ -121,6 +121,10 @@ pt: {
   ij4_t:"Financeiro", ij4_d:"Custos, projeções e viabilidade: o que faz o número fechar.",
   ij_gt:"O que isso agregou", ij_g:"Eu vinha do marketing digital, olhando para o anúncio e o funil. O trainee me mostrou o resto do mapa. Hoje enxergo o negócio inteiro (mercado, operação, marketing e números) e como uma parte mexe na outra.",
   ij_st:"Skills que ganhei", ij_chips:["Visão estratégica","Análise de mercado","Estruturação de processos","Viabilidade financeira","Comunicação com cliente","Trabalho em equipe","Gestão de projetos","Apresentações em PowerPoint"],
+  sd_k:"PowerPoint", sd_t:"Slides que eu fiz.", nav_sd:"Slides",
+  sd_l:"Consultoria também é saber contar a história. Monto decks do zero no PowerPoint: título que já entrega a conclusão, dado que sustenta e visual que deixa a leitura leve.",
+  sd_h:"Role para passar · clique para ampliar",
+  sd_caps:["Huawei · capa da análise de marketing","Huawei · Preço: o catálogo vai de R$ 999 a R$ 32.999","Dermo Clinic Primavera · capa da consultoria estratégica","Casa Lorenzi · Marketing Mix: campanha de vendas no Meta Ads"],
   kf_k:"Evento", kf_t:"Kiwify Festival 2023.", kf_l:"Fui ao maior evento de infoprodutos do Brasil e vi de perto como quem vende na internet pensa, vende e escala.", kf_c1:"Na entrada do Kiwify Festival", kf_c2:"Plateia lotada, palco verde", nav_kf:"Kiwify Festival",
   nav_projects:"Projetos", ab_gt:"Um pouco mais de mim", g1:"Escritório é onde der.", g2:"Quando pede formalidade.", g3:"Rotina de faculdade.",
   vn_k:"Projetos paralelos", vn_t:"Ideias que viram produto.",
@@ -239,6 +243,10 @@ en: {
   ij4_t:"Finance", ij4_d:"Costs, projections and viability: what makes the numbers work.",
   ij_gt:"What it added", ij_g:"I came from digital marketing, looking at the ad and the funnel. The trainee program showed me the rest of the map. Now I see the whole business (market, operations, marketing and numbers) and how each part moves the others.",
   ij_st:"Skills I gained", ij_chips:["Strategic thinking","Market analysis","Process design","Financial viability","Client communication","Teamwork","Project management","PowerPoint presentations"],
+  sd_k:"PowerPoint", sd_t:"Slides I made.", nav_sd:"Slides",
+  sd_l:"Consulting is also about telling the story. I build decks from scratch in PowerPoint: a title that already delivers the conclusion, data that backs it and visuals that make it easy to read.",
+  sd_h:"Scroll to flip · click to enlarge",
+  sd_caps:["Huawei · marketing analysis cover","Huawei · Price: the catalog goes from R$ 999 to R$ 32,999","Dermo Clinic Primavera · strategy consulting cover","Casa Lorenzi · Marketing Mix: sales campaign on Meta Ads"],
   kf_k:"Event", kf_t:"Kiwify Festival 2023.", kf_l:"I went to Brazil's biggest info-product event and saw up close how people who sell online think, sell and scale.", kf_c1:"At the Kiwify Festival entrance", kf_c2:"Packed crowd, green stage", nav_kf:"Kiwify Festival",
   nav_projects:"Projects", ab_gt:"A little more of me", g1:"Office is wherever it works.", g2:"When it calls for a suit.", g3:"College routine.",
   vn_k:"Side projects", vn_t:"Ideas that become products.",
@@ -818,7 +826,7 @@ function setLang(l) {
   $("#mail-t").textContent = CONFIG.email; mailBtn.dataset.copied = T[l].copied;
   $("#btn-still").setAttribute("aria-label", T[l].tip_still);
   buildWork(); splitCTA(); buildStory();
-  buildHelp(); setCounters(false); buildChips();
+  buildHelp(); setCounters(false); buildChips(); buildDeck();
 }
 $("#btn-lang").addEventListener("click", () => setLang(lang === "pt" ? "en" : "pt"));
 
@@ -828,7 +836,7 @@ function setStill(on, persist = true) {
   $("#btn-still").setAttribute("aria-pressed", on);
   if (persist) store.set("gb-still", on ? "1" : "0");
   if (on) { pan.x = pan.y = pan.vx = pan.vy = 0; paintWorld(); }
-  renderStory(true); splitCTA(); heroScroll(); syncChVideo(); Object.values(pjState).forEach(x => x.sync && x.sync()); setCounters(false);
+  renderStory(true); splitCTA(); heroScroll(); syncChVideo(); Object.values(pjState).forEach(x => x.sync && x.sync()); setCounters(false); if (sdEls.length) sdRender(true);
 }
 $("#btn-still").addEventListener("click", () => setStill(!root.dataset.still));
 
@@ -919,6 +927,82 @@ $$("[data-lb]").forEach(b => b.addEventListener("click", () => {
 $("#lb-x").addEventListener("click", () => lb.close());
 lb.addEventListener("click", e => { if (e.target === lb || e.target === lbIn) lb.close(); });
 lb.addEventListener("close", () => root.classList.remove("lb-open"));
+
+/* slides de PowerPoint: coverflow 3D guiado pelo scroll + lightbox */
+const SLIDES = ["sl-huawei", "sl-huawei-preco", "sl-dermo", "sl-lorenzi"];
+const sdTrack = $("#sd-track"), sdStage = $("#sd-stage"), sdCap = $("#sd-cap"), sdDots = $("#sd-dots"), sdBox = $("#sd-box");
+let sdEls = [], sdPos = 0, sdFrom = 0, sdShown = -1, sdBoxI = 0, sdVis = false, sdTilt = { x: 0, y: 0 };
+sdTrack.style.setProperty("--n", SLIDES.length);
+function buildDeck() {
+  const caps = T[lang].sd_caps;
+  sdStage.textContent = ""; sdDots.textContent = "";
+  sdEls = SLIDES.map((f, i) => {
+    const b = mk("button", "sd-slide"); b.type = "button"; b.setAttribute("role", "listitem");
+    b.setAttribute("aria-label", caps[i]);
+    b.innerHTML = `<img src="assets/${f}.webp" alt="" width="1600" height="896" loading="lazy" decoding="async"><i class="sd-glare" aria-hidden="true"></i>`;
+    b.addEventListener("click", () => Math.round(sdPos) === i ? openSlide(i) : goSlide(i));
+    sdStage.appendChild(b);
+    const d = mk("button", "sd-dot"); d.type = "button"; d.setAttribute("aria-label", caps[i]);
+    d.addEventListener("click", () => goSlide(i)); sdDots.appendChild(d);
+    return b;
+  });
+  sdShown = -1; sdRender(true);
+}
+function sdTop() { return sdTrack.getBoundingClientRect().top + scrollY; }
+function sdSpan() { return Math.max(1, sdTrack.offsetHeight - vh); }
+function goSlide(i) {
+  if (root.dataset.still) { sdEls[i].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" }); sdPos = i; sdRender(true); return; }
+  scrollTo({ top: sdTop() + (i / Math.max(1, SLIDES.length - 1)) * sdSpan(), behavior: "smooth" });
+}
+function sdRender(force) {
+  const n = SLIDES.length, still = !!root.dataset.still;
+  if (!still) sdPos = clamp01(-sdTrack.getBoundingClientRect().top / sdSpan()) * (n - 1);
+  const cur = Math.round(sdPos), m = vw < 700;
+  sdEls.forEach((el, i) => {
+    if (still) { el.style.transform = el.style.opacity = el.style.zIndex = ""; el.tabIndex = 0; return; }
+    const d = i - sdPos, a = Math.abs(d);
+    const tx = d * (m ? 70 : 58), tz = -a * (m ? 160 : 240), ry = Math.max(-1, Math.min(1, d)) * -32;
+    const fx = a < 1 ? (1 - a) : 0;
+    el.style.transform = `translate3d(${tx}%,0,${tz}px) rotateY(${ry + sdTilt.y * fx}deg) rotateX(${sdTilt.x * fx}deg)`;
+    el.style.opacity = a > 2.6 ? 0 : 1 - a * .22;
+    el.style.zIndex = 100 - Math.round(a * 10);
+    el.style.setProperty("--g", fx);
+    el.tabIndex = i === cur ? 0 : -1;
+  });
+  if (cur !== sdShown || force) {
+    sdShown = cur; sdCap.innerHTML = `<b>${String(cur + 1).padStart(2, "0")}</b><span>/${String(n).padStart(2, "0")}</span> ${T[lang].sd_caps[cur]}`;
+    [...sdDots.children].forEach((d, i) => d.toggleAttribute("aria-current", i === cur));
+    sdEls.forEach((el, i) => el.classList.toggle("on", i === cur));
+  }
+}
+new IntersectionObserver(([en]) => { sdVis = en.isIntersecting; if (sdVis) sdRender(); }, { rootMargin: "10% 0px" }).observe(sdTrack);
+addEventListener("scroll", () => { if (sdVis) sdRender(); }, { passive: true });
+addEventListener("resize", () => sdRender(true));
+sdStage.addEventListener("pointermove", e => {
+  if (root.dataset.still || e.pointerType !== "mouse") return;
+  const r = sdStage.getBoundingClientRect();
+  sdTilt = { x: ((e.clientY - r.top) / r.height - .5) * -10, y: ((e.clientX - r.left) / r.width - .5) * 14 };
+  sdEls.forEach(el => el.style.setProperty("--mx", ((e.clientX - r.left) / r.width * 100) + "%"));
+  sdRender();
+});
+sdStage.addEventListener("pointerleave", () => { sdTilt = { x: 0, y: 0 }; sdRender(); });
+sdStage.addEventListener("keydown", e => {
+  if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+  e.preventDefault(); const i = Math.max(0, Math.min(SLIDES.length - 1, Math.round(sdPos) + (e.key === "ArrowRight" ? 1 : -1)));
+  goSlide(i); setTimeout(() => sdEls[i].focus({ preventScroll: true }), 450);
+});
+function openSlide(i) {
+  sdBoxI = (i + SLIDES.length) % SLIDES.length;
+  $("#sd-box-img").src = `assets/${SLIDES[sdBoxI]}.webp`; $("#sd-box-img").alt = T[lang].sd_caps[sdBoxI];
+  $("#sd-box-cap").textContent = T[lang].sd_caps[sdBoxI];
+  if (!sdBox.open) { sdFrom = sdBoxI; sdBox.showModal(); }
+}
+sdBox.addEventListener("click", e => {
+  if (e.target === sdBox || e.target.closest("[data-close]")) sdBox.close();
+  const s = e.target.closest("[data-step]"); if (s) openSlide(sdBoxI + +s.dataset.step);
+});
+sdBox.addEventListener("keydown", e => { if (e.key === "ArrowRight") openSlide(sdBoxI + 1); if (e.key === "ArrowLeft") openSlide(sdBoxI - 1); });
+sdBox.addEventListener("close", () => { if (sdBoxI !== sdFrom) goSlide(sdBoxI); });
 
 setLang(lang);
 layoutStickers(); paintWorld(); heroScroll();
