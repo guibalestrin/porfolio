@@ -141,6 +141,7 @@ pt: {
   sd_h:"Role para passar · clique para ampliar",
   sd_caps:["Huawei · projeto autoral, aplicando sozinho o método que aprendi na Insper Jr","Huawei · Preço: o catálogo vai de R$ 999 a R$ 32.999","Dermo Clinic Primavera · capa da consultoria estratégica","Projeto pela Insper Jr, em parceria com a Bain & Company · Marketing Mix"],
   sd_note:"Alguns projetos têm detalhes sob sigilo, por isso mostro só parte do material.",
+  kf_kit_t:"O que eu trouxe de lá.", kf_kit_p:"Fui como participante do público geral, com crachá no pescoço e caderno na mão. Voltei com o kit, muitas anotações e a certeza de que queria jogar esse jogo.", kf_hint:"Arraste o crachá", kf_o1:"Ecobag do kit", kf_o2:"Caderno do festival",
   kf_k:"Evento", kf_t:"Kiwify Festival 2023.", kf_l:"Fui ao maior evento de infoprodutos do Brasil e vi de perto como quem vende na internet pensa, vende e escala.", kf_c1:"Na entrada do Kiwify Festival", kf_c2:"Plateia lotada, palco verde", nav_kf:"Kiwify Festival",
   nav_projects:"Projetos",
   vn_k:"Projetos paralelos", vn_t:"Ideias que viram produto.",
@@ -279,6 +280,7 @@ en: {
   sd_h:"Scroll to flip · click to enlarge",
   sd_caps:["Huawei · solo project, applying on my own the method I learned at Insper Jr","Huawei · Price: the catalog goes from R$ 999 to R$ 32,999","Dermo Clinic Primavera · strategy consulting cover","Project through Insper Jr, in partnership with Bain & Company · Marketing Mix"],
   sd_note:"Some projects are under confidentiality, so I only show part of the material.",
+  kf_kit_t:"What I brought back.", kf_kit_p:"I went as a general admission attendee, badge around my neck and notebook in hand. I came back with the kit, a lot of notes and the certainty that I wanted to play this game.", kf_hint:"Drag the badge", kf_o1:"Kit tote bag", kf_o2:"Festival notebook",
   kf_k:"Event", kf_t:"Kiwify Festival 2023.", kf_l:"I went to Brazil's biggest info-product event and saw up close how people who sell online think, sell and scale.", kf_c1:"At the Kiwify Festival entrance", kf_c2:"Packed crowd, green stage", nav_kf:"Kiwify Festival",
   nav_projects:"Projects",
   vn_k:"Side projects", vn_t:"Ideas that become products.",
@@ -959,6 +961,33 @@ $$("[data-lb]").forEach(b => b.addEventListener("click", () => {
 $("#lb-x").addEventListener("click", () => lb.close());
 lb.addEventListener("click", e => { if (e.target === lb || e.target === lbIn) lb.close(); });
 lb.addEventListener("close", () => root.classList.remove("lb-open"));
+
+/* Kiwify: crachá no cordão com física de pêndulo (arrastar + scroll) e objetos do kit em 3D */
+(() => {
+  const lan = $("#kf-lan"), stage = $("#kf-stage"); if (!lan) return;
+  let th = 18, w = 0, drag = false, vis = false, lastY = scrollY, raf = 0;
+  const paint = () => { lan.style.transform = `rotate(${th}deg) rotateY(${th * 1.6}deg)`; };
+  function tick(t) {
+    raf = 0; if (!vis) return;
+    if (root.dataset.still) { th = 0; w = 0; paint(); return; }
+    if (!drag) { w += -th * .016 + Math.sin(t / 1400) * .006; w *= .978; th += w; }
+    paint();
+    if (drag || Math.abs(w) > .002 || Math.abs(th) > .05) raf = requestAnimationFrame(tick); else { th = 0; paint(); }
+  }
+  const go = () => { if (!raf) raf = requestAnimationFrame(tick); };
+  new IntersectionObserver(([en]) => { vis = en.isIntersecting; if (vis) { lastY = scrollY; go(); } }, { rootMargin: "10% 0px" }).observe(stage);
+  addEventListener("scroll", () => { if (!vis || drag) return; const dy = scrollY - lastY; lastY = scrollY; w += Math.max(-1.6, Math.min(1.6, dy * .03)); go(); }, { passive: true });
+  const ang = e => { const r = lan.parentElement.getBoundingClientRect(), px = r.left + lan.offsetLeft + lan.offsetWidth / 2, py = r.top + lan.offsetTop; return Math.max(-75, Math.min(75, -Math.atan2(e.clientX - px, Math.max(20, e.clientY - py)) * 180 / Math.PI)); };
+  lan.addEventListener("pointerdown", e => { if (root.dataset.still) return; drag = true; lan.setPointerCapture(e.pointerId); lan.classList.add("drag"); go(); });
+  lan.addEventListener("pointermove", e => { if (!drag) return; const a = ang(e); w = (a - th) * .5; th = a; });
+  const up = () => { if (!drag) return; drag = false; lan.classList.remove("drag"); go(); };
+  lan.addEventListener("pointerup", up); lan.addEventListener("pointercancel", up);
+  $$(".kf-obj").forEach(o => {
+    o.addEventListener("pointermove", e => { if (root.dataset.still || e.pointerType !== "mouse") return; const r = o.getBoundingClientRect(); o.style.setProperty("--ry", ((e.clientX - r.left) / r.width - .5) * 26 + "deg"); o.style.setProperty("--rx", ((e.clientY - r.top) / r.height - .5) * -22 + "deg"); });
+    o.addEventListener("pointerleave", () => { o.style.setProperty("--rx", "0deg"); o.style.setProperty("--ry", "0deg"); });
+  });
+  paint();
+})();
 
 /* linha do tempo: ano em odômetro preso ao lado, linha que se desenha com o scroll */
 const TM_IC = [
