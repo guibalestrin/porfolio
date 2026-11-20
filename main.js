@@ -1,5 +1,5 @@
 /* ============================================================
-   Guilherme Balestrin — portfolio · JS puro, sem dependências
+   Guilherme Balestrin — portfolio, JS puro, sem dependências
    1) i18n PT/EN   2) hero CRT arrastável   3) frase animada por scroll
    4) janelas com abas  5) roda de interesses  6) reveals, FAQ, form
    ============================================================ */
@@ -44,12 +44,12 @@ pt: {
   hit_msg:"Por favor, não bata nele.",
   story_sr:"eu crio funis, sites e campanhas que vendem",
   work_h:"Trabalhos",
-  p1_t:"Dropshipping", p1_l:"Tudo começou em 2022, com uma loja online. Demorou 1 ano até a primeira venda. Pelo caminho, um vídeo no TikTok passou de 2,3 milhões de views.", p1_k:"E-commerce · Tráfego orgânico",
-  p2_t:"Infoprodutos", p2_l:"Depois criei meu próprio produto, montei a operação inteira e passei a vender com anúncios pagos.", p2_k:"Produto digital · Funil · Tráfego pago",
-  p3_t:"Meta e TikTok Ads", p3_l:"Campanhas no Meta Ads e no TikTok Ads: segmentação de público, teste de criativos e otimização de verba para trazer o cliente certo.", p3_k:"Meta Ads · TikTok Ads · Criativo",
-  tabs_drop:["Vídeo viral","TikTok","Shopify","Amazon","Vendas"], tabs_info:["Vendas","Funil","Campanhas"], tabs_meta:["Criativos","Públicos","Verba"],
-  sub_drop:["views em um vídeo orgânico do produto que eu vendia, sem anúncio pago.","novos seguidores e 132K curtidas no mesmo vídeo (TikTok Studio).","sessões em uma semana na loja Shopify · R$161,49 em vendas, 3 pedidos.","de conversão em links de afiliado: 38 cliques, 6 pedidos, R$169,72.","venda paga no crédito (Yampi) + Reel com 5 mil curtidas."], big_drop:["2,3M","+3.375","944","15,79%","R$155,96"],
-  sub_info:["notificações reais de Venda Aprovada e Pix Gerado no Kiwify.","Da atenção à compra","Tráfego pago em escala"], big_info:["Kiwify","",""], sub_meta:["Criativos estáticos e em vídeo, com testes A/B","Segmentação para falar com quem compra","Verba otimizada com base nas métricas"],
+  p1_t:"Dropshipping", p1_l:"Tudo começou em 2022, com uma loja online. Demorou 1 ano até a primeira venda. Pelo caminho, um vídeo no TikTok passou de 2,3 milhões de views.", p1_k:"E-commerce e tráfego orgânico",
+  p2_t:"Infoprodutos", p2_l:"Depois criei meu próprio produto, montei a operação inteira e passei a vender com anúncios pagos.", p2_k:"Produto digital, funil e tráfego pago",
+  p3_t:"Meta e TikTok Ads", p3_l:"Campanhas no Meta Ads e no TikTok Ads: segmentação de público, testes A/B e otimização de verba para trazer o cliente certo.", p3_k:"Meta Ads, TikTok Ads e tráfego pago",
+  tabs_drop:["Vídeo viral","TikTok","Shopify","Amazon","Vendas"], tabs_info:["Vendas","E-books"], tabs_meta:["Públicos","Verba"],
+  sub_drop:["views em um vídeo orgânico do produto que eu vendia, sem anúncio pago.","novos seguidores e 132K curtidas no mesmo vídeo (TikTok Studio).","sessões em uma semana na loja Shopify, com R$161,49 em vendas, 3 pedidos.","de conversão em links de afiliado: 38 cliques, 6 pedidos, R$169,72.","venda paga no crédito (Yampi) + Reel com 5 mil curtidas."], big_drop:["2,3M","+3.375","944","15,79%","R$155,96"],
+  sub_info:["notificações reais de Venda Aprovada e Pix Gerado no Kiwify.","capas e páginas dos e-books que eu vendia. Design e texto meus."], big_info:["Kiwify","E‑books"], sub_meta:["Segmentação para falar com quem compra","Verba otimizada com base nas métricas"],
   nav_jn:"Minha história", jn_k:"Fora do trabalho", jn_t:"Repetir até ficar bom.",
   jn_l:"Quase tudo o que eu sei fazer bem veio da mesma regra: repetir, medir e ajustar até ficar bom. É assim que eu trabalho também.",
   jn1_t:"3 mil horas de CS2 me ensinaram a treinar.",
@@ -57,52 +57,43 @@ pt: {
   jn1_p2:"Levei isso para o trabalho. No dropshipping demorou 1 ano até a primeira venda: eu continuei testando, olhando os números e corrigindo até dar certo.",
   jn1_big:"3.000+", jn1_bigl:"horas de CS2", jn1_yt:"Alguns vídeos meus no YouTube",
   jn2_t:"Comunicação na frente da câmera.",
-  jn2_p1:"Criei conteúdo no meu perfil pessoal, de frente para a câmera. Na série “Do Zero ao Milhão” eu mostrava o dia a dia construindo minha loja: criativos, copy, rotina e estudo. Roteiro, gravação e edição eram por minha conta.",
-  jn2_p2:"Foi onde aprendi a explicar uma ideia em poucos segundos e a prender atenção. Hoje isso pesa em qualquer criativo, apresentação ou reunião com cliente.",
+  jn2_p1:"Criei conteúdo no meu perfil pessoal, de frente para a câmera. Na série “Do Zero ao Milhão” eu mostrava o dia a dia construindo minha loja: anúncios, copy, rotina e estudo. Roteiro, gravação e edição eram por minha conta.",
+  jn2_p2:"Foi onde aprendi a explicar uma ideia em poucos segundos e a prender atenção. Hoje isso pesa em qualquer anúncio, apresentação ou reunião com cliente.",
   jn2_cap:"Dia 5 da série “Do Zero ao Milhão”, no meu perfil pessoal. Toque para ouvir.",
   jn3_t:"Gosto de desafio. O de agora é o russo.",
   jn3_p1:"Estou estudando russo e já saí do zero: hoje estou no nível básico. Alfabeto novo, sons novos. Escolhi justamente porque é difícil.",
   jn3_p2:"É a mesma regra de sempre. Não existe atalho, existe repetição até soltar.",
-  jn3_ru:"privet · oi", jn3_rul:"Estudando russo agora",
+  jn3_ru:"privet = oi", jn3_rul:"Estudando russo agora",
   jn4_t:"Leio para entender gente.", jn4_p:"Gosto de ler sobre neurociência, psicologia e filosofia. Quero entender como as pessoas pensam, sentem e decidem, porque todo negócio bom começa aí.",
   jn4_c1:"Neurociência", jn4_c2:"Psicologia", jn4_c3:"Filosofia",
   jn5_t:"Sou cristão.", jn5_p:"Minha fé orienta o jeito como eu trabalho: constância, honestidade com os números e respeito pelas pessoas.",
   xp_k:"Experiência prática", xp_t:"O que eu já fiz, na prática.", xp_l:"Do anúncio ao funil, sempre em projeto próprio e com resultado que dá para conferir.",
-  xp1_tag:"Projeto próprio", xp1_t:"Fundador e operador · E‑commerce dropshipping", xp1_d:"Criei e gerenciei a loja inteira, do marketing às vendas.",
-  xp1_b1:"Campanhas no Meta Ads e TikTok Ads: segmentação de público, teste de criativos e otimização de verba.",
+  xp1_tag:"Projeto próprio", xp1_t:"Fundador e operador de e‑commerce (dropshipping)", xp1_d:"Criei e gerenciei a loja inteira, do marketing às vendas.",
+  xp1_b1:"Campanhas no Meta Ads e TikTok Ads: segmentação de público, testes A/B e otimização de verba.",
   xp1_b2:"Conteúdo orgânico com foco em conversão, com um vídeo que passou de 2,3 milhões de views no TikTok.",
   xp1_b3:"Parcerias com micro influenciadores: busca de perfis, briefing e acompanhamento das entregas.",
-  xp1_b4:"Criativos para anúncios, estáticos e em vídeo, e landing pages.",
   xp1_b5:"Resultado: mais de 20 vendas e produto validado no mercado.",
-  xp2_tag:"Projeto Caverna de Alexandria", xp2_t:"Criador de conteúdo e estrategista", xp2_d:"Infoproduto de educação e desenvolvimento pessoal.",
-  xp2_b1:"Funis de vendas, copywriting e automações básicas com Typebot.",
-  xp2_b2:"Conteúdo para redes sociais (Reels, posts e copy de vendas) para construir audiência.",
+  xp2_tag:"Projeto próprio · Caverna de Alexandria", xp2_t:"Fundador · Marca e comunidade", xp2_d:"Criei uma marca própria para vender meus infoprodutos de educação e desenvolvimento pessoal.",
+  xp2_b1:"Branding: nome, identidade e mensagem pensados para que todos os meus infoprodutos vendessem sob a mesma marca, com mais confiança.",
+  xp2_b2:"A ideia era ir além do produto: construir uma comunidade em torno da marca, reunindo pessoas com a mesma mentalidade de estudo, disciplina e crescimento.",
+  xp2_b3:"Conteúdo nas redes, funis de venda, copy e automações com Typebot para atrair esse público e transformar seguidores em clientes.",
   xp3_tag:"Experiência pontual", xp3_t:"Afiliado digital", xp3_d:"Plataformas de infoprodutos.",
   xp3_b1:"Atuei como afiliado para validar estratégias de tráfego e depois migrei para construir uma marca própria.",
-  xp_tools:"Ferramentas", xp_lang:"Idiomas", xp_l1:"Português · nativo", xp_l2:"Inglês · fluente", xp_l3:"Russo · básico",
-  jn1_evo:"evolução, hora após hora", jn5_cap:"Meu devocional, num dos vídeos.",
+  xp_tools:"Ferramentas", xp_lang:"Idiomas", xp_l1:"Português (nativo)", xp_l2:"Inglês (fluente)", xp_l3:"Russo (básico)",
+  jn1_evo:"evolução, hora após hora", awp_fire:"Clique para atirar", jn5_cap:"Meu devocional, num dos vídeos.", fa_btn:"Toque para acender", fa_v:"“Lâmpada para os meus pés é a tua palavra, e luz para o meu caminho.”", fa_c:"Salmos 119:105",
   xp_s1:"vendas", xp_s2:"views em um vídeo", xp_s3:"produto validado",
-  rw_sr:"O que me move", rw_head:"No fundo, o que me interessa é gente.", rw_sub:"Toque em um rosto.",
-  rw:[
-    {t:"Liderança", x:"Quero entender o que faz um time seguir alguém e como isso se aprende."},
-    {t:"Gestão de pessoas", x:"Empresas são feitas de gente. Resultado vem de pessoas bem geridas."},
-    {t:"Linguagem corporal", x:"O que a pessoa não diz muitas vezes conta mais do que o que ela diz."},
-    {t:"Psicologia nas vendas", x:"Venda é decisão humana. Entender o porquê vale mais que qualquer script."},
-    {t:"Persuasão", x:"Copy boa é clareza, emoção e o próximo passo certo."},
-    {t:"Funil & jornada", x:"Cada clique é uma etapa da jornada do cliente. Eu desenho o caminho todo."}
-  ],
   sv_a:"Tudo o que eu", sv_b:"faço.", sv_lede:"Do primeiro anúncio ao site no ar, eu cuido do caminho inteiro do cliente.",
   s1_n:"Tráfego", s1_l:"Pago e orgânico, do teste à escala.", s1_1:"Meta Ads e TikTok Ads", s1_2:"Testes A/B", s1_3:"Conteúdo orgânico", s1_4:"Análise de métricas",
   s2_n:"Copy & persuasão", s2_l:"Palavras que levam à decisão.", s2_1:"Copywriting", s2_2:"Páginas de venda", s2_3:"Anúncios", s2_4:"Psicologia aplicada",
-  s3_n:"Design & sites", s3_l:"Visual claro, site que converte.", s3_1:"Sites e apps", s3_2:"Landing pages", s3_3:"Criativos (estáticos e vídeo)", s3_4:"Identidade",
+  s3_n:"Design & sites", s3_l:"Visual claro, site que converte.", s3_1:"Sites e apps", s3_2:"Landing pages", s3_3:"Branding", s3_4:"Identidade",
   s4_n:"Funis & produto", s4_l:"Da ideia à operação rodando.", s4_1:"Infoprodutos", s4_2:"Funis e jornada do cliente", s4_3:"Automação com Typebot", s4_4:"Parcerias com influenciadores",
   bf_t:"Vamos conversar", bf_l:"Tem uma oportunidade ligada a marketing digital, tráfego ou conteúdo? Conte aqui. Eu respondo.", bf_name:"Nome", bf_email:"E-mail", bf_need:"Do que você precisa?",
-  pill_site:"Site", pill_traffic:"Tráfego", pill_copy:"Copy", pill_funnel:"Funil", pill_other:"Outro", bf_about:"Conte mais", bf_send:"Enviar",
+  pill_site:"Site", pill_traffic:"Tráfego", pill_copy:"Copy", pill_funnel:"Funil", pill_other:"Outro", bf_about:"Conte mais", bf_send:"Dobrar e enviar", pill_cr:"Branding", bf_co:"Empresa", bf_opt:"Opcional", bf_kind:"Tipo de oportunidade", kind_1:"Estágio", kind_2:"Freela", kind_3:"Projeto", kind_4:"Parceria", bf_sent:"Tá na caixa.", bf_sent_n:"Abri seu app de e-mail com a mensagem pronta. É só apertar enviar.", bf_again:"Escrever outra",
   bf_err:"Preencha nome e um e-mail válido.", bf_ok:"Abrindo seu app de e-mail…", bf_subject:"Contato pelo portfólio", bf_body_need:"Preciso de",
-  rg_ask:"Minha proposta", rg_say:"Aberto a oportunidades alinhadas ao que eu gosto e já fiz.", rg_book:"Remoto ou híbrido · São Paulo",
+  rg_ask:"Minha proposta", rg_say:"Aberto a oportunidades alinhadas ao que eu gosto e já fiz.", rg_book:"Remoto ou híbrido, em São Paulo",
   fq_t:"Perguntas, respondidas.",
   q1:"Quem é você?", a1:"Guilherme, 19 anos. Comecei no marketing digital em 2022, com dropshipping, e depois fiz infoprodutos. Hoje estudo Administração de Empresas no Insper.",
-  q2:"O que você já fez?", a2:"Montei e operei uma loja de dropshipping do zero, com campanhas no Meta Ads e TikTok Ads, criativos e parcerias com micro influenciadores, e passei de 20 vendas. Depois estruturei o infoproduto Caverna de Alexandria, com funis, copy e automações no Typebot. Também já criei conteúdo no meu perfil pessoal.",
+  q2:"O que você já fez?", a2:"Montei e operei uma loja de dropshipping do zero, com campanhas no Meta Ads e TikTok Ads e parcerias com micro influenciadores, e passei de 20 vendas. Depois criei a Caverna de Alexandria, uma marca para vender meus infoprodutos e reunir uma comunidade de pessoas com a mesma mentalidade. Também já criei conteúdo no meu perfil pessoal.",
   q3:"O que te interessa além de marketing?", a3:"Liderança, gestão de pessoas, linguagem corporal e psicologia nas vendas. Todo negócio depende de entender como as pessoas decidem.",
   q4:"Como começamos?", a4:"Preencha o formulário acima ou me escreva por e-mail. Eu respondo.",
   ft_say:"Marketing digital e<br>Administração de Empresas.", ft_top:"Voltar ao topo ↑", copied:"Copiado",
@@ -110,44 +101,73 @@ pt: {
   tip_help:"Teclas e gestos",
   mq_t:"Plataformas por onde já passei",
   st_t:"Números de verdade.", st_l:"Prints e métricas das minhas próprias operações. Sem maquiagem.",
-  st1:"views em um único vídeo no TikTok", st1s:"Maio/2023 · dropshipping",
+  st1:"views em um único vídeo no TikTok", st1s:"Maio/2023, dropshipping",
   st2:"curtidas no mesmo vídeo", st2s:"Produto que eu vendia",
   st3:"novos seguidores vindos dele", st3s:"Dados do TikTok Studio",
-  st4:"de conversão em links de afiliado", st4s:"Amazon Associados · 38 cliques, 6 pedidos",
+  st4:"de conversão em links de afiliado", st4s:"Amazon Associados: 38 cliques, 6 pedidos",
   hp_t:"Teclas e gestos", hp_keys:"Atalhos de uma tecla", hp_close:"Fechar",
   hp_rows:[["Arrastar","Olhar em volta (ou mover os adesivos)"],["3 cliques no monitor","Não faça isso."],["1 – 3","Trocar de canal"],["L","Idioma PT / EN"],["M","Reduzir movimento"],["?","Esta ajuda"],["Shift + rolar","Mover o mundo na horizontal"]],
   ab_k:"Sobre mim", ab_t:"Oi, eu sou o Guilherme.",
   ab_c1:"19 anos", ab_c2:"4 anos de experiência", ab_c3:"Administração de Empresas",
   ab_p1:"Tenho 19 anos e comecei no marketing digital em 2022. Primeiro com dropshipping, onde demorou 1 ano até a primeira venda, depois com infoprodutos. Aprendi fazendo, com dinheiro e resultado em jogo: tráfego pago e orgânico, copy, design e conteúdo.",
   ab_p2:"Em um desses projetos criei um produto do zero, montei a operação e vendi com anúncios pagos. Foi assim que passei a enxergar o funil inteiro e a jornada do cliente.",
-  ab_p3:"Hoje estudo Administração de Empresas no Insper. Na Insper Jr, a consultoria ampliou minha visão para além do marketing: mercado, operação e finanças. O que mais me interessa agora é liderança, gestão de pessoas e psicologia nas vendas, porque todo negócio bom começa em entender gente.",
-  ab_f1:"Administração de Empresas", ab_f2:"Empresa júnior de consultoria",
-  ij_k:"Experiência", ij_t:"Consultoria de verdade, na Insper Jr.",
-  ij_l:"Na faculdade entrei na Insper Jr, a empresa júnior de consultoria do Insper. Lá vivi, na prática, os 4 escopos de um projeto de consultoria.",
+  ab_p3:"Hoje estudo Administração de Empresas no Insper. No trainee da Insper Jr, a consultoria ampliou minha visão para além do marketing: mercado, operação e finanças. O que mais me interessa agora é liderança, gestão de pessoas e psicologia nas vendas, porque todo negócio bom começa em entender gente.",
+  ab_f1:"Administração de Empresas", ab_f2:"Trainee na empresa júnior de consultoria",
+  ij_k:"Trainee · Experiência", ij_t:"Consultoria de verdade, na Insper Jr.",
+  ij_l:"Na faculdade fui selecionado para o trainee da Insper Jr, a empresa júnior de consultoria do Insper. Foi um programa intenso de formação, com metodologia, cases e entregas avaliadas, em que vivi na prática os 4 escopos de um projeto de consultoria.",
   ij1_t:"Mercadológico", ij1_d:"Entender mercado, concorrência e público antes de qualquer decisão.",
   ij2_t:"Operacional", ij2_d:"Mapear processos, achar gargalos e organizar como o trabalho acontece.",
   ij3_t:"Marketing", ij3_d:"Posicionamento, marca e a forma como o negócio chega até o cliente.",
   ij4_t:"Financeiro", ij4_d:"Custos, projeções e viabilidade: o que faz o número fechar.",
-  ij_gt:"O que isso agregou", ij_g:"Eu vinha do marketing digital, olhando para o anúncio e o funil. A consultoria mostrou o resto do mapa. Hoje enxergo o negócio inteiro (mercado, operação, marketing e números) e como uma parte mexe na outra.",
-  ij_st:"Skills que ganhei", ij_chips:["Visão estratégica","Análise de mercado","Estruturação de processos","Viabilidade financeira","Comunicação com cliente","Trabalho em equipe","Gestão de projetos","Apresentação de resultados"],
-  kf_k:"Mercado", kf_t:"Kiwify Festival 2023.", kf_l:"Fui ao maior evento de infoprodutos do Brasil enquanto estruturava meu próprio produto. Ouvir como as maiores operações do mercado montam oferta, funil e time mudou a forma como eu montei a minha: menos foco no anúncio isolado e mais no processo inteiro, da atração à recompra.", kf_c1:"No Kiwify Festival 2023", kf_c2:"Palco principal do evento", nav_kf:"Kiwify Festival",
-  nav_projects:"Projetos", ab_gt:"Um pouco mais de mim", g1:"Escritório é onde der.", g2:"Quando pede formalidade.", g3:"Rotina de faculdade.",
+  ij_gt:"O que isso agregou", ij_g:"Eu vinha do marketing digital, olhando para o anúncio e o funil. O trainee me mostrou o resto do mapa. Hoje enxergo o negócio inteiro (mercado, operação, marketing e números) e como uma parte mexe na outra.",
+  ij_st:"Skills que ganhei", ij_chips:["Visão estratégica","Análise de mercado","Estruturação de processos","Viabilidade financeira","Comunicação com cliente","Trabalho em equipe","Gestão de projetos","Apresentações em PowerPoint"],
+  tm_k:"Trajetória", tm_t:"De 2018 até aqui.", nav_tm:"Trajetória",
+  tm_l:"Nenhum passo foi em linha reta. Cada um ensinou alguma coisa que eu levei para o seguinte.",
+  tm_now:"agora",
+  tm:[
+    {y:2018,t:"Meu primeiro negócio: skins de CS:GO.",d:"Comprava e vendia skins no mercado do jogo. Sem saber o nome, aprendi preço, oferta, demanda e negociação."},
+    {y:2022,t:"Descubro o dropshipping.",d:"Ouço falar pela primeira vez e monto minha loja. Foi 1 ano testando produto, anúncio e página até dar certo."},
+    {y:2023,t:"A primeira venda.",d:"Depois de um ano insistindo, sai a primeira venda. A prova de que repetir funciona."},
+    {y:2023,t:"Testei afiliado e parei por princípio.",d:"Fui afiliado de suplemento encapsulado. Quando percebi que o produto não entregava o que prometia, parei. Não vendo o que eu não acredito."},
+    {y:2024,t:"De volta ao dropshipping, com microinfluenciadores.",d:"Mudei a divulgação: parcerias com microinfluenciadores, que têm público fiel e custo baixo, no lugar de depender só de anúncio."},
+    {y:2024,t:"O mercado muda e eu migro para infoprodutos.",d:"Com a nova taxação das compras internacionais, a conta do dropshipping deixou de fechar. Criei meus próprios infoprodutos e comecei no tráfego pago."},
+    {y:2025,t:"Pausa para estudar, com meta alta.",d:"Parei as operações para focar no vestibular. O plano era o primeiro lugar e a bolsa na FGV."},
+    {y:2026,t:"Aprovado na FGV e no Insper.",d:"Passei nas duas e conquistei bolsa no Insper, onde hoje curso Administração de Empresas. Também fiz o trainee da Insper Jr."},
+    {y:2026,t:"Ideias saindo do papel com IA.",d:"Com a IA, comecei a construir e validar ideias minhas: IN Insper, InsperSwap, Presenza e outros testes."},
+    {y:2026,t:"De volta ao digital, agora com IA e automação.",d:"Estou voltando ao mercado digital, com foco em aprender e aplicar IA e automação no que eu já sei fazer."}
+  ],
+  sd_k:"PowerPoint", sd_t:"Slides que eu fiz.", nav_sd:"Slides",
+  sd_l:"Consultoria também é saber contar a história. Monto decks do zero no PowerPoint: título que já entrega a conclusão, dado que sustenta e visual que deixa a leitura leve.",
+  sd_h:"Role para passar · clique para ampliar",
+  sd_caps:["Huawei · projeto autoral, aplicando sozinho o método que aprendi na Insper Jr","Huawei · Preço: o catálogo vai de R$ 999 a R$ 32.999","Dermo Clinic Primavera · capa da consultoria estratégica","Projeto pela Insper Jr, em parceria com a Bain & Company · Marketing Mix"],
+  sd_note:"Alguns projetos têm detalhes sob sigilo, por isso mostro só parte do material.",
+  kf_kit_t:"O que eu aprendi lá.", kf_kit_p:"Ouvindo como as maiores operações montam oferta, funil e time, entendi que quem escala não depende de um anúncio que viralizou, e sim de processo: oferta clara, funil medido e gente bem organizada. Voltei e reestruturei meu produto com essa lógica, olhando o caminho inteiro do cliente, da atração à recompra.", kf_hint:"Arraste o crachá", kf_o1:"Ecobag do kit", kf_o2:"Caderno do festival",
+  kf_k:"Mercado", kf_t:"Kiwify Festival 2023.", kf_l:"Fui ao maior evento de infoprodutos do Brasil enquanto estruturava meu próprio produto, para ver de perto como as maiores operações do mercado trabalham.", kf_c1:"Na entrada do Kiwify Festival", kf_c2:"Palco principal do evento", nav_kf:"Kiwify Festival",
+  nav_projects:"Projetos",
   vn_k:"Projetos paralelos", vn_t:"Ideias que viram produto.",
   vn_l:"Além do marketing e da faculdade, gosto de pegar uma ideia, desenhar a solução e colocar no ar. Estes são projetos que construí por conta própria.",
-  in_s:"Projeto atual · em construção",
+  in_s:"Projeto atual, em construção",
   in_l:"Uma rede social fechada para quem estuda no Insper: o que está acontecendo no campus, só para quem é de dentro. Hoje está com lista de espera aberta.",
   in_f1:"Spotted anônimo", in_f2:"Festas e lotes", in_f3:"Caronas", in_f4:"Dúvidas da turma", in_f5:"Quem mora perto", in_f6:"Fila do Sodexo",
   in_n:"Entrada só com e-mail do Insper, sem senha.", in_cta:"Ver o IN.",
-  sw_s:"No ar · projeto independente",
+  sw_s:"No ar, projeto independente",
   sw_l:"Plataforma que junta alunos que querem trocar de turma e encontra as melhores combinações: diretas, em grupo ou em ciclo, para ajudar o máximo de gente.",
   sw_1:"Informe semestre, curso, turma atual e para onde quer ir.", sw_2:"O algoritmo procura o melhor match: direto, em grupo ou em ciclo.", sw_3:"Acompanhe o status e combine a troca com quem fechou match.",
   sw_n:"Projeto de alunos, sem fins lucrativos e sem vínculo oficial com o Insper.", sw_cta:"Ver o InsperSwap",
   sw_c1:"Match direto", sw_c2:"Em grupo", sw_c3:"Em ciclo",
-  pz_s:"MVP · web app + API",
+  pz_s:"MVP com web app e API",
   pz_l:"Um consultor de look masculino digital. A tese: as pessoas te julgam em segundos, e a roupa define esse julgamento. O app mostra como cada look será percebido e deixa você montar o seu, peça por peça.",
   pz_f1:"Guarda-roupa digital", pz_f2:"6 ocasiões", pz_f3:"6 estilos", pz_f4:"Nível de presença e impacto", pz_f5:"Modo Análise e Construir", pz_f6:"Como você será percebido",
   pz_n:"Também criei a identidade visual (Ônix, Ouro Antigo e Marfim) e o manual do código. O motor de recomendação por regras é isolado e pronto para plugar IA.",
   pz_cta:"Quer ver? Me chama", pz_chip_k:"PRESENÇA", pz_chip_v:"Médio",
+  nav_cr:"Caverna",
+  cr_k:"Minha marca", cr_t:"Caverna de Alexandria",
+  cr_l:"Uma marca para vender meus infoprodutos e reunir pessoas com a mesma mentalidade.",
+  cr_hint:"Role para reunir a comunidade",
+  cv1_t:"A marca", cv1:"Um nome e uma cara para todos os produtos.",
+  cv2_t:"Os produtos", cv2:"E-books de estudo, disciplina e crescimento.",
+  cv3_t:"A comunidade", cv3:"Pessoas com a mesma mentalidade, juntas.",
+  cv_words:["Estudo","Disciplina","Crescimento","Conhecimento","Presença","Mentalidade"],
   title:"Guilherme Balestrin | Marketing digital e Administração",
   desc:"Guilherme Balestrin, 19. 4 anos de experiência em marketing digital: tráfego, copy, design e sites. Administração de Empresas no Insper.",
   story:["eu","crio","funis","sites","e","campanhas","que","VENDEM"]
@@ -163,12 +183,12 @@ en: {
   hit_msg:"Please do not hit it.",
   story_sr:"I create funnels, websites and campaigns that sell",
   work_h:"Work",
-  p1_t:"Dropshipping", p1_l:"It all started in 2022, with an online store. It took 1 year to get my first sale. Along the way, a TikTok video passed 2.3 million views.", p1_k:"E-commerce · Organic traffic",
-  p2_t:"Info products", p2_l:"Then I built my own product, set up the whole operation and started selling with paid ads.", p2_k:"Digital product · Funnel · Paid traffic",
-  p3_t:"Meta and TikTok Ads", p3_l:"Campaigns on Meta Ads and TikTok Ads: audience targeting, creative testing and budget optimization to bring in the right customer.", p3_k:"Meta Ads · TikTok Ads · Creative",
-  tabs_drop:["Viral video","TikTok","Shopify","Amazon","Sales"], tabs_info:["Sales","Funnel","Campaigns"], tabs_meta:["Creatives","Audiences","Budget"],
-  sub_drop:["views on an organic video of the product I was selling, no paid ads.","new followers and 132K likes on the same video (TikTok Studio).","sessions in one week on the Shopify store · R$161.49 in sales, 3 orders.","conversion on affiliate links: 38 clicks, 6 orders, R$169.72.","a sale paid by credit card (Yampi) + a Reel with 5K likes."], big_drop:["2.3M","+3,375","944","15.79%","R$155.96"],
-  sub_info:["real Approved Sale and Pix Generated notifications from Kiwify.","From attention to purchase","Paid traffic at scale"], big_info:["Kiwify","",""], sub_meta:["Static and video creatives, with A/B tests","Targeting to reach the people who buy","Budget optimized from the metrics"],
+  p1_t:"Dropshipping", p1_l:"It all started in 2022, with an online store. It took 1 year to get my first sale. Along the way, a TikTok video passed 2.3 million views.", p1_k:"E-commerce and organic traffic",
+  p2_t:"Info products", p2_l:"Then I built my own product, set up the whole operation and started selling with paid ads.", p2_k:"Digital product, funnel and paid traffic",
+  p3_t:"Meta and TikTok Ads", p3_l:"Campaigns on Meta Ads and TikTok Ads: audience targeting, A/B testing and budget optimization to bring in the right customer.", p3_k:"Meta Ads, TikTok Ads and paid traffic",
+  tabs_drop:["Viral video","TikTok","Shopify","Amazon","Sales"], tabs_info:["Sales","E-books"], tabs_meta:["Audiences","Budget"],
+  sub_drop:["views on an organic video of the product I was selling, no paid ads.","new followers and 132K likes on the same video (TikTok Studio).","sessions in one week on the Shopify store, with R$161.49 in sales, 3 orders.","conversion on affiliate links: 38 clicks, 6 orders, R$169.72.","a sale paid by credit card (Yampi) + a Reel with 5K likes."], big_drop:["2.3M","+3,375","944","15.79%","R$155.96"],
+  sub_info:["real Approved Sale and Pix Generated notifications from Kiwify.","covers and pages of the e-books I sold. My design and my copy."], big_info:["Kiwify","E‑books"], sub_meta:["Targeting to reach the people who buy","Budget optimized from the metrics"],
   nav_jn:"My story", jn_k:"Off the clock", jn_t:"Repeat until you're good.",
   jn_l:"Almost everything I do well came from the same rule: repeat, measure and adjust until it's good. That's how I work, too.",
   jn1_t:"3,000 hours of CS2 taught me how to practice.",
@@ -176,52 +196,43 @@ en: {
   jn1_p2:"I took that into my work. In dropshipping it took 1 year to get my first sale: I kept testing, reading the numbers and fixing things until it worked.",
   jn1_big:"3,000+", jn1_bigl:"hours of CS2", jn1_yt:"Some of my videos on YouTube",
   jn2_t:"Communicating on camera.",
-  jn2_p1:"I made content on my personal profile, in front of the camera. In the series “From Zero to a Million” I showed the day to day of building my store: creatives, copy, routine and studying. Scripting, shooting and editing were all on me.",
-  jn2_p2:"That's where I learned to explain an idea in a few seconds and hold attention. Today it matters in every creative, presentation or client meeting.",
+  jn2_p1:"I made content on my personal profile, in front of the camera. In the series “From Zero to a Million” I showed the day to day of building my store: ads, copy, routine and studying. Scripting, shooting and editing were all on me.",
+  jn2_p2:"That's where I learned to explain an idea in a few seconds and hold attention. Today it matters in every ad, presentation or client meeting.",
   jn2_cap:"Day 5 of the “From Zero to a Million” series, on my personal profile. Tap to hear it.",
   jn3_t:"I like a challenge. Right now it's Russian.",
   jn3_p1:"I'm studying Russian and I'm already past zero: I'm at a basic level now. New alphabet, new sounds. I picked it precisely because it's hard.",
   jn3_p2:"Same rule as always. There's no shortcut, only repetition until it flows.",
-  jn3_ru:"privet · hi", jn3_rul:"Studying Russian right now",
+  jn3_ru:"privet = hi", jn3_rul:"Studying Russian right now",
   jn4_t:"I read to understand people.", jn4_p:"I like reading about neuroscience, psychology and philosophy. I want to understand how people think, feel and decide, because every good business starts there.",
   jn4_c1:"Neuroscience", jn4_c2:"Psychology", jn4_c3:"Philosophy",
   jn5_t:"I'm a Christian.", jn5_p:"My faith shapes how I work: consistency, honesty with the numbers and respect for people.",
   xp_k:"Hands-on experience", xp_t:"What I've actually done.", xp_l:"From the ad to the funnel, always on my own projects and with results you can check.",
-  xp1_tag:"Own project", xp1_t:"Founder and operator · Dropshipping e‑commerce", xp1_d:"I built and managed the whole store, from marketing to sales.",
-  xp1_b1:"Meta Ads and TikTok Ads campaigns: audience targeting, creative testing and budget optimization.",
+  xp1_tag:"Own project", xp1_t:"Founder and operator of a dropshipping e‑commerce", xp1_d:"I built and managed the whole store, from marketing to sales.",
+  xp1_b1:"Meta Ads and TikTok Ads campaigns: audience targeting, A/B testing and budget optimization.",
   xp1_b2:"Organic content built for conversion, with a video that passed 2.3 million views on TikTok.",
   xp1_b3:"Micro-influencer partnerships: finding profiles, briefing and following the deliveries.",
-  xp1_b4:"Ad creatives, static and video, and landing pages.",
   xp1_b5:"Result: over 20 sales and a product validated in the market.",
-  xp2_tag:"Caverna de Alexandria project", xp2_t:"Content creator and strategist", xp2_d:"Info product in education and personal development.",
-  xp2_b1:"Sales funnels, copywriting and basic automations with Typebot.",
-  xp2_b2:"Social media content (Reels, posts and sales copy) to build an audience.",
+  xp2_tag:"Own project · Caverna de Alexandria", xp2_t:"Founder · Brand and community", xp2_d:"I built my own brand to sell my info products in education and personal development.",
+  xp2_b1:"Branding: name, identity and message designed so all my info products could sell under one brand, with more trust.",
+  xp2_b2:"The idea was to go beyond the product: build a community around the brand, bringing together people with the same mindset of study, discipline and growth.",
+  xp2_b3:"Social content, sales funnels, copy and Typebot automations to attract that audience and turn followers into customers.",
   xp3_tag:"One-off experience", xp3_t:"Digital affiliate", xp3_d:"Info product platforms.",
   xp3_b1:"I worked as an affiliate to validate traffic strategies, then moved on to building my own brand.",
-  xp_tools:"Tools", xp_lang:"Languages", xp_l1:"Portuguese · native", xp_l2:"English · fluent", xp_l3:"Russian · basic",
-  jn1_evo:"progress, hour after hour", jn5_cap:"My devotional time, in one of the videos.",
+  xp_tools:"Tools", xp_lang:"Languages", xp_l1:"Portuguese (native)", xp_l2:"English (fluent)", xp_l3:"Russian (basic)",
+  jn1_evo:"progress, hour after hour", awp_fire:"Click to fire", jn5_cap:"My devotional time, in one of the videos.", fa_btn:"Tap to light it", fa_v:"“Your word is a lamp to my feet and a light to my path.”", fa_c:"Psalm 119:105",
   xp_s1:"sales", xp_s2:"views on one video", xp_s3:"product validated",
-  rw_sr:"What drives me", rw_head:"At the end of the day, I care about people.", rw_sub:"Tap a face.",
-  rw:[
-    {t:"Leadership", x:"I want to understand what makes a team follow someone and how that is learned."},
-    {t:"People management", x:"Companies are made of people. Results come from people who are well led."},
-    {t:"Body language", x:"What someone doesn't say often tells you more than what they do."},
-    {t:"Sales psychology", x:"Selling is a human decision. Knowing the why beats any script."},
-    {t:"Persuasion", x:"Good copy is clarity, emotion and the right next step."},
-    {t:"Funnel & journey", x:"Every click is a step in the customer journey. I design the whole path."}
-  ],
   sv_a:"Everything I", sv_b:"do.", sv_lede:"From the first ad to the live site, I take care of the customer's whole path.",
   s1_n:"Traffic", s1_l:"Paid and organic, from test to scale.", s1_1:"Meta Ads and TikTok Ads", s1_2:"A/B tests", s1_3:"Organic content", s1_4:"Metrics analysis",
   s2_n:"Copy & persuasion", s2_l:"Words that lead to a decision.", s2_1:"Copywriting", s2_2:"Sales pages", s2_3:"Ads", s2_4:"Applied psychology",
-  s3_n:"Design & sites", s3_l:"Clear visuals, a site that converts.", s3_1:"Sites and apps", s3_2:"Landing pages", s3_3:"Creatives (static and video)", s3_4:"Identity",
+  s3_n:"Design & sites", s3_l:"Clear visuals, a site that converts.", s3_1:"Sites and apps", s3_2:"Landing pages", s3_3:"Branding", s3_4:"Identity",
   s4_n:"Funnels & product", s4_l:"From idea to a running operation.", s4_1:"Info products", s4_2:"Funnels and customer journey", s4_3:"Automation with Typebot", s4_4:"Influencer partnerships",
   bf_t:"Let's talk", bf_l:"Got an opportunity in digital marketing, traffic or content? Tell me here. I'll write back.", bf_name:"Name", bf_email:"Email", bf_need:"What do you need?",
-  pill_site:"Website", pill_traffic:"Traffic", pill_copy:"Copy", pill_funnel:"Funnel", pill_other:"Other", bf_about:"Tell me more", bf_send:"Send",
+  pill_site:"Website", pill_traffic:"Traffic", pill_copy:"Copy", pill_funnel:"Funnel", pill_other:"Other", bf_about:"Tell me more", bf_send:"Fold & send", pill_cr:"Branding", bf_co:"Company", bf_opt:"Optional", bf_kind:"Type of opportunity", kind_1:"Internship", kind_2:"Freelance", kind_3:"Project", kind_4:"Partnership", bf_sent:"It's in the box.", bf_sent_n:"I opened your email app with the message ready. Just hit send.", bf_again:"Write another",
   bf_err:"Please add your name and a valid email.", bf_ok:"Opening your email app…", bf_subject:"Contact from portfolio", bf_body_need:"I need",
-  rg_ask:"My proposal", rg_say:"Open to opportunities aligned with what I like and have done.", rg_book:"Remote or hybrid · São Paulo",
+  rg_ask:"My proposal", rg_say:"Open to opportunities aligned with what I like and have done.", rg_book:"Remote or hybrid, São Paulo",
   fq_t:"Questions, answered.",
   q1:"Who are you?", a1:"Guilherme, 19. I started in digital marketing in 2022 with dropshipping, then moved on to info products. Today I study Business Administration at Insper.",
-  q2:"What have you done?", a2:"I built and ran a dropshipping store from scratch, with Meta Ads and TikTok Ads campaigns, creatives and micro-influencer partnerships, and passed 20 sales. Then I structured the Caverna de Alexandria info product, with funnels, copy and Typebot automations. I also made content on my personal profile.",
+  q2:"What have you done?", a2:"I built and ran a dropshipping store from scratch, with Meta Ads and TikTok Ads campaigns and micro-influencer partnerships, and passed 20 sales. Then I created Caverna de Alexandria, a brand to sell my info products and bring together a community of like-minded people. I also made content on my personal profile.",
   q3:"What else are you into?", a3:"Leadership, people management, body language and sales psychology. Every business depends on understanding how people decide.",
   q4:"How do we start?", a4:"Fill in the form above or email me. I'll write back.",
   ft_say:"Digital marketing and<br>Business Administration.", ft_top:"Back to top ↑", copied:"Copied",
@@ -229,44 +240,73 @@ en: {
   tip_help:"Keys & gestures",
   mq_t:"Platforms I've worked on",
   st_t:"Real numbers.", st_l:"Screenshots and metrics from my own operations. No makeup.",
-  st1:"views on a single TikTok video", st1s:"May 2023 · dropshipping",
+  st1:"views on a single TikTok video", st1s:"May 2023, dropshipping",
   st2:"likes on the same video", st2s:"A product I was selling",
   st3:"new followers from it", st3s:"TikTok Studio data",
-  st4:"conversion on affiliate links", st4s:"Amazon Associates · 38 clicks, 6 orders",
+  st4:"conversion on affiliate links", st4s:"Amazon Associates: 38 clicks, 6 orders",
   hp_t:"Keys & gestures", hp_keys:"Single-key shortcuts", hp_close:"Close",
   hp_rows:[["Drag","Look around (or move the stickers)"],["3 clicks on the TV","Please don't."],["1 – 3","Switch channel"],["L","Language PT / EN"],["M","Reduce motion"],["?","This help"],["Shift + scroll","Pan the world sideways"]],
   ab_k:"About me", ab_t:"Hi, I'm Guilherme.",
   ab_c1:"19 y/o", ab_c2:"4 years of experience", ab_c3:"Business Administration",
   ab_p1:"I'm 19 and started in digital marketing in 2022. First with dropshipping, where it took 1 year to get my first sale, then info products. I learned by doing, with real money and results on the line: paid and organic traffic, copy, design and content.",
   ab_p2:"In one of those projects I built a product from scratch, set up the operation and sold it with paid ads. That's how I started seeing the whole funnel and the customer journey.",
-  ab_p3:"Today I study Business Administration at Insper. At Insper Jr, consulting widened my view beyond marketing: market, operations and finance. What interests me most now is leadership, people management and sales psychology, because every good business starts with understanding people.",
-  ab_f1:"Business Administration", ab_f2:"Junior consulting company",
-  ij_k:"Experience", ij_t:"Real consulting, at Insper Jr.",
-  ij_l:"In college I joined Insper Jr, Insper's junior consulting company. There I lived, hands-on, the 4 scopes of a consulting project.",
+  ab_p3:"Today I study Business Administration at Insper. In the Insper Jr trainee program, consulting widened my view beyond marketing: market, operations and finance. What interests me most now is leadership, people management and sales psychology, because every good business starts with understanding people.",
+  ab_f1:"Business Administration", ab_f2:"Trainee at the junior consulting company",
+  ij_k:"Trainee · Experience", ij_t:"Real consulting, at Insper Jr.",
+  ij_l:"In college I was selected for the Insper Jr trainee program, Insper's junior consulting company. It was an intense training program, with methodology, cases and graded deliverables, where I lived hands-on the 4 scopes of a consulting project.",
   ij1_t:"Market", ij1_d:"Understand the market, competitors and audience before any decision.",
   ij2_t:"Operations", ij2_d:"Map processes, find bottlenecks and organize how the work gets done.",
   ij3_t:"Marketing", ij3_d:"Positioning, brand and how the business reaches the customer.",
   ij4_t:"Finance", ij4_d:"Costs, projections and viability: what makes the numbers work.",
-  ij_gt:"What it added", ij_g:"I came from digital marketing, looking at the ad and the funnel. Consulting showed me the rest of the map. Now I see the whole business (market, operations, marketing and numbers) and how each part moves the others.",
-  ij_st:"Skills I gained", ij_chips:["Strategic thinking","Market analysis","Process design","Financial viability","Client communication","Teamwork","Project management","Presenting results"],
-  kf_k:"Market", kf_t:"Kiwify Festival 2023.", kf_l:"I went to Brazil's biggest info-product event while I was structuring my own product. Hearing how the biggest operations in the market build their offer, funnel and team changed how I built mine: less focus on the single ad, more on the whole process, from attraction to repeat purchase.", kf_c1:"At Kiwify Festival 2023", kf_c2:"The event's main stage", nav_kf:"Kiwify Festival",
-  nav_projects:"Projects", ab_gt:"A little more of me", g1:"Office is wherever it works.", g2:"When it calls for a suit.", g3:"College routine.",
+  ij_gt:"What it added", ij_g:"I came from digital marketing, looking at the ad and the funnel. The trainee program showed me the rest of the map. Now I see the whole business (market, operations, marketing and numbers) and how each part moves the others.",
+  ij_st:"Skills I gained", ij_chips:["Strategic thinking","Market analysis","Process design","Financial viability","Client communication","Teamwork","Project management","PowerPoint presentations"],
+  tm_k:"Journey", tm_t:"From 2018 to now.", nav_tm:"Journey",
+  tm_l:"No step was a straight line. Each one taught me something I carried into the next.",
+  tm_now:"now",
+  tm:[
+    {y:2018,t:"My first business: CS:GO skins.",d:"I bought and sold skins on the game's market. Without knowing the words for it, I learned pricing, supply, demand and negotiation."},
+    {y:2022,t:"I discover dropshipping.",d:"I hear about it for the first time and build my store. It took 1 year of testing products, ads and pages until it worked."},
+    {y:2023,t:"The first sale.",d:"After a year of pushing, the first sale comes in. Proof that repetition works."},
+    {y:2023,t:"I tried affiliate marketing and quit on principle.",d:"I was an affiliate for a capsule supplement. When I realized the product didn't deliver what it promised, I stopped. I don't sell what I don't believe in."},
+    {y:2024,t:"Back to dropshipping, with micro-influencers.",d:"I changed how I promoted: partnerships with micro-influencers, who have loyal audiences and low cost, instead of relying only on ads."},
+    {y:2024,t:"The market shifts and I move to info products.",d:"With the new tax on international purchases, dropshipping math stopped working. I created my own info products and started running paid traffic."},
+    {y:2025,t:"A pause to study, with a high bar.",d:"I paused operations to focus on entrance exams. The plan was first place and a scholarship at FGV."},
+    {y:2026,t:"Accepted at FGV and Insper.",d:"I got into both and earned a scholarship at Insper, where I now study Business Administration. I also did the Insper Jr trainee program."},
+    {y:2026,t:"Ideas leaving the page with AI.",d:"With AI, I started building and validating my own ideas: IN Insper, InsperSwap, Presenza and other tests."},
+    {y:2026,t:"Back to digital, now with AI and automation.",d:"I'm returning to the digital market, focused on learning and applying AI and automation to what I already know how to do."}
+  ],
+  sd_k:"PowerPoint", sd_t:"Slides I made.", nav_sd:"Slides",
+  sd_l:"Consulting is also about telling the story. I build decks from scratch in PowerPoint: a title that already delivers the conclusion, data that backs it and visuals that make it easy to read.",
+  sd_h:"Scroll to flip · click to enlarge",
+  sd_caps:["Huawei · solo project, applying on my own the method I learned at Insper Jr","Huawei · Price: the catalog goes from R$ 999 to R$ 32,999","Dermo Clinic Primavera · strategy consulting cover","Project through Insper Jr, in partnership with Bain & Company · Marketing Mix"],
+  sd_note:"Some projects are under confidentiality, so I only show part of the material.",
+  kf_kit_t:"What I learned there.", kf_kit_p:"Hearing how the biggest operations build their offer, funnel and team, I understood that those who scale don't rely on one viral ad, but on process: a clear offer, a measured funnel and a well-organized team. I came back and restructured my product with that logic, looking at the customer's whole path, from attraction to repeat purchase.", kf_hint:"Drag the badge", kf_o1:"Kit tote bag", kf_o2:"Festival notebook",
+  kf_k:"Market", kf_t:"Kiwify Festival 2023.", kf_l:"I went to Brazil's biggest info-product event while I was structuring my own product, to see up close how the biggest operations in the market work.", kf_c1:"At the Kiwify Festival entrance", kf_c2:"The event's main stage", nav_kf:"Kiwify Festival",
+  nav_projects:"Projects",
   vn_k:"Side projects", vn_t:"Ideas that become products.",
   vn_l:"Beyond marketing and college, I like to take an idea, design the solution and put it live. These are projects I built on my own.",
-  in_s:"Current project · in the making",
+  in_s:"Current project, in the making",
   in_l:"A closed social network for people who study at Insper: what's happening on campus, only for those inside. It currently has an open waitlist.",
   in_f1:"Anonymous Spotted", in_f2:"Parties & tickets", in_f3:"Rides", in_f4:"Class questions", in_f5:"Who lives nearby", in_f6:"Cafeteria queue",
   in_n:"Sign-in with your Insper email only, no password.", in_cta:"See IN.",
-  sw_s:"Live · independent project",
+  sw_s:"Live, independent project",
   sw_l:"A platform that brings together students who want to swap classes and finds the best matches: direct, group or cycle, to help as many people as possible.",
   sw_1:"Enter semester, course, current class and where you want to go.", sw_2:"The algorithm finds the best match: direct, group or cycle.", sw_3:"Track the status and arrange the swap with whoever matched.",
   sw_n:"A student project, non-profit and with no official link to Insper.", sw_cta:"See InsperSwap",
   sw_c1:"Direct match", sw_c2:"Group", sw_c3:"Cycle",
-  pz_s:"MVP · web app + API",
+  pz_s:"MVP com web app e API",
   pz_l:"A digital menswear look consultant. The thesis: people judge you in seconds, and your clothes shape that judgment. The app shows how each look will be perceived and lets you build yours, piece by piece.",
   pz_f1:"Digital wardrobe", pz_f2:"6 occasions", pz_f3:"6 styles", pz_f4:"Presence & impact level", pz_f5:"Analysis & Build modes", pz_f6:"How you'll be perceived",
   pz_n:"I also created the visual identity (Onyx, Antique Gold and Ivory) and the code manual. The rule-based recommendation engine is isolated and ready to plug in AI.",
   pz_cta:"Want to see it? Message me", pz_chip_k:"PRESENCE", pz_chip_v:"Medium",
+  nav_cr:"Caverna",
+  cr_k:"My brand", cr_t:"Caverna de Alexandria",
+  cr_l:"A brand to sell my info products and bring together people with the same mindset.",
+  cr_hint:"Scroll to gather the community",
+  cv1_t:"The brand", cv1:"One name and one look for every product.",
+  cv2_t:"The products", cv2:"E-books on study, discipline and growth.",
+  cv3_t:"The community", cv3:"Like-minded people, together.",
+  cv_words:["Study","Discipline","Growth","Knowledge","Presence","Mindset"],
   title:"Guilherme Balestrin | Digital marketing and Business Administration",
   desc:"Guilherme Balestrin, 19. 4 years of digital marketing experience: traffic, copy, design and websites. Business Administration at Insper.",
   story:["I","create","funnels","websites","and","campaigns","that","SELL"]
@@ -319,7 +359,7 @@ function buildRail() {
   rail.textContent = "";
   T[lang].rail.forEach((name, i) => {
     const b = mk("button", "rail-i"); b.type = "button"; b.dataset.i = i;
-    b.setAttribute("aria-label", "CH 0" + (i + 1) + " · " + name);
+    b.setAttribute("aria-label", "CH 0" + (i + 1) + ", " + name);
     b.append(mk("b", "", "0" + (i + 1)), mk("span", "", name));
     b.addEventListener("click", e => { e.stopPropagation(); goCh(i); });
     b.addEventListener("pointerdown", e => e.stopPropagation());
@@ -653,11 +693,9 @@ const PJ = {
   ] },
   info: { items: [
     { g:"linear-gradient(135deg,#0b8a5a,#19c37d)", src:"assets/kiwify.webp", ar:"591/813" },
-    { g:"linear-gradient(135deg,#00b894,#0a84ff)", mock:"funnel" },
-    { g:"linear-gradient(135deg,#ff9500,#ff3b30)", mock:"bars" }
+    { g:"linear-gradient(135deg,#1a1408,#6b5220)", src:"assets/cr-escape.webp", ar:"518/751" }
   ] },
   meta: { items: [
-    { g:"linear-gradient(135deg,#0866ff,#4cc9f0)", mock:"cards" },
     { g:"linear-gradient(135deg,#7b2ff7,#f107a3)", mock:"funnel" },
     { g:"linear-gradient(135deg,#ff9500,#ff3b30)", mock:"bars" }
   ] }
@@ -713,53 +751,6 @@ function buildWork() {
 setInterval(() => { if (root.dataset.still || document.hidden) return; Object.values(pjState).forEach(x => { if (x.auto && x.visible) x.select((x.i + 1) % x.n); }); }, 5600);
 
 /* ============================================================
-   5) ROLA — roda de interesses com balões estilo iMessage
-   ============================================================ */
-const wheel = $("#rw-wheel"), rwStage = $("#rw-stage");
-const FACES = [["🧭","#ffd6a5","#ffadad"],["👥","#caffbf","#9bf6ff"],["🕴️","#bdb2ff","#ffc6ff"],["🧠","#a0c4ff","#9bf6ff"],["🎯","#fdffb6","#ffd6a5"],["🧩","#ffc6ff","#a0c4ff"]];
-let seats = [], theta = 0, hot = -1, rwVisible = false, resumeAt = 0, rwW = 0;
-function buildWheel() {
-  wheel.textContent = ""; seats = [];
-  T[lang].rw.forEach((r, i) => {
-    const seat = mk("div", "rw-seat"), face = mk("button", "rw-face", FACES[i][0]), bub = mk("div", "rw-bubble");
-    face.type = "button"; face.style.setProperty("--a", FACES[i][1]); face.style.setProperty("--b", FACES[i][2]); face.setAttribute("aria-label", r.t);
-    bub.innerHTML = `<b></b><span></span>`; $("b", bub).textContent = r.t; $("span", bub).textContent = r.x;
-    seat.append(face, bub); wheel.appendChild(seat); seats.push(seat);
-    face.addEventListener("click", e => { e.stopPropagation(); setHot(hot === i ? -1 : i); });
-  });
-  layoutWheel(); paintWheel();
-}
-function setHot(i) {
-  hot = i; rwStage.classList.toggle("is-focused", i >= 0);
-  seats.forEach((s, j) => s.classList.toggle("is-hot", j === i));
-  if (i >= 0) { const s = seats[i]; theta = ((theta % 360) + 360) % 360; }
-  resumeAt = performance.now() + 4500;
-}
-document.addEventListener("click", e => { if (hot >= 0 && !e.target.closest(".rw-face")) setHot(-1); });
-document.addEventListener("keydown", e => { if (e.key === "Escape" && hot >= 0) setHot(-1); });
-function layoutWheel() { rwW = rwStage.clientWidth; }
-function paintWheel() {
-  const R = Math.min(560, rwW * .7), cx = rwW / 2, cy = R + 80, n = seats.length;
-  rwStage.style.setProperty("--R", R + "px");
-  seats.forEach((s, i) => {
-    const a = (theta + i * (360 / n)) * Math.PI / 180, x = cx + R * Math.sin(a), y = cy - R * Math.cos(a);
-    s.style.transform = `translate(${x}px,${y}px)`; s.dataset.side = x > cx ? "left" : "right";
-    s.style.opacity = hot >= 0 ? "" : String(clamp01(Math.cos(a) * 1.6 + .6));
-    s.style.pointerEvents = Math.cos(a) > -.1 ? "auto" : "none";
-  });
-}
-let lastW = performance.now();
-function wheelTick(now) {
-  const dt = Math.min(64, now - lastW) / 1000; lastW = now;
-  if (rwVisible && !document.hidden) {
-    if (hot < 0 && !root.dataset.still && now > resumeAt) { theta += dt * 7; paintWheel(); }
-    else if (hot >= 0 && !root.dataset.still && now > resumeAt + 4000) { /* mantém */ }
-  }
-  requestAnimationFrame(wheelTick);
-}
-new IntersectionObserver(([en]) => { rwVisible = en.isIntersecting; }, { threshold: 0 }).observe(rwStage);
-
-/* ============================================================
    6) reveals, FAQ, form, copiar e-mail, dock, idioma
    ============================================================ */
 const io = new IntersectionObserver(es => es.forEach(en => {
@@ -786,19 +777,65 @@ $$(".fq-q button").forEach(btn => btn.addEventListener("click", () => {
   item.classList.toggle("open", open); btn.setAttribute("aria-expanded", open);
 }));
 
-/* form → mailto */
-const bf = $("#bf"), bfNote = $("#bf-note");
-bf.addEventListener("submit", e => {
+/* form: folha → envelope → caixa de correio (estilo wowww.art) → mailto */
+const bf = $("#bf"), bfNote = $("#bf-note"), bfSent = $("#bf-sent"), bfLayout = $(".bf-layout"), mb = $("#mb");
+new IntersectionObserver(([en], ob) => { if (en.isIntersecting) { bfLayout.dataset.seen = ""; ob.disconnect(); } }, { threshold: .15 }).observe(bfLayout);
+const ENV_SVG = '<svg viewBox="0 0 150 96"><rect x=".75" y=".75" width="148.5" height="94.5" rx="7" fill="#fff" stroke="#d9d9de" stroke-width="1.5"/><path d="M1 94 63 46M149 94 87 46" stroke="#e3e3e8" stroke-width="1.5" fill="none"/><rect x="114" y="12" width="22" height="26" rx="3" fill="#dfcd2e"/><path d="M129 21a5 5 0 1 0 0 8v-3h-3" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"/><path class="flap" d="M1 1 75 54 149 1Z" fill="#f5f5f7" stroke="#d9d9de" stroke-width="1.5" stroke-linejoin="round"/></svg>';
+const wait = ms => new Promise(r => setTimeout(r, ms));
+function bfFly() {
+  return new Promise(async done => {
+    const fr = bf.getBoundingClientRect(), sl = $(".mb-slot", mb).getBoundingClientRect();
+    const slotOnScreen = sl.top > 0 && sl.bottom < innerHeight && sl.width > 0;
+    if (root.dataset.still || reduceMQ.matches || !slotOnScreen) { bf.dataset.phase = "send"; await wait(260); return done(); }
+    const env = mk("div", "bf-env"); env.innerHTML = ENV_SVG; document.body.appendChild(env);
+    const x0 = fr.left + fr.width / 2 - 75, y0 = Math.min(Math.max(fr.top + fr.height / 2, 140), innerHeight - 140) - 48;
+    const s1 = sl.width / 150, x1 = sl.left + sl.width / 2 - 75, y1 = sl.top + sl.height / 2 - 48;
+    const at = (x, y, s, r) => `translate(${x}px,${y}px) rotate(${r}deg) scale(${s})`;
+    bf.dataset.phase = "send";
+    await env.animate([{ transform: at(x0, y0 + 40, 1.9, 0), opacity: 0 }, { transform: at(x0, y0, 1, 0), opacity: 1 }], { duration: 420, easing: "cubic-bezier(.22,1,.36,1)", fill: "forwards" }).finished;
+    env.dataset.closed = ""; await wait(360);
+    const mx = (x0 + x1) / 2, my = Math.min(y0, y1) - Math.min(160, innerHeight * .18);
+    await env.animate([
+      { transform: at(x0, y0, 1, 0) },
+      { transform: at(mx, my, .78, -14), offset: .5 },
+      { transform: at(x1, y1 - 40, s1 * 1.05, -2), offset: .82 },
+      { transform: at(x1, y1 - 6, s1, 0), opacity: 1, offset: .9 },
+      { transform: at(x1, y1 + 4, s1 * .95, 0), opacity: 0 }
+    ], { duration: 1150, easing: "cubic-bezier(.45,0,.25,1)", fill: "forwards" }).finished;
+    env.remove(); done();
+  });
+}
+async function bfSend(e) {
   e.preventDefault();
   const f = new FormData(bf);
   if (f.get("website")) return;
   const name = (f.get("name") || "").trim(), mail = (f.get("email") || "").trim();
-  if (!name || !/^\S+@\S+\.\S+$/.test(mail)) { bfNote.textContent = T[lang].bf_err; bfNote.className = "bf-note err"; return; }
-  const what = f.getAll("what").join(", "), about = (f.get("about") || "").trim();
-  const body = `${name} <${mail}>\n${what ? T[lang].bf_body_need + ": " + what + "\n" : ""}\n${about}`;
-  bfNote.className = "bf-note"; bfNote.textContent = T[lang].bf_ok;
+  if (!name || !/^\S+@\S+\.\S+$/.test(mail)) {
+    bfNote.textContent = T[lang].bf_err; bfNote.className = "bf-note err";
+    const btn = $(".bf-send", bf); btn.classList.remove("bf-shake"); void btn.offsetWidth; btn.classList.add("bf-shake");
+    return;
+  }
+  bfNote.textContent = ""; bfNote.className = "bf-note";
+  const what = f.getAll("what").join(", "), kind = f.get("kind") || "", co = (f.get("company") || "").trim(), about = (f.get("about") || "").trim();
+  const body = `${name} <${mail}>${co ? "\n" + co : ""}\n${kind ? T[lang].bf_kind + ": " + kind + "\n" : ""}${what ? T[lang].bf_body_need + ": " + what + "\n" : ""}\n${about}`;
+  await bfFly();
+  mb.dataset.flag = ""; mb.classList.remove("bump"); void mb.offsetWidth; mb.classList.add("bump");
+  bfSent.inert = false; bf.inert = true; bfSent.dataset.in = "";
+  setTimeout(() => $("#bf-again").focus({ preventScroll: true }), 700);
   location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent(T[lang].bf_subject)}&body=${encodeURIComponent(body)}`;
+}
+bf.addEventListener("submit", bfSend);
+$("#bf-again").addEventListener("click", () => {
+  bf.reset(); delete bfSent.dataset.in; bfSent.inert = true; bf.inert = false;
+  delete mb.dataset.flag; bf.dataset.phase = "edit";
+  setTimeout(() => $(".bf-input", bf).focus({ preventScroll: true }), 300);
 });
+function splitBf() {
+  const h = $("#bf-title"); if (!h) return;
+  const words = h.textContent.trim().split(/\s+/);
+  h.setAttribute("aria-label", words.join(" "));
+  h.innerHTML = words.map((w, i) => `<span class="w" aria-hidden="true" style="--w:${i}"><span>${w}</span></span>`).join(" ");
+}
 
 /* copiar e-mail */
 const mailBtn = $("#mail");
@@ -810,40 +847,20 @@ $("#ft-top").addEventListener("click", () => scrollTo({ top: 0, behavior: root.d
 
 /* idioma */
 
-/* logos no lugar da palavra "Insper" / "Insper Jr" nos textos */
-function brandify() {
-  const re = /Insper Jr\.?|Insper(?!Swap)/g;
-  const skip = "script,style,.sr-only,.lg,.logo-sw,.logo-chip,.ij-brand,.ab-chip,dialog,[data-nobrand]";
-  const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, { acceptNode(n) {
-    if (!n.parentElement || n.parentElement.closest(skip)) return NodeFilter.FILTER_REJECT;
-    return /Insper/.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
-  } });
-  const nodes = []; while (w.nextNode()) nodes.push(w.currentNode);
-  nodes.forEach(n => {
-    const txt = n.nodeValue, frag = document.createDocumentFragment(); let last = 0, m;
-    re.lastIndex = 0;
-    while ((m = re.exec(txt))) {
-      frag.appendChild(document.createTextNode(txt.slice(last, m.index)));
-      const jr = m[0].startsWith("Insper Jr"), sp = mk("span", "lg " + (jr ? "lg-jr" : "lg-i")), im = mk("img");
-      im.src = jr ? "assets/insperjr-logo.png" : "assets/insper-w.png"; im.alt = ""; im.draggable = false;
-      sp.append(im, mk("span", "sr-only", m[0])); frag.appendChild(sp); last = m.index + m[0].length;
-    }
-    frag.appendChild(document.createTextNode(txt.slice(last)));
-    n.replaceWith(frag);
-  });
-}
+function cvWords(l) { const m = document.getElementById("cv-mq"); if (!m) return; const w = T[l].cv_words.map(x => `<span>${x}</span><i aria-hidden="true">✦</i>`).join(""); m.innerHTML = `<div class="cv-mq-row">${w}${w}</div>`; }
 function setLang(l) {
+  cvWords(l);
   lang = l; store.set("gb-lang", l);
   root.lang = l === "pt" ? "pt-BR" : "en"; root.dataset.lang = l;
   $$("[data-i]").forEach(el => { const v = T[l][el.dataset.i]; if (typeof v === "string") el.innerHTML = v; });
+  splitBf();
   document.title = T[l].title; $('meta[name="description"]').setAttribute("content", T[l].desc);
   stickers.forEach(o => { if (!o.img) o.el.querySelector(".stk-t").textContent = T[l].stk[o.k]; });
   buildRail();
   $("#mail-t").textContent = CONFIG.email; mailBtn.dataset.copied = T[l].copied;
   $("#btn-still").setAttribute("aria-label", T[l].tip_still);
-  buildWork(); buildWheel(); splitCTA(); buildStory();
-  buildHelp(); setCounters(false); buildChips();
-  brandify();
+  buildWork(); splitCTA(); buildStory();
+  buildHelp(); setCounters(false); buildChips(); buildDeck(); buildTimeline();
 }
 $("#btn-lang").addEventListener("click", () => setLang(lang === "pt" ? "en" : "pt"));
 
@@ -853,7 +870,7 @@ function setStill(on, persist = true) {
   $("#btn-still").setAttribute("aria-pressed", on);
   if (persist) store.set("gb-still", on ? "1" : "0");
   if (on) { pan.x = pan.y = pan.vx = pan.vy = 0; paintWorld(); }
-  renderStory(true); splitCTA(); heroScroll(); syncChVideo(); Object.values(pjState).forEach(x => x.sync && x.sync()); setCounters(false);
+  renderStory(true); splitCTA(); heroScroll(); syncChVideo(); Object.values(pjState).forEach(x => x.sync && x.sync()); setCounters(false); if (sdEls.length) sdRender(true);
 }
 $("#btn-still").addEventListener("click", () => setStill(!root.dataset.still));
 
@@ -878,7 +895,7 @@ function heroScroll() {
   document.body.classList.toggle("on-light", st < 40 && ft > 40);
 }
 addEventListener("scroll", heroScroll, { passive: true });
-addEventListener("resize", () => { vw = innerWidth; vh = innerHeight; layoutStickers(); layoutStory(); layoutWheel(); paintWheel(); heroScroll(); });
+addEventListener("resize", () => { vw = innerWidth; vh = innerHeight; layoutStickers(); layoutStory(); heroScroll(); });
 
 /* ---------- contadores animados (padrão "stats" do 21st) ---------- */
 const counted = new WeakSet();
@@ -931,8 +948,172 @@ $("#help-keys").addEventListener("click", () => { keysOn = !keysOn; store.set("g
 /* ---------- init ---------- */
 const savedStill = store.get("gb-still");
 if (savedStill === "1" || (savedStill == null && reduceMQ.matches)) { root.dataset.still = "1"; $("#btn-still").setAttribute("aria-pressed", "true"); }
+/* ============================================================
+   7) CAVERNA: lightbox das imagens
+   ============================================================ */
+const lb = $("#lb"), lbIn = $("#lb-in");
+$$("[data-lb]").forEach(b => b.addEventListener("click", () => {
+  lbIn.textContent = "";
+  const alt = ($("img", b) || {}).alt || "";
+  b.dataset.lb.split("|").forEach(src => { const im = mk("img"); im.src = src; im.alt = alt; im.decoding = "async"; lbIn.appendChild(im); });
+  lbIn.scrollTop = 0; lb.showModal(); root.classList.add("lb-open");
+}));
+$("#lb-x").addEventListener("click", () => lb.close());
+lb.addEventListener("click", e => { if (e.target === lb || e.target === lbIn) lb.close(); });
+lb.addEventListener("close", () => root.classList.remove("lb-open"));
+
+/* Kiwify: crachá no cordão com física de pêndulo (arrastar + scroll) e objetos do kit em 3D */
+(() => {
+  const lan = $("#kf-lan"), stage = $("#kf-stage"); if (!lan) return;
+  let th = 18, w = 0, drag = false, vis = false, lastY = scrollY, raf = 0;
+  const paint = () => { lan.style.transform = `rotate(${th}deg) rotateY(${th * 1.6}deg)`; };
+  function tick(t) {
+    raf = 0; if (!vis) return;
+    if (root.dataset.still) { th = 0; w = 0; paint(); return; }
+    if (!drag) { w += -th * .016 + Math.sin(t / 1400) * .006; w *= .978; th += w; }
+    paint();
+    if (drag || Math.abs(w) > .002 || Math.abs(th) > .05) raf = requestAnimationFrame(tick); else { th = 0; paint(); }
+  }
+  const go = () => { if (!raf) raf = requestAnimationFrame(tick); };
+  new IntersectionObserver(([en]) => { vis = en.isIntersecting; if (vis) { lastY = scrollY; go(); } }, { rootMargin: "10% 0px" }).observe(stage);
+  addEventListener("scroll", () => { if (!vis || drag) return; const dy = scrollY - lastY; lastY = scrollY; w += Math.max(-1.6, Math.min(1.6, dy * .03)); go(); }, { passive: true });
+  const ang = e => { const r = lan.parentElement.getBoundingClientRect(), px = r.left + lan.offsetLeft + lan.offsetWidth / 2, py = r.top + lan.offsetTop; return Math.max(-75, Math.min(75, -Math.atan2(e.clientX - px, Math.max(20, e.clientY - py)) * 180 / Math.PI)); };
+  lan.addEventListener("pointerdown", e => { if (root.dataset.still) return; drag = true; lan.setPointerCapture(e.pointerId); lan.classList.add("drag"); go(); });
+  lan.addEventListener("pointermove", e => { if (!drag) return; const a = ang(e); w = (a - th) * .5; th = a; });
+  const up = () => { if (!drag) return; drag = false; lan.classList.remove("drag"); go(); };
+  lan.addEventListener("pointerup", up); lan.addEventListener("pointercancel", up);
+  $$(".kf-obj").forEach(o => {
+    o.addEventListener("pointermove", e => { if (root.dataset.still || e.pointerType !== "mouse") return; const r = o.getBoundingClientRect(); o.style.setProperty("--ry", ((e.clientX - r.left) / r.width - .5) * 26 + "deg"); o.style.setProperty("--rx", ((e.clientY - r.top) / r.height - .5) * -22 + "deg"); });
+    o.addEventListener("pointerleave", () => { o.style.setProperty("--rx", "0deg"); o.style.setProperty("--ry", "0deg"); });
+  });
+  paint();
+})();
+
+/* linha do tempo: ano em odômetro preso ao lado, linha que se desenha com o scroll */
+const TM_IC = [
+  '<path d="M6 12h4M8 10v4"/><circle cx="15" cy="11" r="1"/><circle cx="18" cy="13" r="1"/><path d="M17.3 5H6.7a4 4 0 0 0-4 3.6L2 15a3 3 0 0 0 5.2 2.2L9 15h6l1.8 2.2A3 3 0 0 0 22 15l-.7-6.4A4 4 0 0 0 17.3 5z"/>',
+  '<path d="M3 9 5 4h14l2 5"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/><path d="M3 9h18"/>',
+  '<path d="M20 6 9 17l-5-5"/>',
+  '<path d="M10.5 20.5 3.5 13.5a5 5 0 0 1 7-7l7 7a5 5 0 0 1-7 7z"/><path d="m8.5 8.5 7 7"/>',
+  '<circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17.5" cy="9.5" r="2.2"/><path d="M15.5 14.4A4.5 4.5 0 0 1 22 18.5"/>',
+  '<rect x="3" y="4" width="18" height="13" rx="2"/><path d="m10 8.5 4 2-4 2z"/><path d="M8 21h8"/>',
+  '<path d="M4 19.5V5a2 2 0 0 1 2-2h14v15H6a2 2 0 0 0-2 2z"/><path d="M6 21h14"/><path d="M9 7h7M9 11h5"/>',
+  '<path d="M2 9 12 4l10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/><path d="M22 9v6"/>',
+  '<path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 10h4v4h-4z"/>',
+  '<path d="M13 2 4 14h7l-1 8 9-12h-7z"/>'
+];
+const TM_IMG = [];   /* fotos por marco: TM_IMG[i] = "assets/arquivo.webp" */
+const tmList = $("#tm-list"), tmOdo = $("#tm-odo"), tmFill = $("#tm-fill"), tmRail = $("#tm-rail");
+let tmItems = [], tmAct = -1, tmVis = false;
+function buildTimeline() {
+  const L = T[lang].tm; tmList.textContent = "";
+  tmItems = L.map((it, i) => {
+    const li = mk("li", "tm-it"); li.style.setProperty("--k", i);
+    const last = i === L.length - 1, img = TM_IMG[i];
+    li.innerHTML = `<i class="tm-dot" aria-hidden="true"></i>
+      <article class="tm-card${img ? " has-img" : ""}">
+        <div class="tm-top"><span class="tm-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${TM_IC[i] || TM_IC[0]}</svg></span>
+        <span class="tm-y">${it.y}${last ? ` <b>${T[lang].tm_now}</b>` : ""}</span></div>
+        <h3>${it.t}</h3><p>${it.d}</p>
+        ${img ? `<figure class="tm-ph"><img src="${img}" alt="" loading="lazy"></figure>` : ""}
+      </article>`;
+    tmList.appendChild(li); return li;
+  });
+  tmAct = -1; tmRender();
+}
+function tmSetYear(y) {
+  const s = String(y);
+  if (tmOdo.children.length !== s.length) tmOdo.innerHTML = [...s].map(() => `<span class="od"><span class="od-s">${"0123456789".split("").map(n => `<i>${n}</i>`).join("")}</span></span>`).join("");
+  [...s].forEach((c, i) => { tmOdo.children[i].firstChild.style.transform = `translateY(${-c * 10}%)`; });
+}
+function tmRender() {
+  if (!tmItems.length) return;
+  const r = tmRail.getBoundingClientRect(), line = vh * .55;
+  tmFill.style.transform = `scaleY(${clamp01((line - r.top) / r.height)})`;
+  let a = 0; tmItems.forEach((li, i) => { const t = li.getBoundingClientRect().top; if (t < line) a = i; li.classList.toggle("past", t < line); if (t < vh * .92) li.classList.add("seen"); });
+  if (a !== tmAct) { tmAct = a; tmItems.forEach((li, i) => li.classList.toggle("on", i === a)); tmSetYear(T[lang].tm[a].y); $("#tm-cap").textContent = T[lang].tm[a].t; }
+}
+new IntersectionObserver(([en]) => { tmVis = en.isIntersecting; if (tmVis) tmRender(); }, { rootMargin: "20% 0px" }).observe(tmRail);
+addEventListener("scroll", () => { if (tmVis) tmRender(); }, { passive: true });
+
+/* slides de PowerPoint: coverflow 3D guiado pelo scroll + lightbox */
+const SLIDES = ["sl-huawei", "sl-huawei-preco", "sl-dermo", "sl-lorenzi"];
+const sdTrack = $("#sd-track"), sdStage = $("#sd-stage"), sdCap = $("#sd-cap"), sdDots = $("#sd-dots"), sdBox = $("#sd-box");
+let sdEls = [], sdPos = 0, sdFrom = 0, sdShown = -1, sdBoxI = 0, sdVis = false, sdTilt = { x: 0, y: 0 };
+sdTrack.style.setProperty("--n", SLIDES.length);
+function buildDeck() {
+  const caps = T[lang].sd_caps;
+  sdStage.textContent = ""; sdDots.textContent = "";
+  sdEls = SLIDES.map((f, i) => {
+    const b = mk("button", "sd-slide"); b.type = "button"; b.setAttribute("role", "listitem");
+    b.setAttribute("aria-label", caps[i]);
+    b.innerHTML = `<img src="assets/${f}.webp" alt="" width="1600" height="896" loading="lazy" decoding="async"><i class="sd-glare" aria-hidden="true"></i>`;
+    b.addEventListener("click", () => Math.round(sdPos) === i ? openSlide(i) : goSlide(i));
+    sdStage.appendChild(b);
+    const d = mk("button", "sd-dot"); d.type = "button"; d.setAttribute("aria-label", caps[i]);
+    d.addEventListener("click", () => goSlide(i)); sdDots.appendChild(d);
+    return b;
+  });
+  sdShown = -1; sdRender(true);
+}
+function sdTop() { return sdTrack.getBoundingClientRect().top + scrollY; }
+function sdSpan() { return Math.max(1, sdTrack.offsetHeight - vh); }
+function goSlide(i) {
+  if (root.dataset.still) { sdEls[i].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" }); sdPos = i; sdRender(true); return; }
+  scrollTo({ top: sdTop() + (i / Math.max(1, SLIDES.length - 1)) * sdSpan(), behavior: "smooth" });
+}
+function sdRender(force) {
+  const n = SLIDES.length, still = !!root.dataset.still;
+  if (!still) sdPos = clamp01(-sdTrack.getBoundingClientRect().top / sdSpan()) * (n - 1);
+  const cur = Math.round(sdPos), m = vw < 700;
+  sdEls.forEach((el, i) => {
+    if (still) { el.style.transform = el.style.opacity = el.style.zIndex = ""; el.tabIndex = 0; return; }
+    const d = i - sdPos, a = Math.abs(d);
+    const tx = d * (m ? 70 : 58), tz = -a * (m ? 160 : 240), ry = Math.max(-1, Math.min(1, d)) * -32;
+    const fx = a < 1 ? (1 - a) : 0;
+    el.style.transform = `translate3d(${tx}%,0,${tz}px) rotateY(${ry + sdTilt.y * fx}deg) rotateX(${sdTilt.x * fx}deg)`;
+    el.style.opacity = a > 2.6 ? 0 : 1 - a * .22;
+    el.style.zIndex = 100 - Math.round(a * 10);
+    el.style.setProperty("--g", fx);
+    el.tabIndex = i === cur ? 0 : -1;
+  });
+  if (cur !== sdShown || force) {
+    sdShown = cur; sdCap.innerHTML = `<b>${String(cur + 1).padStart(2, "0")}</b><span>/${String(n).padStart(2, "0")}</span> ${T[lang].sd_caps[cur]}`;
+    [...sdDots.children].forEach((d, i) => d.toggleAttribute("aria-current", i === cur));
+    sdEls.forEach((el, i) => el.classList.toggle("on", i === cur));
+  }
+}
+new IntersectionObserver(([en]) => { sdVis = en.isIntersecting; if (sdVis) sdRender(); }, { rootMargin: "10% 0px" }).observe(sdTrack);
+addEventListener("scroll", () => { if (sdVis) sdRender(); }, { passive: true });
+addEventListener("resize", () => sdRender(true));
+sdStage.addEventListener("pointermove", e => {
+  if (root.dataset.still || e.pointerType !== "mouse") return;
+  const r = sdStage.getBoundingClientRect();
+  sdTilt = { x: ((e.clientY - r.top) / r.height - .5) * -10, y: ((e.clientX - r.left) / r.width - .5) * 14 };
+  sdEls.forEach(el => el.style.setProperty("--mx", ((e.clientX - r.left) / r.width * 100) + "%"));
+  sdRender();
+});
+sdStage.addEventListener("pointerleave", () => { sdTilt = { x: 0, y: 0 }; sdRender(); });
+sdStage.addEventListener("keydown", e => {
+  if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+  e.preventDefault(); const i = Math.max(0, Math.min(SLIDES.length - 1, Math.round(sdPos) + (e.key === "ArrowRight" ? 1 : -1)));
+  goSlide(i); setTimeout(() => sdEls[i].focus({ preventScroll: true }), 450);
+});
+function openSlide(i) {
+  sdBoxI = (i + SLIDES.length) % SLIDES.length;
+  $("#sd-box-img").src = `assets/${SLIDES[sdBoxI]}.webp`; $("#sd-box-img").alt = T[lang].sd_caps[sdBoxI];
+  $("#sd-box-cap").textContent = T[lang].sd_caps[sdBoxI];
+  if (!sdBox.open) { sdFrom = sdBoxI; sdBox.showModal(); }
+}
+sdBox.addEventListener("click", e => {
+  if (e.target === sdBox || e.target.closest("[data-close]")) sdBox.close();
+  const s = e.target.closest("[data-step]"); if (s) openSlide(sdBoxI + +s.dataset.step);
+});
+sdBox.addEventListener("keydown", e => { if (e.key === "ArrowRight") openSlide(sdBoxI + 1); if (e.key === "ArrowLeft") openSlide(sdBoxI - 1); });
+sdBox.addEventListener("close", () => { if (sdBoxI !== sdFrom) goSlide(sdBoxI); });
+
 setLang(lang);
 layoutStickers(); paintWorld(); heroScroll();
-requestAnimationFrame(heroTick); requestAnimationFrame(storyTick); requestAnimationFrame(wheelTick);
-if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { layoutStory(); renderStory(true); layoutWheel(); paintWheel(); });
+requestAnimationFrame(heroTick); requestAnimationFrame(storyTick);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { layoutStory(); renderStory(true); });
 })();
