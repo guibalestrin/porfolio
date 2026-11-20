@@ -8,7 +8,8 @@
 
 /* ---------- CONFIG (edite aqui) ---------- */
 const CONFIG = {
-  email: "guibalestrin@hotmail.com"
+  email: "guiprimavera@hotmail.com",
+  whatsapp: "5511986955476"
 };
 
 /* ---------- utilidades ---------- */
@@ -34,6 +35,9 @@ const reduceMQ = matchMedia("(prefers-reduced-motion: reduce)");
    ============================================================ */
 const T = {
 pt: {
+  cta_wa:"Chamar no WhatsApp", hx_mail:"ou escreva para", fab_wa:"WhatsApp", cx_mail:"E-mail",
+  rg_lede:"Estou aberto a estágio, freela e projetos em marketing digital, conteúdo e produto. Já rodei operação com o meu próprio dinheiro, escrevo, gravo, monto a página e não paro no primeiro “não deu certo”.",
+  cx_or:"Prefere escrever com calma? Use o formulário abaixo.", wa_msg:"Oi, Guilherme! Vi seu portfólio e queria conversar.",
   skip:"Pular para o conteúdo", nav_work:"Trabalhos", nav_about:"Sobre", nav_services:"O que faço", nav_contact:"Contato", nav_faq:"FAQ",
   tip_still:"Reduzir movimento",
   hx_status:"Aberto a oportunidades · São Paulo",
@@ -86,7 +90,7 @@ pt: {
   xp_tools:"Ferramentas", xp_lang:"Idiomas", xp_l1:"Português (nativo)", xp_l2:"Inglês (fluente)", xp_l3:"Russo (básico)",
   jn1_evo:"evolução, hora após hora", awp_fire:"Clique para atirar", fa_btn:"Toque para acender", fa_v:"“Ele foi ferido por causa das nossas transgressões; e pelas suas feridas fomos sarados.”", fa_c:"Isaías 53:5",
   xp_s1:"novos seguidores", xp_s2:"views em um vídeo", xp_s3:"produto validado",
-  sv_a:"Tudo o que eu", sv_b:"faço.", sv_lede:"Do primeiro anúncio ao site no ar, eu cuido do caminho inteiro do cliente.",
+  sv_a:"O que eu levo", sv_b:"pro seu time.", sv_lede:"Do conteúdo que chama atenção à página que vende. Tudo isso eu já fiz na prática, e posso fazer com você.",
   s1_n:"Tráfego", s1_l:"Pago e orgânico, do teste à escala.", s1_1:"Meta Ads e TikTok Ads", s1_2:"Testes A/B", s1_3:"Conteúdo orgânico", s1_4:"Análise de métricas",
   s2_n:"Copy & persuasão", s2_l:"Palavras que levam à decisão.", s2_1:"Copywriting", s2_2:"Páginas de venda", s2_3:"Anúncios", s2_4:"Psicologia aplicada",
   s3_n:"Design & sites", s3_l:"Visual claro, site que converte.", s3_1:"Sites e apps", s3_2:"Landing pages", s3_3:"Branding", s3_4:"Identidade",
@@ -94,13 +98,13 @@ pt: {
   bf_t:"Vamos conversar", bf_l:"Tem uma oportunidade ligada a marketing digital, tráfego ou conteúdo? Conte aqui. Eu respondo.", bf_name:"Nome", bf_email:"E-mail", bf_need:"Do que você precisa?",
   pill_site:"Site", pill_traffic:"Tráfego", pill_copy:"Copy", pill_funnel:"Funil", pill_other:"Outro", bf_about:"Conte mais", bf_send:"Dobrar e enviar", pill_cr:"Branding", bf_co:"Empresa", bf_opt:"Opcional", bf_kind:"Tipo de oportunidade", kind_1:"Estágio", kind_2:"Freela", kind_3:"Projeto", kind_4:"Parceria", bf_sent:"Tá na caixa.", bf_sent_n:"Abri seu app de e-mail com a mensagem pronta. É só apertar enviar.", bf_again:"Escrever outra",
   bf_err:"Preencha nome e um e-mail válido.", bf_ok:"Abrindo seu app de e-mail…", bf_subject:"Contato pelo portfólio", bf_body_need:"Preciso de",
-  rg_ask:"Minha proposta", rg_say:"Aberto a oportunidades alinhadas ao que eu gosto e já fiz.", rg_book:"Remoto ou híbrido, em São Paulo",
+  rg_ask:"Próximo passo", rg_say:"Se o seu time precisa de alguém que aprende fazendo, me chama.", rg_book:"Remoto ou híbrido, em São Paulo",
   fq_t:"Perguntas, respondidas.",
   q1:"Quem é você?", a1:"Guilherme, 19 anos. Comecei no marketing digital em 2022, com dropshipping, e depois fiz infoprodutos. Hoje estudo Administração de Empresas no Insper.",
   q2:"O que você já fez?", a2:"Montei e operei uma loja de dropshipping do zero, com campanhas no Meta Ads e TikTok Ads e parcerias com micro influenciadores, e validei o produto no mercado. Depois criei a Caverna de Alexandria, uma marca para vender meus infoprodutos e reunir uma comunidade de pessoas com a mesma mentalidade. Também já criei conteúdo no meu perfil pessoal.",
   q3:"O que te interessa além de marketing?", a3:"Liderança, gestão de pessoas, linguagem corporal e psicologia nas vendas. Todo negócio depende de entender como as pessoas decidem.",
-  q4:"Como começamos?", a4:"Preencha o formulário acima ou me escreva por e-mail. Eu respondo.",
-  ft_say:"Marketing digital e<br>Administração de Empresas.", ft_top:"Voltar ao topo ↑", copied:"Copiado",
+  q4:"Como falo com você?", a4:"Pelo WhatsApp (11) 98695-5476 ou pelo e-mail guiprimavera@hotmail.com. Se preferir, use o formulário logo abaixo.",
+  ft_say:"Ainda por aqui?<br>Esse é o sinal.", ft_top:"Voltar ao topo ↑", copied:"Copiado",
   tip_help:"Teclas e gestos",
   mq_t:"Plataformas por onde já passei",
   st_t:"Números de verdade.", st_l:"Prints e métricas das minhas próprias operações. Sem maquiagem.",
@@ -181,6 +185,9 @@ pt: {
   story:["eu","crio","funis","sites","e","campanhas","que","VENDEM"]
 },
 en: {
+  cta_wa:"Message me on WhatsApp", hx_mail:"or email", fab_wa:"WhatsApp", cx_mail:"Email",
+  rg_lede:"I'm open to internships, freelance work and projects in digital marketing, content and product. I've run operations with my own money, I write, I film, I build the page and I don't stop at the first “it didn't work”.",
+  cx_or:"Rather write it out? Use the form below.", wa_msg:"Hi Guilherme! I saw your portfolio and would like to talk.",
   skip:"Skip to content", nav_work:"Work", nav_about:"About", nav_services:"Services", nav_contact:"Contact", nav_faq:"FAQ",
   tip_still:"Reduce motion",
   hx_status:"Open to opportunities · São Paulo",
@@ -233,7 +240,7 @@ en: {
   xp_tools:"Tools", xp_lang:"Languages", xp_l1:"Portuguese (native)", xp_l2:"English (fluent)", xp_l3:"Russian (basic)",
   jn1_evo:"progress, hour after hour", awp_fire:"Click to fire", fa_btn:"Tap to light it", fa_v:"“He was pierced for our transgressions; and by his wounds we are healed.”", fa_c:"Isaiah 53:5",
   xp_s1:"new followers", xp_s2:"views on one video", xp_s3:"product validated",
-  sv_a:"Everything I", sv_b:"do.", sv_lede:"From the first ad to the live site, I take care of the customer's whole path.",
+  sv_a:"What I bring", sv_b:"to your team.", sv_lede:"From content that grabs attention to the page that sells. I\'ve done all of it hands-on, and I can do it with you.",
   s1_n:"Traffic", s1_l:"Paid and organic, from test to scale.", s1_1:"Meta Ads and TikTok Ads", s1_2:"A/B tests", s1_3:"Organic content", s1_4:"Metrics analysis",
   s2_n:"Copy & persuasion", s2_l:"Words that lead to a decision.", s2_1:"Copywriting", s2_2:"Sales pages", s2_3:"Ads", s2_4:"Applied psychology",
   s3_n:"Design & sites", s3_l:"Clear visuals, a site that converts.", s3_1:"Sites and apps", s3_2:"Landing pages", s3_3:"Branding", s3_4:"Identity",
@@ -241,13 +248,13 @@ en: {
   bf_t:"Let's talk", bf_l:"Got an opportunity in digital marketing, traffic or content? Tell me here. I'll write back.", bf_name:"Name", bf_email:"Email", bf_need:"What do you need?",
   pill_site:"Website", pill_traffic:"Traffic", pill_copy:"Copy", pill_funnel:"Funnel", pill_other:"Other", bf_about:"Tell me more", bf_send:"Fold & send", pill_cr:"Branding", bf_co:"Company", bf_opt:"Optional", bf_kind:"Type of opportunity", kind_1:"Internship", kind_2:"Freelance", kind_3:"Project", kind_4:"Partnership", bf_sent:"It's in the box.", bf_sent_n:"I opened your email app with the message ready. Just hit send.", bf_again:"Write another",
   bf_err:"Please add your name and a valid email.", bf_ok:"Opening your email app…", bf_subject:"Contact from portfolio", bf_body_need:"I need",
-  rg_ask:"My proposal", rg_say:"Open to opportunities aligned with what I like and have done.", rg_book:"Remote or hybrid, São Paulo",
+  rg_ask:"Next step", rg_say:"If your team needs someone who learns by doing, reach out.", rg_book:"Remote or hybrid, São Paulo",
   fq_t:"Questions, answered.",
   q1:"Who are you?", a1:"Guilherme, 19. I started in digital marketing in 2022 with dropshipping, then moved on to info products. Today I study Business Administration at Insper.",
   q2:"What have you done?", a2:"I built and ran a dropshipping store from scratch, with Meta Ads and TikTok Ads campaigns and micro-influencer partnerships, and validated the product in the market. Then I created Caverna de Alexandria, a brand to sell my info products and bring together a community of like-minded people. I also made content on my personal profile.",
   q3:"What else are you into?", a3:"Leadership, people management, body language and sales psychology. Every business depends on understanding how people decide.",
-  q4:"How do we start?", a4:"Fill in the form above or email me. I'll write back.",
-  ft_say:"Digital marketing and<br>Business Administration.", ft_top:"Back to top ↑", copied:"Copied",
+  q4:"How do I reach you?", a4:"On WhatsApp at +55 11 98695-5476 or by email at guiprimavera@hotmail.com. If you prefer, use the form right below.",
+  ft_say:"Still here?<br>That\'s the sign.", ft_top:"Back to top ↑", copied:"Copied",
   tip_help:"Keys & gestures",
   mq_t:"Platforms I've worked on",
   st_t:"Real numbers.", st_l:"Screenshots and metrics from my own operations. No makeup.",
@@ -710,6 +717,8 @@ function setLang(l) {
   document.title = T[l].title; $('meta[name="description"]').setAttribute("content", T[l].desc);
   heroLang();
   $("#mail-t").textContent = CONFIG.email; mailBtn.dataset.copied = T[l].copied;
+  $$("[data-wa]").forEach(a => { a.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(T[l].wa_msg)}`; });
+  $$("[data-mail]").forEach(a => { a.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent(T[l].bf_subject)}`; });
   $("#btn-still").setAttribute("aria-label", T[l].tip_still);
   buildWork(); splitCTA(); buildStory();
   buildHelp(); setCounters(false); buildChips(); buildDeck(); buildTimeline(); paintBook(false); abRotStart();
@@ -737,12 +746,14 @@ addEventListener("keydown", e => {
 });
 
 /* barra de progresso + dock adaptativo (claro no hero e na folha, escuro na frase e no rodapé) */
-const sheet = $(".sheet"), footer = $(".ft");
+const sheet = $(".sheet"), footer = $(".ft"), cxEl = $("#contact");
 function heroScroll() {
   const y = scrollY;
   $("#progress").style.transform = `scaleX(${clamp01(y / Math.max(1, document.documentElement.scrollHeight - vh))})`;
   const st = sheet.getBoundingClientRect().top, ft = footer.getBoundingClientRect().top, sy = story.getBoundingClientRect().top;
   document.body.classList.toggle("on-light", ft > 40 && (st < 40 || sy > 40));
+  const ct = cxEl.getBoundingClientRect().top;
+  document.body.classList.toggle("show-fab", sy < vh * .5 && ct > vh * .85);
 }
 addEventListener("scroll", heroScroll, { passive: true });
 addEventListener("resize", () => { vw = innerWidth; vh = innerHeight; layoutStory(); heroScroll(); });
