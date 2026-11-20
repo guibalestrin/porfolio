@@ -65,6 +65,11 @@ pt: {
   jn3_p2:"É a mesma regra de sempre. Não existe atalho, existe repetição até soltar.",
   jn3_ru:"privet = oi", jn3_rul:"Estudando russo agora",
   jn4_t:"Leio para entender gente.", jn4_p:"Gosto de ler sobre neurociência, psicologia e filosofia. Quero entender como as pessoas pensam, sentem e decidem, porque todo negócio bom começa aí.",
+  bk:[
+    {t:"Nação Dopamina", a:"Anna Lembke", p:"O cérebro cobra cada prazer com um pouco de dor. Entender a dopamina me ajuda a enxergar o que faz alguém clicar, comprar e voltar, e a vender sem explorar isso."},
+    {t:"As 48 Leis do Poder", a:"Robert Greene", p:"Poder é saber ler gente: interesses, intenções e o que fica nas entrelinhas. Aprendi a prestar mais atenção em como as pessoas agem do que no que elas dizem."},
+    {t:"Meditações", a:"Marco Aurélio", p:"Foco no que depende de mim e calma com o resto. Um imperador escrevendo para si mesmo sobre disciplina virou meu manual de constância."}
+  ], bk_read:"Lendo",
   jn4_c1:"Neurociência", jn4_c2:"Psicologia", jn4_c3:"Filosofia",
   jn5_t:"Sou cristão.", jn5_p:"Minha fé orienta o jeito como eu trabalho: constância, honestidade com os números e respeito pelas pessoas.",
   xp_k:"Experiência prática", xp_t:"O que eu já fiz, na prática.", xp_l:"Do anúncio ao funil, sempre em projeto próprio e com resultado que dá para conferir.",
@@ -204,6 +209,11 @@ en: {
   jn3_p2:"Same rule as always. There's no shortcut, only repetition until it flows.",
   jn3_ru:"privet = hi", jn3_rul:"Studying Russian right now",
   jn4_t:"I read to understand people.", jn4_p:"I like reading about neuroscience, psychology and philosophy. I want to understand how people think, feel and decide, because every good business starts there.",
+  bk:[
+    {t:"Dopamine Nation", a:"Anna Lembke", p:"The brain charges every pleasure with a bit of pain. Understanding dopamine helps me see what makes someone click, buy and come back, and how to sell without exploiting it."},
+    {t:"The 48 Laws of Power", a:"Robert Greene", p:"Power is reading people: interests, intentions and what sits between the lines. It taught me to watch how people act more than what they say."},
+    {t:"Meditations", a:"Marcus Aurelius", p:"Focus on what depends on me and stay calm about the rest. An emperor writing to himself about discipline became my handbook for consistency."}
+  ], bk_read:"Reading",
   jn4_c1:"Neuroscience", jn4_c2:"Psychology", jn4_c3:"Philosophy",
   jn5_t:"I'm a Christian.", jn5_p:"My faith shapes how I work: consistency, honesty with the numbers and respect for people.",
   xp_k:"Hands-on experience", xp_t:"What I've actually done.", xp_l:"From the ad to the funnel, always on my own projects and with results you can check.",
@@ -860,7 +870,7 @@ function setLang(l) {
   $("#mail-t").textContent = CONFIG.email; mailBtn.dataset.copied = T[l].copied;
   $("#btn-still").setAttribute("aria-label", T[l].tip_still);
   buildWork(); splitCTA(); buildStory();
-  buildHelp(); setCounters(false); buildChips(); buildDeck(); buildTimeline();
+  buildHelp(); setCounters(false); buildChips(); buildDeck(); buildTimeline(); paintBook(false);
 }
 $("#btn-lang").addEventListener("click", () => setLang(lang === "pt" ? "en" : "pt"));
 
@@ -1111,6 +1121,73 @@ sdBox.addEventListener("click", e => {
 });
 sdBox.addEventListener("keydown", e => { if (e.key === "ArrowRight") openSlide(sdBoxI + 1); if (e.key === "ArrowLeft") openSlide(sdBoxI - 1); });
 sdBox.addEventListener("close", () => { if (sdBoxI !== sdFrom) goSlide(sdBoxI); });
+
+/* ============================================================
+   ESTANTE 3D — cada tema abre o livro que eu ligo a ele
+   ============================================================ */
+const bkShelf = $("#bk-shelf"), bkSlots = $$(".bk-slot"), bkNote = $("#bk-note");
+const BK_MS = 5200, BK_FX = [
+  { n: 14, g: () => "dot", c: ["#ff4f6d", "#f0642a", "#ffb02e", "#e83f8f", "#ffd34d"] },
+  { n: 9, g: () => "♛♜♞♝♚"[Math.random() * 5 | 0] + "︎", c: ["#b8923a", "#8a8f96", "#1d1d1f", "#d7b45a"] },
+  { n: 12, g: () => Math.random() < .55 ? "✦" : "·", c: ["#c9a24a", "#e5d3a1", "#a8893f"] }
+];
+let bkI = -1, bkAuto = true, bkVis = false, bkTimer = 0, bkStarted = false;
+function bkBurst(i) {
+  if (root.dataset.still || reduceMQ.matches) return;
+  const fx = $(".bk-fx", bkSlots[i]), F = BK_FX[i]; fx.textContent = "";
+  for (let k = 0; k < F.n; k++) {
+    const g = F.g(), dot = g === "dot", el = mk("span", dot ? "dot" : "", dot ? "" : g);
+    const a = -Math.PI / 2 + (Math.random() - .5) * 2.4, d = 40 + Math.random() * 70;
+    el.style.cssText = `--x:${(Math.cos(a) * d).toFixed(1)}px;--y:${(Math.sin(a) * d - 20).toFixed(1)}px;--r:${(Math.random() * 300 - 150) | 0}deg;--fs:${(dot ? 4 + Math.random() * 5 : 10 + Math.random() * 9).toFixed(1)}px;--c:${F.c[k % F.c.length]};--dl:${(.25 + Math.random() * .3).toFixed(2)}s;--t:${(1.1 + Math.random() * .7).toFixed(2)}s`;
+    fx.appendChild(el);
+  }
+  setTimeout(() => { fx.textContent = ""; }, 2600);
+}
+function paintBook(anim = true) {
+  if (!bkNote) return;
+  const L = T[lang];
+  bkSlots.forEach((li, j) => {
+    const b = $(".bk", li); li.classList.toggle("on", j === bkI); b.setAttribute("aria-pressed", j === bkI ? "true" : "false");
+    b.setAttribute("aria-label", `${L["jn4_c" + (j + 1)]}: ${L.bk[j].t}, ${L.bk[j].a}`);
+  });
+  const i = bkI < 0 ? 0 : bkI, B = L.bk[i];
+  bkNote.style.setProperty("--tint", bkSlots[i].style.getPropertyValue("--tint"));
+  $("#bk-nk").textContent = `${L["jn4_c" + (i + 1)]} · ${L.bk_read}`;
+  $("#bk-nt").textContent = B.t; $("#bk-na").textContent = B.a; $("#bk-np").textContent = B.p;
+  if (anim) { bkNote.classList.toggle("swap", false); void bkNote.offsetWidth; bkNote.classList.add("swap"); }
+}
+function bkSchedule() {
+  clearTimeout(bkTimer); bkNote.classList.toggle("auto", false);
+  if (!bkAuto || !bkVis || root.dataset.still || reduceMQ.matches || document.hidden) return;
+  bkNote.style.setProperty("--bk-ms", BK_MS + "ms"); void bkNote.offsetWidth; bkNote.classList.add("auto");
+  bkTimer = setTimeout(() => bkSelect((bkI + 1) % bkSlots.length), BK_MS);
+}
+function bkSelect(i, user = false) {
+  if (user) bkAuto = false;
+  const changed = i !== bkI; bkI = i; paintBook(changed);
+  if (changed || user) bkBurst(i);
+  bkSchedule();
+}
+bkSlots.forEach((li, j) => {
+  const b = $(".bk", li);
+  b.addEventListener("click", () => bkSelect(j, true));
+  b.addEventListener("pointerenter", e => { if (e.pointerType === "mouse" && j !== bkI) bkSelect(j, true); });
+});
+if (bkShelf) {
+  bkShelf.addEventListener("pointermove", e => {
+    if (e.pointerType !== "mouse" || root.dataset.still) return;
+    const r = bkShelf.getBoundingClientRect();
+    bkShelf.style.setProperty("--px", (((e.clientX - r.left) / r.width) - .5).toFixed(3));
+    bkShelf.style.setProperty("--py", (((e.clientY - r.top) / r.height) - .5).toFixed(3));
+  });
+  bkShelf.addEventListener("pointerleave", () => { bkShelf.style.setProperty("--px", 0); bkShelf.style.setProperty("--py", 0); });
+  new IntersectionObserver(es => es.forEach(en => {
+    bkVis = en.isIntersecting;
+    if (bkVis && !bkStarted) { bkStarted = true; setTimeout(() => { if (bkI < 0) bkSelect(0); }, root.dataset.still ? 0 : 1100); }
+    else bkSchedule();
+  }), { threshold: .35 }).observe(bkShelf);
+  document.addEventListener("visibilitychange", bkSchedule);
+}
 
 setLang(lang);
 layoutStickers(); paintWorld(); heroScroll();
