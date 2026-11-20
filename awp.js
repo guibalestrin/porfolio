@@ -1,5 +1,5 @@
 /* ============================================================
-   CS2 · AWP | Lightning Strike — modelo 3D procedural (Three.js),
+   CS2: AWP | Lightning Strike: modelo 3D procedural (Three.js),
    fundo de raios em shader, scope e raio cruzando a tela no tiro.
    ============================================================ */
 const wrap = document.querySelector(".jc-cs");

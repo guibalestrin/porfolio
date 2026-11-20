@@ -1,5 +1,5 @@
 /* ============================================================
-   Fé · cruz templária 3D (Three.js): cruz pattée em ouro com
+   Fé: cruz templária 3D (Three.js): cruz pattée em ouro com
    esmalte vermelho, coroa de espinhos e auréola; raios de luz
    em shader sobre a foto do devocional; ao acender, a luz se
    espalha pela tela e aparece um versículo.

@@ -1,5 +1,5 @@
 /* ============================================================
-   Caverna de Alexandria — cena 3D (Three.js)
+   Caverna de Alexandria: cena 3D (Three.js)
    Monograma CA no centro, e-books orbitando e partículas douradas
    que se reúnem em volta da marca conforme a página rola
    (a comunidade se formando). Arraste para girar.
@@ -59,9 +59,9 @@ function boot() {
 
   /* ---------- e-books orbitando ---------- */
   const BOOKS = [
-    { src: "assets/cr-escape.webp", w: 518, h: 751 },
-    { src: "assets/cr-anti-mock.webp", w: 500, h: 805 },
-    { src: "assets/cr-estoicismo.webp", w: 640, h: 960, flat: true }   // capa plana: vira um livro 3D com lombada e páginas
+    { src: "assets/cr-escape.webp", w: 364, h: 542 },
+    { src: "assets/cr-anti-mock.webp", w: 310, h: 545 },
+    { src: "assets/cr-fantasma.webp", w: 332, h: 504 }
   ];
   const books = BOOKS.map((b, i) => {
     let m;

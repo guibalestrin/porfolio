@@ -1,5 +1,5 @@
 /* ============================================================
-   Guilherme Balestrin — portfolio
+   Guilherme Balestrin: portfolio
    Linguagem visual: palco preto + monitor CRT (estilo ntch.design)
    e frase animada por scroll + seções claras (estilo wowww.art)
    ============================================================ */
@@ -42,7 +42,7 @@ body.on-light .dock-lang b{opacity:.45}
 html[data-lang=pt] body.on-light .dock-lang [data-l=pt],html[data-lang=en] body.on-light .dock-lang [data-l=en]{opacity:1;color:var(--blue)}
 
 /* ============================================================
-   HERO — monitor CRT num mundo arrastável
+   HERO: monitor CRT num mundo arrastável
    ============================================================ */
 .hero-track{position:relative;height:calc(100svh + 120svh);background:#000}
 .hero{position:sticky;top:0;height:100svh;min-height:560px;overflow:hidden;background:#000;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
@@ -109,7 +109,7 @@ html[data-breaking] .world{animation:shake .12s linear 5}
 @keyframes hint-line{0%{opacity:1;transform:scaleY(0)}60%{opacity:1;transform:scaleY(1)}100%{opacity:0;transform:scaleY(1)}}
 
 /* ============================================================
-   STORY — frase animada por scroll
+   STORY: frase animada por scroll
    ============================================================ */
 .story{position:relative;height:calc(30svh + 190svh);background:#000}
 .story-stage{position:sticky;top:0;height:100svh;display:grid;place-items:center;overflow:hidden;z-index:2;perspective:1400px}
@@ -142,7 +142,7 @@ html[data-breaking] .world{animation:shake .12s linear 5}
 .chrome-glint{position:absolute;inset:0;color:transparent;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.95) 50%,transparent 60%) no-repeat;background-size:250% 100%;background-position:150% 0;-webkit-background-clip:text;background-clip:text;pointer-events:none}
 
 /* ============================================================
-   SHEET — seções claras (estilo Apple / wowww)
+   SHEET: seções claras (estilo Apple / wowww)
    ============================================================ */
 .sheet{position:relative;z-index:3;background:#fff;color:var(--ink);border-radius:clamp(22px,3vw,44px) clamp(22px,3vw,44px) 0 0;margin-top:-6svh;font-family:var(--text);overflow:clip;box-shadow:0 -30px 80px rgba(0,0,0,.5)}
 /* work */
@@ -264,7 +264,7 @@ html[data-still] .hero{transform:none!important;opacity:1!important}
 
 
 /* ============================================================
-   v2 — vídeo na TV, mídia real, stats, marquee, ajuda, progresso
+   v2: vídeo na TV, mídia real, stats, marquee, ajuda, progresso
    ============================================================ */
 .progress{position:fixed;inset:0 0 auto 0;height:2px;z-index:120;background:var(--accent);transform:scaleX(0);transform-origin:0 50%;pointer-events:none}
 .dock-btn span[aria-hidden]{font:700 15px/1 var(--text)}
@@ -344,7 +344,7 @@ html[data-still] .progress{transition:none}
 
 
 /* ============================================================
-   v3 — sobre mim, Insper Jr, logos
+   v3: sobre mim, Insper Jr, logos
    ============================================================ */
 html:not([data-still]) .rv:not(.in){opacity:0;translate:0 34px}
 .rv{transition:opacity .8s ease,translate 1s var(--ease)}
@@ -406,7 +406,7 @@ html[data-still] .ab-chip{animation:none}
 
 
 /* ============================================================
-   v4 — projetos paralelos (IN., InsperSwap, Presenza)
+   v4: projetos paralelos (IN., InsperSwap, Presenza)
    ============================================================ */
 .vn{padding:clamp(60px,10svh,120px) max(16px,4vw) clamp(40px,8svh,100px);color:var(--ink)}
 .vn-in{max-width:1320px;margin:0 auto}
@@ -496,7 +496,7 @@ html[data-still] .fl,html[data-still] .tile,html[data-still] .pz-chip,html[data-
 
 
 /* ============================================================
-   v5 — foto na Insper Jr, sticker recortado
+   v5: foto na Insper Jr, sticker recortado
    ============================================================ */
 
 .ij-head{position:relative}
@@ -513,7 +513,7 @@ html[data-still] .fl,html[data-still] .tile,html[data-still] .pz-chip,html[data-
 @media (max-width:900px){.ij-photo{position:relative;right:auto;top:auto;width:min(60%,240px);margin:26px 0 0;rotate:-3deg}.ij-title,.ij-lede{max-width:none}}
 
 /* ============================================================
-   v6 — hero: canais por scroll, ícones, guia de canais
+   v6: hero: canais por scroll, ícones, guia de canais
    ============================================================ */
 .ch{gap:1.6cqw;padding:6cqw}
 .ch b{font-size:15cqw}
@@ -561,7 +561,7 @@ html[data-still] .hero-track{height:calc(100svh + 120svh)}
 .stk-ico{width:1.1em;height:1.1em;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 
 /* ============================================================
-   v7 — Kiwify Festival + keywords em vidro com borda animada
+   v7: Kiwify Festival + keywords em vidro com borda animada
    ============================================================ */
 .kf{padding:clamp(20px,4svh,60px) max(16px,4vw) clamp(60px,10svh,120px)}
 .kf-panel{max-width:1320px;margin:0 auto;padding:clamp(32px,6vw,88px);border-radius:clamp(26px,3vw,44px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(30px,5vw,70px);align-items:center;color:#fff;position:relative;overflow:hidden;background:radial-gradient(90% 80% at 90% 100%,#0e4a2c 0%,transparent 60%),radial-gradient(120% 90% at 0% 0%,#10281c 0%,#070a08 65%);box-shadow:0 50px 100px -40px rgba(0,0,0,.55)}
@@ -822,7 +822,7 @@ html[data-still] .sm{opacity:1!important;transform:rotate(var(--r))!important}
 .jc-photo img{aspect-ratio:16/9}
 .jc-mini:not(.jc-faith) .jc-tiles{flex:1 1 auto;max-height:230px}
 
-/* ---- CS2 · AWP Lightning Strike 3D ---- */
+/* ---- CS2: AWP Lightning Strike 3D ---- */
 .jc-cs{position:relative;--sh:clamp(210px,22vw,270px);--pad:clamp(24px,3vw,40px)}
 .jc-cs .jc-stat{padding-top:0}
 .awp-stage{position:relative;height:var(--sh);margin:0 calc(var(--pad)*-1) 18px;overflow:hidden;cursor:crosshair;background:radial-gradient(120% 100% at 50% 50%,#5a17b8 0%,#1d0640 60%,#08020f 100%);-webkit-mask-image:linear-gradient(#000 82%,transparent);mask-image:linear-gradient(#000 82%,transparent)}
@@ -856,7 +856,7 @@ html[data-still] .sm{opacity:1!important;transform:rotate(var(--r))!important}
 @media (max-width:860px){.awp-gl{left:-2%;width:104%}}
 .awp-stage:has(.awp-kill.on) .awp-skin{opacity:0}
 /* ============================================================
-   CAVERNA — marca de Alexandria (preto + dourado)
+   CAVERNA: marca de Alexandria (preto + dourado)
    ============================================================ */
 .cr{padding:clamp(20px,4svh,60px) max(16px,4vw) clamp(40px,8svh,100px)}
 .cr-panel{--gold:#c6a85a;--gold2:#e5d3a1;max-width:1320px;margin:0 auto;padding:clamp(28px,6vw,88px);border-radius:clamp(26px,3vw,44px);background:radial-gradient(110% 70% at 80% 0%,#1d1810 0%,#0a0a0a 55%);color:#f2efe8;position:relative;overflow:hidden;box-shadow:0 50px 100px -40px rgba(0,0,0,.55)}
@@ -931,7 +931,7 @@ html.lb-open{overflow:hidden}
 
 
 /* ============================================================
-   BRIEF — folha que dobra e cai na caixa de correio (estilo wowww.art)
+   BRIEF: folha que dobra e cai na caixa de correio (estilo wowww.art)
    ============================================================ */
 .brief{background:#fff;color:var(--ink);position:relative}
 .bf-layout{max-width:1240px;margin:0 auto;padding:clamp(32px,6vw,96px) max(16px,4vw) 14svh;display:grid;grid-template-columns:minmax(0,500px) minmax(300px,1fr);gap:clamp(40px,8vw,140px)}
@@ -1053,7 +1053,7 @@ html[data-still] .bf-sent{position:relative;top:auto}
 .ij-card:hover{box-shadow:inset 0 0 0 1px rgba(236,43,51,.45)}
 .ij-n{color:rgba(236,43,51,.35)}
 
-/* ---- Fé · cruz templária 3D ---- */
+/* ---- Fé: cruz templária 3D ---- */
 .fa-wrap{position:relative;margin:0 0 22px}
 .fa-stage{margin:0;cursor:pointer;background:#0d0906}
 .fa-stage img{filter:brightness(.5) saturate(.75) sepia(.2);transition:filter 1.4s var(--ease),scale 1.6s var(--ease)}
@@ -1080,7 +1080,7 @@ html[data-still] .bf-sent{position:relative;top:auto}
 @media (max-width:860px){.fa-gl{right:-3%;top:-20%;width:54%}.fa-verse{max-width:56%}}
 
 /* ============================================================
-   Slides (PowerPoint) — coverflow 3D guiado pelo scroll
+   Slides (PowerPoint): coverflow 3D guiado pelo scroll
    ============================================================ */
 .sd{--pp:#d35230;padding:0 max(16px,3vw)}
 .sd-track{height:calc(var(--n,4) * 55svh + 100svh);position:relative}
@@ -1138,7 +1138,7 @@ html[data-still] .sd-slide{position:relative;flex:0 0 min(80%,720px);width:auto;
 @media (max-width:600px){.sd-x{top:-52px;right:0}}
 
 /* ============================================================
-   Trajetória — linha do tempo com ano em odômetro
+   Trajetória: linha do tempo com ano em odômetro
    ============================================================ */
 .tm{padding:clamp(60px,10svh,120px) max(16px,4vw) clamp(40px,8svh,100px);color:var(--ink)}
 .tm-in{max-width:1320px;margin:0 auto}
@@ -1183,7 +1183,7 @@ html:not([data-still]) .tm-it:not(.seen) .tm-card{opacity:0;transform:perspectiv
 .sd-note{grid-column:1/-1;justify-self:center;font-size:12px;color:rgba(255,255,255,.38);text-align:center}
 
 /* ============================================================
-   Kiwify — crachá no cordão (pêndulo) + kit em 3D
+   Kiwify: crachá no cordão (pêndulo) + kit em 3D
    ============================================================ */
 .kf-kit{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:clamp(20px,4vw,60px);align-items:center;margin-top:clamp(10px,2vw,20px);padding-top:clamp(28px,4vw,44px);border-top:1px solid rgba(109,240,168,.2)}
 .kf-kit-t h3{font:700 clamp(24px,2.4vw,34px)/1.1 var(--text);letter-spacing:-.03em}
@@ -1284,7 +1284,7 @@ html[data-still] .bk-obj,html[data-still] .bk-cover,html[data-still] .bk-stage,h
 .bk-slot.on .bk{--ry:18deg;--open:-135deg}
 @media (max-width:520px){.bk{padding:10px 2px 12px}.bk-lab{font-size:12px}.bk-slot.on .bk{--sc:1.04;--lift:-8px}}
 
-/* ============ SOBRE MIM v2 — card 3D, text rotate e bento com glow ============ */
+/* ============ SOBRE MIM v2: card 3D, text rotate e bento com glow ============ */
 .ab-card3d{--rx:0deg;--ry:0deg;--gx:50%;--gy:50%;perspective:1100px}
 .ab-card3d .ab-photo{transform-style:preserve-3d;transform:rotateX(var(--rx)) rotateY(var(--ry));transition:transform .6s var(--ease)}
 .ab-card3d.hov .ab-photo{transition:transform .12s linear}

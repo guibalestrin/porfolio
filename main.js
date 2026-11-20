@@ -1,5 +1,5 @@
 /* ============================================================
-   Guilherme Balestrin — portfolio, JS puro, sem dependências
+   Guilherme Balestrin: portfolio, JS puro, sem dependências
    1) i18n PT/EN   2) hero CRT arrastável   3) frase animada por scroll
    4) janelas com abas  5) roda de interesses  6) reveals, FAQ, form
    ============================================================ */
@@ -78,7 +78,7 @@ pt: {
   xp1_b2:"Conteúdo orgânico com foco em conversão, com um vídeo que passou de 2,3 milhões de views no TikTok.",
   xp1_b3:"Parcerias com micro influenciadores: busca de perfis, briefing e acompanhamento das entregas.",
   xp1_b5:"Resultado: produto validado no mercado e uma operação completa rodando, do anúncio ao pós-venda.",
-  xp2_tag:"Projeto próprio · Caverna de Alexandria", xp2_t:"Fundador · Marca e comunidade", xp2_d:"Criei uma marca própria para vender meus infoprodutos de educação e desenvolvimento pessoal.",
+  xp2_tag:"Projeto próprio: Caverna de Alexandria", xp2_t:"Fundador da marca e da comunidade", xp2_d:"Criei uma marca própria para vender meus infoprodutos de educação e desenvolvimento pessoal.",
   xp2_b1:"Branding: nome, identidade e mensagem pensados para que todos os meus infoprodutos vendessem sob a mesma marca, com mais confiança.",
   xp2_b2:"A ideia era ir além do produto: construir uma comunidade em torno da marca, reunindo pessoas com a mesma mentalidade de estudo, disciplina e crescimento.",
   xp2_b3:"Conteúdo nas redes, funis de venda, copy e automações com Typebot para atrair esse público e transformar seguidores em clientes.",
@@ -111,7 +111,7 @@ pt: {
   st3:"novos seguidores vindos dele", st3s:"Dados do TikTok Studio",
   st4:"de conversão em links de afiliado", st4s:"Amazon Associados",
   hp_t:"Teclas e gestos", hp_keys:"Atalhos de uma tecla", hp_close:"Fechar",
-  hp_rows:[["Arrastar","Olhar em volta (ou mover os adesivos)"],["3 cliques no monitor","Não faça isso."],["1 – 3","Trocar de canal"],["L","Idioma PT / EN"],["M","Reduzir movimento"],["?","Esta ajuda"],["Shift + rolar","Mover o mundo na horizontal"]],
+  hp_rows:[["Arrastar","Olhar em volta (ou mover os adesivos)"],["3 cliques no monitor","Não faça isso."],["1, 2 ou 3","Trocar de canal"],["L","Idioma PT / EN"],["M","Reduzir movimento"],["?","Esta ajuda"],["Shift + rolar","Mover o mundo na horizontal"]],
   ab_k:"Sobre mim", ab_t:"Oi, eu sou o Guilherme.",
   ab_c1:"19 anos", ab_c2:"4 anos de experiência", ab_c3:"São Paulo",
   ab_rot_a:"Marketing com cabeça de", ab_rot_b:"", ab_rot:["negócio","dados","cliente"], ab_rot_sr:"Marketing com cabeça de negócio, de dados e de cliente.",
@@ -123,7 +123,7 @@ pt: {
   ab_w3t:"Do zero ao ar.", ab_w3:"Criativo, copy, página e automação: tiro uma ideia do papel sozinho e sei quando chamar quem faz melhor.",
   ab_w4t:"Gente no centro.", ab_w4:"Toda venda é uma decisão humana. É o que eu mais estudo e o que quero desenvolver na carreira.",
   ab_t1:"Liderança", ab_t2:"Gestão de pessoas", ab_t3:"Psicologia nas vendas", ab_t4:"Linguagem corporal",
-  ij_k:"Trainee · Experiência", ij_t:"Consultoria de verdade, na Insper Jr.",
+  ij_k:"Experiência como trainee", ij_t:"Consultoria de verdade, na Insper Jr.",
   ij_l:"Na faculdade fui selecionado para o trainee da Insper Jr, a empresa júnior de consultoria do Insper. Foi um programa intenso de formação, com metodologia, cases e entregas avaliadas, em que vivi na prática os 4 escopos de um projeto de consultoria.",
   ij1_t:"Mercadológico", ij1_d:"Entender mercado, concorrência e público antes de qualquer decisão.",
   ij2_t:"Operacional", ij2_d:"Mapear processos, achar gargalos e organizar como o trabalho acontece.",
@@ -148,8 +148,8 @@ pt: {
   ],
   sd_k:"PowerPoint", sd_t:"Slides que eu fiz.", nav_sd:"Slides",
   sd_l:"Consultoria também é saber contar a história. Monto decks do zero no PowerPoint: título que já entrega a conclusão, dado que sustenta e visual que deixa a leitura leve.",
-  sd_h:"Role para passar · clique para ampliar",
-  sd_caps:["Huawei · projeto autoral, aplicando sozinho o método que aprendi na Insper Jr","Huawei · Preço: o catálogo vai de R$ 999 a R$ 32.999","Dermo Clinic Primavera · capa da consultoria estratégica","Projeto pela Insper Jr, em parceria com a Bain & Company · Marketing Mix"],
+  sd_h:"Role para passar e clique para ampliar",
+  sd_caps:["Huawei: projeto autoral, aplicando sozinho o método que aprendi na Insper Jr","Huawei: análise de preço, com catálogo de R$ 999 a R$ 32.999","Dermo Clinic Primavera: capa da consultoria estratégica","Marketing Mix: projeto pela Insper Jr em parceria com a Bain & Company"],
   sd_note:"Alguns projetos têm detalhes sob sigilo, por isso mostro só parte do material.",
   kf_kit_t:"O que eu aprendi lá.", kf_kit_p:"Ouvindo como as maiores operações montam oferta, funil e time, entendi que quem escala não depende de um anúncio que viralizou, e sim de processo: oferta clara, funil medido e gente bem organizada. Voltei e reestruturei meu produto com essa lógica, olhando o caminho inteiro do cliente, da atração à recompra.", kf_hint:"Arraste o crachá",
   kf_k:"Mercado", kf_t:"Kiwify Festival 2023.", kf_l:"Fui ao maior evento de infoprodutos do Brasil enquanto estruturava meu próprio produto, para ver de perto como as maiores operações do mercado trabalham.", kf_c1:"Na entrada do Kiwify Festival", kf_c2:"Palco principal do evento", nav_kf:"Kiwify Festival",
@@ -227,7 +227,7 @@ en: {
   xp1_b2:"Organic content built for conversion, with a video that passed 2.3 million views on TikTok.",
   xp1_b3:"Micro-influencer partnerships: finding profiles, briefing and following the deliveries.",
   xp1_b5:"Result: a product validated in the market and a full operation running, from ad to after-sales.",
-  xp2_tag:"Own project · Caverna de Alexandria", xp2_t:"Founder · Brand and community", xp2_d:"I built my own brand to sell my info products in education and personal development.",
+  xp2_tag:"Own project: Caverna de Alexandria", xp2_t:"Founder of the brand and community", xp2_d:"I built my own brand to sell my info products in education and personal development.",
   xp2_b1:"Branding: name, identity and message designed so all my info products could sell under one brand, with more trust.",
   xp2_b2:"The idea was to go beyond the product: build a community around the brand, bringing together people with the same mindset of study, discipline and growth.",
   xp2_b3:"Social content, sales funnels, copy and Typebot automations to attract that audience and turn followers into customers.",
@@ -260,7 +260,7 @@ en: {
   st3:"new followers from it", st3s:"TikTok Studio data",
   st4:"conversion on affiliate links", st4s:"Amazon Associates",
   hp_t:"Keys & gestures", hp_keys:"Single-key shortcuts", hp_close:"Close",
-  hp_rows:[["Drag","Look around (or move the stickers)"],["3 clicks on the TV","Please don't."],["1 – 3","Switch channel"],["L","Language PT / EN"],["M","Reduce motion"],["?","This help"],["Shift + scroll","Pan the world sideways"]],
+  hp_rows:[["Drag","Look around (or move the stickers)"],["3 clicks on the TV","Please don't."],["1, 2 or 3","Switch channel"],["L","Language PT / EN"],["M","Reduce motion"],["?","This help"],["Shift + scroll","Pan the world sideways"]],
   ab_k:"About me", ab_t:"Hi, I'm Guilherme.",
   ab_c1:"19 y/o", ab_c2:"4 years of experience", ab_c3:"São Paulo",
   ab_rot_a:"Marketing with a", ab_rot_b:" mindset", ab_rot:["business","data","customer"], ab_rot_sr:"Marketing with a business, data and customer mindset.",
@@ -272,7 +272,7 @@ en: {
   ab_w3t:"From zero to live.", ab_w3:"Creative, copy, page and automation: I can take an idea off paper on my own, and I know when to call someone better.",
   ab_w4t:"People at the center.", ab_w4:"Every sale is a human decision. It's what I study most and what I want to grow into in my career.",
   ab_t1:"Leadership", ab_t2:"People management", ab_t3:"Sales psychology", ab_t4:"Body language",
-  ij_k:"Trainee · Experience", ij_t:"Real consulting, at Insper Jr.",
+  ij_k:"Trainee experience", ij_t:"Real consulting, at Insper Jr.",
   ij_l:"In college I was selected for the Insper Jr trainee program, Insper's junior consulting company. It was an intense training program, with methodology, cases and graded deliverables, where I lived hands-on the 4 scopes of a consulting project.",
   ij1_t:"Market", ij1_d:"Understand the market, competitors and audience before any decision.",
   ij2_t:"Operations", ij2_d:"Map processes, find bottlenecks and organize how the work gets done.",
@@ -297,8 +297,8 @@ en: {
   ],
   sd_k:"PowerPoint", sd_t:"Slides I made.", nav_sd:"Slides",
   sd_l:"Consulting is also about telling the story. I build decks from scratch in PowerPoint: a title that already delivers the conclusion, data that backs it and visuals that make it easy to read.",
-  sd_h:"Scroll to flip · click to enlarge",
-  sd_caps:["Huawei · solo project, applying on my own the method I learned at Insper Jr","Huawei · Price: the catalog goes from R$ 999 to R$ 32,999","Dermo Clinic Primavera · strategy consulting cover","Project through Insper Jr, in partnership with Bain & Company · Marketing Mix"],
+  sd_h:"Scroll to flip, click to enlarge",
+  sd_caps:["Huawei: solo project, applying on my own the method I learned at Insper Jr","Huawei: pricing analysis, with a catalog from R$ 999 to R$ 32,999","Dermo Clinic Primavera: strategy consulting cover","Marketing Mix: project through Insper Jr in partnership with Bain & Company"],
   sd_note:"Some projects are under confidentiality, so I only show part of the material.",
   kf_kit_t:"What I learned there.", kf_kit_p:"Hearing how the biggest operations build their offer, funnel and team, I understood that those who scale don't rely on one viral ad, but on process: a clear offer, a measured funnel and a well-organized team. I came back and restructured my product with that logic, looking at the customer's whole path, from attraction to repeat purchase.", kf_hint:"Drag the badge",
   kf_k:"Market", kf_t:"Kiwify Festival 2023.", kf_l:"I went to Brazil's biggest info-product event while I was structuring my own product, to see up close how the biggest operations in the market work.", kf_c1:"At the Kiwify Festival entrance", kf_c2:"The event's main stage", nav_kf:"Kiwify Festival",
@@ -336,7 +336,7 @@ let lang = store.get("gb-lang");
 if (lang !== "pt" && lang !== "en") lang = (navigator.language || "pt").toLowerCase().startsWith("pt") ? "pt" : "en";
 
 /* ============================================================
-   2) HERO — monitor CRT + mundo arrastável + stickers
+   2) HERO: monitor CRT + mundo arrastável + stickers
    ============================================================ */
 const hero = $("#top"), world = $("#world"), tv = $("#tv"), strip = $("#strip"), noiseC = $("#noise"), sysmsg = $("#sysmsg"), draghint = $("#draghint"), tvch = $("#tvch");
 const layers = $$(".layer", world).map(el => ({ el, d: parseFloat(el.dataset.depth) || 1 }));
@@ -546,7 +546,7 @@ new IntersectionObserver(([en]) => { heroVisible = en.isIntersecting; syncChVide
 document.addEventListener("visibilitychange", () => { syncChVideo(); Object.values(pjState).forEach(x => x.sync && x.sync()); });
 
 /* ============================================================
-   3) STORY — frase animada por scroll
+   3) STORY: frase animada por scroll
    ============================================================ */
 const story = $("#story"), sentence = $("#sentence");
 const TOTAL = 10;
@@ -700,7 +700,7 @@ function storyTick() {
 }
 
 /* ============================================================
-   4) WORK — janelas com abas (telas geradas em CSS)
+   4) WORK: janelas com abas (telas geradas em CSS)
    ============================================================ */
 const G = ["linear-gradient(135deg,#ff6a3d,#ff2d55)","linear-gradient(135deg,#0a84ff,#5ac8fa)","linear-gradient(135deg,#7b36ff,#ff2d92)","linear-gradient(135deg,#ff9500,#ffcc00)","linear-gradient(135deg,#00b894,#0a84ff)"];
 const PJ = {
@@ -713,7 +713,7 @@ const PJ = {
   ] },
   info: { items: [
     { g:"linear-gradient(135deg,#0b8a5a,#19c37d)", src:"assets/kiwify.webp", ar:"591/813" },
-    { g:"linear-gradient(135deg,#1a1408,#6b5220)", src:"assets/cr-escape.webp", ar:"518/751" }
+    { g:"linear-gradient(135deg,#1a1408,#6b5220)", src:"assets/cr-escape.webp", ar:"364/542" }
   ] },
   meta: { items: [
     { g:"linear-gradient(135deg,#7b2ff7,#f107a3)", mock:"funnel" },
@@ -894,7 +894,7 @@ function setStill(on, persist = true) {
 }
 $("#btn-still").addEventListener("click", () => setStill(!root.dataset.still));
 
-/* atalhos de uma tecla (ntch-like): L idioma · M movimento · 1-3 canais */
+/* atalhos de uma tecla (ntch-like): L idioma: M movimento: 1-3 canais */
 addEventListener("keydown", e => {
   if (e.metaKey || e.ctrlKey || e.altKey || /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) return;
   const k = e.key.toLowerCase();
@@ -1133,13 +1133,13 @@ sdBox.addEventListener("keydown", e => { if (e.key === "ArrowRight") openSlide(s
 sdBox.addEventListener("close", () => { if (sdBoxI !== sdFrom) goSlide(sdBoxI); });
 
 /* ============================================================
-   ESTANTE 3D — cada tema abre o livro que eu ligo a ele
+   ESTANTE 3D: cada tema abre o livro que eu ligo a ele
    ============================================================ */
 const bkShelf = $("#bk-shelf"), bkSlots = $$(".bk-slot"), bkNote = $("#bk-note");
 const BK_MS = 5200, BK_FX = [
   { n: 14, g: () => "dot", c: ["#ff4f6d", "#f0642a", "#ffb02e", "#e83f8f", "#ffd34d"] },
   { n: 9, g: () => "♛♜♞♝♚"[Math.random() * 5 | 0] + "︎", c: ["#b8923a", "#8a8f96", "#1d1d1f", "#d7b45a"] },
-  { n: 12, g: () => Math.random() < .55 ? "✦" : "·", c: ["#c9a24a", "#e5d3a1", "#a8893f"] }
+  { n: 12, g: () => Math.random() < .55 ? "✦" : "✧", c: ["#c9a24a", "#e5d3a1", "#a8893f"] }
 ];
 let bkI = -1, bkAuto = true, bkVis = false, bkTimer = 0, bkStarted = false;
 function bkBurst(i) {
@@ -1162,7 +1162,7 @@ function paintBook(anim = true) {
   });
   const i = bkI < 0 ? 0 : bkI, B = L.bk[i];
   bkNote.style.setProperty("--tint", bkSlots[i].style.getPropertyValue("--tint"));
-  $("#bk-nk").textContent = `${L["jn4_c" + (i + 1)]} · ${L.bk_read}`;
+  $("#bk-nk").textContent = L["jn4_c" + (i + 1)];
   $("#bk-nt").textContent = B.t; $("#bk-na").textContent = B.a; $("#bk-np").textContent = B.p;
   if (anim) { bkNote.classList.toggle("swap", false); void bkNote.offsetWidth; bkNote.classList.add("swap"); }
 }
@@ -1200,7 +1200,7 @@ if (bkShelf) {
 }
 
 /* ============================================================
-   SOBRE MIM — Text Rotate, card 3D e borda que brilha (padrões do 21st.dev)
+   SOBRE MIM: Text Rotate, card 3D e borda que brilha (padrões do 21st.dev)
    ============================================================ */
 const abRot = $("#ab-rot");
 let abRotI = 0, abRotT = 0;
