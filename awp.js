@@ -26,12 +26,23 @@ function boot() {
   let gun = null, visible = false, busy = false, autoFired = false;
   let mx = 0, my = 0;
 
-  const io = new IntersectionObserver(es => es.forEach(e => {
+  // pré-carrega o modelo 3D um pouco antes de chegar no bloco (sem animar nada)
+  new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting && !gun) loadGun();
+  }), { rootMargin: "500px 0px" }).observe(stage);
+
+  // animação e tiro automático só quando o bloco está de fato na tela
+  let inView = false, autoT = 0;
+  const fullyIn = () => { const r = stage.getBoundingClientRect(); return r.top >= -r.height * .1 && r.bottom <= innerHeight + r.height * .1; };
+  new IntersectionObserver(es => es.forEach(e => {
     visible = e.isIntersecting;
+    inView = e.intersectionRatio >= .85;
     if (visible && !gun) loadGun();
-    if (visible && e.intersectionRatio > .55 && !autoFired && !still()) { autoFired = true; setTimeout(() => visible && fire(), 900); }
-  }), { rootMargin: "500px 0px", threshold: [0, .55] });
-  io.observe(stage);
+    clearTimeout(autoT);
+    if (inView && !autoFired && !still()) autoT = setTimeout(() => {
+      if (inView && fullyIn() && !document.hidden) { autoFired = true; fire(); }
+    }, 900);
+  }), { threshold: [0, .25, .5, .85, 1] }).observe(stage);
 
   wrap.addEventListener("pointermove", e => { const r = wrap.getBoundingClientRect(); mx = (e.clientX - r.left) / r.width - .5; my = (e.clientY - r.top) / r.height - .5; });
   wrap.addEventListener("pointerleave", () => { mx = my = 0; });
