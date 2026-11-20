@@ -1332,3 +1332,15 @@ html[data-still] .ab-card3d .ab-photo{transform:none}
 .ab-card3d .ab-chip{animation-name:abBob}
 @keyframes abBob{50%{translate:0 -6px}}
 .ab-rot{align-items:center}.ab-rot-w{vertical-align:middle}
+/* mobile: números cabem no card; marcador do ano não cobre os títulos da linha do tempo */
+@media (max-width:520px){
+  .st-card{padding:20px 16px 18px}
+  .st-num{font-size:clamp(28px,8.4vw,40px)}
+}
+@media (max-width:860px){
+  .tm-side{justify-self:end;margin-right:4px}
+  .tm-stick{padding:6px 14px}
+  .tm-cap{display:none}
+  .tm-odo{font-size:28px}
+}
+@media (max-width:860px){.tm-side{display:none}}
