@@ -113,11 +113,16 @@ pt: {
   hp_t:"Teclas e gestos", hp_keys:"Atalhos de uma tecla", hp_close:"Fechar",
   hp_rows:[["Arrastar","Olhar em volta (ou mover os adesivos)"],["3 cliques no monitor","Não faça isso."],["1 – 3","Trocar de canal"],["L","Idioma PT / EN"],["M","Reduzir movimento"],["?","Esta ajuda"],["Shift + rolar","Mover o mundo na horizontal"]],
   ab_k:"Sobre mim", ab_t:"Oi, eu sou o Guilherme.",
-  ab_c1:"19 anos", ab_c2:"4 anos de experiência", ab_c3:"Administração de Empresas",
-  ab_p1:"Tenho 19 anos e comecei no marketing digital em 2022. Primeiro com dropshipping, onde demorou 1 ano até a primeira venda, depois com infoprodutos. Aprendi fazendo, com dinheiro e resultado em jogo: tráfego pago e orgânico, copy, design e conteúdo.",
-  ab_p2:"Em um desses projetos criei um produto do zero, montei a operação e vendi com anúncios pagos. Foi assim que passei a enxergar o funil inteiro e a jornada do cliente.",
-  ab_p3:"Hoje estudo Administração de Empresas no Insper. No trainee da Insper Jr, a consultoria ampliou minha visão para além do marketing: mercado, operação e finanças. O que mais me interessa agora é liderança, gestão de pessoas e psicologia nas vendas, porque todo negócio bom começa em entender gente.",
-  ab_f1:"Administração de Empresas", ab_f2:"Trainee na empresa júnior de consultoria",
+  ab_c1:"19 anos", ab_c2:"4 anos de experiência", ab_c3:"São Paulo",
+  ab_rot_a:"Marketing com cabeça de", ab_rot_b:"", ab_rot:["negócio","dados","cliente"], ab_rot_sr:"Marketing com cabeça de negócio, de dados e de cliente.",
+  ab_p1:"Faço marketing digital de ponta a ponta: tráfego, copy, conteúdo e páginas. Aprendi em projetos próprios, com dinheiro de verdade em jogo. No Insper estou ganhando a outra metade: enxergar o negócio inteiro, do mercado às finanças.",
+  ab_f1:"Administração de Empresas", ab_f1s:"Insper, com bolsa", ab_f2:"Trainee de consultoria", ab_f2s:"Insper Jr, empresa júnior",
+  ab_wt:"Como eu trabalho",
+  ab_w1t:"Dado antes de opinião.", ab_w1:"Testo criativo, público e página, e deixo os números decidirem. Achismo custa verba.",
+  ab_w2t:"O funil inteiro, não só o anúncio.", ab_w2:"Clique barato não vale nada se a página não converte. Olho do primeiro contato até a recompra.",
+  ab_w3t:"Do zero ao ar.", ab_w3:"Criativo, copy, página e automação: tiro uma ideia do papel sozinho e sei quando chamar quem faz melhor.",
+  ab_w4t:"Gente no centro.", ab_w4:"Toda venda é uma decisão humana. É o que eu mais estudo e o que quero desenvolver na carreira.",
+  ab_t1:"Liderança", ab_t2:"Gestão de pessoas", ab_t3:"Psicologia nas vendas", ab_t4:"Linguagem corporal",
   ij_k:"Trainee · Experiência", ij_t:"Consultoria de verdade, na Insper Jr.",
   ij_l:"Na faculdade fui selecionado para o trainee da Insper Jr, a empresa júnior de consultoria do Insper. Foi um programa intenso de formação, com metodologia, cases e entregas avaliadas, em que vivi na prática os 4 escopos de um projeto de consultoria.",
   ij1_t:"Mercadológico", ij1_d:"Entender mercado, concorrência e público antes de qualquer decisão.",
@@ -257,11 +262,16 @@ en: {
   hp_t:"Keys & gestures", hp_keys:"Single-key shortcuts", hp_close:"Close",
   hp_rows:[["Drag","Look around (or move the stickers)"],["3 clicks on the TV","Please don't."],["1 – 3","Switch channel"],["L","Language PT / EN"],["M","Reduce motion"],["?","This help"],["Shift + scroll","Pan the world sideways"]],
   ab_k:"About me", ab_t:"Hi, I'm Guilherme.",
-  ab_c1:"19 y/o", ab_c2:"4 years of experience", ab_c3:"Business Administration",
-  ab_p1:"I'm 19 and started in digital marketing in 2022. First with dropshipping, where it took 1 year to get my first sale, then info products. I learned by doing, with real money and results on the line: paid and organic traffic, copy, design and content.",
-  ab_p2:"In one of those projects I built a product from scratch, set up the operation and sold it with paid ads. That's how I started seeing the whole funnel and the customer journey.",
-  ab_p3:"Today I study Business Administration at Insper. In the Insper Jr trainee program, consulting widened my view beyond marketing: market, operations and finance. What interests me most now is leadership, people management and sales psychology, because every good business starts with understanding people.",
-  ab_f1:"Business Administration", ab_f2:"Trainee at the junior consulting company",
+  ab_c1:"19 y/o", ab_c2:"4 years of experience", ab_c3:"São Paulo",
+  ab_rot_a:"Marketing with a", ab_rot_b:" mindset", ab_rot:["business","data","customer"], ab_rot_sr:"Marketing with a business, data and customer mindset.",
+  ab_p1:"I do digital marketing end to end: traffic, copy, content and pages. I learned it on my own projects, with real money on the line. At Insper I'm getting the other half: seeing the whole business, from market to finance.",
+  ab_f1:"Business Administration", ab_f1s:"Insper, on scholarship", ab_f2:"Consulting trainee", ab_f2s:"Insper Jr, junior company",
+  ab_wt:"How I work",
+  ab_w1t:"Data before opinion.", ab_w1:"I test creative, audience and page, and let the numbers decide. Guesswork burns budget.",
+  ab_w2t:"The whole funnel, not just the ad.", ab_w2:"A cheap click is worth nothing if the page doesn't convert. I look from first contact to repeat purchase.",
+  ab_w3t:"From zero to live.", ab_w3:"Creative, copy, page and automation: I can take an idea off paper on my own, and I know when to call someone better.",
+  ab_w4t:"People at the center.", ab_w4:"Every sale is a human decision. It's what I study most and what I want to grow into in my career.",
+  ab_t1:"Leadership", ab_t2:"People management", ab_t3:"Sales psychology", ab_t4:"Body language",
   ij_k:"Trainee · Experience", ij_t:"Real consulting, at Insper Jr.",
   ij_l:"In college I was selected for the Insper Jr trainee program, Insper's junior consulting company. It was an intense training program, with methodology, cases and graded deliverables, where I lived hands-on the 4 scopes of a consulting project.",
   ij1_t:"Market", ij1_d:"Understand the market, competitors and audience before any decision.",
@@ -870,7 +880,7 @@ function setLang(l) {
   $("#mail-t").textContent = CONFIG.email; mailBtn.dataset.copied = T[l].copied;
   $("#btn-still").setAttribute("aria-label", T[l].tip_still);
   buildWork(); splitCTA(); buildStory();
-  buildHelp(); setCounters(false); buildChips(); buildDeck(); buildTimeline(); paintBook(false);
+  buildHelp(); setCounters(false); buildChips(); buildDeck(); buildTimeline(); paintBook(false); abRotStart();
 }
 $("#btn-lang").addEventListener("click", () => setLang(lang === "pt" ? "en" : "pt"));
 
@@ -1187,6 +1197,68 @@ if (bkShelf) {
     else bkSchedule();
   }), { threshold: .35 }).observe(bkShelf);
   document.addEventListener("visibilitychange", bkSchedule);
+}
+
+/* ============================================================
+   SOBRE MIM — Text Rotate, card 3D e borda que brilha (padrões do 21st.dev)
+   ============================================================ */
+const abRot = $("#ab-rot");
+let abRotI = 0, abRotT = 0;
+function abRotPaint(word, anim) {
+  const w = mk("span", "ab-rot-word");
+  [...word].forEach((c, k) => { const l = mk("span", "ab-rot-l", c); l.style.setProperty("--k", k); w.appendChild(l); });
+  if (anim) {
+    const old = abRot.querySelector(".ab-rot-word:not(.out)");
+    if (old) { old.classList.add("out"); setTimeout(() => old.parentNode && old.parentNode.removeChild(old), 700); }
+    w.classList.add("in");
+  }
+  abRot.appendChild(w);
+  if (!anim) [...abRot.children].forEach(x => { if (x !== w) abRot.removeChild(x); });
+  abRot.style.setProperty("--w", w.getBoundingClientRect().width + "px");
+}
+function abRotStart() {
+  if (!abRot) return;
+  clearInterval(abRotT); abRotI = 0;
+  abRotPaint(T[lang].ab_rot[0], false);
+  abRotT = setInterval(() => {
+    if (root.dataset.still || document.hidden || reduceMQ.matches) return;
+    const r = abRot.getBoundingClientRect(); if (r.bottom < 0 || r.top > innerHeight) return;
+    abRotI = (abRotI + 1) % T[lang].ab_rot.length;
+    abRotPaint(T[lang].ab_rot[abRotI], true);
+  }, 2600);
+}
+/* card 3D: a foto inclina, os selos saltam em profundidade e um reflexo segue o mouse */
+{
+  const c = $("#ab-card3d");
+  if (c) {
+    c.addEventListener("pointermove", e => {
+      if (root.dataset.still || e.pointerType !== "mouse") return;
+      const r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+      c.style.setProperty("--ry", ((x - .5) * 14).toFixed(2) + "deg");
+      c.style.setProperty("--rx", ((.5 - y) * 12).toFixed(2) + "deg");
+      c.style.setProperty("--gx", (x * 100).toFixed(1) + "%"); c.style.setProperty("--gy", (y * 100).toFixed(1) + "%");
+      c.classList.add("hov");
+    });
+    c.addEventListener("pointerleave", () => { c.style.setProperty("--ry", "0deg"); c.style.setProperty("--rx", "0deg"); c.classList.remove("hov"); });
+  }
+}
+/* borda que acende na direção do cursor quando ele chega perto do card */
+{
+  const cards = $$("[data-glow]");
+  let raf = 0, px = 0, py = 0;
+  const paint = () => {
+    raf = 0;
+    cards.forEach(el => {
+      const r = el.getBoundingClientRect(), cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+      const near = px > r.left - 70 && px < r.right + 70 && py > r.top - 70 && py < r.bottom + 70;
+      el.style.setProperty("--glow", near ? "1" : "0");
+      if (near) el.style.setProperty("--ang", (Math.atan2(py - cy, px - cx) * 180 / Math.PI + 90).toFixed(1) + "deg");
+    });
+  };
+  document.addEventListener("pointermove", e => {
+    if (e.pointerType !== "mouse" || root.dataset.still) return;
+    px = e.clientX; py = e.clientY; if (!raf) raf = requestAnimationFrame(paint);
+  }, { passive: true });
 }
 
 setLang(lang);
