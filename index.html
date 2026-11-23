@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Guilherme Balestrin | Marketing digital e Administração</title>
 <meta name="description" content="Guilherme Balestrin, 19. 4 anos de experiência em marketing digital: tráfego, copy, design e sites. Administração de Empresas no Insper.">
-<meta name="theme-color" content="#000000">
+<meta name="theme-color" content="#ffffff">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;800&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;800&family=Cormorant+Garamond:wght@400;500;600&family=Playfair+Display:wght@500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23000'/%3E%3Cpath d='M20 11a6 6 0 1 0 0 10v-4h-4' fill='none' stroke='%23dfcd2e' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 </head>
@@ -20,14 +20,17 @@
   <a class="mode-first" href="#main" data-i="skip">Pular para o conteúdo</a>
   <nav class="mode-nav" aria-label="Site">
     <a href="#work" data-i="nav_work">Trabalhos</a>
-    <a href="#about" data-i="nav_about">Sobre</a>
-    <a href="#journey" data-i="nav_jn">Minha história</a>
-    <a href="#insperjr">Insper Jr</a>
+    <a href="#creatives" data-i="nav_cr">Caverna</a>
     <a href="#kiwify" data-i="nav_kf">Kiwify Festival</a>
+    <a href="#insperjr">Insper Jr</a>
+    <a href="#slides" data-i="nav_sd">Slides</a>
     <a href="#projects" data-i="nav_projects">Projetos</a>
+    <a href="#about" data-i="nav_about">Sobre</a>
+    <a href="#timeline" data-i="nav_tm">Trajetória</a>
+    <a href="#journey" data-i="nav_jn">Minha história</a>
     <a href="#services" data-i="nav_services">O que faço</a>
-    <a href="#contact" data-i="nav_contact">Contato</a>
     <a href="#faq" data-i="nav_faq">FAQ</a>
+    <a href="#contact" data-i="nav_contact">Contato</a>
   </nav>
 </header>
 
@@ -39,68 +42,31 @@
 
 <main id="main">
 
-<!-- ============ HERO — monitor CRT (arraste para olhar em volta) ============ -->
-<div class="hero-track" id="heroTrack">
-<section class="hero" id="top" aria-label="Guilherme Balestrin">
-  <h1 class="sr-only" data-i="h1">Guilherme Balestrin, 19 anos. 4 anos de experiência em marketing digital e aluno de Administração de Empresas no Insper.</h1>
-
-  <div class="world" id="world">
-    <div class="layer l-back" data-depth="0.55">
-      <span class="grid-lines"></span>
+<!-- ============ HERO — claro, foto + notificações reais ============ -->
+<section class="hx" id="top" aria-labelledby="hx-h">
+  <span class="hx-grid" aria-hidden="true"></span>
+  <div class="hx-in">
+    <div class="hx-text">
+      <p class="hx-status hx-a" style="--d:0"><i></i><span data-i="hx_status">Marketing digital · Administração no Insper</span></p>
+      <h1 id="hx-h" class="hx-title hx-a" style="--d:1"><span data-i="hx_t1">Eu transformo</span> <span class="hx-mark" data-i="hx_t2">atenção</span> <span data-i="hx_t3">em</span> <span class="hx-sale" data-i="hx_t4">venda.</span></h1>
+      <p class="hx-lede hx-a" style="--d:2" data-i="hx_lede"></p>
+      <div class="hx-cta hx-a" style="--d:3"><a class="hx-btn hx-btn-main" href="#work"><span data-i="cta1">Ver trabalhos</span> <i aria-hidden="true">↓</i></a></div>
     </div>
-
-    <div class="layer l-tv" data-depth="1">
-      <div class="tv" id="tv" role="img" aria-label="CRT">
-        <div class="tv-body">
-          <div class="tv-screen" id="screen">
-            <div class="strip" id="strip">
-              <div class="ch ch-1 ch-ph">
-                <img class="ch-photo" src="assets/me-sq.webp" alt="" width="720" height="720" fetchpriority="high"><span class="vid-shade"></span>
-                <small data-i="ch1_k">Olá, eu sou</small>
-                <b>Guilherme<br>Balestrin</b>
-                <em data-i="ch1_v">4 anos de experiência em marketing digital</em>
-              </div>
-              <div class="ch ch-2 ch-ph ch-cutwrap">
-                <img class="ch-cut" src="assets/cut-daily.webp" alt="" width="290" height="556">
-                <small data-i="ch2_k">Faculdade</small>
-                <b data-i="ch2_b">Administração<br>de Empresas</b>
-                <img class="logo-insper" src="assets/insper-w.png" alt="Insper">
-                <em data-i="ch2_v">Graduação em São Paulo</em>
-              </div>
-              <div class="ch ch-3 ch-vid">
-                <video data-src="assets/dashboard.mp4" poster="assets/dashboard.jpg" muted loop playsinline preload="none" aria-hidden="true"></video><span class="vid-shade"></span>
-                <small data-i="ch3_k">O que eu faço</small>
-                <b data-i="ch3_b">Tráfego, copy<br>e sites</b>
-                <em data-i="ch3_v">Do anúncio à página de venda</em>
-              </div>
-            </div>
-            <canvas id="noise" class="noise" width="96" height="72" aria-hidden="true"></canvas>
-            <span class="roll-bar" id="rollbar"></span>
-            <span class="scan"></span>
-            <span class="glare"></span>
-          </div>
-          <div class="tv-panel">
-            <span class="tv-led"></span>
-            <span class="tv-ch" id="tvch">CH 01</span>
-            <span class="tv-knob"></span><span class="tv-knob k2"></span>
-          </div>
-        </div>
-        <div class="tv-feet"><i></i><i></i></div>
-      </div>
+    <div class="hx-visual hx-a" style="--d:2" id="hx-visual">
+      <span class="hx-glow" aria-hidden="true"></span>
+      <figure class="hx-photo" id="hx-photo">
+        <img src="assets/me-hero.webp" alt="Guilherme Balestrin" width="720" height="900" fetchpriority="high">
+      </figure>
+      <div class="hx-notifs" id="hx-notifs" aria-hidden="true"></div>
+      <span class="hx-chip hx-chip-tt"><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/tiktok.svg" alt="" width="16" height="16"><b>2,3M</b><span data-i="hx_c1">views em um vídeo</span></span>
+      <span class="hx-chip hx-chip-in"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg><span data-i="hx_c2">Administração no Insper</span></span>
+      <p class="hx-cap" data-i="hx_cap">Notificações reais do Kiwify</p>
     </div>
-
-    <div class="layer l-stickers" id="stickers" data-depth="1.25"></div>
   </div>
-
-  <div class="sysmsg" id="sysmsg" role="status" aria-live="polite"></div>
-  <p class="drag-hint" id="draghint"><span data-i="hint_drag">Arraste para olhar em volta</span></p>
-  <span class="hint" aria-hidden="true"><span data-i="hint_scroll">Role para mudar de canal</span></span>
-  <nav class="rail" id="rail" aria-label="Canais"></nav>
-  <div class="hero-cta"><a class="cta cta-main" href="#work" data-i="cta1">Ver trabalhos</a><a class="cta" href="#contact" data-i="cta2">Falar comigo</a></div>
+  <a class="hx-scroll" href="#story" aria-label="Rolar"><span data-i="hx_scroll">Role</span><i aria-hidden="true"></i></a>
 </section>
-</div>
 
-<!-- ============ STORY — frase presa na tela, animada pelo scroll ============ -->
+<!-- ============ STORY: frase presa na tela, animada pelo scroll ============ -->
 <section class="story" id="story" aria-label="Manifesto">
   <div class="story-stage">
     <p class="sr-only" id="story-sr"></p>
@@ -114,19 +80,18 @@
   </div>
 </section>
 
-<!-- ============ WORK — janelas de macOS com abas ============ -->
+<!-- ============ WORK: janelas de macOS com abas ============ -->
 <div class="sheet">
-
 <section id="numbers" class="st" aria-labelledby="st-h">
   <div class="st-in">
-    <h2 id="st-h" class="st-title"><span data-i="st_t">Números de verdade.</span></h2>
-    <p class="st-lede" data-i="st_l">Prints e métricas das minhas próprias operações. Sem maquiagem.</p>
+    <h2 id="st-h" class="st-title"><span data-i="st_t">Os números.</span></h2>
+    <p class="st-lede" data-i="st_l">Direto dos painéis das minhas próprias operações.</p>
     <div class="st-body">
     <ul class="st-grid">
-      <li class="st-card" data-spot><span class="st-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg></span><b class="st-num" data-to="2.3" data-dec="1" data-suf="M">2,3M</b><span class="st-lab" data-i="st1">views em um único vídeo no TikTok</span><small data-i="st1s">Maio/2023 · dropshipping</small></li>
+      <li class="st-card" data-spot><span class="st-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg></span><b class="st-num" data-to="2.3" data-dec="1" data-suf="M">2,3M</b><span class="st-lab" data-i="st1">views em um único vídeo no TikTok</span><small data-i="st1s">Maio/2023, dropshipping</small></li>
       <li class="st-card" data-spot><span class="st-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span><b class="st-num" data-to="132" data-dec="0" data-suf="K">132K</b><span class="st-lab" data-i="st2">curtidas no mesmo vídeo</span><small data-i="st2s">Produto que eu vendia</small></li>
       <li class="st-card" data-spot><span class="st-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/></svg></span><b class="st-num" data-to="3375" data-dec="0" data-pre="+">+3.375</b><span class="st-lab" data-i="st3">novos seguidores vindos dele</span><small data-i="st3s">Dados do TikTok Studio</small></li>
-      <li class="st-card" data-spot><span class="st-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" x2="5" y1="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></span><b class="st-num" data-to="15.79" data-dec="2" data-suf="%">15,79%</b><span class="st-lab" data-i="st4">de conversão em links de afiliado</span><small data-i="st4s">Amazon Associados · 38 cliques, 6 pedidos</small></li>
+      <li class="st-card" data-spot><span class="st-ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" x2="5" y1="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></span><b class="st-num" data-to="15.79" data-dec="2" data-suf="%">15,79%</b><span class="st-lab" data-i="st4">de conversão em links de afiliado</span><small data-i="st4s">Amazon Associados</small></li>
     </ul>
     <div class="st-prints">
       <figure class="st-ph st-ph-1"><div class="st-scr"><img src="assets/tiktok.webp" alt="Print do TikTok Studio com as métricas do vídeo" loading="lazy" width="591" height="1280"></div><figcaption data-i="stp1">TikTok Studio</figcaption></figure>
@@ -136,9 +101,10 @@
   </div>
 </section>
 <section class="mq" aria-label="Plataformas">
-  <p class="mq-t" data-i="mq_t">Plataformas por onde já passei</p>
-  <div class="mq-track"><ul class="mq-list" id="mq-list"><li><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/tiktok.svg" alt="" width="24" height="24" loading="lazy"><span>TikTok</span></li><li><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/instagram.svg" alt="" width="24" height="24" loading="lazy"><span>Instagram</span></li><li><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/shopify.svg" alt="" width="24" height="24" loading="lazy"><span>Shopify</span></li><li><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/meta.svg" alt="" width="24" height="24" loading="lazy"><span>Meta Ads</span></li><li><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/amazon.svg" alt="" width="24" height="24" loading="lazy"><span>Amazon</span></li><li><i class="mq-badge">K</i><span>Kiwify</span></li><li><i class="mq-badge">Y</i><span>Yampi</span></li></ul></div>
+  <p class="mq-t" data-i="mq_t">Plataformas que eu opero</p>
+  <div class="mq-track"><ul class="mq-list" id="mq-list"><li><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/tiktok.svg" alt="" width="24" height="24" loading="lazy"><span>TikTok</span></li><li><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/instagram.svg" alt="" width="24" height="24" loading="lazy"><span>Instagram</span></li><li><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/shopify.svg" alt="" width="24" height="24" loading="lazy"><span>Shopify</span></li><li><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/meta.svg" alt="" width="24" height="24" loading="lazy"><span>Meta Ads</span></li><li><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/amazon.svg" alt="" width="24" height="24" loading="lazy"><span>Amazon</span></li><li><img class="mq-brand" src="assets/logo-kiwify-mark.webp" alt="" width="22" height="22" loading="lazy"><span>Kiwify</span></li><li><img class="mq-brand" src="assets/logo-yampi-mark.webp" alt="" width="22" height="22" loading="lazy"><span>Yampi</span></li></ul></div>
 </section>
+
 <section id="work" class="pjs" aria-labelledby="work-h">
   <h2 id="work-h" class="sr-only" data-i="work_h">Trabalhos</h2>
 
@@ -146,7 +112,7 @@
     <div class="pj-text">
       <h3 class="pj-app"><span class="pj-icon" aria-hidden="true">🛒</span><span data-i="p1_t">Dropshipping</span></h3>
       <p class="pj-line" data-i="p1_l">Onde tudo começou, em 2022: lojas online e tráfego orgânico que gerou resultado de verdade.</p>
-      <p class="pj-kind" data-i="p1_k">E-commerce · Tráfego orgânico</p>
+      <p class="pj-kind" data-i="p1_k">E-commerce e tráfego orgânico</p>
     </div>
     <figure class="pj-window">
       <div class="pj-bar"><span class="pj-lights" aria-hidden="true"><i></i><i></i><i></i></span>
@@ -159,7 +125,7 @@
     <div class="pj-text">
       <h3 class="pj-app"><span class="pj-icon" aria-hidden="true">🎓</span><span data-i="p2_t">Infoprodutos</span></h3>
       <p class="pj-line" data-i="p2_l">Criei um produto do zero, montei toda a operação e vendi com campanhas pagas.</p>
-      <p class="pj-kind" data-i="p2_k">Produto digital · Funil · Tráfego pago</p>
+      <p class="pj-kind" data-i="p2_k">Produto digital, funil e tráfego pago</p>
     </div>
     <figure class="pj-window">
       <div class="pj-bar"><span class="pj-lights" aria-hidden="true"><i></i><i></i><i></i></span>
@@ -168,18 +134,66 @@
     </figure>
   </article>
 
-  <article class="pj" data-pj="meta" aria-label="Meta e TikTok Ads">
-    <div class="pj-text">
-      <h3 class="pj-app"><span class="pj-icon" aria-hidden="true">📣</span><span data-i="p3_t">Meta e TikTok Ads</span></h3>
-      <p class="pj-line" data-i="p3_l">Campanhas no Meta Ads e no TikTok Ads: segmentação de público, teste de criativos e otimização de verba para trazer o cliente certo.</p>
-      <p class="pj-kind" data-i="p3_k">Meta Ads · TikTok Ads · Criativo</p>
+</section>
+
+<!-- ============ CAVERNA DE ALEXANDRIA (marca + comunidade, 3D) ============ -->
+<section id="creatives" class="cr cv" aria-labelledby="cr-h">
+  <div class="cr-panel">
+    <div class="cv-stage" id="cv-stage">
+      <canvas class="cv-gl" id="cv-gl" aria-hidden="true"></canvas>
+      <div class="cv-copy">
+        <p class="cr-eyebrow rv"><span class="cr-cav" aria-hidden="true"><img src="assets/cav-mono.webp" alt="" width="116" height="152"></span><span data-i="cr_k">Minha marca</span></p>
+        <h2 id="cr-h" class="cv-title rv" data-i="cr_t">Caverna de Alexandria</h2>
+        <p class="cv-lede rv" data-i="cr_l"></p>
+      </div>
+      <p class="cv-hint" aria-hidden="true"><i></i><span data-i="cr_hint"></span></p>
     </div>
-    <figure class="pj-window">
-      <div class="pj-bar"><span class="pj-lights" aria-hidden="true"><i></i><i></i><i></i></span>
-        <div class="pj-tabs" role="tablist"></div></div>
-      <div class="pj-screen"></div>
-    </figure>
-  </article>
+
+    <ol class="cv-flow">
+      <li class="cv-step rv" style="--d:0s"><div class="cv-ico cv-ico-mono"><img src="assets/cav-mono.webp" alt="" width="116" height="152"></div><h3 data-i="cv1_t">A marca</h3><p data-i="cv1"></p></li>
+      <li class="cv-step rv" style="--d:.12s"><div class="cv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v15H6a2 2 0 0 0-2 2z"/><path d="M6 18h13v3H6a1.5 1.5 0 0 1 0-3z"/><path d="M9 7h6M9 10.5h4"/></svg></div><h3 data-i="cv2_t">Os produtos</h3><p data-i="cv2"></p></li>
+      <li class="cv-step rv" style="--d:.24s"><div class="cv-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7.5" r="3.2"/><path d="M6 20v-1.5A4.5 4.5 0 0 1 10.5 14h3a4.5 4.5 0 0 1 4.5 4.5V20"/><circle cx="4.6" cy="10" r="2.1"/><path d="M1.5 19v-1a3 3 0 0 1 3-3"/><circle cx="19.4" cy="10" r="2.1"/><path d="M22.5 19v-1a3 3 0 0 0-3-3"/></svg></div><h3 data-i="cv3_t">A comunidade</h3><p data-i="cv3"></p></li>
+    </ol>
+
+    <div class="cv-mq" id="cv-mq" aria-hidden="true"></div>
+  </div>
+</section>
+
+<dialog class="lb" id="lb" aria-label="Imagem ampliada">
+  <button type="button" class="lb-x" id="lb-x" aria-label="Fechar">✕</button>
+  <div class="lb-in" id="lb-in"></div>
+</dialog>
+
+<!-- ============ KIWIFY FESTIVAL ============ -->
+<section id="kiwify" class="kf" aria-labelledby="kf-h">
+  <div class="kf-panel">
+    <div class="kf-text rv">
+      <img class="kf-logo" src="assets/logo-kiwify-w.png" alt="Kiwify" width="216" height="60">
+      <p class="kf-eyebrow"><i></i><span data-i="kf_k">Mercado</span></p>
+      <h2 id="kf-h" class="kf-title" data-i="kf_t">Kiwify Festival 2023.</h2>
+      <p class="kf-lede" data-i="kf_l"></p>
+    </div>
+    <ul class="kf-photos">
+      <li class="kf-card rv" style="--r:-2.5deg"><img src="assets/kf-me.webp" alt="Guilherme na entrada do Kiwify Festival 2023" loading="lazy" width="680" height="907"><span data-i="kf_c1">Na entrada do Kiwify Festival</span></li>
+      <li class="kf-card rv" style="--r:2deg"><img src="assets/kf-stage.webp" alt="Palco principal do Kiwify Festival" loading="lazy" width="680" height="907"><span data-i="kf_c2">Palco principal do evento</span></li>
+    </ul>
+    <div class="kf-kit rv">
+      <div class="kf-kit-t">
+        <h3 data-i="kf_kit_t">O que eu aprendi lá.</h3>
+        <p data-i="kf_kit_p"></p>
+        <p class="kf-hint"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 11V6a2 2 0 0 0-4 0v1M14 10V4a2 2 0 0 0-4 0v2M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg><span data-i="kf_hint">Arraste o crachá</span></p>
+      </div>
+      <div class="kf-kit-stage" id="kf-stage">
+        <div class="kf-lan" id="kf-lan">
+          <span class="kf-strap" aria-hidden="true"><b>KIWIFY FESTIVAL&ensp;&ensp;KIWIFY FESTIVAL&ensp;&ensp;KIWIFY FESTIVAL&ensp;&ensp;KIWIFY FESTIVAL</b></span>
+          <span class="kf-clip" aria-hidden="true"></span>
+          <img class="kf-badge" src="assets/kf-badge.webp" alt="Meu crachá de participante do Kiwify Festival 2023" width="390" height="552" draggable="false" loading="lazy">
+        </div>
+        <figure class="kf-obj kf-o1"><img src="assets/kf-bag.webp" alt="" width="569" height="552" loading="lazy"></figure>
+        <figure class="kf-obj kf-o2"><img src="assets/kf-note.webp" alt="" width="450" height="552" loading="lazy"></figure>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ============ EXPERIÊNCIA PRÁTICA ============ -->
@@ -193,24 +207,24 @@
       <div class="xp-head">
         <span class="xp-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9 5.5 4h13L20 9"/><path d="M5 9v11h14V9"/><path d="M4 9a2.67 2.67 0 0 0 5.33 0 2.67 2.67 0 0 0 5.34 0A2.67 2.67 0 0 0 20 9"/></svg></span>
         <span class="xp-tag" data-i="xp1_tag"></span><h3 data-i="xp1_t"></h3><p data-i="xp1_d"></p>
-        <ul class="xp-logos" aria-hidden="true"><li><img class="tl-i" src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/tiktok.svg" alt="" width="16" height="16" loading="lazy"></li><li><img class="tl-i" src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/meta.svg" alt="" width="16" height="16" loading="lazy"></li><li><img class="tl-i" src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/shopify.svg" alt="" width="16" height="16" loading="lazy"></li></ul>
+        <ul class="xp-logos" aria-hidden="true"><li><img class="tl-i" src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/tiktok.svg" alt="" width="16" height="16" loading="lazy"></li><li><img class="tl-i" src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/meta.svg" alt="" width="16" height="16" loading="lazy"></li><li><img class="tl-i" src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/shopify.svg" alt="" width="16" height="16" loading="lazy"></li><li><img class="tl-i xp-brand" src="assets/logo-yampi-mark.webp" alt="" width="16" height="16" loading="lazy"></li></ul>
       </div>
       <div class="xp-right">
         <ul class="xp-stats">
-          <li><b>20+</b><span data-i="xp_s1">vendas</span></li>
+          <li><b>+3.375</b><span data-i="xp_s1">novos seguidores</span></li>
           <li><b>2,3M</b><span data-i="xp_s2">views em um vídeo</span></li>
           <li><b class="ok">✓</b><span data-i="xp_s3">produto validado</span></li>
         </ul>
-        <ul class="xp-b"><li data-i="xp1_b1"></li><li data-i="xp1_b2"></li><li data-i="xp1_b3"></li><li data-i="xp1_b4"></li></ul>
+        <ul class="xp-b"><li data-i="xp1_b1"></li><li data-i="xp1_b2"></li><li data-i="xp1_b3"></li></ul>
       </div>
     </article>
     <article class="xp-item rv">
       <div class="xp-head">
-        <span class="xp-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></svg></span>
+        <span class="xp-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
         <span class="xp-tag" data-i="xp2_tag"></span><h3 data-i="xp2_t"></h3><p data-i="xp2_d"></p>
-        <ul class="xp-logos" aria-hidden="true"><li><img class="tl-i" src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/instagram.svg" alt="" width="16" height="16" loading="lazy"></li><li class="xp-txt">Typebot</li></ul>
+        <ul class="xp-logos" aria-hidden="true"><li><img class="tl-i" src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/instagram.svg" alt="" width="16" height="16" loading="lazy"></li><li><img class="tl-i xp-brand" src="assets/logo-kiwify-mark.webp" alt="" width="16" height="16" loading="lazy"></li><li class="xp-txt">Typebot</li></ul>
       </div>
-      <div class="xp-right"><ul class="xp-b"><li data-i="xp2_b1"></li><li data-i="xp2_b2"></li></ul></div>
+      <div class="xp-right"><ul class="xp-b"><li data-i="xp2_b1"></li><li data-i="xp2_b2"></li><li data-i="xp2_b3"></li></ul></div>
     </article>
     <article class="xp-item rv">
       <div class="xp-head">
@@ -224,131 +238,17 @@
       <div class="xp-box"><h3 data-i="xp_tools">Ferramentas</h3>
         <ul class="jc-chips tl">
           <li><img class="tl-i" src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/meta.svg" alt="" width="16" height="16" loading="lazy">Meta Ads</li><li><img class="tl-i" src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/tiktok.svg" alt="" width="16" height="16" loading="lazy">TikTok Ads</li><li><img class="tl-i" src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/canva.svg" alt="" width="16" height="16" loading="lazy">Canva</li>
-          <li><i class="tl-b">T</i>Typebot</li>
+          <li><i class="tl-b">T</i>Typebot</li><li><img class="tl-i xp-brand" src="assets/logo-kiwify-mark.webp" alt="" width="16" height="16" loading="lazy">Kiwify</li><li><img class="tl-i xp-brand" src="assets/logo-yampi-mark.webp" alt="" width="16" height="16" loading="lazy">Yampi</li>
+          <li><img class="tl-i" src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/davinciresolve.svg" alt="" width="16" height="16" loading="lazy">DaVinci Resolve</li><li><img class="tl-i" src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/adobepremierepro.svg" alt="" width="16" height="16" loading="lazy">Premiere Pro</li>
           <li><svg class="tl-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg>CapCut</li>
           <li><img class="tl-i" src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/microsoftexcel.svg" alt="" width="16" height="16" loading="lazy">Excel / VBA</li><li><img class="tl-i" src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/microsoftpowerpoint.svg" alt="" width="16" height="16" loading="lazy">PowerPoint</li><li><img class="tl-i" src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/html5.svg" alt="" width="16" height="16" loading="lazy">HTML &amp; CSS</li>
         </ul></div>
       <div class="xp-box"><h3 data-i="xp_lang">Idiomas</h3>
         <ul class="jc-chips tl">
-          <li><svg class="fl-svg" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" fill="#009b3a"/><path d="M14 2.2 25.6 10 14 17.8 2.4 10z" fill="#fedf00"/><circle cx="14" cy="10" r="4.2" fill="#002776"/></svg><span data-i="xp_l1">Português · nativo</span></li>
-          <li><svg class="fl-svg" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" fill="#fff"/><rect y="0.00" width="28" height="1.54" fill="#b22234"/><rect y="3.08" width="28" height="1.54" fill="#b22234"/><rect y="6.15" width="28" height="1.54" fill="#b22234"/><rect y="9.23" width="28" height="1.54" fill="#b22234"/><rect y="12.31" width="28" height="1.54" fill="#b22234"/><rect y="15.38" width="28" height="1.54" fill="#b22234"/><rect y="18.46" width="28" height="1.54" fill="#b22234"/><rect width="12" height="10.77" fill="#3c3b6e"/></svg><span data-i="xp_l2">Inglês · fluente</span></li>
-          <li><svg class="fl-svg" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" fill="#fff"/><rect y="6.67" width="28" height="6.67" fill="#0039a6"/><rect y="13.34" width="28" height="6.66" fill="#d52b1e"/></svg><span data-i="xp_l3">Russo · básico</span></li>
+          <li><svg class="fl-svg" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" fill="#009b3a"/><path d="M14 2.2 25.6 10 14 17.8 2.4 10z" fill="#fedf00"/><circle cx="14" cy="10" r="4.2" fill="#002776"/></svg><span data-i="xp_l1">Português (nativo)</span></li>
+          <li><svg class="fl-svg" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" fill="#fff"/><rect y="0.00" width="28" height="1.54" fill="#b22234"/><rect y="3.08" width="28" height="1.54" fill="#b22234"/><rect y="6.15" width="28" height="1.54" fill="#b22234"/><rect y="9.23" width="28" height="1.54" fill="#b22234"/><rect y="12.31" width="28" height="1.54" fill="#b22234"/><rect y="15.38" width="28" height="1.54" fill="#b22234"/><rect y="18.46" width="28" height="1.54" fill="#b22234"/><rect width="12" height="10.77" fill="#3c3b6e"/></svg><span data-i="xp_l2">Inglês (fluente)</span></li>
+          <li><svg class="fl-svg" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" fill="#fff"/><rect y="6.67" width="28" height="6.67" fill="#0039a6"/><rect y="13.34" width="28" height="6.66" fill="#d52b1e"/></svg><span data-i="xp_l3">Russo (básico)</span></li>
         </ul></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SOBRE MIM ============ -->
-<section id="about" class="ab" aria-labelledby="ab-h">
-  <div class="ab-in">
-    <figure class="ab-photo rv" data-spot>
-      <img src="assets/me.webp" alt="Guilherme Balestrin" width="720" height="900" loading="lazy" decoding="async">
-      <span class="ab-chip c1"><i></i><span data-i="ab_c1">19 anos</span></span>
-      <span class="ab-chip c2"><i></i><span data-i="ab_c2">4 anos de experiência</span></span>
-      <span class="ab-chip c3"><img src="assets/insper-w.png" alt="Insper"><span data-i="ab_c3">Administração de Empresas</span></span>
-    </figure>
-    <div class="ab-text">
-      <p class="ab-eyebrow rv" data-i="ab_k">Sobre mim</p>
-      <h2 id="ab-h" class="ab-title rv" data-i="ab_t">Oi, eu sou o Guilherme.</h2>
-      <p class="ab-p rv" data-i="ab_p1"></p>
-      <p class="ab-p rv" data-i="ab_p2"></p>
-      <p class="ab-p rv" data-i="ab_p3"></p>
-      <ul class="ab-facts rv">
-        <li><span class="logo-chip"><img src="assets/insper-w.png" alt="Insper"></span><span data-i="ab_f1">Administração de Empresas</span></li>
-        <li><span class="logo-chip jrl"><img src="assets/insperjr-logo.png" alt="Insper Jr." width="129" height="34"></span><span data-i="ab_f2">Empresa júnior de consultoria</span></li>
-      </ul>
-    </div>
-  </div>
-  <div class="ab-gal">
-    <p class="ab-gal-t rv" data-i="ab_gt">Um pouco mais de mim</p>
-    <ul class="ab-gal-list">
-      <li class="ab-gal-card rv" style="--r:-3deg"><img src="assets/g-work.webp" alt="" loading="lazy" width="640" height="800"><span data-i="g1">Escritório é onde der.</span></li>
-      <li class="ab-gal-card rv" style="--r:2deg"><img src="assets/g-suit.webp" alt="" loading="lazy" width="640" height="800"><span data-i="g2">Quando pede formalidade.</span></li>
-      <li class="ab-gal-card rv" style="--r:-2deg"><img src="assets/g-daily.webp" alt="" loading="lazy" width="640" height="800"><span data-i="g3">Rotina de faculdade.</span></li>
-    </ul>
-  </div>
-</section>
-
-<!-- ============ MINHA HISTÓRIA ============ -->
-<section id="journey" class="vn jn" aria-labelledby="jn-h">
-  <div class="vn-in">
-    <p class="vn-eyebrow rv" data-i="jn_k">Fora do trabalho</p>
-    <h2 id="jn-h" class="vn-title rv" data-i="jn_t">Repetir até ficar bom.</h2>
-    <p class="vn-lede rv" data-i="jn_l"></p>
-
-    <!-- 01 · CS2 -->
-    <article class="jc rv" aria-labelledby="jn1-h">
-      <div class="jc-text">
-        <span class="jc-n">01</span>
-        <h3 id="jn1-h" data-i="jn1_t">Quase fui pro player de CS2.</h3>
-        <p data-i="jn1_p1"></p>
-        <p class="jc-insight" data-i="jn1_p2"></p>
-      </div>
-      <div class="jc-stat">
-        <svg class="jc-cross" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="24" cy="24" r="12"/><path d="M24 3v11M24 34v11M3 24h11M34 24h11"/><circle cx="24" cy="24" r="1.6" fill="currentColor"/></svg>
-        <b class="jc-big" data-i="jn1_big">3.000+</b>
-        <span class="jc-bigl" data-i="jn1_bigl">horas de CS2</span>
-        <svg class="jc-spark" viewBox="0 0 240 70" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfcd2e" stop-opacity=".38"/><stop offset="1" stop-color="#dfcd2e" stop-opacity="0"/></linearGradient></defs><path d="M0 64C28 62 40 56 68 52S112 46 134 36 182 22 204 14 232 6 238 5V70H0z" fill="url(#sg)"/><path d="M0 64C28 62 40 56 68 52S112 46 134 36 182 22 204 14 232 6 238 5" fill="none" stroke="#dfcd2e" stroke-width="2.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>
-        <small class="jc-sparkl" data-i="jn1_evo">evolução, hora após hora</small>
-        <a class="jc-yt" href="https://www.youtube.com/@Ezzocty" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><rect x="1" y="4.5" width="22" height="15" rx="4.5" fill="#ff1f1f"/><path d="m10 9 5.5 3-5.5 3z" fill="#fff"/></svg>
-          <span><b>@Ezzocty</b><small data-i="jn1_yt">Alguns vídeos meus no YouTube</small></span><i aria-hidden="true">↗</i>
-        </a>
-      </div>
-    </article>
-
-    <!-- 02 · Aparecer -->
-    <article class="jc jc-flip rv" aria-labelledby="jn2-h">
-      <div class="jc-text">
-        <span class="jc-n">02</span>
-        <h3 id="jn2-h" data-i="jn2_t">Não tenho vergonha de aparecer.</h3>
-        <p data-i="jn2_p1"></p>
-        <p data-i="jn2_p2"></p>
-      </div>
-      <figure class="jc-vid">
-        <div class="jc-phone"><video id="zvid" data-src="assets/zero-ao-milhao.mp4" poster="assets/zero-ao-milhao.webp" muted loop playsinline controls preload="none"></video></div>
-        <figcaption data-i="jn2_cap">Dia 5 da série “Do Zero ao Milhão”, no meu perfil pessoal. Toque para ouvir.</figcaption>
-      </figure>
-    </article>
-
-    <!-- 03 · Russo -->
-    <article class="jc rv" aria-labelledby="jn3-h">
-      <div class="jc-text">
-        <span class="jc-n">03</span>
-        <h3 id="jn3-h" data-i="jn3_t">Gosto de desafio. O de agora é o russo.</h3>
-        <p data-i="jn3_p1"></p>
-        <p class="jc-insight" data-i="jn3_p2"></p>
-      </div>
-      <div class="jc-ru" aria-hidden="true">
-        <span class="ru-flag"><svg class="fl-svg" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" fill="#fff"/><rect y="6.67" width="28" height="6.67" fill="#0039a6"/><rect y="13.34" width="28" height="6.66" fill="#d52b1e"/></svg></span>
-        <b lang="ru">Привет</b>
-        <small data-i="jn3_ru">privet · oi</small>
-        <div class="ru-abc" lang="ru"><i>А</i><i>Б</i><i>В</i><i>Г</i><i>Д</i><i>Е</i><i>Ж</i><i>З</i><i>И</i><i>К</i><i>Л</i><i>М</i></div>
-        <span class="ru-tag" data-i="jn3_rul">Estudando russo agora</span>
-      </div>
-    </article>
-
-    <div class="jn-duo">
-      <article class="jc-mini rv" aria-labelledby="jn4-h">
-        <span class="jc-n">04</span>
-        <h3 id="jn4-h" data-i="jn4_t">Leio para entender gente.</h3>
-        <p data-i="jn4_p"></p>
-        <ul class="jc-tiles">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="12" r="2.4"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M6.6 7.3 10 10.5M17.4 7.3 14 10.5M6.6 16.7 10 13.5M17.4 16.7 14 13.5"/></svg><span data-i="jn4_c1">Neurociência</span></li>
-          <li><b class="psi" aria-hidden="true">Ψ</b><span data-i="jn4_c2">Psicologia</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-5 9 5z"/><path d="M6 11v7M10 11v7M14 11v7M18 11v7M4 20h16"/></svg><span data-i="jn4_c3">Filosofia</span></li>
-        </ul>
-      </article>
-      <article class="jc-mini jc-faith rv" aria-labelledby="jn5-h">
-        <figure class="jc-photo">
-          <img src="assets/devocional.webp" alt="Bíblia aberta sobre a mesa, no meu devocional" loading="lazy" width="540" height="405">
-          <span class="jc-cross2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 3v18M6.5 9h11"/></svg></span>
-          <figcaption data-i="jn5_cap">Meu devocional, num dos vídeos.</figcaption>
-        </figure>
-        <span class="jc-n">05</span>
-        <h3 id="jn5-h" data-i="jn5_t">Sou cristão.</h3>
-        <p data-i="jn5_p"></p>
-      </article>
     </div>
   </div>
 </section>
@@ -358,8 +258,8 @@
   <div class="ij-panel">
     <img class="ij-mark" src="assets/insperjr-mark.png" alt="" aria-hidden="true" width="308" height="399">
     <div class="ij-head rv">
-      <span class="ij-brand"><img src="assets/insperjr-logo.png" alt="Insper Jr." width="129" height="34"></span>
-      <p class="ij-eyebrow" data-i="ij_k">Experiência</p>
+      <span class="ij-brand"><img src="assets/insperjr-logo.png" alt="Insper Jr." width="130" height="34"></span>
+      <p class="ij-eyebrow" data-i="ij_k">Experiência como trainee</p>
       <h2 id="ij-h" class="ij-title" data-i="ij_t">Consultoria de verdade, na Insper Jr.</h2>
       <p class="ij-lede" data-i="ij_l"></p>
       <figure class="ij-photo"><img src="assets/ij-ig.webp" alt="Perfil da Insper Jr. no Instagram" loading="lazy" width="560" height="1133"></figure>
@@ -377,20 +277,32 @@
   </div>
 </section>
 
-<!-- ============ KIWIFY FESTIVAL ============ -->
-<section id="kiwify" class="kf" aria-labelledby="kf-h">
-  <div class="kf-panel">
-    <div class="kf-text rv">
-      <p class="kf-eyebrow"><i></i><span data-i="kf_k">Evento</span></p>
-      <h2 id="kf-h" class="kf-title" data-i="kf_t">Kiwify Festival 2023.</h2>
-      <p class="kf-lede" data-i="kf_l"></p>
+<!-- ============ SLIDES (PowerPoint): coverflow 3D guiado pelo scroll ============ -->
+<section id="slides" class="sd" aria-labelledby="sd-h">
+  <div class="sd-track" id="sd-track">
+    <div class="sd-stick">
+      <div class="sd-panel">
+        <div class="sd-head">
+          <p class="sd-eyebrow"><img src="https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/microsoftpowerpoint.svg" alt="" width="16" height="16"><span data-i="sd_k">PowerPoint</span></p>
+          <h2 id="sd-h" class="sd-title" data-i="sd_t">Slides que eu fiz.</h2>
+          <p class="sd-lede" data-i="sd_l"></p>
+        </div>
+        <div class="sd-stage" id="sd-stage" role="list"></div>
+        <div class="sd-foot">
+          <p class="sd-cap" id="sd-cap" aria-live="polite"></p>
+          <div class="sd-dots" id="sd-dots"></div>
+          <p class="sd-hint" data-i="sd_h"></p>
+          <p class="sd-note" data-i="sd_note"></p>
+        </div>
+      </div>
     </div>
-    <ul class="kf-photos">
-      <li class="kf-card rv" style="--r:-2.5deg"><img src="assets/kf-me.webp" alt="Guilherme no Kiwify Festival 2023" loading="lazy" width="680" height="907"><span data-i="kf_c1">No palco da Kiwify</span></li>
-      <li class="kf-card rv" style="--r:2deg"><img src="assets/kf-stage.webp" alt="Palco principal do Kiwify Festival" loading="lazy" width="680" height="907"><span data-i="kf_c2">Plateia lotada, palco verde</span></li>
-    </ul>
   </div>
 </section>
+<dialog class="sd-box" id="sd-box" aria-label="Slide">
+  <button class="sd-x" type="button" data-close aria-label="Fechar">×</button>
+  <img id="sd-box-img" alt="">
+  <div class="sd-box-bar"><button type="button" class="sd-nav" data-step="-1" aria-label="Anterior">←</button><p id="sd-box-cap"></p><button type="button" class="sd-nav" data-step="1" aria-label="Próximo">→</button></div>
+</dialog>
 
 <!-- ============ PROJETOS PARALELOS ============ -->
 <section id="projects" class="vn" aria-labelledby="vn-h">
@@ -402,7 +314,7 @@
     <!-- IN. -->
     <article class="vc vc-in rv" aria-label="IN.">
       <div class="vc-text">
-        <span class="vc-status"><i></i><span data-i="in_s">Projeto atual · em construção</span></span>
+        <span class="vc-status"><i></i><span data-i="in_s">Projeto atual, em construção</span></span>
         <h3 class="vc-name"><span class="logo-in">in<b>.</b></span></h3>
         <p class="vc-line" data-i="in_l"></p>
         <ul class="vc-feats">
@@ -424,7 +336,7 @@
     <!-- InsperSwap -->
     <article class="vc vc-sw vc-flip rv" aria-label="InsperSwap">
       <div class="vc-text">
-        <span class="vc-status"><i></i><span data-i="sw_s">No ar · projeto independente</span></span>
+        <span class="vc-status"><i></i><span data-i="sw_s">No ar, projeto independente</span></span>
         <h3 class="vc-name"><span class="logo-sw"><span class="logo-sw-ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h11l-3-3"/><path d="M17 17H6l3 3"/></svg></span>Insper<b>Swap</b></span></h3>
         <p class="vc-line" data-i="sw_l"></p>
         <ol class="vc-steps">
@@ -447,7 +359,7 @@
     <!-- Presenza -->
     <article class="vc vc-pz rv" aria-label="Presenza">
       <div class="vc-text">
-        <span class="vc-status"><i></i><span data-i="pz_s">MVP · web app + API</span></span>
+        <span class="vc-status"><i></i><span data-i="pz_s">MVP com web app e API</span></span>
         <h3 class="vc-name"><span class="logo-pz"><b>P</b>RESENZA</span></h3>
         <p class="vc-line" data-i="pz_l"></p>
         <ul class="vc-feats">
@@ -455,9 +367,7 @@
           <li><i>🎩</i><span data-i="pz_f3">6 estilos</span></li><li><i>◐</i><span data-i="pz_f4">Nível de presença e impacto</span></li>
           <li><i>✦</i><span data-i="pz_f5">Modo Análise e Construir</span></li><li><i>🧠</i><span data-i="pz_f6">Como você será percebido</span></li>
         </ul>
-        <p class="vc-note" data-i="pz_n"></p>
-        <ul class="vc-tech"><li>React</li><li>Node · Fastify</li><li>Prisma</li><li>PostgreSQL</li><li>JWT</li></ul>
-        <a class="vc-link" href="#contact"><span data-i="pz_cta">Quer ver? Me chama</span> →</a>
+        <p class="vc-priv"><span class="vc-lock" aria-hidden="true">🔒</span><span data-i="pz_cta">Acesso restrito durante o MVP.</span></p>
       </div>
       <div class="vc-media">
         <div class="ph ph-l"><img src="assets/pz-2.webp" alt="Presenza, home" loading="lazy" width="520" height="1125"></div>
@@ -472,14 +382,217 @@
   </div>
 </section>
 
-<!-- ============ MOVES (roda) ============ -->
-<section id="moves" class="rw" aria-labelledby="rw-h">
-  <h2 id="rw-h" class="sr-only" data-i="rw_sr">O que me move</h2>
-  <div class="rw-stage" id="rw-stage">
-    <div class="rw-wheel" id="rw-wheel"></div>
-    <div class="rw-head">
-      <p class="rw-headline"><span data-i="rw_head">Entender gente é o negócio.</span></p>
-      <p class="rw-sub" data-i="rw_sub">Toque em um rosto.</p>
+<!-- ============ SOBRE MIM ============ -->
+<section id="about" class="ab" aria-labelledby="ab-h">
+  <div class="ab-in">
+    <div class="ab-card3d rv" id="ab-card3d">
+      <figure class="ab-photo">
+        <img src="assets/me.webp" alt="Guilherme Balestrin" width="720" height="900" loading="lazy" decoding="async">
+        <span class="ab-glare" aria-hidden="true"></span>
+        <span class="ab-chip c1"><i></i><span data-i="ab_c1">19 anos</span></span>
+        <span class="ab-chip c2"><i></i><span data-i="ab_c2">4 anos de experiência</span></span>
+        <span class="ab-chip c3"><i></i><span data-i="ab_c3">São Paulo</span></span>
+      </figure>
+    </div>
+    <div class="ab-text">
+      <p class="ab-eyebrow rv" data-i="ab_k">Sobre mim</p>
+      <h2 id="ab-h" class="ab-title rv"><span data-i="ab_t">Oi, eu sou o Guilherme.</span></h2>
+      <p class="ab-rot rv" aria-hidden="true"><span data-i="ab_rot_a">Marketing com cabeça de</span> <span class="ab-rot-w" id="ab-rot"></span><span data-i="ab_rot_b"></span></p>
+      <p class="sr-only" data-i="ab_rot_sr">Marketing com cabeça de negócio, de dados e de cliente.</p>
+      <p class="ab-p rv" data-i="ab_p1"></p>
+      <div class="ab-now rv">
+        <div class="ab-now-i"><span class="logo-chip"><img src="assets/insper-w.png" alt="Insper"></span><span><b data-i="ab_f1">Administração de Empresas</b><small data-i="ab_f1s">Insper, com bolsa</small></span></div>
+        <div class="ab-now-i"><span class="logo-chip jrl"><img src="assets/insperjr-logo.png" alt="Insper Jr." width="130" height="34"></span><span><b data-i="ab_f2">Trainee de consultoria</b><small data-i="ab_f2s">Insper Jr, empresa júnior</small></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ab-bento" id="ab-bento">
+    <p class="ab-bento-t rv" data-i="ab_wt">Como eu trabalho</p>
+    <ul class="ab-grid">
+      <li class="ab-b rv" data-glow><span class="ab-b-n">01</span>
+        <svg class="ab-b-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/><circle cx="19" cy="8" r="1.4"/></svg>
+        <h3 data-i="ab_w1t">Dado antes de opinião.</h3><p data-i="ab_w1"></p></li>
+      <li class="ab-b rv" data-glow><span class="ab-b-n">02</span>
+        <svg class="ab-b-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h18l-7 8.5V19l-4 2v-8.5z"/></svg>
+        <h3 data-i="ab_w2t">O funil inteiro, não só o anúncio.</h3><p data-i="ab_w2"></p></li>
+      <li class="ab-b rv" data-glow><span class="ab-b-n">03</span>
+        <svg class="ab-b-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+        <h3 data-i="ab_w3t">Do zero ao ar.</h3><p data-i="ab_w3"></p></li>
+      <li class="ab-b ab-b-wide rv" data-glow><span class="ab-b-n">04</span>
+        <svg class="ab-b-i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c.6-3.4 3-5.5 6-5.5s5.4 2.1 6 5.5"/><circle cx="17.5" cy="9" r="2.4"/><path d="M16 14.6c2.6-.3 4.6 1.4 5 4.4"/></svg>
+        <div><h3 data-i="ab_w4t">Gente no centro.</h3><p data-i="ab_w4"></p></div>
+        <ul class="ab-tags"><li data-i="ab_t1">Liderança</li><li data-i="ab_t2">Gestão de pessoas</li><li data-i="ab_t3">Psicologia nas vendas</li><li data-i="ab_t4">Linguagem corporal</li></ul></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ TRAJETÓRIA: linha do tempo ============ -->
+<section id="timeline" class="tm" aria-labelledby="tm-h">
+  <div class="tm-in">
+    <p class="vn-eyebrow rv" data-i="tm_k">Trajetória</p>
+    <h2 id="tm-h" class="vn-title rv" data-i="tm_t">De 2018 até aqui.</h2>
+    <p class="vn-lede rv" data-i="tm_l"></p>
+    <div class="tm-body">
+      <aside class="tm-side" aria-hidden="true">
+        <div class="tm-stick">
+          <div class="tm-odo" id="tm-odo"></div>
+          <p class="tm-cap" id="tm-cap"></p>
+        </div>
+      </aside>
+      <div class="tm-rail" id="tm-rail">
+        <span class="tm-line" aria-hidden="true"><i id="tm-fill"></i></span>
+        <ol class="tm-list" id="tm-list"></ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MINHA HISTÓRIA ============ -->
+<section id="journey" class="vn jn" aria-labelledby="jn-h">
+  <div class="vn-in">
+    <p class="vn-eyebrow rv" data-i="jn_k">Fora do trabalho</p>
+    <h2 id="jn-h" class="vn-title rv" data-i="jn_t">Repetir até ficar bom.</h2>
+    <p class="vn-lede rv" data-i="jn_l"></p>
+
+    <!-- 01: CS2 -->
+    <article class="jc rv" aria-labelledby="jn1-h">
+      <div class="jc-text">
+        <span class="jc-n">01</span>
+        <h3 id="jn1-h" data-i="jn1_t">3 mil horas de CS2 me ensinaram a treinar.</h3>
+        <p data-i="jn1_p1"></p>
+        <p class="jc-insight" data-i="jn1_p2"></p>
+      </div>
+      <div class="jc-cs">
+      <div class="jc-stat">
+        <div class="awp-stage" id="awp-stage">
+          <canvas class="awp-bg" aria-hidden="true"></canvas>
+          <div class="awp-scope" aria-hidden="true"><i class="sc-h"></i><i class="sc-v"></i><i class="sc-flash"></i></div>
+          <span class="awp-skin"><i></i>AWP | Lightning Strike</span>
+          <span class="awp-kill" aria-hidden="true"><b>Ezzocty</b><svg viewBox="0 0 60 14" aria-hidden="true"><path d="M1 6h38v-2h6v2h6l4-2h4v4h-6l-6 1h-4l-3 4h-5l1-4H23l-2 2h-6l2-2H1z" fill="currentColor"/></svg><svg class="hs" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg><em>bot_purple</em></span>
+          <button class="awp-fire" id="awp-fire" type="button"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="7"/><path d="M12 1v5M12 18v5M1 12h5M18 12h5"/></svg><span data-i="awp_fire">Clique para atirar</span></button>
+        </div>
+        <b class="jc-big" data-i="jn1_big">3.000+</b>
+        <span class="jc-bigl" data-i="jn1_bigl">horas de CS2</span>
+        <svg class="jc-spark" viewBox="0 0 240 70" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfcd2e" stop-opacity=".38"/><stop offset="1" stop-color="#dfcd2e" stop-opacity="0"/></linearGradient></defs><path d="M0 64C28 62 40 56 68 52S112 46 134 36 182 22 204 14 232 6 238 5V70H0z" fill="url(#sg)"/><path d="M0 64C28 62 40 56 68 52S112 46 134 36 182 22 204 14 232 6 238 5" fill="none" stroke="#dfcd2e" stroke-width="2.6" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>
+        <small class="jc-sparkl" data-i="jn1_evo">evolução, hora após hora</small>
+        <a class="jc-yt" href="https://www.youtube.com/@Ezzocty" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><rect x="1" y="4.5" width="22" height="15" rx="4.5" fill="#ff1f1f"/><path d="m10 9 5.5 3-5.5 3z" fill="#fff"/></svg>
+          <span><b>@Ezzocty</b><small data-i="jn1_yt">Alguns vídeos meus no YouTube</small></span><i aria-hidden="true">↗</i>
+        </a>
+      </div>
+      <canvas class="awp-gl" aria-hidden="true"></canvas>
+      </div>
+    </article>
+
+    <!-- 02: Aparecer -->
+    <article class="jc jc-flip rv" aria-labelledby="jn2-h">
+      <div class="jc-text">
+        <span class="jc-n">02</span>
+        <h3 id="jn2-h" data-i="jn2_t">Comunicação na frente da câmera.</h3>
+        <p data-i="jn2_p1"></p>
+        <p data-i="jn2_p2"></p>
+      </div>
+      <figure class="jc-vid">
+        <div class="jc-phone"><video id="zvid" data-src="assets/zero-ao-milhao.mp4" poster="assets/zero-ao-milhao.webp" muted loop playsinline controls preload="none"></video></div>
+        <figcaption data-i="jn2_cap">Dia 5 da série “Do Zero ao Milhão”, no meu perfil pessoal. Toque para ouvir.</figcaption>
+      </figure>
+    </article>
+
+    <!-- 03: Russo -->
+    <article class="jc rv" aria-labelledby="jn3-h">
+      <div class="jc-text">
+        <span class="jc-n">03</span>
+        <h3 id="jn3-h" data-i="jn3_t">Gosto de desafio. O de agora é o russo.</h3>
+        <p data-i="jn3_p1"></p>
+        <p class="jc-insight" data-i="jn3_p2"></p>
+      </div>
+      <div class="jc-ru ru-stage" id="ru-stage">
+        <canvas class="ru-gl" id="ru-gl" aria-hidden="true"></canvas>
+        <svg class="ru-sky" viewBox="0 0 600 140" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><path d="M0 140V118H40V108H90V120H170V112H250V104H350V112H420V116H520V110H600V140ZM47.0 140V104.0H43.0C33.5 86.0 58.0 75.2 60.0 64.0C62.0 75.2 86.5 86.0 77.0 104.0H73.0V140ZM59.0 64.0h2v-12h-2zM55.0 56.0h10v2h-10zM120.0 140V96.0H117.0C109.7 82.5 128.4 74.4 130.0 66.0C131.6 74.4 150.3 82.5 143.0 96.0H140.0V140ZM129.0 66.0h2v-12h-2zM125.0 58.0h10v2h-10zM192.0 140V78.0H186.0C172.6 52.8 207.1 37.7 210.0 22.0C212.9 37.7 247.4 52.8 234.0 78.0H228.0V140ZM209.0 22.0h2v-12h-2zM205.0 14.0h10v2h-10zM278.0 140V62.0H270.0C253.2 30.5 296.4 11.6 300.0 -8.0C303.6 11.6 346.8 30.5 330.0 62.0H322.0V140ZM299.0 -8.0h2v-12h-2zM295.0 -16.0h10v2h-10zM376.0 140V82.0H370.0C357.7 58.6 389.4 44.6 392.0 30.0C394.6 44.6 426.3 58.6 414.0 82.0H408.0V140ZM391.0 30.0h2v-12h-2zM387.0 22.0h10v2h-10zM459.0 140V98.0H455.0C446.6 82.7 468.2 73.5 470.0 64.0C471.8 73.5 493.4 82.7 485.0 98.0H481.0V140ZM469.0 64.0h2v-12h-2zM465.0 56.0h10v2h-10zM531.0 140V92.0H526.0C515.4 72.2 542.7 60.3 545.0 48.0C547.3 60.3 574.6 72.2 564.0 92.0H559.0V140ZM544.0 48.0h2v-12h-2zM540.0 40.0h10v2h-10z"/></svg>
+        <div class="ru-top" aria-hidden="true">
+          <span class="ru-flag"><svg class="fl-svg" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" fill="#fff"/><rect y="6.67" width="28" height="6.67" fill="#0039a6"/><rect y="13.34" width="28" height="6.66" fill="#d52b1e"/></svg></span>
+          <span class="ru-tag" data-i="jn3_rul">Estudando russo agora</span>
+        </div>
+        <div class="ru-bar">
+          <div class="ru-card" aria-live="polite">
+            <em class="ru-k"><i data-i="ru_k">Camada</i> <i id="ru-n">1</i>/4</em>
+            <ol class="ru-ws">
+              <li class="ru-w on"><b lang="ru">Алфавит</b><small data-i="ru_w1">alfabeto</small></li>
+              <li class="ru-w"><b lang="ru">Звуки</b><small data-i="ru_w2">sons</small></li>
+              <li class="ru-w"><b lang="ru">Слова</b><small data-i="ru_w3">palavras</small></li>
+              <li class="ru-w"><b lang="ru">Привет, как дела?</b><small data-i="ru_w4">oi, tudo bem?</small></li>
+            </ol>
+          </div>
+          <button class="ru-btn" id="ru-btn" type="button"><i class="ru-b1" data-i="ru_open">Abrir a próxima</i><i class="ru-b2" data-i="ru_close">Guardar de novo</i></button>
+        </div>
+      </div>
+    </article>
+
+    <div class="jn-duo">
+      <article class="jc-mini rv" aria-labelledby="jn4-h">
+        <span class="jc-n">04</span>
+        <h3 id="jn4-h" data-i="jn4_t">Leio para entender gente.</h3>
+        <p data-i="jn4_p"></p>
+        <div class="bk-shelf" id="bk-shelf">
+        <ul class="jc-tiles bk-row">
+          <li class="bk-slot" style="--i:0;--d:.14;--tint:#f0642a" data-bk="dopamina">
+            <button class="bk" type="button" aria-pressed="false" aria-controls="bk-note" data-n="0">
+              <span class="bk-stage" aria-hidden="true"><span class="bk-fl"><span class="bk-obj">
+                <span class="bk-f bk-back"></span>
+                <span class="bk-f bk-spine"><img src="assets/bk-dopamina-sp.webp" alt="" loading="lazy" width="60" height="540"></span>
+                <span class="bk-f bk-edge"></span>
+                <span class="bk-f bk-topf"></span>
+                <span class="bk-f bk-page"><span class="bk-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="12" r="2.4"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M6.6 7.3 10 10.5M17.4 7.3 14 10.5M6.6 16.7 10 13.5M17.4 16.7 14 13.5"/></svg></span><i></i><i></i><i></i></span>
+                <span class="bk-f bk-cover"><img src="assets/bk-dopamina.webp" alt="" loading="lazy" width="360" height="540"><span class="bk-in"></span></span>
+              </span></span><span class="bk-shadow"></span><span class="bk-fx"></span></span>
+              <span class="bk-lab" data-i="jn4_c1">Neurociência</span>
+            </button>
+          </li>
+          <li class="bk-slot" style="--i:1;--d:.24;--tint:#b8923a" data-bk="48leis">
+            <button class="bk" type="button" aria-pressed="false" aria-controls="bk-note" data-n="1">
+              <span class="bk-stage" aria-hidden="true"><span class="bk-fl"><span class="bk-obj">
+                <span class="bk-f bk-back"></span>
+                <span class="bk-f bk-spine"><img src="assets/bk-48leis-sp.webp" alt="" loading="lazy" width="60" height="540"></span>
+                <span class="bk-f bk-edge"></span>
+                <span class="bk-f bk-topf"></span>
+                <span class="bk-f bk-page"><span class="bk-ico"><b class="psi" aria-hidden="true">Ψ</b></span><i></i><i></i><i></i></span>
+                <span class="bk-f bk-cover"><img src="assets/bk-48leis.webp" alt="" loading="lazy" width="360" height="540"><span class="bk-in"></span></span>
+              </span></span><span class="bk-shadow"></span><span class="bk-fx"></span></span>
+              <span class="bk-lab" data-i="jn4_c2">Psicologia</span>
+            </button>
+          </li>
+          <li class="bk-slot" style="--i:2;--d:.2;--tint:#c9a24a" data-bk="meditacoes">
+            <button class="bk" type="button" aria-pressed="false" aria-controls="bk-note" data-n="2">
+              <span class="bk-stage" aria-hidden="true"><span class="bk-fl"><span class="bk-obj">
+                <span class="bk-f bk-back"></span>
+                <span class="bk-f bk-spine"><img src="assets/bk-meditacoes-sp.webp" alt="" loading="lazy" width="60" height="540"></span>
+                <span class="bk-f bk-edge"></span>
+                <span class="bk-f bk-topf"></span>
+                <span class="bk-f bk-page"><span class="bk-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-5 9 5z"/><path d="M6 11v7M10 11v7M14 11v7M18 11v7M4 20h16"/></svg></span><i></i><i></i><i></i></span>
+                <span class="bk-f bk-cover"><img src="assets/bk-meditacoes.webp" alt="" loading="lazy" width="360" height="540"><span class="bk-in"></span></span>
+              </span></span><span class="bk-shadow"></span><span class="bk-fx"></span></span>
+              <span class="bk-lab" data-i="jn4_c3">Filosofia</span>
+            </button>
+          </li>
+        </ul>
+        <div class="bk-note" id="bk-note" aria-live="polite"><span class="bk-note-k" id="bk-nk"></span><b class="bk-note-t" id="bk-nt"></b><span class="bk-note-a" id="bk-na"></span><p class="bk-note-p" id="bk-np"></p><span class="bk-note-bar"></span></div>
+        </div>
+      </article>
+      <article class="jc-mini jc-faith rv" aria-labelledby="jn5-h">
+        <div class="fa-wrap">
+        <figure class="jc-photo fa-stage" id="fa-stage">
+          <img src="assets/devocional.webp" alt="Bíblia aberta sobre a mesa, no meu devocional" loading="lazy" width="540" height="405">
+          <canvas class="fa-rays" aria-hidden="true"></canvas>
+          <blockquote class="fa-verse"><p data-i="fa_v">“Ele foi ferido por causa das nossas transgressões; e pelas suas feridas fomos sarados.”</p><cite data-i="fa_c">Isaías 53:5</cite></blockquote>
+          <button class="fa-btn" id="fa-btn" type="button"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 3v18M6.5 9h11"/></svg><span data-i="fa_btn">Toque para acender</span></button>
+        </figure>
+        <canvas class="fa-gl" aria-hidden="true"></canvas>
+        </div>
+        <span class="jc-n">05</span>
+        <h3 id="jn5-h" data-i="jn5_t">Sou cristão.</h3>
+        <p data-i="jn5_p"></p>
+      </article>
     </div>
   </div>
 </section>
@@ -487,7 +600,7 @@
 <!-- ============ SERVICES ============ -->
 <section id="services" class="sv" aria-labelledby="sv-h">
   <div class="sv-in">
-    <h2 id="sv-h" class="sv-title"><span data-i="sv_a">Tudo o que eu</span> <span class="sv-wow" data-i="sv_b">faço.</span></h2>
+    <h2 id="sv-h" class="sv-title"><span data-i="sv_a">O que eu</span> <span class="sv-wow" data-i="sv_b">entrego.</span></h2>
     <p class="sv-lede" data-i="sv_lede">Do primeiro anúncio ao site no ar, eu cuido do caminho inteiro do cliente.</p>
     <ul class="sv-cols">
       <li class="sv-col"><span class="sv-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></span><h3 class="sv-name" data-i="s1_n">Tráfego</h3><p class="sv-line" data-i="s1_l">Pago e orgânico, do teste à escala.</p>
@@ -495,41 +608,11 @@
       <li class="sv-col"><span class="sv-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></span><h3 class="sv-name" data-i="s2_n">Copy & persuasão</h3><p class="sv-line" data-i="s2_l">Palavras que levam à decisão.</p>
         <ul><li data-i="s2_1">Copywriting</li><li data-i="s2_2">Páginas de venda</li><li data-i="s2_3">Anúncios</li><li data-i="s2_4">Psicologia aplicada</li></ul></li>
       <li class="sv-col"><span class="sv-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r=".6"/><circle cx="17.5" cy="10.5" r=".6"/><circle cx="8.5" cy="7.5" r=".6"/><circle cx="6.5" cy="12.5" r=".6"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.65-.75 1.65-1.69 0-.44-.18-.84-.44-1.13-.29-.29-.44-.65-.44-1.12a1.64 1.64 0 0 1 1.67-1.67h2c3.05 0 5.55-2.5 5.55-5.55C21.97 6.01 17.46 2 12 2z"/></svg></span><h3 class="sv-name" data-i="s3_n">Design & sites</h3><p class="sv-line" data-i="s3_l">Visual claro, site que converte.</p>
-        <ul><li data-i="s3_1">Sites e apps</li><li data-i="s3_2">Landing pages</li><li data-i="s3_3">Criativos (estáticos e vídeo)</li><li data-i="s3_4">Identidade</li></ul></li>
+        <ul><li data-i="s3_1">Sites e apps</li><li data-i="s3_2">Landing pages</li><li data-i="s3_3">Branding</li><li data-i="s3_4">Identidade</li></ul></li>
       <li class="sv-col"><span class="sv-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span><h3 class="sv-name" data-i="s4_n">Funis & produto</h3><p class="sv-line" data-i="s4_l">Da ideia à operação rodando.</p>
         <ul><li data-i="s4_1">Infoprodutos</li><li data-i="s4_2">Funis e jornada do cliente</li><li data-i="s4_3">Automação com Typebot</li><li data-i="s4_4">Parcerias com influenciadores</li></ul></li>
     </ul>
   </div>
-</section>
-
-<!-- ============ CONTACT / BRIEF ============ -->
-<section id="contact" class="brief" aria-label="Contato">
-  <form id="bf" class="bf" novalidate>
-    <input class="bf-trap" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" name="website">
-    <h2 class="bf-title" data-i="bf_t">Vamos conversar</h2>
-    <p class="bf-lede" data-i="bf_l">Tem uma oportunidade ligada a marketing digital, tráfego ou conteúdo? Conte aqui. Eu respondo.</p>
-
-    <label class="bf-field"><input class="bf-input" name="name" placeholder=" " required autocomplete="name"><span data-i="bf_name">Nome</span></label>
-    <label class="bf-field"><input class="bf-input" name="email" type="email" placeholder=" " required autocomplete="email"><span data-i="bf_email">E-mail</span></label>
-
-    <fieldset class="bf-set"><legend data-i="bf_need">Do que você precisa?</legend>
-      <label class="bf-pill"><input type="checkbox" name="what" value="Site"><span data-i="pill_site">Site</span></label>
-      <label class="bf-pill"><input type="checkbox" name="what" value="Tráfego"><span data-i="pill_traffic">Tráfego</span></label>
-      <label class="bf-pill"><input type="checkbox" name="what" value="Copy"><span data-i="pill_copy">Copy</span></label>
-      <label class="bf-pill"><input type="checkbox" name="what" value="Funil"><span data-i="pill_funnel">Funil</span></label>
-      <label class="bf-pill"><input type="checkbox" name="what" value="Outro"><span data-i="pill_other">Outro</span></label>
-    </fieldset>
-
-    <label class="bf-field bf-tall"><textarea class="bf-input" name="about" rows="4" placeholder=" "></textarea><span data-i="bf_about">Conte mais</span></label>
-    <button class="bf-send" type="submit"><span data-i="bf_send">Enviar</span></button>
-    <p class="bf-note" id="bf-note" role="status"></p>
-  </form>
-</section>
-
-<section class="rg">
-  <p class="rg-ask" data-i="rg_ask">Minha proposta</p>
-  <h2 class="rg-say" id="rg-say" data-i="rg_say">Aberto a oportunidades alinhadas ao que eu gosto e já fiz.</h2>
-  <p class="rg-book"><span class="dot"></span><span data-i="rg_book">Remoto ou híbrido · São Paulo</span></p>
 </section>
 
 <!-- ============ FAQ ============ -->
@@ -539,26 +622,142 @@
     <li class="fq-item"><h3 class="fq-q"><button type="button" aria-expanded="false"><span data-i="q1">Quem é você?</span></button></h3><div class="fq-a"><p data-i="a1">Guilherme, 19 anos. Comecei no marketing digital em 2022, com dropshipping, e depois fiz infoprodutos. Hoje estudo Administração de Empresas no Insper.</p></div></li>
     <li class="fq-item"><h3 class="fq-q"><button type="button" aria-expanded="false"><span data-i="q2">O que você já fez?</span></button></h3><div class="fq-a"><p data-i="a2">Lojas de dropshipping com tráfego orgânico e um infoproduto criado do zero, com operação estruturada e vendas por campanhas pagas. Também rodo campanhas no Meta Ads e já criei conteúdo no meu perfil pessoal.</p></div></li>
     <li class="fq-item"><h3 class="fq-q"><button type="button" aria-expanded="false"><span data-i="q3">O que te interessa além de marketing?</span></button></h3><div class="fq-a"><p data-i="a3">Liderança, gestão de pessoas, linguagem corporal e psicologia aplicada às vendas. Entender o comportamento humano é a base de qualquer negócio.</p></div></li>
-    <li class="fq-item"><h3 class="fq-q"><button type="button" aria-expanded="false"><span data-i="q4">Como começamos?</span></button></h3><div class="fq-a"><p data-i="a4">Preencha o formulário acima ou escreva direto por e-mail.</p></div></li>
+    <li class="fq-item"><h3 class="fq-q"><button type="button" aria-expanded="false"><span data-i="q4">Com quem você trabalha?</span></button></h3><div class="fq-a"><p data-i="a4">Com empresas, marcas e projetos que tratam marketing como investimento e acompanham número. Prefiro poucos projetos bem feitos a muitos pela metade.</p></div></li>
   </ul>
+</section>
+
+<!-- ============ CONTATO: próximo passo (WhatsApp e e-mail diretos) ============ -->
+<section class="rg cx" id="contact" aria-labelledby="rg-say">
+  <p class="rg-ask" data-i="rg_ask">Contato</p>
+  <h2 class="rg-say" id="rg-say" data-i="rg_say">Menos promessa, mais número.</h2>
+  <p class="cx-lede" data-i="rg_lede"></p>
+  <div class="cx-cards">
+    <a class="cx-card cx-mail" data-mail href="mailto:guiprimavera@hotmail.com"><span class="cx-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></svg></span><span class="cx-tx"><small data-i="cx_mail">E-mail</small><b>guiprimavera@hotmail.com</b></span><i aria-hidden="true">↗</i></a>
+    <a class="cx-card cx-wa" data-wa href="https://wa.me/5511986955476" target="_blank" rel="noopener"><span class="cx-ic"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.87 9.87 0 0 0 12.04 2Zm5.8 14.04c-.24.68-1.42 1.3-1.96 1.35-.5.05-1.13.23-3.8-.79-3.2-1.26-5.24-4.53-5.4-4.74-.16-.21-1.29-1.72-1.29-3.28 0-1.56.82-2.33 1.11-2.65.29-.32.63-.4.84-.4l.6.01c.19.01.45-.07.71.54.26.63.89 2.18.97 2.34.08.16.13.34.03.55-.11.21-.16.34-.32.53-.16.18-.33.41-.47.55-.16.16-.32.33-.14.65.18.32.82 1.35 1.76 2.19 1.21 1.08 2.23 1.41 2.55 1.57.32.16.5.13.69-.08.18-.21.79-.92 1-1.24.21-.32.42-.26.71-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44Z"/></svg></span><span class="cx-tx"><small>WhatsApp</small><b>(11) 98695-5476</b></span><i aria-hidden="true">↗</i></a>
+  </div>
+  <p class="rg-book"><span class="dot"></span><span data-i="rg_book">Remoto ou híbrido, em São Paulo</span></p>
+  <p class="cx-or" data-i="cx_or">Para uma proposta mais detalhada, use o formulário abaixo.</p>
+</section>
+
+<!-- ============ CONTACT / BRIEF ============ -->
+<section id="brief" class="brief" aria-label="Formulário de contato">
+  <div class="bf-layout">
+    <div class="bf-desk">
+      <form id="bf" class="bf" data-phase="edit" novalidate>
+        <input class="bf-trap" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" name="website">
+        <div class="bf-intro" style="--i:0">
+          <h2 class="bf-title" id="bf-title" data-i="bf_t">Propostas</h2>
+          <p class="bf-lede" data-i="bf_l">Projetos e posições em marketing digital, tráfego ou conteúdo. Envie o contexto, o objetivo e o prazo. Eu leio tudo e retorno quando existe fit.</p>
+        </div>
+
+        <div class="bf-group" style="--i:1">
+          <label class="bf-field"><input class="bf-input" name="name" placeholder=" " required autocomplete="name"><span class="bf-label" data-i="bf_name">Nome</span></label>
+          <label class="bf-field"><input class="bf-input" name="email" type="email" placeholder=" " required autocomplete="email"><span class="bf-label" data-i="bf_email">E-mail</span></label>
+          <label class="bf-field"><input class="bf-input" name="company" placeholder=" " autocomplete="organization"><span class="bf-label" data-i="bf_co">Empresa</span><span class="bf-hint" data-i="bf_opt">Opcional</span></label>
+        </div>
+
+        <fieldset class="bf-set" style="--i:2"><legend data-i="bf_need">Escopo</legend>
+          <div class="bf-pills">
+            <label class="bf-pill" style="--j:0"><input type="checkbox" name="what" value="Site"><span data-i="pill_site">Site</span></label>
+            <label class="bf-pill" style="--j:1"><input type="checkbox" name="what" value="Tráfego"><span data-i="pill_traffic">Tráfego</span></label>
+            <label class="bf-pill" style="--j:2"><input type="checkbox" name="what" value="Copy"><span data-i="pill_copy">Copy</span></label>
+            <label class="bf-pill" style="--j:3"><input type="checkbox" name="what" value="Branding"><span data-i="pill_cr">Branding</span></label>
+            <label class="bf-pill" style="--j:4"><input type="checkbox" name="what" value="Funil"><span data-i="pill_funnel">Funil</span></label>
+            <label class="bf-pill" style="--j:5"><input type="checkbox" name="what" value="Outro"><span data-i="pill_other">Outro</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="bf-set" style="--i:3"><legend data-i="bf_kind">Formato</legend>
+          <div class="bf-pills">
+            <label class="bf-pill" style="--j:0"><input type="radio" name="kind" value="Estágio"><span data-i="kind_1">Estágio</span></label>
+            <label class="bf-pill" style="--j:1"><input type="radio" name="kind" value="Freela"><span data-i="kind_2">Freela</span></label>
+            <label class="bf-pill" style="--j:2"><input type="radio" name="kind" value="Projeto"><span data-i="kind_3">Projeto</span></label>
+            <label class="bf-pill" style="--j:3"><input type="radio" name="kind" value="Parceria"><span data-i="kind_4">Parceria</span></label>
+          </div>
+        </fieldset>
+
+        <div class="bf-group" style="--i:4">
+          <label class="bf-field bf-tall"><textarea class="bf-input" name="about" rows="4" placeholder=" "></textarea><span class="bf-label" data-i="bf_about">Contexto, objetivo e prazo</span></label>
+        </div>
+
+        <button class="bf-send" type="submit" style="--i:5"><span data-i="bf_send">Dobrar e enviar</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M2.9 9.6 17 3.4c.4-.2.8.2.6.6L11.4 17.8c-.2.4-.8.4-.9 0L8.6 12.2 3 10.5c-.5-.1-.5-.7-.1-.9Z"/><path d="m8.6 12.2 8.8-8.6"/></svg></button>
+        <p class="bf-note" id="bf-note" role="status"></p>
+      </form>
+
+      <div class="bf-sent" id="bf-sent" inert>
+        <span class="bf-done" style="--i:0" aria-hidden="true"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="26"/><path d="m15.5 27 7 7 14-15"/></svg></span>
+        <p class="bf-sent-say" style="--i:1" data-i="bf_sent">Tá na caixa.</p>
+        <p class="bf-sent-note" style="--i:2" data-i="bf_sent_n">Abri seu app de e-mail com a mensagem pronta. É só apertar enviar.</p>
+        <button class="bf-again" id="bf-again" type="button" style="--i:3" data-i="bf_again">Escrever outra</button>
+      </div>
+    </div>
+
+    <div class="bf-box" aria-hidden="true">
+      <div class="mb" id="mb">
+        <svg class="mb-svg" viewBox="0 0 320 380">
+          <defs>
+            <linearGradient id="mbFront" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#e6e8ee"/><stop offset="1" stop-color="#b9bdc7"/></linearGradient>
+            <linearGradient id="mbSide" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d5d8df"/><stop offset=".45" stop-color="#f3f4f7"/><stop offset="1" stop-color="#a9aeb8"/></linearGradient>
+            <linearGradient id="mbPost" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8b909b"/><stop offset=".4" stop-color="#e9ebef"/><stop offset="1" stop-color="#7c818c"/></linearGradient>
+            <radialGradient id="mbBase" cx=".45" cy=".35" r=".7"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#a7acb6"/></radialGradient>
+            <pattern id="mbDots" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="3.5" cy="3.5" r="1.1" fill="#000" opacity=".07"/></pattern>
+          </defs>
+          <ellipse cx="168" cy="352" rx="96" ry="16" fill="#000" opacity=".08"/>
+          <!-- poste -->
+          <ellipse cx="166" cy="340" rx="62" ry="15" fill="url(#mbBase)"/>
+          <path d="M104 340a62 15 0 0 0 124 0v5a62 15 0 0 1-124 0z" fill="#8f949f"/>
+          <rect x="154" y="210" width="24" height="132" rx="4" fill="url(#mbPost)"/>
+          <!-- lateral -->
+          <path d="M98 70 L222 50 A62 62 0 0 1 284 112 L284 212 L160 232 L160 132 A62 62 0 0 0 98 70Z" fill="url(#mbSide)"/>
+          <path d="M98 70 L222 50 A62 62 0 0 1 284 112 L284 212 L160 232 L160 132 A62 62 0 0 0 98 70Z" fill="url(#mbDots)"/>
+          <path d="M160 206 L284 186 L284 212 L160 232Z" fill="#1d1d1f"/>
+          <path d="M100 71 L222 51" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+          <!-- adesivo G -->
+          <g class="mb-sticker" transform="rotate(-10 208 166)">
+            <circle cx="208" cy="166" r="25" fill="#dfcd2e"/>
+            <circle cx="208" cy="166" r="25" fill="none" stroke="#fff" stroke-width="4"/>
+            <path d="M216 158a11 11 0 1 0 0 16v-7h-7" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <!-- frente / porta -->
+          <path d="M36 232 V132 A62 62 0 0 1 160 132 V232Z" fill="url(#mbFront)"/>
+          <path d="M36 232 V132 A62 62 0 0 1 160 132 V232Z" fill="url(#mbDots)"/>
+          <path d="M36 206 H160 V232 H36Z" fill="#1d1d1f"/>
+          <path d="M48 200 V134 A50 50 0 0 1 148 134 V200" fill="none" stroke="#fff" stroke-width="2.5" opacity=".75"/>
+          <rect class="mb-slot" x="62" y="124" width="72" height="13" rx="6.5" fill="#1d1d1f"/>
+          <rect x="62" y="124" width="72" height="5" rx="2.5" fill="#000" opacity=".35"/>
+          <rect x="64" y="152" width="68" height="10" rx="5" fill="#fff" opacity=".85"/>
+          <rect x="64" y="170" width="68" height="10" rx="5" fill="#fff" opacity=".85"/>
+          <!-- bandeira -->
+          <g class="mb-flag">
+            <rect x="257.5" y="58" width="9" height="68" rx="4.5" fill="#ff3b30"/>
+            <path d="M266.5 58h28a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4h-28z" fill="#ff3b30"/>
+            <circle cx="262" cy="120" r="9" fill="#d5d8df" stroke="#9aa0ab" stroke-width="2"/>
+            <circle cx="262" cy="120" r="3" fill="#7c818c"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
 </section>
 </div><!-- /sheet -->
 
 <footer class="ft">
-  <p class="ft-say" data-i="ft_say">Marketing digital e<br>Administração de Empresas.</p>
+  <p class="ft-say" data-i="ft_say">Marketing com<br>cabeça de negócio.</p>
   <ul class="ft-meta">
     <li><button type="button" class="ft-mail" id="mail" data-copied="Copiado"><span id="mail-t"></span></button></li>
   </ul>
   <nav class="ft-links" aria-label="Footer">
     <a href="#work" data-i="nav_work">Trabalhos</a>
-    <a href="#about" data-i="nav_about">Sobre</a>
-    <a href="#journey" data-i="nav_jn">Minha história</a>
+    <a href="#creatives" data-i="nav_cr">Caverna</a>
     <a href="#insperjr">Insper Jr</a>
     <a href="#projects" data-i="nav_projects">Projetos</a>
+    <a href="#about" data-i="nav_about">Sobre</a>
+    <a href="#timeline" data-i="nav_tm">Trajetória</a>
+    <a href="#journey" data-i="nav_jn">Minha história</a>
     <a href="#services" data-i="nav_services">O que faço</a>
-    <a href="#faq" data-i="nav_faq">FAQ</a>
+    <a href="#contact" data-i="nav_contact">Contato</a>
   </nav>
-  <p class="ft-row">© 2026 Guilherme Balestrin · <button type="button" id="ft-top" class="ft-top" data-i="ft_top">Voltar ao topo ↑</button></p>
+  <p class="ft-row">© 2026 Guilherme Balestrin. <button type="button" id="ft-top" class="ft-top" data-i="ft_top">Voltar ao topo ↑</button></p>
 </footer>
 
 </main>
@@ -572,6 +771,12 @@
   </div>
 </dialog>
 
+
 <script src="main.js"></script>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+<script type="module" src="awp.js"></script>
+<script type="module" src="faith.js"></script>
+<script type="module" src="cav.js"></script>
+<script type="module" src="ru.js"></script>
 </body>
 </html>
